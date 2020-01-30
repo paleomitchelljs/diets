@@ -9,7 +9,7 @@ Model <- lmer(ppreymass ~ predmass + (1 | clade/subclade/species) + ( 1 | obstyp
 
 ########## SIMPLE   ##############
 library(brms)
-bform <- bf( ppreymass ~ predmass + (1 | clade) + (1 | study) + (1 | obstype) )
+bform <- bf( ppreymass ~ predmass + (1 | clade) + (1 | obstype/study) )
 
 Prior <- c(
 	prior(student_t(3, 0, 5), class="Intercept", coef=""),

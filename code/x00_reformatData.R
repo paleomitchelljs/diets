@@ -1,8 +1,6 @@
 ###################
-setwd("C:\\Users\\jsm0036\\Dropbox\\Research\\DietProject\\data")
+setwd("C:\\Users\\jsm0036\\Dropbox\\Research\\diets\\data")
 library(MASS)
-library(nlme)
-library(brms)
 
 ####################
 #######For diet:
@@ -31,8 +29,7 @@ genDistro <- function(preycount, preymasses)	{
 }
 ####################
 ####################
-Table <- read.csv('AllDiets.csv', header=F, stringsAsFactors=FALSE)
-#Table <- Table[c(1:3,sample(4:nrow(Table), floor(0.3*nrow(Table)))),]
+Table <- read.csv('raw_data.csv', header=F, stringsAsFactors=FALSE)
 StartCol <- 31
 
 Nobs <- Table[4:nrow(Table), which(Table[3,] == "Nobservations")]
@@ -72,4 +69,4 @@ for (j in 1:nrow(Data))	{
 
 }
 
-write.csv("longform.csv", outMat, quote=F)
+write.csv(outMat, 'longform.csv', quote=F, row.names=F)
