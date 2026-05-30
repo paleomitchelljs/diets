@@ -1,0 +1,63 @@
+# ============================================================================
+# .gitignore for the PUBLIC repo (github.com/paleomitchelljs/diets)
+# Tracks: analysis code, curated/derived small data tables, figures, docs.
+# Excludes: copyrighted source PDFs + specimen images, large third-party
+# datasets (fetch separately; see data/external_data_wanted.md), and large
+# regenerable pipeline outputs.
+# ============================================================================
+
+# --- macOS / R cruft ---
+.DS_Store
+**/.DS_Store
+.Rhistory
+.Rapp.history
+.RData
+
+# --- Source materials: EVERYTHING under pdfs/ (copyrighted journal PDFs, raw
+#     data drops, digitized images) EXCEPT the INTAKE.md doc. Plus specimen images. ---
+pdfs/
+images/
+
+# --- Large third-party datasets (redistribution-restricted / huge) ---
+data/AVONET/
+data/pantheria
+data/mass_references/*.xls
+data/mass_references/*.XLS
+data/mass_references/*.xlsx
+
+# --- Large regenerable structured tables (rebuild via code/x10,x13,x14,x16) ---
+data/structured/fishbase.csv
+data/structured/aviandietdb_dietdb.csv
+data/structured/aviandiet_long.csv
+data/structured/aviandiet_gut.csv
+data/structured/raptor_diets_long.csv
+
+# --- Derived / regenerable pipeline outputs ---
+data/longform.csv
+data/phylo_tree.rds
+data/phylo_A.rds
+data/phylo_model.stan
+data/fit_simple.rds
+data/fit_phylo.rds
+data/*.log
+
+# --- Historical archives (large; may include copyrighted material) ---
+archive_owl/
+archive_old_pipeline/
+
+# ============================================================================
+# Intentionally TRACKED (small, curated, reviewable, or the project's own work):
+#   code/                                  full analysis pipeline x00-x16
+#   data/raw_data.csv                      source diet matrix (project's compilation)
+#   data/fossil_predprey.csv, fossil_diet_extractions.csv, extant_new_observations.csv
+#   data/mass_overrides.csv, mass_gaps.csv, intake_manifest.csv
+#   data/reconciliations.md, observation_bias_notes.md, external_data_wanted.md,
+#     INTEGRATED_SOURCES.md
+#   data/*_slopes*.csv, fossil_gut_points.csv, fossil_clade_resemblance.csv,
+#     extant_gut_ppmr_by_clade.csv, clade_lines_gut_equiv.csv, mode_offset_by_clade.csv
+#   data/structured/{tucker2016_mammal_ppmr,gator_jekyll_stomach,aviandiet_gut_ppmr,
+#     raptor_diets_gut,fishbase_lw_coef}.csv
+#   data/mass_references/theropoda_benson.csv   (dinosaur femur->mass calibration)
+#   figures/                               project's own plots
+#   pdfs/INTAKE.md, README.md, relaunch.md, .gitignore
+# ============================================================================

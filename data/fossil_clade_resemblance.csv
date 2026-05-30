@@ -1,0 +1,7 @@
+"pred","prey","ppmr","pct_in_Aves","pct_in_Crocodylia","pct_in_Lacertilia","pct_in_Mammalia","pct_in_Serpentes","P_Aves","P_Crocodylia","P_Lacertilia","P_Mammalia","P_Serpentes"
+"Sinocalliopteryx_gigas","Confuciusornis",-5.49,22,81,81,23,0,0.25,0.22,0.27,0.24,0.01
+"Gorgosaurus_libratus_juvenile","Citipes_elegans_yearling",-3.46,53,87,94,39,10,0.27,0.07,0.06,0.24,0.36
+"Microraptor_gui","Enantiornithes",-2.46,54,91,95,52,60,0.21,0.03,0.02,0.2,0.54
+"Sinocalliopteryx_gigas","Sinornithosaurus",-2.18,59,92,99,55,66,0.21,0.03,0.02,0.19,0.55
+"Sinocalliopteryx_gigas","cfPsittacosaurus",-1.67,75,97,99,71,73,0.21,0.02,0.01,0.2,0.55
+"Velociraptor_mongoliensis","Azdarchid",-0.37,83,100,100,86,94,0.32,0.02,0.01,0.33,0.32

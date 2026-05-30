@@ -1,0 +1,5 @@
+"clade","stomach_minus_scat","se","ci_low","ci_high","n_scat","n_stom","n_species_both","n_studies_both","offset_quality"
+"Aves",-8.42638182915227,0.669031763771583,-9.73768408614457,-7.11507957215997,105465,602,2,1,"FRAGILE (<3 shared taxa)"
+"Mammalia",0.407231879728837,0.116373198591489,0.179140410489518,0.635323348968155,24174,5578,8,2,"ok"
+"Squamata",0.307746866189882,0.195145786580687,-0.0747388755082633,0.690232607888028,4131,8804,2,3,"FRAGILE (<3 shared taxa)"
+"Crocodylia",NA,NA,NA,NA,0,4499,0,0,"NOT IDENTIFIABLE (single-mode clade)"

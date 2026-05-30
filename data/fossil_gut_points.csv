@@ -1,0 +1,7 @@
+"pred","prey","prey_clade","pred_mass","prey_mass","source","ppmr","evidence"
+"Sinocalliopteryx_gigas","Confuciusornis","Theropoda",55570,230,"Xingetal_2012",-5.49,"gut/assoc"
+"Gorgosaurus_libratus_juvenile","Citipes_elegans_yearling","Theropoda_Caenagnathidae",335000,10500,"Therrien_et_al_2023_SciAdv",-3.46,"gut_content"
+"Microraptor_gui","Enantiornithes","Theropoda",764,65,"Oconnoretal_2011",-2.46,"gut/assoc"
+"Sinocalliopteryx_gigas","Sinornithosaurus","Theropoda",8317,942,"Xingetal_2012",-2.18,"gut/assoc"
+"Sinocalliopteryx_gigas","cfPsittacosaurus","Ornithischia",56408,10606.60465,"Xingetal_2012",-1.67,"gut/assoc"
+"Velociraptor_mongoliensis","Azdarchid","Pterosauria",13000,9000,"Honeetal_2012",-0.37,"gut/assoc"
