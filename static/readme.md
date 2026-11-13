@@ -18,7 +18,7 @@ The site reads only `data/data.js` (same content as `data/data.json`), written b
 |---|---|---|---|
 | 0 | Preferred prey size for theropod dinosaurs | 1 | species count from `counts`; Coe wordmark |
 | 1 | Some specimens preserve a single meal | 7 | *Compsognathus* gut close-up (Conrad 2017 fig. 2), then six living spindles |
-| 2 | How do we make a comparison? | 3 | schematic (made-up points): complete, no and partial pooling |
+| 2 | A mean from three records is hard to trust / One mean for everyone hides real differences / Small samples borrow from large ones | 3 | schematic (made-up records, three clades of 400, 25 and 3): per-clade histograms with each clade's mean, under no, complete and partial pooling |
 | 3 | Borrow from nobody / everyone equally / close relatives / Hierarchical models borrow variably across the tree | 4 | all points; λ = 0 global line; λ = 1 clade lines; free-λ major lines plus minor clades whose slope differs from their major clade |
 | 4 | A global regression line / Where theropods fall relative to extant diet data | 2 | global line of the free-λ fit, 1:1 line, theropod records |
 | 5 | Specimens | 4 | *Microraptor*, *Gorgosaurus*, *Sinocalliopteryx*, *Velociraptor*, each with an image |

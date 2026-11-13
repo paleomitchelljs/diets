@@ -84,6 +84,8 @@
   function layoutTree(newick, x0, w, top, h, clado) {
     const tree = typeof newick === 'string' ? P.newick(newick) : newick, tips = P.tips(tree);
     if (clado) {
+      // a zero-length internal branch is a polytomy (the 'other' bins hang from their major clade's crown node): draw it as one
+      const collapse = (n) => { n.kids.forEach(collapse); n.kids = n.kids.flatMap((k) => (k.kids.length && k.len === 0 ? k.kids : [k])); }; collapse(tree);
       const ht = (n) => (n.h = n.kids.length ? 1 + Math.max(...n.kids.map(ht)) : 0);
       ht(tree); const H = tree.h, set = (n) => { n.depth = H - n.h; n.kids.forEach(set); }; set(tree);
       tips.forEach((t) => { t.depth = H; });
@@ -159,50 +161,75 @@
     }
   });
 
-  /* ---------- 2 how do we make a comparison: schematic of the model ---------- */
+  /* ---------- 2 pooling, shown on one number per clade: schematic histograms ---------- */
   S.push({
-    title: 'How do we make <em>a comparison</em>?',
+    titles: ['A mean from three records is <em>hard to trust</em>', 'One mean for everyone <em>hides real differences</em>', 'Small samples <em>borrow from large ones</em>'],
+    anim: { 1: 900, 2: 900 },
     builds: [
-      'A schematic, not data. Three clades: one with a lot of records, one with a few, one with three. Option one: ignore the clades. One line through everything. Every clade gets the same answer, and the big clade writes it.',
-      'Option two: a line per clade. Each clade speaks only for itself. Fine for the big one. The clade with three points gets a line nobody should believe.',
-      'Option three, the model in this talk. Every clade still gets its own line, but the lines are drawn from a shared distribution. A thin clade leans on the others. A well-sampled clade barely moves. The remaining question is whom a clade should lean on.'
+      'A schematic, not data. Start with one number per clade: the typical prey size as a share of predator size. Three clades, with four hundred records, twenty-five, and three. Take each clade’s own mean. The dot is the mean and the bar is how well we know it. With four hundred records the mean is pinned down. With three it could be almost anywhere.',
+      'The other extreme: ignore the clades and take one mean for all the records. Every clade gets the same answer, and the clade with four hundred records writes it. The middle clade sits well below that line, and we have enough records there to know it.',
+      'In between. Each clade keeps its own mean, but the means are treated as draws from a shared distribution. The big clade does not move. The middle one barely moves. The clade with three records is pulled most of the way toward the others, and its bar narrows. Next: the same three options with lines in place of means.'
     ],
     make(fr) {
-      // deterministic made-up clades in a unit box
-      let seed = 11; const rnd = () => { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; };
+      // deterministic made-up clades; x is log10 (prey size / predator size)
+      let seed = 7; const rnd = () => { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; };
       const norm = () => Math.sqrt(-2 * Math.log(rnd() + 1e-9)) * Math.cos(2 * Math.PI * rnd());
-      const spec = [{ n: 46, x: [0.30, 0.95], a: 0.20, b: 0.72, col: 'var(--aves)' }, { n: 12, x: [0.10, 0.62], a: 0.02, b: 0.62, col: 'var(--squamata)' }, { n: 3, x: [0.42, 0.70], a: 0.0, b: 0.5, col: 'var(--mammalia)' }];
-      const cl = spec.map((s, j) => {
-        const pts = Array.from({ length: s.n }, () => { const x = s.x[0] + rnd() * (s.x[1] - s.x[0]); return [x, s.a + s.b * x + norm() * 0.07]; });
-        if (j === 2) { pts[0] = [0.44, 0.52]; pts[1] = [0.55, 0.20]; pts[2] = [0.68, 0.24]; }   // three points, a misleading slope
-        return Object.assign({ pts }, s);
+      const SD = 0.5, K = 3;                                   // within-clade sd; K = within / between variance
+      const cl = [{ name: 'Clade A', n: 400, mu: -1.0, col: 'var(--aves)' }, { name: 'Clade B', n: 25, mu: -1.7, col: 'var(--squamata)' }, { name: 'Clade C', n: 3, col: 'var(--mammalia)' }];
+      cl.forEach((c) => { c.v = c.mu == null ? [-0.55, -0.2, 0.05] : Array.from({ length: c.n }, () => c.mu + norm() * SD); });
+      const mean = (a) => a.reduce((s, v) => s + v, 0) / a.length;
+      const all = cl.flatMap((c) => c.v), grand = mean(all);
+      cl.forEach((c) => {
+        const w = c.n / (c.n + K);
+        c.est = [{ m: mean(c.v), se: SD / Math.sqrt(c.n) }, { m: grand, se: SD / Math.sqrt(all.length) }, { m: grand + (mean(c.v) - grand) * w, se: SD / Math.sqrt(c.n + K) }];
       });
-      const ols = (pts) => { const n = pts.length, mxx = pts.reduce((a, p) => a + p[0], 0) / n, my = pts.reduce((a, p) => a + p[1], 0) / n;
-        const b = pts.reduce((a, p) => a + (p[0] - mxx) * (p[1] - my), 0) / pts.reduce((a, p) => a + (p[0] - mxx) ** 2, 0); return { a: my - b * mxx, b }; };
-      const pooled = ols(cl.flatMap((c) => c.pts));
-      cl.forEach((c) => { c.solo = ols(c.pts); const w = c.n / (c.n + 6); c.part = { a: pooled.a + (c.solo.a - pooled.a) * w, b: pooled.b + (c.solo.b - pooled.b) * w }; });
-      const W = 440, Hh = 440, caps = [['One line for all species', 'complete pooling'], ['A line per clade', 'no pooling'], ['Clade lines that borrow', 'partial pooling']];
-      const panels = caps.map(([cap, sub], i) => {
-        const box = plotBox(fr, 110 + i * 480, 180, W, 640); box.classList.add('fade', 'hidden');
-        const svg = D.svg('svg', { width: W, height: 640 }, box);
-        const sx = (v) => 30 + v * (W - 50), sy = (v) => Hh - 20 - v * (Hh - 50);
-        D.svg('path', { d: `M30,10V${Hh - 20}H${W - 10}`, fill: 'none', stroke: 'var(--muted)', 'stroke-width': 2.5 }, svg);
-        const xt = D.svg('text', { x: 30 + (W - 40) / 2, y: Hh + 14, 'text-anchor': 'middle', class: 'lbl small' }, svg); xt.textContent = 'Predator size';
-        const yt = D.svg('text', { x: -(Hh / 2), y: 14, transform: 'rotate(-90)', 'text-anchor': 'middle', class: 'lbl small' }, svg); yt.textContent = 'Prey size';
-        const ln = (f, x0, x1, attrs) => D.svg('path', Object.assign({ d: `M${sx(x0)},${sy(f.a + f.b * x0)}L${sx(x1)},${sy(f.a + f.b * x1)}`, fill: 'none', 'stroke-linecap': 'round' }, attrs), svg);
-        cl.forEach((c) => c.pts.forEach((p) => D.svg('circle', { cx: sx(p[0]), cy: sy(p[1]), r: 6, fill: i === 0 ? 'var(--muted)' : c.col, opacity: 0.6 }, svg)));
-        if (i === 0) ln(pooled, 0.05, 0.97, { stroke: 'var(--ink)', 'stroke-width': 5 });
-        if (i === 1) cl.forEach((c) => ln(c.solo, c.x[0] - 0.04, c.x[1] + 0.04, { stroke: c.col, 'stroke-width': 5 }));
-        if (i === 2) {
-          ln(pooled, 0.05, 0.97, { stroke: 'var(--muted)', 'stroke-width': 2.5, 'stroke-dasharray': '8 9' });
-          cl.forEach((c) => { ln(c.solo, c.x[0] - 0.04, c.x[1] + 0.04, { stroke: c.col, 'stroke-width': 2, opacity: 0.45 }); ln(c.part, c.x[0] - 0.04, c.x[1] + 0.04, { stroke: c.col, 'stroke-width': 5 }); });
-        }
-        const t1 = D.svg('text', { x: W / 2, y: Hh + 84, 'text-anchor': 'middle', class: 'lbl' }, svg); t1.textContent = cap;
-        const t2 = D.svg('text', { x: W / 2, y: Hh + 124, 'text-anchor': 'middle', class: 'lbl small' }, svg); t2.textContent = sub;
-        return box;
+      const box = plotBox(fr, 0, 0, 1600, 900), svg = D.svg('svg', { width: 1600, height: 900 }, box);
+      const X0 = 440, X1 = 1500, LO = -3.2, HI = 0.5, BW = 0.1, sx = (v) => X0 + (v - LO) / (HI - LO) * (X1 - X0);
+      const AX = 740, base = [310, 490, 670], HH = 112;
+      // shared axis
+      const ax = D.svg('g', { class: 'axis' }, svg);
+      D.svg('line', { x1: X0, x2: X1, y1: AX, y2: AX }, ax);
+      [[-3, '0.1%'], [-2, '1%'], [-1, '10%'], [0, '100%']].forEach(([t, s]) => {
+        D.svg('line', { x1: sx(t), x2: sx(t), y1: 190, y2: AX, class: 'gridline' }, ax);
+        D.svg('line', { x1: sx(t), x2: sx(t), y1: AX, y2: AX + 12, class: 'tick' }, ax);
+        D.svg('text', { x: sx(t), y: AX + 46, 'text-anchor': 'middle' }, ax).textContent = s;
       });
-      D.el('div', 'formula', fr, 'log prey size = intercept<sub>clade</sub> + slope<sub>clade</sub> × log predator size');
-      return { show(b) { panels.forEach((p, i) => p.classList.toggle('hidden', i > b)); } };
+      D.svg('text', { x: (X0 + X1) / 2, y: AX + 98, 'text-anchor': 'middle', class: 'title' }, ax).textContent = 'Prey size as a share of predator size';
+      // the shared mean: solid when it is the answer, dashed when it is only the centre the clades lean toward
+      const gSolid = D.svg('line', { x1: sx(grand), x2: sx(grand), y1: 180, y2: AX, stroke: 'var(--ink)', 'stroke-width': 5, 'stroke-linecap': 'round', class: 'fade hidden' }, svg);
+      const gDash = D.svg('line', { x1: sx(grand), x2: sx(grand), y1: 180, y2: AX, class: 'guide fade hidden' }, svg);
+      const gLbl = D.svg('text', { x: sx(grand) + 16, y: 204, class: 'lbl small halo fade hidden' }, svg); gLbl.textContent = 'mean of all records';
+      const rows = cl.map((c, i) => {
+        const y0 = base[i];
+        // histogram: the big clade fills the row; smaller clades are drawn one block per record
+        const bins = {}; c.v.forEach((v) => { const b = Math.floor((v - LO) / BW); bins[b] = (bins[b] || 0) + 1; });
+        const top = Math.max(...Object.values(bins)), unit = Math.min(22, HH / top);
+        const hist = D.svg('g', { class: 'fade', opacity: 0.6 }, svg);
+        Object.entries(bins).forEach(([b, k]) => D.svg('rect', { x: sx(LO + b * BW) + 1.5, y: y0 - k * unit, width: sx(LO + BW) - sx(LO) - 3, height: k * unit, rx: 2 }, hist));
+        D.svg('line', { x1: X0, x2: X1, y1: y0, y2: y0, stroke: 'var(--rule)', 'stroke-width': 2 }, svg);
+        const t1 = D.svg('text', { x: 100, y: y0 - 48, class: 'lbl', fill: c.col }, svg); t1.textContent = c.name; t1.style.fill = c.col;
+        const t2 = D.svg('text', { x: 100, y: y0 - 8, class: 'lbl small' }, svg); t2.textContent = c.n + ' records';
+        // estimate lane under the histogram: the clade's own mean as a ghost ring, then the current estimate
+        const ey = y0 + 30;
+        const ghost = D.svg('circle', { cx: sx(c.est[0].m), cy: ey, r: 10, fill: 'none', stroke: c.col, 'stroke-width': 3, class: 'fade hidden' }, svg);
+        const bar = D.svg('rect', { x: -1, y: -4, width: 2, height: 8, fill: c.col }, svg);
+        const dot = D.svg('circle', { cx: 0, cy: 0, r: 12, fill: c.col, class: 'ring' }, svg);
+        [bar, dot].forEach((e) => { e.style.transition = 'transform 0.8s ease'; });
+        return { c, hist, ghost, bar, dot, ey };
+      });
+      const tag = D.svg('text', { x: 100, y: AX + 98, class: 'guide-lbl' }, svg);
+      const tags = ['no pooling', 'complete pooling', 'partial pooling'];
+      return { show(b) {
+        tag.textContent = tags[b];
+        gSolid.classList.toggle('hidden', b !== 1); gDash.classList.toggle('hidden', b !== 2); gLbl.classList.toggle('hidden', b === 0);
+        rows.forEach((r) => {
+          const e = r.c.est[b], px = sx(e.m), half = Math.max(2, 2 * e.se * (X1 - X0) / (HI - LO));
+          r.hist.setAttribute('fill', b === 1 ? 'var(--muted)' : r.c.col);
+          r.ghost.classList.toggle('hidden', b === 0);
+          r.dot.style.transform = `translate(${px}px, ${r.ey}px)`;
+          r.bar.style.transform = `translate(${px}px, ${r.ey}px) scaleX(${half})`;
+        });
+      } };
     }
   });
 

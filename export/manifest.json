@@ -2,7 +2,7 @@
   "site": "/Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/static/index.html",
   "width": 1600,
   "height": 900,
-  "built": "2026-11-13T04:01:11.585Z",
+  "built": "2026-11-13T10:36:53.611Z",
   "slides": [
     {
       "builds": [
@@ -56,18 +56,18 @@
       "builds": [
         {
           "media": "media/s2_b0.png",
-          "title": "How do we make a comparison?",
-          "notes": "A schematic, not data. Three clades: one with a lot of records, one with a few, one with three. Option one: ignore the clades. One line through everything. Every clade gets the same answer, and the big clade writes it."
+          "title": "A mean from three records is hard to trust",
+          "notes": "A schematic, not data. Start with one number per clade: the typical prey size as a share of predator size. Three clades, with four hundred records, twenty-five, and three. Take each clade’s own mean. The dot is the mean and the bar is how well we know it. With four hundred records the mean is pinned down. With three it could be almost anywhere."
         },
         {
-          "media": "media/s2_b1.png",
-          "title": "How do we make a comparison?",
-          "notes": "Option two: a line per clade. Each clade speaks only for itself. Fine for the big one. The clade with three points gets a line nobody should believe."
+          "media": "media/s2_b1.gif",
+          "title": "One mean for everyone hides real differences",
+          "notes": "The other extreme: ignore the clades and take one mean for all the records. Every clade gets the same answer, and the clade with four hundred records writes it. The middle clade sits well below that line, and we have enough records there to know it."
         },
         {
-          "media": "media/s2_b2.png",
-          "title": "How do we make a comparison?",
-          "notes": "Option three, the model in this talk. Every clade still gets its own line, but the lines are drawn from a shared distribution. A thin clade leans on the others. A well-sampled clade barely moves. The remaining question is whom a clade should lean on."
+          "media": "media/s2_b2.gif",
+          "title": "Small samples borrow from large ones",
+          "notes": "In between. Each clade keeps its own mean, but the means are treated as draws from a shared distribution. The big clade does not move. The middle one barely moves. The clade with three records is pulled most of the way toward the others, and its bar narrows. Next: the same three options with lines in place of means."
         }
       ]
     },
