@@ -120,7 +120,7 @@
     btn('Scroll all slides (S)', '<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="7" rx="1"/><rect x="5" y="14" width="14" height="7" rx="1"/></svg>', () => setScroll(!scroll));
     btn('Presenter window (P)', '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="12" height="9" rx="1"/><path d="M18 7h3M18 11h3M3 17h18M3 20h12"/></svg>', openPresenter);
     btn('Theme (T)', '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>', Deck.toggleTheme);
-    const help = Deck.el('div', 'helpbox', document.body, '<dl><dt>→ space</dt><dd>next</dd><dt>←</dt><dd>back</dd><dt>S</dt><dd>scroll mode</dd><dt>P</dt><dd>presenter window</dd><dt>T</dt><dd>dark / light</dd><dt>B</dt><dd>blank</dd></dl>');
+    const help = Deck.el('div', 'helpbox', document.body, '<dl><dt>→ space</dt><dd>next</dd><dt>←</dt><dd>back</dd><dt>S</dt><dd>scroll mode</dd><dt>P</dt><dd>presenter window</dd><dt>T</dt><dd>dark / light</dd><dt>B</dt><dd>blank</dd><dt>I</dt><dd>silhouettes on / off</dd></dl>');
     help.hidden = true;
     btn('Keys (?)', '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>', () => { help.hidden = !help.hidden; });
     let idle; const wake = () => { c.classList.remove('idle'); clearTimeout(idle); idle = setTimeout(() => c.classList.add('idle'), 2500); };
@@ -141,6 +141,7 @@
       else if ((k === 's' || k === 'S') && !Deck.isPresenter) setScroll(!scroll);
       else if ((k === 'p' || k === 'P') && !Deck.isPresenter) openPresenter();
       else if ((k === 'b' || k === 'B') && !Deck.isPresenter) document.getElementById('deck').style.visibility = document.getElementById('deck').style.visibility ? '' : 'hidden';
+      else if (k === 'i' || k === 'I') document.body.classList.toggle('nopics');
       else if (k === '?' && Deck.helpbox) Deck.helpbox.hidden = !Deck.helpbox.hidden;
     });
   }

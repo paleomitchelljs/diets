@@ -171,13 +171,48 @@ support <- if (!is.null(sp)) list(source = FOSSIL,
               comparison %in% c("all_minor", "major_vs_none", "tree_vs_major_vs_none", "dated_tree_vs_major_vs_none"),
             .(unit, comparison, candidate, lpd = round(lpd, 3), mcse = round(mcse, 3), rel = round(rel_support, 4))]) else NULL
 
+## closing slide: spread of the living records about the global line (free-lambda root line at the
+## stomach reference), in log10 units, for all records and for each main record type. Raw residuals:
+## the fit's observation shift is NOT removed, so the types differ by method and by which species
+## each type samples. thero_med = median residual of the theropod stomach records with a measured
+## prey mass (brackets not used, as on the tree map); below = share of living records under it.
+closing <- local({
+  sm <- fread(file.path(FIT, "summary.csv")); a0 <- sm[label == "alpha0", median]; b0 <- sm[label == "beta0", median]
+  res <- rows[, .(obs, sp = pred_taxon_id, r = (y - a0 - b0 * m) / L10)]
+  ft <- fr0 <- fread(file.path(FOSSIL, "records.csv"))[group == "Theropoda" & record_class == "point_interval" & obs == "stomach_content"]
+  ft[, pr := fifelse(is.na(pred_mass_g), sqrt(pred_mass_lo_g * pred_mass_hi_g), pred_mass_g)]
+  tm <- median((log(ft$prey_mass_g) - a0 - b0 * (log(ft$pr) - log(1000))) / L10)
+  g <- seq(-3, 3, by = 0.05)
+  one <- function(key, x) {
+    d <- density(x$r, bw = 0.12, from = min(g), to = max(g), n = length(g))$y
+    list(obs = key, rows = nrow(x), species = uniqueN(x$sp), q5 = round(quantile(x$r, 0.05)[[1]], 3), q50 = round(median(x$r), 3),
+         q95 = round(quantile(x$r, 0.95)[[1]], 3), below = round(mean(x$r < tm), 3), d = round(d / max(d), 3))
+  }
+  list(grid0 = min(g), step = 0.05, thero_med = round(tm, 3), thero_n = nrow(ft), all = one("all", res),
+       types = lapply(c("stomach_content", "pellet_scat", "prey_remains", "direct_observation"), function(k) one(k, res[obs == k])))
+})
+
+## title-slide sidebar: a few living records where the recorded prey is far heavier than the predator.
+## Each was read in the source PDF (archive_old_pipeline/compiled/Compiled/); `what` is what the paper says.
+## Masses are the ones in the analysis rows (taxon averages), which is why the ratios are absurd.
+highlights <- local({
+  h <- fread(text = "pair_id|img|pred|prey|cite|what
+Elmeros2006_DM182_L69C1918|elmeros2006.png|Mustela nivalis|Capreolus capreolus|Elmeros 2006, Acta Theriologica|1 of 132 weasel guts; probably scavenged carrion (road-kill or hunters' remains)
+Marr1983_L440C1848|marr1983.png|Aquila chrysaetos|Bos taurus|Marr & Knight 1983, The Murrelet|cattle carrion, one record
+Pemberton2008_DM147_L184C1818|pemberton2008.png|Sarcophilus harrisii|Bos taurus|Pemberton et al. 2008, Pap. Proc. R. Soc. Tasmania|cattle hair in scats; scavenging
+Camp1980_DM178_L84C217|camp1980.png|Nerodia taxispilota|Ictalurus punctatus|Camp et al. 1980, J. Herpetology|one catfish, 2.6% of food volume; prey mass is the adult species average", sep = "|", quote = "")
+  x <- merge(h, rows[, .(pair_id, pred_g, prey_g, obs)], by = "pair_id", sort = FALSE)
+  stopifnot(nrow(x) == nrow(h))
+  x[, ratio := signif(prey_g / pred_g, 3)][]
+})
+
 ## skeleton tree (terrestrial) and its shared-history matrix
 SKW <- Sys.getenv("SKEL", "results/6_work/terr")
 skel <- list(newick = readLines(file.path(SKW, "skeleton_tree.tre"))[1],
              corr = fread(file.path(SKW, "skeleton_corr.csv")))
 
 D <- list(built = format(Sys.time(), "%Y-%m-%d %H:%M"), draft = TRUE,
-          counts = cnt, fits = fits, skeleton = skel, points = pts, spindles = spindles, treefits = list(extant = tf, theropod_tree = thero_tree), majors = majors, obs = obs, allspin = list(step = 0.1, min_records = MINREC, groups = spin_groups, species = dens), fossils = fos, tree = tree, support = support)
+          counts = cnt, fits = fits, skeleton = skel, points = pts, spindles = spindles, treefits = list(extant = tf, theropod_tree = thero_tree), majors = majors, obs = obs, allspin = list(step = 0.1, min_records = MINREC, groups = spin_groups, species = dens), fossils = fos, tree = tree, support = support, closing = closing, highlights = highlights)
 js <- toJSON(D, dataframe = "rows", auto_unbox = TRUE, digits = 5, na = "null")
 writeLines(js, "static/data/data.json")
 writeLines(paste0("window.DATA = ", js, ";"), "static/data/data.js")

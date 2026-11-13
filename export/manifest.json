@@ -2,14 +2,14 @@
   "site": "/Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/static/index.html",
   "width": 1600,
   "height": 900,
-  "built": "2026-11-13T10:36:53.611Z",
+  "built": "2026-11-13T11:31:26.271Z",
   "slides": [
     {
       "builds": [
         {
           "media": "media/s0_b0.png",
           "title": "Preferred prey size for theropod dinosaurs",
-          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?"
+          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that? On the right, some of what is in the living data. Mustela nivalis with Capreolus capreolus, 345 times its own mass (Elmeros 2006, Acta Theriologica): 1 of 132 weasel guts; probably scavenged carrion (road-kill or hunters' remains). Aquila chrysaetos with Bos taurus, 144 times its own mass (Marr & Knight 1983, The Murrelet): cattle carrion, one record. Sarcophilus harrisii with Bos taurus, 90 times its own mass (Pemberton et al. 2008, Pap. Proc. R. Soc. Tasmania): cattle hair in scats; scavenging. Nerodia taxispilota with Ictalurus punctatus, 48 times its own mass (Camp et al. 1980, J. Herpetology): one catfish, 2.6% of food volume; prey mass is the adult species average. None of these is an error. They are carrion, or a small individual given its species’ average mass, and a fossil gut can hide the same things."
         }
       ]
     },
@@ -56,18 +56,18 @@
       "builds": [
         {
           "media": "media/s2_b0.png",
-          "title": "A mean from three records is hard to trust",
-          "notes": "A schematic, not data. Start with one number per clade: the typical prey size as a share of predator size. Three clades, with four hundred records, twenty-five, and three. Take each clade’s own mean. The dot is the mean and the bar is how well we know it. With four hundred records the mean is pinned down. With three it could be almost anywhere."
+          "title": "Lump nothing: a mean from three records is hard to trust",
+          "notes": "A schematic, not data. The question on this slide and the next is how much to lump. Start with one number per clade: the typical prey size as a share of predator size. Three clades, with four hundred records, twenty-five, and three. Lump nothing: take each clade’s own mean. The dot is the mean and the bar is how well we know it. With four hundred records the mean is pinned down. With three it could be almost anywhere."
         },
         {
           "media": "media/s2_b1.gif",
-          "title": "One mean for everyone hides real differences",
-          "notes": "The other extreme: ignore the clades and take one mean for all the records. Every clade gets the same answer, and the clade with four hundred records writes it. The middle clade sits well below that line, and we have enough records there to know it."
+          "title": "Lump everything: one mean hides real differences",
+          "notes": "The other extreme: lump everything. Ignore the clades and take one mean for all the records. Every clade gets the same answer, and the clade with four hundred records writes it. The middle clade sits well below that line, and we have enough records there to know it."
         },
         {
           "media": "media/s2_b2.gif",
-          "title": "Small samples borrow from large ones",
-          "notes": "In between. Each clade keeps its own mean, but the means are treated as draws from a shared distribution. The big clade does not move. The middle one barely moves. The clade with three records is pulled most of the way toward the others, and its bar narrows. Next: the same three options with lines in place of means."
+          "title": "Lump partly: small samples lean on large ones",
+          "notes": "In between: lump partly, which statisticians call partial pooling. Each clade keeps its own mean, but the means are treated as draws from a shared distribution. The big clade does not move. The middle one barely moves. The clade with three records is lumped most of the way in with the others, and its bar narrows. How much a clade is lumped depends on how little it has. Next: the same three options with lines in place of means."
         }
       ]
     },
@@ -75,22 +75,22 @@
       "builds": [
         {
           "media": "media/s3_b0.png",
-          "title": "Borrow from nobody",
-          "notes": "Every record from the living predators: 75,583 meals, 17 clades, the tree on the left. Rule one: borrow from nobody. Each clade is its own problem. No shared line at all."
+          "title": "Lump nobody",
+          "notes": "Every record from the living predators: 75,583 meals, 17 clades, the tree on the left. Rule one: lump nobody. Each clade is its own problem. No shared line at all."
         },
         {
           "media": "media/s3_b1.png",
-          "title": "Borrow from everyone equally",
-          "notes": "Rule two: borrow from everyone equally. One line, and every clade is scatter around it. Birds, snakes, cats, all the same distance from each other. In comparative-methods language that is white noise, or an Ornstein-Uhlenbeck model with one optimum and a strong pull. Lambda near zero. (A strong OU is not strictly lambda zero, which is why it says approximately.)"
+          "title": "Lump everyone equally",
+          "notes": "Rule two: lump everyone equally. One line, and every clade is scatter around it. Birds, snakes, cats, all the same distance from each other. In comparative-methods language that is white noise, or an Ornstein-Uhlenbeck model with one optimum and a strong pull. Lambda near zero. (A strong OU is not strictly lambda zero, which is why it says approximately.)"
         },
         {
           "media": "media/s3_b2.png",
-          "title": "Borrow from close relatives",
-          "notes": "Rule three: Brownian motion. Borrow from relatives, and more from the close ones. Now every clade has its own colour and its own line, and a clade’s line is pulled toward its neighbours on the tree. Lambda of one."
+          "title": "Lump close relatives",
+          "notes": "Rule three: Brownian motion. Lump relatives together, and the close ones most. Now every clade has its own colour and its own line, and a clade’s line is pulled toward its neighbours on the tree. Lambda of one."
         },
         {
           "media": "media/s3_b3.png",
-          "title": "Hierarchical models borrow variably across the tree",
+          "title": "Hierarchical models lump variably across the tree",
           "notes": "The model we fit does not pick a rule ahead of time. It estimates how much the tree matters: lambda comes out near 0.5 for the height of the line and 0.4 for the slope. Colour here is the major clade. A clade gets a colour of its own only where its slope clearly differs from the rest of its major clade: Feliforms, Serpentes, Accipitriforms, Strigiforms."
         }
       ]
@@ -202,6 +202,25 @@
       "builds": [
         {
           "media": "media/s11_b0.png",
+          "title": "Conclusions",
+          "notes": "Three points, each on the same axis: prey size against the global line, so predator size is taken out. First, the 17 living clades. From Teiioids to Feliforms is a 28-fold difference in prey size at the same predator size. There is no single living predator to compare a fossil to."
+        },
+        {
+          "media": "media/s11_b1.gif",
+          "title": "Conclusions",
+          "notes": "Second, the theropods. Grey is every living record, 75,583 of them. Red dots are theropod records with a measured prey, thin bars are brackets, and the open dot is the Velociraptor fight. 17 of 25 sit inside the middle 90% of living records, 8 below it and 0 above (brackets counted at their midpoint). Nothing here needs a kind of predator that is not alive today."
+        },
+        {
+          "media": "media/s11_b2.gif",
+          "title": "Conclusions",
+          "notes": "Third, the kind of record. Fossil guts are stomachs. The dashed line is the median theropod stomach record with a measured prey, 14 records. Against living stomachs, 44% of records sit below that line: theropods look ordinary. Against prey remains it is 15% (pellets and scats 29%, observed kills 20%): the same theropods start to look like small-prey specialists. These are raw records, so part of the gap is which species each method samples. The model’s shift for method alone is smaller, 1.1 to 1.5 times. Either way: compare stomachs to stomachs."
+        }
+      ]
+    },
+    {
+      "builds": [
+        {
+          "media": "media/s12_b0.png",
           "title": "Acknowledgments",
           "notes": "Acknowledgments. NSF and Coe College for support. Faith Hysell. Mike Grundler and SquamataBase. The people who built OS-Prey, CarniDIET, GATEWAy and AVONET, and every author who weighed a stomach. PhyloPic."
         }

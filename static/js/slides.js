@@ -80,6 +80,17 @@
   const oneToOne = (Pl) => D.svg('path', { d: P.path(Pl, [[Pl.o.x[0], Pl.o.x[0]], [Pl.o.x[1], Pl.o.x[1]]]), class: 'guide' }, Pl.g);
   const cutout = (fr, src, credit, cls = '') => D.el('figure', 'cutout fade hidden ' + cls, fr, `<img src="img/${src}" alt=""><figcaption>${credit}</figcaption>`);
 
+  /* a PhyloPic silhouette (data/silhouettes.js, keyed by minor clade), drawn h tall (narrower if it is long)
+   * in colour col, centred on y; ax says which edge x is: 'start', 'middle' or 'end'. Null if there is none. */
+  const SIL = root.SIL || {};
+  function sil(parent, key, x, y, h, col, ax = 'start') {
+    const s = SIL[key]; if (!s) return null;
+    const k = Math.min(h / s.h, 1.9 * h / s.w), w = s.w * k, hh = s.h * k;
+    const el = D.svg('svg', { x: ax === 'end' ? x - w : ax === 'middle' ? x - w / 2 : x, y: y - hh / 2, width: w, height: hh, viewBox: s.vb, class: 'sil fade' }, parent);
+    el.innerHTML = s.body; el.style.fill = col;
+    return el;
+  }
+
   /* tree layout: sets x, y on every node; cladogram = equal steps per node level, tips aligned */
   function layoutTree(newick, x0, w, top, h, clado) {
     const tree = typeof newick === 'string' ? P.newick(newick) : newick, tips = P.tips(tree);
@@ -114,9 +125,13 @@
 
   /* ---------- 0 title ---------- */
   S.push({
-    builds: [`Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is ${nSpecies.toLocaleString()} living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?`],
+    builds: [`Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is ${nSpecies.toLocaleString()} living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?` +
+      (X.highlights ? ' On the right, some of what is in the living data. ' + X.highlights.map((h) => `${h.pred} with ${h.prey}, ${Math.round(h.ratio)} times its own mass (${h.cite}): ${h.what}.`).join(' ') + ' None of these is an error. They are carrion, or a small individual given its species’ average mass, and a fossil gut can hide the same things.' : '')],
     make(fr) {
-      D.el('div', 'titlecard', fr, `<h1>Preferred prey size for <em>theropod dinosaurs</em></h1>` +
+      const H = X.highlights || [];
+      if (H.length) D.el('div', 'hl', fr, '<p class="cap">Recorded meals of extant predators</p>' + H.map((h) =>
+        `<figure><img src="img/highlights/${h.img}" alt="${h.cite}"><figcaption><span><i>${h.pred}</i> ← <i>${h.prey}</i></span><b>${Math.round(h.ratio)} ×</b></figcaption></figure>`).join(''));
+      D.el('div', 'titlecard' + (H.length ? ' with-side' : ''), fr, `<h1>Preferred prey size for <em>theropod dinosaurs</em></h1>` +
         `<p class="sub">Evidence from ${nSpecies.toLocaleString()} extant species</p>` +
         `<p class="who">Jonathan Mitchell</p><div class="plate"><img src="img/logo_coe.png" alt="Coe College"></div>`);
     }
@@ -144,6 +159,8 @@
         D.svg('path', { d: P.path(Pl, R) + P.path(Pl, Lf.reverse()).replace(/^M/, 'L') + 'Z', fill: col, opacity: 0.45, stroke: col, 'stroke-width': 2.5 }, g);
         const top = keep[keep.length - 1][0];
         const t = D.svg('text', { x: Pl.sx(hx), y: Pl.sy(top) - 16, 'text-anchor': 'middle', class: 'lbl', 'font-style': 'italic' }, lab); t.textContent = sp.label;
+        // above the name, or beside it when the spindle reaches the top of the plot
+        if (Pl.sy(top) > 60) sil(lab, sp.minor, Pl.sx(hx), Pl.sy(top) - 82, 46, col, 'middle'); else sil(lab, sp.minor, Pl.sx(hx) + sp.label.length * 9 + 16, Pl.sy(top) - 28, 46, col);
         const hit = D.svg('rect', { x: Pl.sx(hx - half), y: Pl.sy(top), width: Pl.sx(hx + half) - Pl.sx(hx - half), height: Pl.sy(keep[0][0]) - Pl.sy(top), fill: 'transparent' }, g);
         hit.addEventListener('pointermove', (e) => D.tip(e, `<b><i>${sp.species}</i></b><br>${sp.n} prey records, ${sp.sources} studies<br>predator ${P.fmt(sp.pred_g)}`));
         hit.addEventListener('pointerleave', D.untip);
@@ -161,14 +178,14 @@
     }
   });
 
-  /* ---------- 2 pooling, shown on one number per clade: schematic histograms ---------- */
+  /* ---------- 2 lumping (pooling), shown on one number per clade: schematic histograms ---------- */
   S.push({
-    titles: ['A mean from three records is <em>hard to trust</em>', 'One mean for everyone <em>hides real differences</em>', 'Small samples <em>borrow from large ones</em>'],
+    titles: ['Lump nothing: a mean from three records is <em>hard to trust</em>', 'Lump everything: one mean <em>hides real differences</em>', 'Lump partly: small samples <em>lean on large ones</em>'],
     anim: { 1: 900, 2: 900 },
     builds: [
-      'A schematic, not data. Start with one number per clade: the typical prey size as a share of predator size. Three clades, with four hundred records, twenty-five, and three. Take each clade’s own mean. The dot is the mean and the bar is how well we know it. With four hundred records the mean is pinned down. With three it could be almost anywhere.',
-      'The other extreme: ignore the clades and take one mean for all the records. Every clade gets the same answer, and the clade with four hundred records writes it. The middle clade sits well below that line, and we have enough records there to know it.',
-      'In between. Each clade keeps its own mean, but the means are treated as draws from a shared distribution. The big clade does not move. The middle one barely moves. The clade with three records is pulled most of the way toward the others, and its bar narrows. Next: the same three options with lines in place of means.'
+      'A schematic, not data. The question on this slide and the next is how much to lump. Start with one number per clade: the typical prey size as a share of predator size. Three clades, with four hundred records, twenty-five, and three. Lump nothing: take each clade’s own mean. The dot is the mean and the bar is how well we know it. With four hundred records the mean is pinned down. With three it could be almost anywhere.',
+      'The other extreme: lump everything. Ignore the clades and take one mean for all the records. Every clade gets the same answer, and the clade with four hundred records writes it. The middle clade sits well below that line, and we have enough records there to know it.',
+      'In between: lump partly, which statisticians call partial pooling. Each clade keeps its own mean, but the means are treated as draws from a shared distribution. The big clade does not move. The middle one barely moves. The clade with three records is lumped most of the way in with the others, and its bar narrows. How much a clade is lumped depends on how little it has. Next: the same three options with lines in place of means.'
     ],
     make(fr) {
       // deterministic made-up clades; x is log10 (prey size / predator size)
@@ -218,7 +235,7 @@
         return { c, hist, ghost, bar, dot, ey };
       });
       const tag = D.svg('text', { x: 100, y: AX + 98, class: 'guide-lbl' }, svg);
-      const tags = ['no pooling', 'complete pooling', 'partial pooling'];
+      const tags = ['no lumping', 'complete lumping', 'partial lumping'];
       return { show(b) {
         tag.textContent = tags[b];
         gSolid.classList.toggle('hidden', b !== 1); gDash.classList.toggle('hidden', b !== 2); gLbl.classList.toggle('hidden', b === 0);
@@ -233,15 +250,15 @@
     }
   });
 
-  /* ---------- 3 evolutionary models: whom to borrow from ---------- */
+  /* ---------- 3 evolutionary models: who is lumped with whom ---------- */
   const lam = global.raw;
   S.push({
-    kicker: 'Evolutionary models describe whom we borrow from',
-    titles: ['Borrow from <em>nobody</em>', 'Borrow from <em>everyone equally</em>', 'Borrow from <em>close relatives</em>', 'Hierarchical models borrow <em>variably across the tree</em>'],
+    kicker: 'Evolutionary models describe who is lumped with whom',
+    titles: ['Lump <em>nobody</em>', 'Lump <em>everyone equally</em>', 'Lump <em>close relatives</em>', 'Hierarchical models lump <em>variably across the tree</em>'],
     builds: [
-      `Every record from the living predators: ${X.counts.reduce((a, c) => a + c.rows, 0).toLocaleString()} meals, ${X.counts.length} clades, the tree on the left. Rule one: borrow from nobody. Each clade is its own problem. No shared line at all.`,
-      'Rule two: borrow from everyone equally. One line, and every clade is scatter around it. Birds, snakes, cats, all the same distance from each other. In comparative-methods language that is white noise, or an Ornstein-Uhlenbeck model with one optimum and a strong pull. Lambda near zero. (A strong OU is not strictly lambda zero, which is why it says approximately.)',
-      'Rule three: Brownian motion. Borrow from relatives, and more from the close ones. Now every clade has its own colour and its own line, and a clade’s line is pulled toward its neighbours on the tree. Lambda of one.',
+      `Every record from the living predators: ${X.counts.reduce((a, c) => a + c.rows, 0).toLocaleString()} meals, ${X.counts.length} clades, the tree on the left. Rule one: lump nobody. Each clade is its own problem. No shared line at all.`,
+      'Rule two: lump everyone equally. One line, and every clade is scatter around it. Birds, snakes, cats, all the same distance from each other. In comparative-methods language that is white noise, or an Ornstein-Uhlenbeck model with one optimum and a strong pull. Lambda near zero. (A strong OU is not strictly lambda zero, which is why it says approximately.)',
+      'Rule three: Brownian motion. Lump relatives together, and the close ones most. Now every clade has its own colour and its own line, and a clade’s line is pulled toward its neighbours on the tree. Lambda of one.',
       `The model we fit does not pick a rule ahead of time. It estimates how much the tree matters: lambda comes out near ${lam.lambda_a.toFixed(1)} for the height of the line and ${lam.lambda_b.toFixed(1)} for the slope. Colour here is the major clade. A clade gets a colour of its own only where its slope clearly differs from the rest of its major clade: ${Object.keys(ownCol).map(nm).join(', ')}.`
     ],
     make(fr) {
@@ -252,7 +269,7 @@
       const tipEls = tips.map((t) => {
         const dot = D.svg('circle', { cx: t.x + 16, cy: t.y, r: 11, class: 'fade', opacity: 0 }, svg);
         const tx = D.svg('text', { x: t.x + 36, y: t.y + 10, class: 'lbl small' }, svg); tx.textContent = nm(t.name);
-        return { k: t.name, dot };
+        return { k: t.name, dot, pic: ownCol[t.name] ? sil(svg, t.name, 500, t.y, 30, ownCol[t.name]) : null };
       });
       // all the points
       const Pl = P.loglog(plotBox(fr, 640, 180, 900, 680), { x: [0, 6], y: [-3, 6], w: 900, h: 680 });
@@ -267,12 +284,12 @@
         return line(m, mx(Math.min(...ks.map((c) => c.m_lo))), mx(Math.max(...ks.map((c) => c.m_hi))), P.color(m.major), 5);
       }).concat(Object.keys(ownCol).map((k) => line(F.primary[k], ...rng(k), ownCol[k], 5)));
       const tag = label(Pl, Pl.left + Pl.pw - 18, Pl.top + Pl.ph - 24, '', 'lbl halo', 'end');
-      const tags = ['no pooling', 'white noise · strong OU (λ ≈ 0)', 'Brownian motion (λ = 1)', `λ estimated (${lam.lambda_a.toFixed(1)}, ${lam.lambda_b.toFixed(1)})`];
+      const tags = ['no lumping', 'white noise · strong OU (λ ≈ 0)', 'Brownian motion (λ = 1)', `λ estimated (${lam.lambda_a.toFixed(1)}, ${lam.lambda_b.toFixed(1)})`];
       const colour = [() => 'var(--muted)', () => 'var(--muted)', (k) => minorCol[k], hierCol];
       return { show(b) {
         tag.textContent = tags[b];
         pts.forEach((p) => { p.el.setAttribute('fill', colour[b](p.k)); p.el.setAttribute('opacity', b < 2 ? 0.32 : 0.42); });
-        tipEls.forEach((e) => { e.dot.setAttribute('fill', colour[b](e.k)); e.dot.setAttribute('opacity', b < 2 ? 0 : 1); });
+        tipEls.forEach((e) => { e.dot.setAttribute('fill', colour[b](e.k)); e.dot.setAttribute('opacity', b < 2 ? 0 : 1); if (e.pic) e.pic.style.opacity = b === 3 ? 1 : 0; });
         [L1, L2, L3].forEach((set, i) => set.forEach((l) => l.setAttribute('opacity', b === i + 1 ? 1 : 0)));
       } };
     }
@@ -505,10 +522,10 @@
         D.svg('circle', { cx: sx(c.slope), cy: y, r: 9, fill: P.color(c.major), class: 'ring' }, g);
         const t = D.svg('text', { x: left - 14, y: y + 10, 'text-anchor': 'end', class: 'lbl small' }, g); t.textContent = nm(c.minor);
         const v = D.svg('text', { x: sx(Math.min(x1, c.slope_hi)) + 12, y: y + 10, class: 'lbl small' }, g); v.textContent = c.slope.toFixed(2);
-        return { c, g, v };
+        return { c, g, v, pic: sil(svg, c.minor, 72, y, 30, P.color(c.major), 'end') };
       });
       const hi = [['Feliformia', 'Caniformia'], ['Accipitriformes', 'Strigiformes']];
-      return { show(b) { els.forEach((e) => { const on = hi[b].includes(e.c.minor); e.g.style.opacity = on ? 1 : 0.45; e.v.style.display = on ? '' : 'none'; }); } };
+      return { show(b) { els.forEach((e) => { const on = hi[b].includes(e.c.minor); e.g.style.opacity = on ? 1 : 0.45; e.v.style.display = on ? '' : 'none'; if (e.pic) e.pic.style.opacity = on ? 1 : 0; }); } };
     }
   });
 
@@ -605,7 +622,96 @@
     }
   });
 
-  /* ---------- 10 acknowledgments ---------- */
+  /* ---------- 11 closing: three bullets, each with a small figure on one shared axis ---------- */
+  const CL = (() => {
+    const C = X.closing, ty = Object.fromEntries(C.types.map((t) => [t.obs, t]));
+    const devs = X.treefits.extant.slice().sort((a, b) => a.dev - b.dev), lo = devs[0], hi = devs[devs.length - 1];
+    const mid = theroRecs.map((f) => { const pr = f.pred || Math.sqrt(f.pred_lo * f.pred_hi); return resid(pr, f.prey_g || Math.sqrt(f.prey_lo * f.prey_hi)); });
+    return { C, ty, devs, lo, hi, fold: Math.round(Math.pow(10, hi.dev - lo.dev)),
+      nIn: mid.filter((v) => v >= C.all.q5 && v <= C.all.q95).length, nLow: mid.filter((v) => v < C.all.q5).length, nHigh: mid.filter((v) => v > C.all.q95).length,
+      pc: (k) => Math.round(ty[k].below * 100) };
+  })();
+  S.push({
+    title: 'Conclusions',
+    anim: { 1: 900, 2: 900 },
+    builds: (() => {
+      const C = CL.C, o = Object.fromEntries(X.obs.map((r) => [r.obs, r]));
+      return [
+        `Three points, each on the same axis: prey size against the global line, so predator size is taken out. First, the ${CL.devs.length} living clades. From ${nm(CL.lo.minor)} to ${nm(CL.hi.minor)} is a ${CL.fold}-fold difference in prey size at the same predator size. There is no single living predator to compare a fossil to.`,
+        `Second, the theropods. Grey is every living record, ${C.all.rows.toLocaleString()} of them. Red dots are theropod records with a measured prey, thin bars are brackets, and the open dot is the Velociraptor fight. ${CL.nIn} of ${theroRecs.length} sit inside the middle 90% of living records, ${CL.nLow} below it and ${CL.nHigh} above (brackets counted at their midpoint). Nothing here needs a kind of predator that is not alive today.`,
+        `Third, the kind of record. Fossil guts are stomachs. The dashed line is the median theropod stomach record with a measured prey, ${C.thero_n} records. Against living stomachs, ${CL.pc('stomach_content')}% of records sit below that line: theropods look ordinary. Against prey remains it is ${CL.pc('prey_remains')}% (pellets and scats ${CL.pc('pellet_scat')}%, observed kills ${CL.pc('direct_observation')}%): the same theropods start to look like small-prey specialists. These are raw records, so part of the gap is which species each method samples. The model’s shift for method alone is smaller, ${Math.exp(o.pellet_scat.d).toFixed(1)} to ${Math.exp(o.direct_observation.d).toFixed(1)} times. Either way: compare stomachs to stomachs.`
+      ];
+    })(),
+    make(fr) {
+      const C = CL.C, W = 1480, Hh = 710, svg = D.svg('svg', { width: W, height: Hh }, plotBox(fr));
+      const x0 = 900, x1 = 1370, rx = [-3, 3], sx = (v) => x0 + (Math.max(rx[0], Math.min(rx[1], v)) - rx[0]) / (rx[1] - rx[0]) * (x1 - x0);
+      const bottom = 600, TX = 76, rowY = [80, 270, 480];
+      // shared axis under the three small figures
+      const times = { '-2': '1/100 ×', 0: '1 ×', 2: '100 ×' };
+      [-2, -1, 0, 1, 2].forEach((t) => {
+        D.svg('line', { x1: sx(t), x2: sx(t), y1: 10, y2: bottom, class: t === 0 ? 'guide' : 'gridline' }, svg);
+        if (times[t]) { const tx = D.svg('text', { x: sx(t), y: bottom + 36, 'text-anchor': 'middle', class: 'lbl tiny' }, svg); tx.textContent = times[t]; }
+      });
+      D.svg('line', { x1: x0, x2: x1, y1: bottom, y2: bottom, stroke: 'var(--muted)', 'stroke-width': 2.5 }, svg);
+      const at = D.svg('text', { x: (x0 + x1) / 2, y: bottom + 84, 'text-anchor': 'middle', class: 'lbl small' }, svg); at.textContent = 'Prey size relative to the global regression';
+      const bullet = (g, y, head, sub) => {
+        D.svg('circle', { cx: 44, cy: y - 22, r: 9, fill: 'var(--accent-ink)' }, g);
+        const h = D.svg('text', { x: TX, y: y - 8, class: 'lbl' }, g); h.textContent = head; h.style.fontSize = '42px';
+        const t = D.svg('text', { x: TX, y: y + 36, class: 'lbl small muted' }, g); t.textContent = sub;
+      };
+      const violin = (t, y, hh, col, parent) => {
+        const pts = t.d.map((d, i) => [C.grid0 + i * C.step, d]).filter((p) => p[0] >= rx[0] && p[0] <= rx[1]);
+        const up = pts.map((p) => `${sx(p[0]).toFixed(1)},${(y - hh * p[1]).toFixed(1)}`), dn = pts.slice().reverse().map((p) => `${sx(p[0]).toFixed(1)},${(y + hh * p[1]).toFixed(1)}`);
+        D.svg('path', { d: 'M' + up.concat(dn).join('L') + 'Z', fill: col, 'fill-opacity': 0.4, stroke: col, 'stroke-width': 2.5 }, parent);
+        D.svg('line', { x1: sx(t.q50), x2: sx(t.q50), y1: y - hh * 0.8, y2: y + hh * 0.8, stroke: 'var(--ink)', 'stroke-width': 3.5, 'stroke-linecap': 'round' }, parent);
+      };
+      // 1 heterogeneity: one dot per clade, swarmed, the two ends named
+      const g1 = D.svg('g', { class: 'fade' }, svg);
+      bullet(g1, rowY[0], 'Extant predators vary widely', `${CL.fold}-fold among ${CL.devs.length} clades at one predator size`);
+      const placed = [];
+      CL.devs.forEach((r) => {
+        const px = sx(r.dev), oy = [0, -21, 21, -42, 42].find((o) => !placed.some((q) => q.o === o && Math.abs(q.x - px) < 21)) || 0;
+        placed.push({ x: px, o: oy }); r.cy = rowY[0] + oy;
+        const c = D.svg('circle', { cx: px, cy: r.cy, r: 9.5, fill: P.color(r.major), class: 'ring' }, g1);
+        c.addEventListener('pointermove', (e) => D.tip(e, `<b>${nm(r.minor)}</b> · ${r.species} species<br>${Math.pow(10, r.dev).toPrecision(2)} × the global line (90% ${Math.pow(10, r.dev_lo).toPrecision(2)}–${Math.pow(10, r.dev_hi).toPrecision(2)})`));
+        c.addEventListener('pointerleave', D.untip);
+      });
+      const l0 = D.svg('text', { x: sx(CL.lo.dev) - 18, y: CL.lo.cy + 8, 'text-anchor': 'end', class: 'lbl tiny' }, g1); l0.textContent = nm(CL.lo.minor);
+      const l1 = D.svg('text', { x: sx(CL.hi.dev) + 18, y: CL.hi.cy + 8, class: 'lbl tiny' }, g1); l1.textContent = nm(CL.hi.minor);
+      sil(g1, CL.lo.minor, sx(CL.lo.dev) - 30 - nm(CL.lo.minor).length * 13, CL.lo.cy, 30, P.color(CL.lo.major), 'end');
+      sil(g1, CL.hi.minor, sx(CL.hi.dev) + 30 + nm(CL.hi.minor).length * 13, CL.hi.cy, 30, P.color(CL.hi.major));
+      // 2 theropods against every living record
+      const g2 = D.svg('g', { class: 'fade hidden' }, svg), y2 = rowY[1];
+      bullet(g2, y2, 'Theropods fall within that range', `${CL.nIn} of ${theroRecs.length} records inside the middle 90%`);
+      violin(C.all, y2 - 26, 50, 'var(--muted)', g2);
+      let k = 0;
+      theroRecs.filter((f) => !f.prey_g).forEach((f) => {
+        const pr = f.pred || Math.sqrt(f.pred_lo * f.pred_hi), lo = resid(pr, f.prey_lo), hi = resid(pr, f.prey_hi), yy = y2 + 62 + (k++) * 3.6;
+        D.svg('line', { x1: sx(lo), x2: sx(hi), y1: yy, y2: yy, stroke: 'var(--fossil)', 'stroke-width': 2, opacity: 0.7 }, g2);
+      });
+      theroRecs.filter((f) => f.prey_g).forEach((f) => {
+        const pr = f.pred || Math.sqrt(f.pred_lo * f.pred_hi), v = resid(pr, f.prey_g), gut = f.obs === 'stomach_content';
+        const c = D.svg('circle', { cx: sx(v), cy: y2 + 44, r: 8, fill: gut ? 'var(--fossil)' : 'var(--board)', stroke: gut ? 'var(--board)' : 'var(--fossil)', 'stroke-width': gut ? 1.5 : 3.5 }, g2);
+        c.addEventListener('pointermove', (e) => D.tip(e, `<b>${f.taxon}</b> ate <b>${f.prey}</b><br>${Math.pow(10, v).toPrecision(2)} × the global line<br>${f.obs.replace(/_/g, ' ')}`));
+        c.addEventListener('pointerleave', D.untip);
+      });
+      // 3 record type: living stomachs against living prey remains, with the theropod median
+      const g3 = D.svg('g', { class: 'fade hidden' }, svg), y3 = rowY[2];
+      bullet(g3, y3, 'Record type matters', 'compare stomachs with stomachs');
+      [['stomach_content', y3 - 34], ['prey_remains', y3 + 44]].forEach(([key, y]) => {
+        const t = CL.ty[key], ref = key === 'stomach_content';
+        violin(t, y, 32, ref ? 'var(--fossil)' : 'var(--muted)', g3);
+        const a = D.svg('text', { x: x0 - 16, y: y + 8, 'text-anchor': 'end', class: 'lbl tiny' + (ref ? ' strong' : '') }, g3); a.textContent = OBS[key];
+        const p = D.svg('text', { x: x1 + 18, y: y + 9, class: 'lbl small' + (ref ? ' strong' : '') }, g3); p.textContent = CL.pc(key) + '%';
+      });
+      D.svg('line', { x1: sx(C.thero_med), x2: sx(C.thero_med), y1: y3 - 78, y2: y3 + 86, stroke: 'var(--fossil)', 'stroke-width': 3.5, 'stroke-dasharray': '8 7' }, g3);
+      const tm = D.svg('text', { x: x1 + 18, y: y3 - 66, class: 'lbl tiny muted' }, g3); tm.textContent = 'below';
+      const tm2 = D.svg('text', { x: sx(C.thero_med) - 10, y: y3 + 104, 'text-anchor': 'end', class: 'lbl tiny', fill: 'var(--fossil)' }, g3); tm2.textContent = 'theropod median'; tm2.style.fill = 'var(--fossil)';
+      return { show(b) { g2.classList.toggle('hidden', b < 1); g3.classList.toggle('hidden', b < 2); } };
+    }
+  });
+
+  /* ---------- 12 acknowledgments ---------- */
   S.push({
     title: 'Acknowledgments',
     builds: ['Acknowledgments. NSF and Coe College for support. Faith Hysell. Mike Grundler and SquamataBase. The people who built OS-Prey, CarniDIET, GATEWAy and AVONET, and every author who weighed a stomach. PhyloPic.'],

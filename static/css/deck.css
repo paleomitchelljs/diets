@@ -63,6 +63,8 @@ body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
 .hidden { opacity: 0; }
 .dropin { animation: drop 0.55s cubic-bezier(.2,.8,.3,1.2) both; }
 .ring { stroke: var(--board); stroke-width: 2; }
+/* PhyloPic silhouettes beside highlighted clade names; key I turns them off */
+body.nopics .sil { display: none; }
 
 /* ---------- title slide ---------- */
 .titlecard { position: absolute; left: 120px; right: 120px; top: 300px; }
@@ -74,6 +76,16 @@ body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
 .titlecard p.who { margin-top: 90px; font: 600 38px var(--font-ui); color: var(--ink); }
 .plate { display: inline-flex; align-items: center; justify-content: center; margin-top: 22px; padding: 18px 26px; border-radius: 12px; background: #fff; }
 .titlecard .plate img { height: 46px; display: block; }
+
+/* title slide with the outlier sidebar */
+.titlecard.with-side { right: 660px; left: 90px; }
+.titlecard.with-side h1 { font-size: 84px; }
+.hl { position: absolute; right: 70px; top: 96px; width: 540px; }
+.hl .cap { font: 600 26px var(--font-ui); color: var(--muted); margin: 0 0 14px; }
+.hl figure { margin: 0 0 20px; border: 3px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); }
+.hl figure img { display: block; width: 100%; height: 86px; object-fit: contain; background: #fff; padding: 6px 10px; }
+.hl figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 6px 12px 8px; font: 600 22px var(--font-ui); color: var(--ink-2); white-space: nowrap; }
+.hl figcaption b { font: 700 28px var(--font-ui); color: var(--accent-ink); }
 
 /* ---------- headings that change with the build, images ---------- */
 .kicker { position: absolute; left: 82px; top: 26px; font: 600 30px var(--font-ui); color: var(--muted); }
