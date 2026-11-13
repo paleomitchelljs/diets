@@ -2,14 +2,14 @@
   "site": "/Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/static/index.html",
   "width": 1600,
   "height": 900,
-  "built": "2026-11-13T03:07:40.986Z",
+  "built": "2026-11-13T04:01:11.585Z",
   "slides": [
     {
       "builds": [
         {
           "media": "media/s0_b0.png",
-          "title": "What did theropods eat like?",
-          "notes": "Title. Fossil gut contents are the only direct record of what extinct predators ate. Tonight: how to compare them to living animals without pretending one stomach is a diet."
+          "title": "Preferred prey size for theropod dinosaurs",
+          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?"
         }
       ]
     },
@@ -17,38 +17,38 @@
       "builds": [
         {
           "media": "media/s1_b0.png",
-          "title": "One gut is one meal",
-          "notes": "Compsognathus with Bavarisaurus in its gut. One predator, one prey, one point: a meal about half a percent of its own mass."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Compsognathus. This is the inside of the ribcage, and the small bones are a lizard. One predator, one prey, one point. The lizard is about half a percent of the predator’s mass."
         },
         {
           "media": "media/s1_b1.gif",
-          "title": "One gut is one meal",
-          "notes": "Lanius excubitor: every recorded meal, 99 records from 4 studies. Of these living predators, this is the worst match to the Compsognathus meal as a share of body mass."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Lanius excubitor: every recorded meal, 99 records from 4 studies. Of these six living predators, this is the worst match to the Compsognathus meal as a share of body mass."
         },
         {
           "media": "media/s1_b2.gif",
-          "title": "One gut is one meal",
-          "notes": "Salvator merianae: every recorded meal, 281 records from 4 studies. Match to the Compsognathus meal, 2 of 6 from worst."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Salvator merianae: every recorded meal, 281 records from 4 studies. Match to the Compsognathus meal: 2 of 6, counting from the worst."
         },
         {
           "media": "media/s1_b3.gif",
-          "title": "One gut is one meal",
-          "notes": "Strix aluco: every recorded meal, 8437 records from 35 studies. Match to the Compsognathus meal, 3 of 6 from worst."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Strix aluco: every recorded meal, 8437 records from 35 studies. Match to the Compsognathus meal: 3 of 6, counting from the worst."
         },
         {
           "media": "media/s1_b4.gif",
-          "title": "One gut is one meal",
-          "notes": "Vulpes vulpes: every recorded meal, 2268 records from 85 studies. Match to the Compsognathus meal, 4 of 6 from worst."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Vulpes vulpes: every recorded meal, 2268 records from 85 studies. Match to the Compsognathus meal: 4 of 6, counting from the worst."
         },
         {
           "media": "media/s1_b5.gif",
-          "title": "One gut is one meal",
-          "notes": "Alligator mississippiensis: every recorded meal, 152 records from 6 studies. Match to the Compsognathus meal, 5 of 6 from worst."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Alligator mississippiensis: every recorded meal, 152 records from 6 studies. Match to the Compsognathus meal: 5 of 6, counting from the worst."
         },
         {
           "media": "media/s1_b6.gif",
-          "title": "One gut is one meal",
-          "notes": "Morelia spilota: every recorded meal, 77 records from 5 studies. The best match of the six. Even so, the fossil is one draw from a spindle like this, and we do not know where in it the draw fell."
+          "title": "Some specimens preserve a single meal",
+          "notes": "Morelia spilota: every recorded meal, 77 records from 5 studies. The best match of the six. Even so, the fossil is one draw from a spindle like this. We do not know where in the spindle that draw fell."
         }
       ]
     },
@@ -56,13 +56,18 @@
       "builds": [
         {
           "media": "media/s2_b0.png",
-          "title": "Borrowing from relatives is pooling",
-          "notes": "Three clades on their own. Crocodylians: six species. Iguanians: 47 records. Strigiforms: 29,448 records. Each line is what the clade says about itself alone. The dashed line is all tetrapods together."
+          "title": "How do we make a comparison?",
+          "notes": "A schematic, not data. Three clades: one with a lot of records, one with a few, one with three. Option one: ignore the clades. One line through everything. Every clade gets the same answer, and the big clade writes it."
         },
         {
-          "media": "media/s2_b1.gif",
-          "title": "Borrowing from relatives is pooling",
-          "notes": "Now let each clade borrow from the rest. Thin clades slide toward the shared line, because their own data cannot hold them far from it. Strigiforms barely move: 29,000 records do not need help. Nobody estimates Scipionyx from one hatchling alone; this is that reasoning written down."
+          "media": "media/s2_b1.png",
+          "title": "How do we make a comparison?",
+          "notes": "Option two: a line per clade. Each clade speaks only for itself. Fine for the big one. The clade with three points gets a line nobody should believe."
+        },
+        {
+          "media": "media/s2_b2.png",
+          "title": "How do we make a comparison?",
+          "notes": "Option three, the model in this talk. Every clade still gets its own line, but the lines are drawn from a shared distribution. A thin clade leans on the others. A well-sampled clade barely moves. The remaining question is whom a clade should lean on."
         }
       ]
     },
@@ -70,18 +75,23 @@
       "builds": [
         {
           "media": "media/s3_b0.png",
-          "title": "The names are rules for whom to borrow from",
-          "notes": "Iguanians on the right: 22 species, 47 records. On the left, the clades we can borrow from. Rule one: borrow from nobody. The line is the iguanians alone. (No pooling.)"
+          "title": "Borrow from nobody",
+          "notes": "Every record from the living predators: 75,583 meals, 17 clades, the tree on the left. Rule one: borrow from nobody. Each clade is its own problem. No shared line at all."
         },
         {
-          "media": "media/s3_b1.gif",
-          "title": "The names are rules for whom to borrow from",
-          "notes": "Rule two: borrow from everybody equally. Every clade counts the same, birds and snakes and cats alike. In comparative-methods language this is white noise around a shared mean, or an Ornstein-Uhlenbeck model with one optimum and strong pull."
+          "media": "media/s3_b1.png",
+          "title": "Borrow from everyone equally",
+          "notes": "Rule two: borrow from everyone equally. One line, and every clade is scatter around it. Birds, snakes, cats, all the same distance from each other. In comparative-methods language that is white noise, or an Ornstein-Uhlenbeck model with one optimum and a strong pull. Lambda near zero. (A strong OU is not strictly lambda zero, which is why it says approximately.)"
         },
         {
-          "media": "media/s3_b2.gif",
-          "title": "The names are rules for whom to borrow from",
-          "notes": "Rule three: borrow from relatives, more from closer ones. Other squamates count most for an iguanian, archosaurs less, mammals not at all. That is Brownian motion."
+          "media": "media/s3_b2.png",
+          "title": "Borrow from close relatives",
+          "notes": "Rule three: Brownian motion. Borrow from relatives, and more from the close ones. Now every clade has its own colour and its own line, and a clade’s line is pulled toward its neighbours on the tree. Lambda of one."
+        },
+        {
+          "media": "media/s3_b3.png",
+          "title": "Hierarchical models borrow variably across the tree",
+          "notes": "The model we fit does not pick a rule ahead of time. It estimates how much the tree matters: lambda comes out near 0.5 for the height of the line and 0.4 for the slope. Colour here is the major clade. A clade gets a colour of its own only where its slope clearly differs from the rest of its major clade: Feliforms, Serpentes, Accipitriforms, Strigiforms."
         }
       ]
     },
@@ -89,18 +99,13 @@
       "builds": [
         {
           "media": "media/s4_b0.png",
-          "title": "The tree predicts first",
-          "notes": "Before any fossil: theropods sit on the bird stem, between crocodylians and birds. The tree turns that position into a prediction."
+          "title": "A global regression line",
+          "notes": "Start with the simplest version. Every living record in grey, and one line through all of them: prey mass goes up with predator mass with a slope of 0.81. The dashed line is one to one, a meal as heavy as the animal eating it. Nearly everything sits below it."
         },
         {
           "media": "media/s4_b1.gif",
-          "title": "The tree predicts first",
-          "notes": "This band is where a new theropod lineage should fall, borrowing from birds and crocodylians by shared history. It is wide, and that is the honest answer: close relatives in the living data scale differently, so the tree cannot narrow it much."
-        },
-        {
-          "media": "media/s4_b2.gif",
-          "title": "The tree predicts first",
-          "notes": "Now the fossils: every non-avian theropod gut with a prey mass or bracket. Bars are prey known only to within a bracket."
+          "title": "Where theropods fall relative to extant diet data",
+          "notes": "Now the fossils, in red: every non-avian theropod gut with a prey mass or a bracket, 25 records. Bars are prey known only to within a bracket. They fall inside the living cloud, and most of them sit under the line."
         }
       ]
     },
@@ -108,23 +113,23 @@
       "builds": [
         {
           "media": "media/s5_b0.png",
-          "title": "Microraptor: one genus, four kinds of prey",
-          "notes": "Microraptor: four gut records from one genus, a bird, a fish, a mammal and a lizard. The best fossil case for diet breadth: the spread of these four is the closest thing we have to a fossil spindle."
+          "title": "Microraptor: four observations",
+          "notes": "Microraptor. Four gut records from one genus: a bird, a fish, a mammal, a lizard. This is the best fossil case for diet breadth we have. The spread of these four is the closest thing to a fossil spindle. The fish is a bar because all that is preserved is fin rays; more on that bar in a minute."
         },
         {
           "media": "media/s5_b1.png",
-          "title": "Juvenile Gorgosaurus: prey about 3% of its mass",
-          "notes": "A juvenile Gorgosaurus with two young Citipes in its gut. Each is about 3% of the predator’s mass. Juvenile tyrannosaurs were not eating like adults."
+          "title": "Juvenile Gorgosaurus: two observations",
+          "notes": "A juvenile Gorgosaurus with two young Citipes in its gut. Each is about 3% of the predator’s mass. A juvenile tyrannosaur was not eating like an adult."
         },
         {
           "media": "media/s5_b2.png",
-          "title": "Sinocalliopteryx: about 8%",
-          "notes": "Sinocalliopteryx with a Sinornithosaurus leg in its gut: a dromaeosaur about 8% of its mass."
+          "title": "Sinocalliopteryx: three observations",
+          "notes": "Sinocalliopteryx, two specimens. One has a Sinornithosaurus leg in its gut, a dromaeosaur about 8% of its mass. The other has two Confuciusornis, each about 1%. The labels on the plot are the prey."
         },
         {
           "media": "media/s5_b3.png",
-          "title": "Velociraptor: a fight, not a meal",
-          "notes": "Velociraptor locked with Protoceratops. The prey is heavier than the predator. This is a fight, not a meal, and it goes in the model as a direct observation, not a stomach."
+          "title": "Velociraptor: battling Protoceratops",
+          "notes": "Velociraptor locked with Protoceratops. The prey is heavier than the predator: this one sits above the one-to-one line. It is a fight, not a meal, and it goes into the model as a direct observation, not a stomach."
         }
       ]
     },
@@ -132,13 +137,13 @@
       "builds": [
         {
           "media": "media/s6_b0.png",
-          "title": "Theropods against every living diet",
-          "notes": "Every living predator species with at least 20 vertebrate prey records: 308 spindles. Colour is the major clade: birds, mammals, squamates, and the one crocodylian with enough records. Snakes sit low and flat; cats climb steeply; owls are narrow; canids are wide."
+          "title": "Theropods compared to extant predators",
+          "notes": "Every living predator species with at least 20 vertebrate prey records: 308 spindles, each one a species’ whole recorded diet. Colour is the major clade. Snakes sit low and flat. Cats climb steeply. Owls are narrow, canids are wide."
         },
         {
           "media": "media/s6_b1.gif",
-          "title": "Theropods against every living diet",
-          "notes": "And the theropod gut records on top. They fall inside the living cloud, mostly in its lower half for their size, and no single colour owns them."
+          "title": "Theropods compared to extant predators",
+          "notes": "And the theropod gut records on top, in red. They fall inside the living cloud, mostly in its lower half for their size. No single colour owns them."
         }
       ]
     },
@@ -146,13 +151,8 @@
       "builds": [
         {
           "media": "media/s7_b0.png",
-          "title": "Fits along the tree, theropods beside them",
-          "notes": "Each living group at its typical size: the dot is the median meal as a share of predator mass, the bar is where 80 percent of a new species' meals would fall. Colour is the major clade. Pale with a triangle: a group whose scaling clearly differs from its clade. Hawks and cats steeper, owls and snakes shallower."
-        },
-        {
-          "media": "media/s7_b1.gif",
-          "title": "Fits along the tree, theropods beside them",
-          "notes": "The theropods on their own dated tree, every gut record as a share of its predator. Tyrannosaurids, compsognathids, paravians. They spread across the same range as the living groups, and the spread within one genus, Microraptor, is as wide as a whole living clade."
+          "title": "Prey size by type of record",
+          "notes": "The living data are not one kind of record. Most of it, 53,599 rows, is pellets and scats. Stomachs are 8,943. The model estimates a shift for each kind, measured against stomach contents, with everything else held fixed. Pellets and scats: prey 1.12 times as heavy as a stomach would give. Prey remains: 1.41. Watching the animal hunt: 1.50. Big prey is what you see, and what is left at the nest. Fossil guts are stomachs, so every comparison in this talk is made at the stomach line."
         }
       ]
     },
@@ -160,8 +160,13 @@
       "builds": [
         {
           "media": "media/s8_b0.png",
-          "title": "Which living animals do they eat like?",
-          "notes": "For all theropods, then each theropod clade: support for each living group as the source of the records, and for the dated dinosaur tree, all given equal odds beforehand. The dashed line is \"cannot tell\": every option equal. Paravians lean toward the tree; compsognathids toward crocodylians and squamates; tyrannosaurids, four records, are flat. None of these is far from the line. The model is telling us how little these records can say, which a regression line through eleven taxa never would."
+          "title": "Prey to predator mass ratio for extant clades",
+          "notes": "Each living clade at its typical body size. The dot is the median meal as a share of predator mass, and the bar is the 90% interval on that median, not the range of meals. The number is how many species are behind it. The grey tick is where the global line says a predator of that size should be. Coloured rows are the clades that clearly sit off the global line: hawks, both carnivoran groups and dasyuromorphs above it, crocodylians and teiioids below."
+        },
+        {
+          "media": "media/s8_b1.gif",
+          "title": "Prey to predator mass ratio for theropods",
+          "notes": "The theropods on their own tree, every gut record as a share of its predator. Dots are measured prey. Thin bars are brackets: prey known only between two bounds. The Microraptor fish runs off the axis because its lower bound comes from a 6.7 mm fin ray and nothing else. The spread inside one genus, Microraptor, is as wide as a whole living clade."
         }
       ]
     },
@@ -170,12 +175,12 @@
         {
           "media": "media/s9_b0.png",
           "title": "Close relatives scale differently",
-          "notes": "Slope of prey mass on predator mass for each living group. Feliforms: prey mass rises faster than predator mass. Caniforms: about in step. Sister groups, different answers."
+          "notes": "Slope of prey mass on predator mass for each living clade, with its 90% interval. The dashed line is the global slope, 0.81. Feliforms: 1.33, prey mass rises faster than predator mass. Caniforms: 0.91. Sister groups, different answers."
         },
         {
           "media": "media/s9_b1.png",
           "title": "Close relatives scale differently",
-          "notes": "Accipitriforms against strigiforms: the same split inside birds. The model found this from data. It did not assume the tree was right, and it is why the tree cannot predict theropods tightly."
+          "notes": "Accipitriforms against strigiforms: 1.00 against 0.47. The same split, inside birds. The model found this from the data. It did not assume the tree was right, and this is why the tree cannot predict a theropod tightly."
         }
       ]
     },
@@ -183,8 +188,22 @@
       "builds": [
         {
           "media": "media/s10_b0.png",
-          "title": "Thanks",
-          "notes": "Acknowledgements."
+          "title": "Prey size relative to the global regression",
+          "notes": "The same information on the tree. Colour is how far a clade sits from the global line at its own typical size: orange is larger prey than the line predicts, blue is smaller, grey is on the line. Branch colours between the tips are interpolated, the way a phylogenetic trait map does it. On the right, the same number for each tip with its 90% interval. The axis is its own colour key. Mammalian carnivores and hawks run orange. Crocodylians and teiioids run blue."
+        },
+        {
+          "media": "media/s10_b1.gif",
+          "title": "Prey size relative to the global regression",
+          "notes": "Now the theropods, grafted onto the bird stem. Each dot is one gut record against the global line; thin bars are brackets. The medians of the measured records: Tyrannosauridae 1.9 times the line, Compsognathidae 0.42 times the line, Paraves 2.1 times the line. Compsognathids sit on the blue side, with the crocodylians and teiioids, and away from the birds they are closest to on the tree. The paravians cover the whole axis, from a lizard in a Microraptor to the Protoceratops fight. 25 records cannot say more than that."
+        }
+      ]
+    },
+    {
+      "builds": [
+        {
+          "media": "media/s11_b0.png",
+          "title": "Acknowledgments",
+          "notes": "Acknowledgments. NSF and Coe College for support. Faith Hysell. Mike Grundler and SquamataBase. The people who built OS-Prey, CarniDIET, GATEWAy and AVONET, and every author who weighed a stomach. PhyloPic."
         }
       ]
     }
