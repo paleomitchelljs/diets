@@ -1,0 +1,102 @@
+/* Chalkboard (dark, default) and whiteboard (light): the fs110 deck tokens. The stage is
+ * 1600 x 900 px scaled to fit; every size below is in stage pixels. */
+:root {
+  --ground: #141e1a; --board: #1b2823; --board-2: #22312b; --card: #24352e;
+  --ink: #edece3; --ink-2: #c4c9c0; --muted: #919d97; --rule: #34463e; --grid: #263730;
+  --accent: #f5d76e; --accent-ink: #f5d76e; --accent-soft: rgba(245, 215, 110, 0.10);
+  --aves: #3987e5; --mammalia: #d95926; --squamata: #199e70; --crocodylia: #9085e9; --fossil: #c98500;
+  --font-ui: "Source Sans 3", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --ground: #e8edea; --board: #f9fbfa; --board-2: #eef2f0; --card: #ffffff;
+  --ink: #17211d; --ink-2: #44514c; --muted: #62706a; --rule: #cfd8d3; --grid: #e3e9e6;
+  --accent: #f2b705; --accent-ink: #8a6100; --accent-soft: rgba(242, 183, 5, 0.12);
+  --aves: #2a78d6; --mammalia: #eb6834; --squamata: #1baf7a; --crocodylia: #6250d6; --fossil: #c99400;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--ground); color: var(--ink); font: 17px/1.4 var(--font-ui); overflow: hidden; }
+body.scroll { overflow: auto; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent-ink); outline-offset: 2px; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes drop { from { opacity: 0; transform: translateY(-60px); } to { opacity: 1; transform: none; } }
+
+/* ---------- frames ---------- */
+#deck { position: relative; }
+.frame-wrap { position: absolute; left: 0; top: 0; overflow: hidden; }
+body:not(.scroll) .frame-wrap:not(.here) { display: none; }
+body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
+.frame {
+  position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; overflow: hidden;
+  background: var(--board); color: var(--ink); font: 26px/1.3 var(--font-ui); user-select: none;
+}
+.frame h2 { position: absolute; left: 80px; right: 80px; top: 44px; margin: 0; font: 700 58px/1.1 var(--font-ui); letter-spacing: -0.01em; }
+.frame h2 em { font-style: normal; color: var(--accent-ink); }
+.frame .plot { position: absolute; left: 60px; top: 150px; width: 1480px; height: 710px; }
+.frame svg { overflow: visible; }
+.draft-tag {
+  position: absolute; right: 24px; top: 16px; padding: 2px 12px; border-radius: 999px;
+  font: 600 19px var(--font-ui); color: var(--muted); border: 1.5px dashed var(--muted);
+}
+
+/* ---------- plot marks ---------- */
+.axis line, .axis path { stroke: var(--rule); stroke-width: 1.5; }
+.axis text { fill: var(--muted); font: 22px var(--font-ui); }
+.axis .title { fill: var(--ink-2); font: 600 26px var(--font-ui); }
+.gridline { stroke: var(--grid); stroke-width: 1; }
+.lbl { fill: var(--ink); font: 600 26px var(--font-ui); }
+.lbl.small { font-size: 22px; fill: var(--ink-2); }
+.lbl.muted { fill: var(--muted); font-weight: 400; }
+.guide { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 8; fill: none; }
+.guide-lbl { fill: var(--muted); font: italic 21px var(--font-ui); }
+.fade { transition: opacity 0.6s ease; }
+.hidden { opacity: 0; }
+.dropin { animation: drop 0.55s cubic-bezier(.2,.8,.3,1.2) both; }
+.ring { stroke: var(--board); stroke-width: 2; }
+
+/* ---------- title slide ---------- */
+.titlecard { position: absolute; left: 120px; right: 120px; top: 300px; }
+.titlecard h1 { margin: 0; font: 700 92px/1.05 var(--font-ui); letter-spacing: -0.015em; }
+.titlecard h1 em { font-style: normal; color: var(--accent-ink); }
+.titlecard p { margin: 36px 0 0; font: 400 34px var(--font-ui); color: var(--ink-2); }
+.thanks { position: absolute; left: 120px; right: 120px; top: 200px; columns: 2; column-gap: 80px; font: 400 34px/1.6 var(--font-ui); }
+.thanks b { color: var(--accent-ink); font-weight: 600; }
+
+/* ---------- controls ---------- */
+.ctl {
+  position: fixed; right: 12px; bottom: 10px; z-index: 10; display: flex; gap: 4px; align-items: center;
+  padding: 4px 8px; border-radius: 12px; background: var(--board-2); border: 1px solid var(--rule); transition: opacity 0.3s;
+}
+.ctl.idle:not(:hover):not(:focus-within) { opacity: 0.12; }
+.ctl button { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid transparent; border-radius: 8px; background: none; cursor: pointer; color: var(--muted); }
+.ctl button:hover { border-color: var(--rule); color: var(--ink); }
+.ctl svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ctl .count { min-width: 64px; text-align: center; color: var(--muted); font-variant-numeric: tabular-nums; }
+body.scroll .ctl { position: fixed; }
+.helpbox { position: fixed; right: 12px; bottom: 60px; z-index: 10; padding: 12px 18px; border-radius: 12px; background: var(--board-2); border: 1px solid var(--rule); }
+.helpbox dl { display: grid; grid-template-columns: auto auto; gap: 4px 16px; margin: 0; }
+.helpbox dt { font-weight: 600; color: var(--accent-ink); }
+.helpbox dd { margin: 0; }
+.tip {
+  position: fixed; z-index: 20; pointer-events: none; padding: 6px 10px; border-radius: 8px; max-width: 320px;
+  background: var(--card); border: 1px solid var(--rule); color: var(--ink); font: 15px/1.35 var(--font-ui);
+}
+.tip b { font-weight: 600; }
+.tip[hidden] { display: none; }
+
+/* ---------- presenter ---------- */
+body.presenter { overflow: auto; }
+.pres { display: grid; grid-template-columns: 3fr 2fr; grid-template-rows: auto 1fr; gap: 16px; padding: 16px; height: 100vh; }
+.pres .cur, .pres .nxt { position: relative; }
+.pres .nxt { opacity: 0.8; }
+.pres .cap { color: var(--muted); font-size: 15px; margin-bottom: 4px; }
+.pres .notes { grid-column: 1 / 2; font: 24px/1.45 var(--font-ui); overflow: auto; padding-right: 8px; }
+.pres .side { display: flex; flex-direction: column; gap: 12px; }
+.pres .timer { font: 600 56px var(--font-ui); font-variant-numeric: tabular-nums; }
+.pres .timer button { font-size: 16px; margin-left: 12px; vertical-align: middle; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--rule); background: none; cursor: pointer; }
+.pres .pos { color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .dropin, .fade { animation: none !important; transition: none !important; } }
