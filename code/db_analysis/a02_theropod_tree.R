@@ -23,7 +23,7 @@ TIP  <- Sys.getenv("TIP", "mid")                         # tip age: mid (range m
 DROP <- strsplit(Sys.getenv("DROP", "Eshanosaurus_deguchiianus"), ",")[[1]]   # tips removed before dating
 # Primary drops Eshanosaurus: one Early Jurassic specimen placed in Therizinosauria that alone
 # moves every coelurosaur split from the crown-bird line from about 163-168 Ma to 201 Ma.
-# Its placement and age have been debated; JM to confirm. DROP= keeps it (sensitivity).
+# Its placement and age have been debated. Dropped in the primary (JM, 2026-11-12). DROP= keeps it (sensitivity).
 OUT  <- Sys.getenv("OUT", "db/tree/theropod")
 dir.create(OUT, recursive = TRUE, showWarnings = FALSE)
 CROWN <- "Vegavis_iaai"

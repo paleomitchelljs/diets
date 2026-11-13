@@ -112,3 +112,13 @@ Two uses:
 Support for tree:dated among {tree:dated, 4 major clades, none}, theropods: 0.08 (all records), 0.07 (no combat), 0.24 (no juvenile predators; highest of the six), 0.08 (no brackets), 0.07 (stomach only). Stem birds: 0.03–0.09.
 
 Calibration at the theropod design: when data are simulated from tree:dated, it ranks first 74% of the time (stem-bird design: 36%). So the test can recognise the dated-tree pattern when it is true, and the real theropod records mostly do not show it. The single exception (no juvenile predators) means this is not a stable conclusion either. Single-tip candidates (one shared effect for all theropods) are never recognised (0–2%), because they are indistinguishable from the major-clade candidates.
+
+### Decisions and placements (2026-11-12, later)
+
+- *Eshanosaurus* dropped from the dating (JM). Kept only as the `sens_withEshano` sensitivity.
+- Rule placements now follow the original descriptions (checked from abstracts and secondary summaries, not full text):
+  - *Huadanosaurus*: Qiu et al. 2025 Natl Sci Rev, OSP matrix, sister to *Mirischia* + *Sinocalliopteryx*; attached at MRCA(*Sinocalliopteryx*, *Mirischia*). Their TWiG analysis places it differently (Hendrickx 2025 comment).
+  - *Piscivoravis*: Zhou, Zhou & O'Connor 2014 Hist Biol (online 2013), polytomy with *Jianchangornis*, *Patagopteryx* and more derived ornithuromorphs; attached at MRCA(*Jianchangornis*, *Patagopteryx*, *Ichthyornis*).
+  - *Kunpengornis*: Huang et al. 2025 Cretaceous Research, sister to *Piscivoravis*; same attachment.
+- Effect: split ages unchanged (*Huadanosaurus* 162.5, ornithuromorphs 130.5 Ma); *Huadanosaurus* now shares history with *Sinocalliopteryx* and *Compsognathus* to 155 Ma. Similarity-test support unchanged to two decimals. Calibration not rerun for this change.
+- Positive-control slide dropped from the talk (JM). Ziphodont marking dropped.

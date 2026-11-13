@@ -17,7 +17,7 @@ tree,taxon_id,split_age,anchor_age
 1,Yanornis,119.9,
 1,Yanornis_martini,119.9,
 1,Jianchangornis_microdonta,130.5,
-1,Huadanosaurus_sinensis,162.5,154.9
+1,Huadanosaurus_sinensis,162.5,155
 1,Piscivoravis_lii,130.5,130.5
 1,Kunpengornis_anhuimusei,130.5,130.5
 2,Anchiornis,161.8,
@@ -38,7 +38,7 @@ tree,taxon_id,split_age,anchor_age
 2,Yanornis,119.9,
 2,Yanornis_martini,119.9,
 2,Jianchangornis_microdonta,130.5,
-2,Huadanosaurus_sinensis,162.5,154.9
+2,Huadanosaurus_sinensis,162.5,155
 2,Piscivoravis_lii,130.5,130.5
 2,Kunpengornis_anhuimusei,130.5,130.5
 3,Anchiornis,161.8,
@@ -59,7 +59,7 @@ tree,taxon_id,split_age,anchor_age
 3,Yanornis,119.9,
 3,Yanornis_martini,119.9,
 3,Jianchangornis_microdonta,130.5,
-3,Huadanosaurus_sinensis,162.5,154.9
+3,Huadanosaurus_sinensis,162.5,155
 3,Piscivoravis_lii,130.5,130.5
 3,Kunpengornis_anhuimusei,130.5,130.5
 4,Anchiornis,161.8,
@@ -80,7 +80,7 @@ tree,taxon_id,split_age,anchor_age
 4,Yanornis,119.9,
 4,Yanornis_martini,119.9,
 4,Jianchangornis_microdonta,130.5,
-4,Huadanosaurus_sinensis,162.5,154.9
+4,Huadanosaurus_sinensis,162.5,155
 4,Piscivoravis_lii,130.5,130.5
 4,Kunpengornis_anhuimusei,130.5,130.5
 5,Anchiornis,161.8,
@@ -101,7 +101,7 @@ tree,taxon_id,split_age,anchor_age
 5,Yanornis,119.9,
 5,Yanornis_martini,119.9,
 5,Jianchangornis_microdonta,130.5,
-5,Huadanosaurus_sinensis,162.5,154.9
+5,Huadanosaurus_sinensis,162.5,155
 5,Piscivoravis_lii,130.5,130.5
 5,Kunpengornis_anhuimusei,130.5,130.5
 6,Anchiornis,161.8,
@@ -122,7 +122,7 @@ tree,taxon_id,split_age,anchor_age
 6,Yanornis,119.9,
 6,Yanornis_martini,119.9,
 6,Jianchangornis_microdonta,130.5,
-6,Huadanosaurus_sinensis,162.5,154.9
+6,Huadanosaurus_sinensis,162.5,155
 6,Piscivoravis_lii,130.5,130.5
 6,Kunpengornis_anhuimusei,130.5,130.5
 7,Anchiornis,161.8,
@@ -143,7 +143,7 @@ tree,taxon_id,split_age,anchor_age
 7,Yanornis,119.9,
 7,Yanornis_martini,119.9,
 7,Jianchangornis_microdonta,130.5,
-7,Huadanosaurus_sinensis,162.5,154.9
+7,Huadanosaurus_sinensis,162.5,155
 7,Piscivoravis_lii,130.5,130.5
 7,Kunpengornis_anhuimusei,130.5,130.5
 8,Anchiornis,161.8,
@@ -164,7 +164,7 @@ tree,taxon_id,split_age,anchor_age
 8,Yanornis,119.9,
 8,Yanornis_martini,119.9,
 8,Jianchangornis_microdonta,130.5,
-8,Huadanosaurus_sinensis,162.5,154.9
+8,Huadanosaurus_sinensis,162.5,155
 8,Piscivoravis_lii,130.5,130.5
 8,Kunpengornis_anhuimusei,130.5,130.5
 9,Anchiornis,161.8,
@@ -185,7 +185,7 @@ tree,taxon_id,split_age,anchor_age
 9,Yanornis,119.9,
 9,Yanornis_martini,119.9,
 9,Jianchangornis_microdonta,130.5,
-9,Huadanosaurus_sinensis,162.5,154.9
+9,Huadanosaurus_sinensis,162.5,155
 9,Piscivoravis_lii,130.5,130.5
 9,Kunpengornis_anhuimusei,130.5,130.5
 10,Anchiornis,161.8,
@@ -206,7 +206,7 @@ tree,taxon_id,split_age,anchor_age
 10,Yanornis,119.9,
 10,Yanornis_martini,119.9,
 10,Jianchangornis_microdonta,130.5,
-10,Huadanosaurus_sinensis,162.5,154.9
+10,Huadanosaurus_sinensis,162.5,155
 10,Piscivoravis_lii,130.5,130.5
 10,Kunpengornis_anhuimusei,130.5,130.5
 11,Anchiornis,161.8,
@@ -227,7 +227,7 @@ tree,taxon_id,split_age,anchor_age
 11,Yanornis,119.9,
 11,Yanornis_martini,119.9,
 11,Jianchangornis_microdonta,130.5,
-11,Huadanosaurus_sinensis,162.5,154.9
+11,Huadanosaurus_sinensis,162.5,155
 11,Piscivoravis_lii,130.5,130.5
 11,Kunpengornis_anhuimusei,130.5,130.5
 12,Anchiornis,161.8,
@@ -248,7 +248,7 @@ tree,taxon_id,split_age,anchor_age
 12,Yanornis,119.9,
 12,Yanornis_martini,119.9,
 12,Jianchangornis_microdonta,130.5,
-12,Huadanosaurus_sinensis,162.5,154.9
+12,Huadanosaurus_sinensis,162.5,155
 12,Piscivoravis_lii,130.5,130.5
 12,Kunpengornis_anhuimusei,130.5,130.5
 13,Anchiornis,161.8,
@@ -269,7 +269,7 @@ tree,taxon_id,split_age,anchor_age
 13,Yanornis,119.9,
 13,Yanornis_martini,119.9,
 13,Jianchangornis_microdonta,130.5,
-13,Huadanosaurus_sinensis,162.5,154.9
+13,Huadanosaurus_sinensis,162.5,155
 13,Piscivoravis_lii,130.5,130.5
 13,Kunpengornis_anhuimusei,130.5,130.5
 14,Anchiornis,161.8,
@@ -290,7 +290,7 @@ tree,taxon_id,split_age,anchor_age
 14,Yanornis,119.9,
 14,Yanornis_martini,119.9,
 14,Jianchangornis_microdonta,130.5,
-14,Huadanosaurus_sinensis,162.5,154.9
+14,Huadanosaurus_sinensis,162.5,155
 14,Piscivoravis_lii,130.5,130.5
 14,Kunpengornis_anhuimusei,130.5,130.5
 15,Anchiornis,161.8,
@@ -311,7 +311,7 @@ tree,taxon_id,split_age,anchor_age
 15,Yanornis,119.9,
 15,Yanornis_martini,119.9,
 15,Jianchangornis_microdonta,130.5,
-15,Huadanosaurus_sinensis,162.5,154.9
+15,Huadanosaurus_sinensis,162.5,155
 15,Piscivoravis_lii,130.5,130.5
 15,Kunpengornis_anhuimusei,130.5,130.5
 16,Anchiornis,161.8,
@@ -332,7 +332,7 @@ tree,taxon_id,split_age,anchor_age
 16,Yanornis,119.9,
 16,Yanornis_martini,119.9,
 16,Jianchangornis_microdonta,130.5,
-16,Huadanosaurus_sinensis,162.5,154.9
+16,Huadanosaurus_sinensis,162.5,155
 16,Piscivoravis_lii,130.5,130.5
 16,Kunpengornis_anhuimusei,130.5,130.5
 17,Anchiornis,161.8,
@@ -353,7 +353,7 @@ tree,taxon_id,split_age,anchor_age
 17,Yanornis,119.9,
 17,Yanornis_martini,119.9,
 17,Jianchangornis_microdonta,130.5,
-17,Huadanosaurus_sinensis,162.5,154.9
+17,Huadanosaurus_sinensis,162.5,155
 17,Piscivoravis_lii,130.5,130.5
 17,Kunpengornis_anhuimusei,130.5,130.5
 18,Anchiornis,161.8,
@@ -374,7 +374,7 @@ tree,taxon_id,split_age,anchor_age
 18,Yanornis,119.9,
 18,Yanornis_martini,119.9,
 18,Jianchangornis_microdonta,130.5,
-18,Huadanosaurus_sinensis,162.5,154.9
+18,Huadanosaurus_sinensis,162.5,155
 18,Piscivoravis_lii,130.5,130.5
 18,Kunpengornis_anhuimusei,130.5,130.5
 19,Anchiornis,161.8,
@@ -395,7 +395,7 @@ tree,taxon_id,split_age,anchor_age
 19,Yanornis,119.9,
 19,Yanornis_martini,119.9,
 19,Jianchangornis_microdonta,130.5,
-19,Huadanosaurus_sinensis,162.5,154.9
+19,Huadanosaurus_sinensis,162.5,155
 19,Piscivoravis_lii,130.5,130.5
 19,Kunpengornis_anhuimusei,130.5,130.5
 20,Anchiornis,161.8,
@@ -416,7 +416,7 @@ tree,taxon_id,split_age,anchor_age
 20,Yanornis,119.9,
 20,Yanornis_martini,119.9,
 20,Jianchangornis_microdonta,130.5,
-20,Huadanosaurus_sinensis,162.5,154.9
+20,Huadanosaurus_sinensis,162.5,155
 20,Piscivoravis_lii,130.5,130.5
 20,Kunpengornis_anhuimusei,130.5,130.5
 21,Anchiornis,161.8,
@@ -437,7 +437,7 @@ tree,taxon_id,split_age,anchor_age
 21,Yanornis,119.9,
 21,Yanornis_martini,119.9,
 21,Jianchangornis_microdonta,130.5,
-21,Huadanosaurus_sinensis,162.5,154.9
+21,Huadanosaurus_sinensis,162.5,155
 21,Piscivoravis_lii,130.5,130.5
 21,Kunpengornis_anhuimusei,130.5,130.5
 22,Anchiornis,161.8,
@@ -458,7 +458,7 @@ tree,taxon_id,split_age,anchor_age
 22,Yanornis,119.9,
 22,Yanornis_martini,119.9,
 22,Jianchangornis_microdonta,130.5,
-22,Huadanosaurus_sinensis,162.5,154.9
+22,Huadanosaurus_sinensis,162.5,155
 22,Piscivoravis_lii,130.5,130.5
 22,Kunpengornis_anhuimusei,130.5,130.5
 23,Anchiornis,161.8,
@@ -479,7 +479,7 @@ tree,taxon_id,split_age,anchor_age
 23,Yanornis,119.9,
 23,Yanornis_martini,119.9,
 23,Jianchangornis_microdonta,130.5,
-23,Huadanosaurus_sinensis,162.5,154.9
+23,Huadanosaurus_sinensis,162.5,155
 23,Piscivoravis_lii,130.5,130.5
 23,Kunpengornis_anhuimusei,130.5,130.5
 24,Anchiornis,161.8,
@@ -500,7 +500,7 @@ tree,taxon_id,split_age,anchor_age
 24,Yanornis,119.9,
 24,Yanornis_martini,119.9,
 24,Jianchangornis_microdonta,130.5,
-24,Huadanosaurus_sinensis,162.5,154.9
+24,Huadanosaurus_sinensis,162.5,155
 24,Piscivoravis_lii,130.5,130.5
 24,Kunpengornis_anhuimusei,130.5,130.5
 25,Anchiornis,161.8,
@@ -521,7 +521,7 @@ tree,taxon_id,split_age,anchor_age
 25,Yanornis,119.9,
 25,Yanornis_martini,119.9,
 25,Jianchangornis_microdonta,130.5,
-25,Huadanosaurus_sinensis,162.5,154.9
+25,Huadanosaurus_sinensis,162.5,155
 25,Piscivoravis_lii,130.5,130.5
 25,Kunpengornis_anhuimusei,130.5,130.5
 26,Anchiornis,161.8,
@@ -542,7 +542,7 @@ tree,taxon_id,split_age,anchor_age
 26,Yanornis,119.9,
 26,Yanornis_martini,119.9,
 26,Jianchangornis_microdonta,130.5,
-26,Huadanosaurus_sinensis,162.5,154.9
+26,Huadanosaurus_sinensis,162.5,155
 26,Piscivoravis_lii,130.5,130.5
 26,Kunpengornis_anhuimusei,130.5,130.5
 27,Anchiornis,161.8,
@@ -563,7 +563,7 @@ tree,taxon_id,split_age,anchor_age
 27,Yanornis,119.9,
 27,Yanornis_martini,119.9,
 27,Jianchangornis_microdonta,130.5,
-27,Huadanosaurus_sinensis,162.5,154.9
+27,Huadanosaurus_sinensis,162.5,155
 27,Piscivoravis_lii,130.5,130.5
 27,Kunpengornis_anhuimusei,130.5,130.5
 28,Anchiornis,161.8,
@@ -584,7 +584,7 @@ tree,taxon_id,split_age,anchor_age
 28,Yanornis,119.9,
 28,Yanornis_martini,119.9,
 28,Jianchangornis_microdonta,130.5,
-28,Huadanosaurus_sinensis,162.5,154.9
+28,Huadanosaurus_sinensis,162.5,155
 28,Piscivoravis_lii,130.5,130.5
 28,Kunpengornis_anhuimusei,130.5,130.5
 29,Anchiornis,161.8,
@@ -605,7 +605,7 @@ tree,taxon_id,split_age,anchor_age
 29,Yanornis,119.9,
 29,Yanornis_martini,119.9,
 29,Jianchangornis_microdonta,130.5,
-29,Huadanosaurus_sinensis,162.5,154.9
+29,Huadanosaurus_sinensis,162.5,155
 29,Piscivoravis_lii,130.5,130.5
 29,Kunpengornis_anhuimusei,130.5,130.5
 30,Anchiornis,161.8,
@@ -626,7 +626,7 @@ tree,taxon_id,split_age,anchor_age
 30,Yanornis,119.9,
 30,Yanornis_martini,119.9,
 30,Jianchangornis_microdonta,130.5,
-30,Huadanosaurus_sinensis,162.5,154.9
+30,Huadanosaurus_sinensis,162.5,155
 30,Piscivoravis_lii,130.5,130.5
 30,Kunpengornis_anhuimusei,130.5,130.5
 31,Anchiornis,161.8,
@@ -647,7 +647,7 @@ tree,taxon_id,split_age,anchor_age
 31,Yanornis,119.9,
 31,Yanornis_martini,119.9,
 31,Jianchangornis_microdonta,130.5,
-31,Huadanosaurus_sinensis,162.5,154.9
+31,Huadanosaurus_sinensis,162.5,155
 31,Piscivoravis_lii,130.5,130.5
 31,Kunpengornis_anhuimusei,130.5,130.5
 32,Anchiornis,161.8,
@@ -668,7 +668,7 @@ tree,taxon_id,split_age,anchor_age
 32,Yanornis,119.9,
 32,Yanornis_martini,119.9,
 32,Jianchangornis_microdonta,130.5,
-32,Huadanosaurus_sinensis,162.5,154.9
+32,Huadanosaurus_sinensis,162.5,155
 32,Piscivoravis_lii,130.5,130.5
 32,Kunpengornis_anhuimusei,130.5,130.5
 33,Anchiornis,161.8,
@@ -689,7 +689,7 @@ tree,taxon_id,split_age,anchor_age
 33,Yanornis,119.9,
 33,Yanornis_martini,119.9,
 33,Jianchangornis_microdonta,130.5,
-33,Huadanosaurus_sinensis,162.5,154.9
+33,Huadanosaurus_sinensis,162.5,155
 33,Piscivoravis_lii,130.5,130.5
 33,Kunpengornis_anhuimusei,130.5,130.5
 34,Anchiornis,161.8,
@@ -710,7 +710,7 @@ tree,taxon_id,split_age,anchor_age
 34,Yanornis,119.9,
 34,Yanornis_martini,119.9,
 34,Jianchangornis_microdonta,130.5,
-34,Huadanosaurus_sinensis,162.5,154.9
+34,Huadanosaurus_sinensis,162.5,155
 34,Piscivoravis_lii,130.5,130.5
 34,Kunpengornis_anhuimusei,130.5,130.5
 35,Anchiornis,161.8,
@@ -731,7 +731,7 @@ tree,taxon_id,split_age,anchor_age
 35,Yanornis,119.9,
 35,Yanornis_martini,119.9,
 35,Jianchangornis_microdonta,130.5,
-35,Huadanosaurus_sinensis,162.5,154.9
+35,Huadanosaurus_sinensis,162.5,155
 35,Piscivoravis_lii,130.5,130.5
 35,Kunpengornis_anhuimusei,130.5,130.5
 36,Anchiornis,161.8,
@@ -752,7 +752,7 @@ tree,taxon_id,split_age,anchor_age
 36,Yanornis,119.9,
 36,Yanornis_martini,119.9,
 36,Jianchangornis_microdonta,130.5,
-36,Huadanosaurus_sinensis,162.5,154.9
+36,Huadanosaurus_sinensis,162.5,155
 36,Piscivoravis_lii,130.5,130.5
 36,Kunpengornis_anhuimusei,130.5,130.5
 37,Anchiornis,161.8,
@@ -773,7 +773,7 @@ tree,taxon_id,split_age,anchor_age
 37,Yanornis,119.9,
 37,Yanornis_martini,119.9,
 37,Jianchangornis_microdonta,130.5,
-37,Huadanosaurus_sinensis,162.5,154.9
+37,Huadanosaurus_sinensis,162.5,155
 37,Piscivoravis_lii,130.5,130.5
 37,Kunpengornis_anhuimusei,130.5,130.5
 38,Anchiornis,161.8,
@@ -794,7 +794,7 @@ tree,taxon_id,split_age,anchor_age
 38,Yanornis,119.9,
 38,Yanornis_martini,119.9,
 38,Jianchangornis_microdonta,130.5,
-38,Huadanosaurus_sinensis,162.5,154.9
+38,Huadanosaurus_sinensis,162.5,155
 38,Piscivoravis_lii,130.5,130.5
 38,Kunpengornis_anhuimusei,130.5,130.5
 39,Anchiornis,161.8,
@@ -815,7 +815,7 @@ tree,taxon_id,split_age,anchor_age
 39,Yanornis,119.9,
 39,Yanornis_martini,119.9,
 39,Jianchangornis_microdonta,130.5,
-39,Huadanosaurus_sinensis,162.5,154.9
+39,Huadanosaurus_sinensis,162.5,155
 39,Piscivoravis_lii,130.5,130.5
 39,Kunpengornis_anhuimusei,130.5,130.5
 40,Anchiornis,161.8,
@@ -836,7 +836,7 @@ tree,taxon_id,split_age,anchor_age
 40,Yanornis,119.9,
 40,Yanornis_martini,119.9,
 40,Jianchangornis_microdonta,130.5,
-40,Huadanosaurus_sinensis,162.5,154.9
+40,Huadanosaurus_sinensis,162.5,155
 40,Piscivoravis_lii,130.5,130.5
 40,Kunpengornis_anhuimusei,130.5,130.5
 41,Anchiornis,161.8,
@@ -857,7 +857,7 @@ tree,taxon_id,split_age,anchor_age
 41,Yanornis,119.9,
 41,Yanornis_martini,119.9,
 41,Jianchangornis_microdonta,130.5,
-41,Huadanosaurus_sinensis,162.5,154.9
+41,Huadanosaurus_sinensis,162.5,155
 41,Piscivoravis_lii,130.5,130.5
 41,Kunpengornis_anhuimusei,130.5,130.5
 42,Anchiornis,161.8,
@@ -878,7 +878,7 @@ tree,taxon_id,split_age,anchor_age
 42,Yanornis,119.9,
 42,Yanornis_martini,119.9,
 42,Jianchangornis_microdonta,130.5,
-42,Huadanosaurus_sinensis,162.5,154.9
+42,Huadanosaurus_sinensis,162.5,155
 42,Piscivoravis_lii,130.5,130.5
 42,Kunpengornis_anhuimusei,130.5,130.5
 43,Anchiornis,161.8,
@@ -899,7 +899,7 @@ tree,taxon_id,split_age,anchor_age
 43,Yanornis,119.9,
 43,Yanornis_martini,119.9,
 43,Jianchangornis_microdonta,130.5,
-43,Huadanosaurus_sinensis,162.5,154.9
+43,Huadanosaurus_sinensis,162.5,155
 43,Piscivoravis_lii,130.5,130.5
 43,Kunpengornis_anhuimusei,130.5,130.5
 44,Anchiornis,161.8,
@@ -920,7 +920,7 @@ tree,taxon_id,split_age,anchor_age
 44,Yanornis,119.9,
 44,Yanornis_martini,119.9,
 44,Jianchangornis_microdonta,130.5,
-44,Huadanosaurus_sinensis,162.5,154.9
+44,Huadanosaurus_sinensis,162.5,155
 44,Piscivoravis_lii,130.5,130.5
 44,Kunpengornis_anhuimusei,130.5,130.5
 45,Anchiornis,161.8,
@@ -941,7 +941,7 @@ tree,taxon_id,split_age,anchor_age
 45,Yanornis,119.9,
 45,Yanornis_martini,119.9,
 45,Jianchangornis_microdonta,130.5,
-45,Huadanosaurus_sinensis,162.5,154.9
+45,Huadanosaurus_sinensis,162.5,155
 45,Piscivoravis_lii,130.5,130.5
 45,Kunpengornis_anhuimusei,130.5,130.5
 46,Anchiornis,161.8,
@@ -962,7 +962,7 @@ tree,taxon_id,split_age,anchor_age
 46,Yanornis,119.9,
 46,Yanornis_martini,119.9,
 46,Jianchangornis_microdonta,130.5,
-46,Huadanosaurus_sinensis,162.5,154.9
+46,Huadanosaurus_sinensis,162.5,155
 46,Piscivoravis_lii,130.5,130.5
 46,Kunpengornis_anhuimusei,130.5,130.5
 47,Anchiornis,161.8,
@@ -983,7 +983,7 @@ tree,taxon_id,split_age,anchor_age
 47,Yanornis,119.9,
 47,Yanornis_martini,119.9,
 47,Jianchangornis_microdonta,130.5,
-47,Huadanosaurus_sinensis,162.5,154.9
+47,Huadanosaurus_sinensis,162.5,155
 47,Piscivoravis_lii,130.5,130.5
 47,Kunpengornis_anhuimusei,130.5,130.5
 48,Anchiornis,161.8,
@@ -1004,7 +1004,7 @@ tree,taxon_id,split_age,anchor_age
 48,Yanornis,119.9,
 48,Yanornis_martini,119.9,
 48,Jianchangornis_microdonta,130.5,
-48,Huadanosaurus_sinensis,162.5,154.9
+48,Huadanosaurus_sinensis,162.5,155
 48,Piscivoravis_lii,130.5,130.5
 48,Kunpengornis_anhuimusei,130.5,130.5
 49,Anchiornis,161.8,
@@ -1025,7 +1025,7 @@ tree,taxon_id,split_age,anchor_age
 49,Yanornis,119.9,
 49,Yanornis_martini,119.9,
 49,Jianchangornis_microdonta,130.5,
-49,Huadanosaurus_sinensis,162.5,154.9
+49,Huadanosaurus_sinensis,162.5,155
 49,Piscivoravis_lii,130.5,130.5
 49,Kunpengornis_anhuimusei,130.5,130.5
 50,Anchiornis,161.8,
@@ -1046,7 +1046,7 @@ tree,taxon_id,split_age,anchor_age
 50,Yanornis,119.9,
 50,Yanornis_martini,119.9,
 50,Jianchangornis_microdonta,130.5,
-50,Huadanosaurus_sinensis,162.5,154.9
+50,Huadanosaurus_sinensis,162.5,155
 50,Piscivoravis_lii,130.5,130.5
 50,Kunpengornis_anhuimusei,130.5,130.5
 51,Anchiornis,161.8,
@@ -1067,7 +1067,7 @@ tree,taxon_id,split_age,anchor_age
 51,Yanornis,119.9,
 51,Yanornis_martini,119.9,
 51,Jianchangornis_microdonta,130.5,
-51,Huadanosaurus_sinensis,162.5,154.9
+51,Huadanosaurus_sinensis,162.5,155
 51,Piscivoravis_lii,130.5,130.5
 51,Kunpengornis_anhuimusei,130.5,130.5
 52,Anchiornis,161.8,
@@ -1088,7 +1088,7 @@ tree,taxon_id,split_age,anchor_age
 52,Yanornis,119.9,
 52,Yanornis_martini,119.9,
 52,Jianchangornis_microdonta,130.5,
-52,Huadanosaurus_sinensis,162.5,154.9
+52,Huadanosaurus_sinensis,162.5,155
 52,Piscivoravis_lii,130.5,130.5
 52,Kunpengornis_anhuimusei,130.5,130.5
 53,Anchiornis,161.8,
@@ -1109,7 +1109,7 @@ tree,taxon_id,split_age,anchor_age
 53,Yanornis,119.9,
 53,Yanornis_martini,119.9,
 53,Jianchangornis_microdonta,130.5,
-53,Huadanosaurus_sinensis,162.5,154.9
+53,Huadanosaurus_sinensis,162.5,155
 53,Piscivoravis_lii,130.5,130.5
 53,Kunpengornis_anhuimusei,130.5,130.5
 54,Anchiornis,161.8,
@@ -1130,7 +1130,7 @@ tree,taxon_id,split_age,anchor_age
 54,Yanornis,119.9,
 54,Yanornis_martini,119.9,
 54,Jianchangornis_microdonta,130.5,
-54,Huadanosaurus_sinensis,162.5,154.9
+54,Huadanosaurus_sinensis,162.5,155
 54,Piscivoravis_lii,130.5,130.5
 54,Kunpengornis_anhuimusei,130.5,130.5
 55,Anchiornis,161.8,
@@ -1151,7 +1151,7 @@ tree,taxon_id,split_age,anchor_age
 55,Yanornis,119.9,
 55,Yanornis_martini,119.9,
 55,Jianchangornis_microdonta,130.5,
-55,Huadanosaurus_sinensis,162.5,154.9
+55,Huadanosaurus_sinensis,162.5,155
 55,Piscivoravis_lii,130.5,130.5
 55,Kunpengornis_anhuimusei,130.5,130.5
 56,Anchiornis,161.8,
@@ -1172,7 +1172,7 @@ tree,taxon_id,split_age,anchor_age
 56,Yanornis,119.9,
 56,Yanornis_martini,119.9,
 56,Jianchangornis_microdonta,130.5,
-56,Huadanosaurus_sinensis,162.5,154.9
+56,Huadanosaurus_sinensis,162.5,155
 56,Piscivoravis_lii,130.5,130.5
 56,Kunpengornis_anhuimusei,130.5,130.5
 57,Anchiornis,161.8,
@@ -1193,7 +1193,7 @@ tree,taxon_id,split_age,anchor_age
 57,Yanornis,119.9,
 57,Yanornis_martini,119.9,
 57,Jianchangornis_microdonta,130.5,
-57,Huadanosaurus_sinensis,162.5,154.9
+57,Huadanosaurus_sinensis,162.5,155
 57,Piscivoravis_lii,130.5,130.5
 57,Kunpengornis_anhuimusei,130.5,130.5
 58,Anchiornis,161.8,
@@ -1214,7 +1214,7 @@ tree,taxon_id,split_age,anchor_age
 58,Yanornis,119.9,
 58,Yanornis_martini,119.9,
 58,Jianchangornis_microdonta,130.5,
-58,Huadanosaurus_sinensis,162.5,154.9
+58,Huadanosaurus_sinensis,162.5,155
 58,Piscivoravis_lii,130.5,130.5
 58,Kunpengornis_anhuimusei,130.5,130.5
 59,Anchiornis,161.8,
@@ -1235,7 +1235,7 @@ tree,taxon_id,split_age,anchor_age
 59,Yanornis,119.9,
 59,Yanornis_martini,119.9,
 59,Jianchangornis_microdonta,130.5,
-59,Huadanosaurus_sinensis,162.5,154.9
+59,Huadanosaurus_sinensis,162.5,155
 59,Piscivoravis_lii,130.5,130.5
 59,Kunpengornis_anhuimusei,130.5,130.5
 60,Anchiornis,161.8,
@@ -1256,7 +1256,7 @@ tree,taxon_id,split_age,anchor_age
 60,Yanornis,119.9,
 60,Yanornis_martini,119.9,
 60,Jianchangornis_microdonta,130.5,
-60,Huadanosaurus_sinensis,162.5,154.9
+60,Huadanosaurus_sinensis,162.5,155
 60,Piscivoravis_lii,130.5,130.5
 60,Kunpengornis_anhuimusei,130.5,130.5
 61,Anchiornis,161.8,
@@ -1277,7 +1277,7 @@ tree,taxon_id,split_age,anchor_age
 61,Yanornis,119.9,
 61,Yanornis_martini,119.9,
 61,Jianchangornis_microdonta,130.5,
-61,Huadanosaurus_sinensis,162.5,154.9
+61,Huadanosaurus_sinensis,162.5,155
 61,Piscivoravis_lii,130.5,130.5
 61,Kunpengornis_anhuimusei,130.5,130.5
 62,Anchiornis,161.8,
@@ -1298,7 +1298,7 @@ tree,taxon_id,split_age,anchor_age
 62,Yanornis,119.9,
 62,Yanornis_martini,119.9,
 62,Jianchangornis_microdonta,130.5,
-62,Huadanosaurus_sinensis,162.5,154.9
+62,Huadanosaurus_sinensis,162.5,155
 62,Piscivoravis_lii,130.5,130.5
 62,Kunpengornis_anhuimusei,130.5,130.5
 63,Anchiornis,161.8,
@@ -1319,7 +1319,7 @@ tree,taxon_id,split_age,anchor_age
 63,Yanornis,119.9,
 63,Yanornis_martini,119.9,
 63,Jianchangornis_microdonta,130.5,
-63,Huadanosaurus_sinensis,162.5,154.9
+63,Huadanosaurus_sinensis,162.5,155
 63,Piscivoravis_lii,130.5,130.5
 63,Kunpengornis_anhuimusei,130.5,130.5
 64,Anchiornis,161.8,
@@ -1340,7 +1340,7 @@ tree,taxon_id,split_age,anchor_age
 64,Yanornis,119.9,
 64,Yanornis_martini,119.9,
 64,Jianchangornis_microdonta,130.5,
-64,Huadanosaurus_sinensis,162.5,154.9
+64,Huadanosaurus_sinensis,162.5,155
 64,Piscivoravis_lii,130.5,130.5
 64,Kunpengornis_anhuimusei,130.5,130.5
 65,Anchiornis,161.8,
@@ -1361,7 +1361,7 @@ tree,taxon_id,split_age,anchor_age
 65,Yanornis,119.9,
 65,Yanornis_martini,119.9,
 65,Jianchangornis_microdonta,130.5,
-65,Huadanosaurus_sinensis,162.5,154.9
+65,Huadanosaurus_sinensis,162.5,155
 65,Piscivoravis_lii,130.5,130.5
 65,Kunpengornis_anhuimusei,130.5,130.5
 66,Anchiornis,161.8,
@@ -1382,7 +1382,7 @@ tree,taxon_id,split_age,anchor_age
 66,Yanornis,119.9,
 66,Yanornis_martini,119.9,
 66,Jianchangornis_microdonta,130.5,
-66,Huadanosaurus_sinensis,162.5,154.9
+66,Huadanosaurus_sinensis,162.5,155
 66,Piscivoravis_lii,130.5,130.5
 66,Kunpengornis_anhuimusei,130.5,130.5
 67,Anchiornis,161.8,
@@ -1403,7 +1403,7 @@ tree,taxon_id,split_age,anchor_age
 67,Yanornis,119.9,
 67,Yanornis_martini,119.9,
 67,Jianchangornis_microdonta,130.5,
-67,Huadanosaurus_sinensis,162.5,154.9
+67,Huadanosaurus_sinensis,162.5,155
 67,Piscivoravis_lii,130.5,130.5
 67,Kunpengornis_anhuimusei,130.5,130.5
 68,Anchiornis,161.8,
@@ -1424,7 +1424,7 @@ tree,taxon_id,split_age,anchor_age
 68,Yanornis,119.9,
 68,Yanornis_martini,119.9,
 68,Jianchangornis_microdonta,130.5,
-68,Huadanosaurus_sinensis,162.5,154.9
+68,Huadanosaurus_sinensis,162.5,155
 68,Piscivoravis_lii,130.5,130.5
 68,Kunpengornis_anhuimusei,130.5,130.5
 69,Anchiornis,161.8,
@@ -1445,7 +1445,7 @@ tree,taxon_id,split_age,anchor_age
 69,Yanornis,119.9,
 69,Yanornis_martini,119.9,
 69,Jianchangornis_microdonta,130.5,
-69,Huadanosaurus_sinensis,162.5,154.9
+69,Huadanosaurus_sinensis,162.5,155
 69,Piscivoravis_lii,130.5,130.5
 69,Kunpengornis_anhuimusei,130.5,130.5
 70,Anchiornis,161.8,
@@ -1466,7 +1466,7 @@ tree,taxon_id,split_age,anchor_age
 70,Yanornis,119.9,
 70,Yanornis_martini,119.9,
 70,Jianchangornis_microdonta,130.5,
-70,Huadanosaurus_sinensis,162.5,154.9
+70,Huadanosaurus_sinensis,162.5,155
 70,Piscivoravis_lii,130.5,130.5
 70,Kunpengornis_anhuimusei,130.5,130.5
 71,Anchiornis,161.8,
@@ -1487,7 +1487,7 @@ tree,taxon_id,split_age,anchor_age
 71,Yanornis,119.9,
 71,Yanornis_martini,119.9,
 71,Jianchangornis_microdonta,130.5,
-71,Huadanosaurus_sinensis,162.5,154.9
+71,Huadanosaurus_sinensis,162.5,155
 71,Piscivoravis_lii,130.5,130.5
 71,Kunpengornis_anhuimusei,130.5,130.5
 72,Anchiornis,161.8,
@@ -1508,7 +1508,7 @@ tree,taxon_id,split_age,anchor_age
 72,Yanornis,119.9,
 72,Yanornis_martini,119.9,
 72,Jianchangornis_microdonta,130.5,
-72,Huadanosaurus_sinensis,162.5,154.9
+72,Huadanosaurus_sinensis,162.5,155
 72,Piscivoravis_lii,130.5,130.5
 72,Kunpengornis_anhuimusei,130.5,130.5
 73,Anchiornis,161.8,
@@ -1529,7 +1529,7 @@ tree,taxon_id,split_age,anchor_age
 73,Yanornis,119.9,
 73,Yanornis_martini,119.9,
 73,Jianchangornis_microdonta,130.5,
-73,Huadanosaurus_sinensis,162.5,154.9
+73,Huadanosaurus_sinensis,162.5,155
 73,Piscivoravis_lii,130.5,130.5
 73,Kunpengornis_anhuimusei,130.5,130.5
 74,Anchiornis,161.8,
@@ -1550,7 +1550,7 @@ tree,taxon_id,split_age,anchor_age
 74,Yanornis,119.9,
 74,Yanornis_martini,119.9,
 74,Jianchangornis_microdonta,130.5,
-74,Huadanosaurus_sinensis,162.5,154.9
+74,Huadanosaurus_sinensis,162.5,155
 74,Piscivoravis_lii,130.5,130.5
 74,Kunpengornis_anhuimusei,130.5,130.5
 75,Anchiornis,161.8,
@@ -1571,7 +1571,7 @@ tree,taxon_id,split_age,anchor_age
 75,Yanornis,119.9,
 75,Yanornis_martini,119.9,
 75,Jianchangornis_microdonta,130.5,
-75,Huadanosaurus_sinensis,162.5,154.9
+75,Huadanosaurus_sinensis,162.5,155
 75,Piscivoravis_lii,130.5,130.5
 75,Kunpengornis_anhuimusei,130.5,130.5
 76,Anchiornis,161.8,
@@ -1592,7 +1592,7 @@ tree,taxon_id,split_age,anchor_age
 76,Yanornis,119.9,
 76,Yanornis_martini,119.9,
 76,Jianchangornis_microdonta,130.5,
-76,Huadanosaurus_sinensis,162.5,154.9
+76,Huadanosaurus_sinensis,162.5,155
 76,Piscivoravis_lii,130.5,130.5
 76,Kunpengornis_anhuimusei,130.5,130.5
 77,Anchiornis,161.8,
@@ -1613,7 +1613,7 @@ tree,taxon_id,split_age,anchor_age
 77,Yanornis,119.9,
 77,Yanornis_martini,119.9,
 77,Jianchangornis_microdonta,130.5,
-77,Huadanosaurus_sinensis,162.5,154.9
+77,Huadanosaurus_sinensis,162.5,155
 77,Piscivoravis_lii,130.5,130.5
 77,Kunpengornis_anhuimusei,130.5,130.5
 78,Anchiornis,161.8,
@@ -1634,7 +1634,7 @@ tree,taxon_id,split_age,anchor_age
 78,Yanornis,119.9,
 78,Yanornis_martini,119.9,
 78,Jianchangornis_microdonta,130.5,
-78,Huadanosaurus_sinensis,162.5,154.9
+78,Huadanosaurus_sinensis,162.5,155
 78,Piscivoravis_lii,130.5,130.5
 78,Kunpengornis_anhuimusei,130.5,130.5
 79,Anchiornis,161.8,
@@ -1655,7 +1655,7 @@ tree,taxon_id,split_age,anchor_age
 79,Yanornis,119.9,
 79,Yanornis_martini,119.9,
 79,Jianchangornis_microdonta,130.5,
-79,Huadanosaurus_sinensis,162.5,154.9
+79,Huadanosaurus_sinensis,162.5,155
 79,Piscivoravis_lii,130.5,130.5
 79,Kunpengornis_anhuimusei,130.5,130.5
 80,Anchiornis,161.8,
@@ -1676,7 +1676,7 @@ tree,taxon_id,split_age,anchor_age
 80,Yanornis,119.9,
 80,Yanornis_martini,119.9,
 80,Jianchangornis_microdonta,130.5,
-80,Huadanosaurus_sinensis,162.5,154.9
+80,Huadanosaurus_sinensis,162.5,155
 80,Piscivoravis_lii,130.5,130.5
 80,Kunpengornis_anhuimusei,130.5,130.5
 81,Anchiornis,161.8,
@@ -1697,7 +1697,7 @@ tree,taxon_id,split_age,anchor_age
 81,Yanornis,119.9,
 81,Yanornis_martini,119.9,
 81,Jianchangornis_microdonta,130.5,
-81,Huadanosaurus_sinensis,162.5,154.9
+81,Huadanosaurus_sinensis,162.5,155
 81,Piscivoravis_lii,130.5,130.5
 81,Kunpengornis_anhuimusei,130.5,130.5
 82,Anchiornis,161.8,
@@ -1718,7 +1718,7 @@ tree,taxon_id,split_age,anchor_age
 82,Yanornis,119.9,
 82,Yanornis_martini,119.9,
 82,Jianchangornis_microdonta,130.5,
-82,Huadanosaurus_sinensis,162.5,154.9
+82,Huadanosaurus_sinensis,162.5,155
 82,Piscivoravis_lii,130.5,130.5
 82,Kunpengornis_anhuimusei,130.5,130.5
 83,Anchiornis,161.8,
@@ -1739,7 +1739,7 @@ tree,taxon_id,split_age,anchor_age
 83,Yanornis,119.9,
 83,Yanornis_martini,119.9,
 83,Jianchangornis_microdonta,130.5,
-83,Huadanosaurus_sinensis,162.5,154.9
+83,Huadanosaurus_sinensis,162.5,155
 83,Piscivoravis_lii,130.5,130.5
 83,Kunpengornis_anhuimusei,130.5,130.5
 84,Anchiornis,161.8,
@@ -1760,7 +1760,7 @@ tree,taxon_id,split_age,anchor_age
 84,Yanornis,119.9,
 84,Yanornis_martini,119.9,
 84,Jianchangornis_microdonta,130.5,
-84,Huadanosaurus_sinensis,162.5,154.9
+84,Huadanosaurus_sinensis,162.5,155
 84,Piscivoravis_lii,130.5,130.5
 84,Kunpengornis_anhuimusei,130.5,130.5
 85,Anchiornis,161.8,
@@ -1781,7 +1781,7 @@ tree,taxon_id,split_age,anchor_age
 85,Yanornis,119.9,
 85,Yanornis_martini,119.9,
 85,Jianchangornis_microdonta,130.5,
-85,Huadanosaurus_sinensis,162.5,154.9
+85,Huadanosaurus_sinensis,162.5,155
 85,Piscivoravis_lii,130.5,130.5
 85,Kunpengornis_anhuimusei,130.5,130.5
 86,Anchiornis,161.8,
@@ -1802,7 +1802,7 @@ tree,taxon_id,split_age,anchor_age
 86,Yanornis,119.9,
 86,Yanornis_martini,119.9,
 86,Jianchangornis_microdonta,130.5,
-86,Huadanosaurus_sinensis,162.5,154.9
+86,Huadanosaurus_sinensis,162.5,155
 86,Piscivoravis_lii,130.5,130.5
 86,Kunpengornis_anhuimusei,130.5,130.5
 87,Anchiornis,161.8,
@@ -1823,7 +1823,7 @@ tree,taxon_id,split_age,anchor_age
 87,Yanornis,119.9,
 87,Yanornis_martini,119.9,
 87,Jianchangornis_microdonta,130.5,
-87,Huadanosaurus_sinensis,162.5,154.9
+87,Huadanosaurus_sinensis,162.5,155
 87,Piscivoravis_lii,130.5,130.5
 87,Kunpengornis_anhuimusei,130.5,130.5
 88,Anchiornis,161.8,
@@ -1844,7 +1844,7 @@ tree,taxon_id,split_age,anchor_age
 88,Yanornis,119.9,
 88,Yanornis_martini,119.9,
 88,Jianchangornis_microdonta,130.5,
-88,Huadanosaurus_sinensis,162.5,154.9
+88,Huadanosaurus_sinensis,162.5,155
 88,Piscivoravis_lii,130.5,130.5
 88,Kunpengornis_anhuimusei,130.5,130.5
 89,Anchiornis,161.8,
@@ -1865,7 +1865,7 @@ tree,taxon_id,split_age,anchor_age
 89,Yanornis,119.9,
 89,Yanornis_martini,119.9,
 89,Jianchangornis_microdonta,130.5,
-89,Huadanosaurus_sinensis,162.5,154.9
+89,Huadanosaurus_sinensis,162.5,155
 89,Piscivoravis_lii,130.5,130.5
 89,Kunpengornis_anhuimusei,130.5,130.5
 90,Anchiornis,161.8,
@@ -1886,7 +1886,7 @@ tree,taxon_id,split_age,anchor_age
 90,Yanornis,119.9,
 90,Yanornis_martini,119.9,
 90,Jianchangornis_microdonta,130.5,
-90,Huadanosaurus_sinensis,162.5,154.9
+90,Huadanosaurus_sinensis,162.5,155
 90,Piscivoravis_lii,130.5,130.5
 90,Kunpengornis_anhuimusei,130.5,130.5
 91,Anchiornis,161.8,
@@ -1907,7 +1907,7 @@ tree,taxon_id,split_age,anchor_age
 91,Yanornis,119.9,
 91,Yanornis_martini,119.9,
 91,Jianchangornis_microdonta,130.5,
-91,Huadanosaurus_sinensis,162.5,154.9
+91,Huadanosaurus_sinensis,162.5,155
 91,Piscivoravis_lii,130.5,130.5
 91,Kunpengornis_anhuimusei,130.5,130.5
 92,Anchiornis,161.8,
@@ -1928,7 +1928,7 @@ tree,taxon_id,split_age,anchor_age
 92,Yanornis,119.9,
 92,Yanornis_martini,119.9,
 92,Jianchangornis_microdonta,130.5,
-92,Huadanosaurus_sinensis,162.5,154.9
+92,Huadanosaurus_sinensis,162.5,155
 92,Piscivoravis_lii,130.5,130.5
 92,Kunpengornis_anhuimusei,130.5,130.5
 93,Anchiornis,161.8,
@@ -1949,7 +1949,7 @@ tree,taxon_id,split_age,anchor_age
 93,Yanornis,119.9,
 93,Yanornis_martini,119.9,
 93,Jianchangornis_microdonta,130.5,
-93,Huadanosaurus_sinensis,162.5,154.9
+93,Huadanosaurus_sinensis,162.5,155
 93,Piscivoravis_lii,130.5,130.5
 93,Kunpengornis_anhuimusei,130.5,130.5
 94,Anchiornis,161.8,
@@ -1970,7 +1970,7 @@ tree,taxon_id,split_age,anchor_age
 94,Yanornis,119.9,
 94,Yanornis_martini,119.9,
 94,Jianchangornis_microdonta,130.5,
-94,Huadanosaurus_sinensis,162.5,154.9
+94,Huadanosaurus_sinensis,162.5,155
 94,Piscivoravis_lii,130.5,130.5
 94,Kunpengornis_anhuimusei,130.5,130.5
 95,Anchiornis,161.8,
@@ -1991,7 +1991,7 @@ tree,taxon_id,split_age,anchor_age
 95,Yanornis,119.9,
 95,Yanornis_martini,119.9,
 95,Jianchangornis_microdonta,130.5,
-95,Huadanosaurus_sinensis,162.5,154.9
+95,Huadanosaurus_sinensis,162.5,155
 95,Piscivoravis_lii,130.5,130.5
 95,Kunpengornis_anhuimusei,130.5,130.5
 96,Anchiornis,161.8,
@@ -2012,7 +2012,7 @@ tree,taxon_id,split_age,anchor_age
 96,Yanornis,119.9,
 96,Yanornis_martini,119.9,
 96,Jianchangornis_microdonta,130.5,
-96,Huadanosaurus_sinensis,162.5,154.9
+96,Huadanosaurus_sinensis,162.5,155
 96,Piscivoravis_lii,130.5,130.5
 96,Kunpengornis_anhuimusei,130.5,130.5
 97,Anchiornis,161.8,
@@ -2033,7 +2033,7 @@ tree,taxon_id,split_age,anchor_age
 97,Yanornis,119.9,
 97,Yanornis_martini,119.9,
 97,Jianchangornis_microdonta,130.5,
-97,Huadanosaurus_sinensis,162.5,154.9
+97,Huadanosaurus_sinensis,162.5,155
 97,Piscivoravis_lii,130.5,130.5
 97,Kunpengornis_anhuimusei,130.5,130.5
 98,Anchiornis,161.8,
@@ -2054,7 +2054,7 @@ tree,taxon_id,split_age,anchor_age
 98,Yanornis,119.9,
 98,Yanornis_martini,119.9,
 98,Jianchangornis_microdonta,130.5,
-98,Huadanosaurus_sinensis,162.5,154.9
+98,Huadanosaurus_sinensis,162.5,155
 98,Piscivoravis_lii,130.5,130.5
 98,Kunpengornis_anhuimusei,130.5,130.5
 99,Anchiornis,161.8,
@@ -2075,7 +2075,7 @@ tree,taxon_id,split_age,anchor_age
 99,Yanornis,119.9,
 99,Yanornis_martini,119.9,
 99,Jianchangornis_microdonta,130.5,
-99,Huadanosaurus_sinensis,162.5,154.9
+99,Huadanosaurus_sinensis,162.5,155
 99,Piscivoravis_lii,130.5,130.5
 99,Kunpengornis_anhuimusei,130.5,130.5
 100,Anchiornis,161.8,
@@ -2096,6 +2096,6 @@ tree,taxon_id,split_age,anchor_age
 100,Yanornis,119.9,
 100,Yanornis_martini,119.9,
 100,Jianchangornis_microdonta,130.5,
-100,Huadanosaurus_sinensis,162.5,154.9
+100,Huadanosaurus_sinensis,162.5,155
 100,Piscivoravis_lii,130.5,130.5
 100,Kunpengornis_anhuimusei,130.5,130.5

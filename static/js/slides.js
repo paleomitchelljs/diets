@@ -20,7 +20,6 @@
   const mx = (m) => (m + Math.log(1000)) / L10;           // model m -> log10 g
   const lg = Math.log10;
   const fossils = X.fossils;
-  const ziphodont = new Set(['Varanidae']);               // PLACEHOLDER: JM to supply tooth-form coding
 
   /* a fossil record as marks: interval cross + dot, or a bracket bar */
   function fossilMark(Pl, r, parent, opts = {}) {
@@ -142,23 +141,13 @@
       // tree
       const tbox = plotBox(fr, 60, 150, 600, 700);
       const svg = D.svg('svg', { width: 600, height: 700 }, tbox);
-      const tree = P.newick(X.skeleton.newick), tips = P.tips(tree), H = 640, top = 30;
-      const maxd = Math.max(...tips.map((t) => t.depth)), sx = (d) => 10 + d / maxd * 330;
-      tips.forEach((t, i) => { t.y = top + i * H / (tips.length - 1); });
-      const setY = (n) => { if (n.kids.length) { n.kids.forEach(setY); n.y = (n.kids[0].y + n.kids[n.kids.length - 1].y) / 2; } };
-      setY(tree);
-      const edges = D.svg('g', {}, svg);
-      const drawN = (n, pd) => {
-        D.svg('path', { d: `M${sx(pd)},${n.y}H${sx(n.depth)}`, stroke: 'var(--rule)', 'stroke-width': 4, fill: 'none' }, edges);
-        if (n.kids.length) { D.svg('path', { d: `M${sx(n.depth)},${n.kids[0].y}V${n.kids[n.kids.length - 1].y}`, stroke: 'var(--rule)', 'stroke-width': 4 }, edges); n.kids.forEach((k) => drawN(k, n.depth)); }
-      };
-      drawN(tree, 0);
+      const tips = drawTree(svg, X.skeleton.newick, 10, 330, 30, 640, { clado: true });   // cladogram: bird orders split within a few Myr
       const corr = Object.fromEntries(X.skeleton.corr.map((r) => [r.minor_clade, r]));
       const tipEls = tips.map((t) => {
         const c = counts[t.name] || {};
         const g = D.svg('g', { class: 'fade' }, svg);
-        D.svg('circle', { cx: sx(t.depth), cy: t.y, r: 11, fill: P.color(c.major) }, g);
-        const tx = D.svg('text', { x: sx(t.depth) + 18, y: t.y + 10, class: 'lbl small' }, g); tx.textContent = nm(t.name);
+        D.svg('circle', { cx: t.x, cy: t.y, r: 11, fill: P.color(c.major) }, g);
+        const tx = D.svg('text', { x: t.x + 18, y: t.y + 10, class: 'lbl small' }, g); tx.textContent = nm(t.name);
         return { t, g };
       });
       const ruleT = D.svg('text', { x: 10, y: 10, class: 'lbl' }, svg);
@@ -346,7 +335,7 @@
       };
       // extant
       const L = panel(30, 790), bottom = 600;
-      const tipsL = drawTree(L, X.skeleton.newick, 0, 150, 20, bottom - 40);
+      const tipsL = drawTree(L, X.skeleton.newick, 0, 150, 20, bottom - 40, { clado: true });
       const sxL = axis(L, 450, 780, bottom, 'Meal as % of predator');
       tipsL.forEach((t) => {
         const r = ext[t.name]; if (!r) return;
@@ -460,37 +449,6 @@
       });
       const hi = [['Feliformia', 'Caniformia'], ['Accipitriformes', 'Strigiformes']];
       return { show(b) { els.forEach((e) => { const on = hi[b].includes(e.c.minor); e.g.style.opacity = on ? 1 : 0.25; e.v.style.display = on ? '' : 'none'; }); } };
-    }
-  });
-
-  /* ---------- 8 known answers ---------- */
-  S.push({
-    title: 'Does it get <em>known answers</em> right?',
-    builds: [
-      'Positive controls: fossils whose living group we know. Repenomamus should look like a mammal, the two crocodyliforms like crocodylians, Sanajeh like a squamate. Outlined bar is the right answer. With one or two records each, if these come out flat, the method is honest about thin data; if they come out wrong, I say so.'
-    ],
-    make(fr) {
-      const units = [['Repenomamus_robustus', 'Repenomamus', 'Mammalia'], ['Crocodyliformes', 'Crocodyliforms', 'Crocodylia'], ['Sanajeh_indicus', 'Sanajeh', 'Squamata']];
-      const order = ['Aves', 'Mammalia', 'Squamata', 'Crocodylia', 'none'];
-      units.forEach(([u, title, right], ui) => {
-        const box = plotBox(fr, 60 + ui * 500, 170, 460, 680), svg = D.svg('svg', { width: 460, height: 680 }, box);
-        const t = D.svg('text', { x: 230, y: 30, 'text-anchor': 'middle', class: 'lbl' }, svg); t.textContent = title;
-        const rows = sup(u, 'major_vs_none'), base = 600, sh = 520, top = Math.max(0.4, ...rows.map((r) => r.rel));
-        const yeq = base - (1 / 5) / top * sh;
-        D.svg('line', { x1: 20, x2: 440, y1: yeq, y2: yeq, class: 'guide', 'stroke-width': 2.5 }, svg);
-        if (ui === 2) {
-          D.svg('line', { x1: 300, x2: 340, y1: base + 76, y2: base + 76, class: 'guide', 'stroke-width': 2.5 }, svg);
-          const ct = D.svg('text', { x: 350, y: base + 83, class: 'guide-lbl' }, svg); ct.textContent = 'cannot tell';
-        }
-        order.forEach((o, i) => {
-          const r = rows.find((x) => x.candidate === (o === 'none' ? 'none' : 'major:' + o)); if (!r) return;
-          const x = 30 + i * 82, h = r.rel / top * sh;
-          D.svg('rect', { x, y: base - h, width: 66, height: h, rx: 4, fill: o === 'none' ? 'var(--muted)' : P.color(o),
-            stroke: o === right ? 'var(--ink)' : 'none', 'stroke-width': 4 }, svg);
-          const tx = D.svg('text', { x: x + 33, y: base + 40, 'text-anchor': 'middle', class: 'lbl small' }, svg); tx.textContent = { Aves: 'Aves', Mammalia: 'Mamm.', Squamata: 'Squam.', Crocodylia: 'Croc.', none: 'None' }[o];
-          const v = D.svg('text', { x: x + 33, y: base - h - 10, 'text-anchor': 'middle', class: 'lbl small' }, svg); v.textContent = Math.round(r.rel * 100) + '%';
-        });
-      });
     }
   });
 
