@@ -47,10 +47,72 @@ set.seed(1)
 pts <- rows[, .SD[sample(.N, min(.N, 350))], by = minor_clade]
 pts <- pts[, .(x = round(log10(pred_g), 3), y = round(log10(prey_g), 3), k = minor_clade, o = obs, sp = pred_taxon_id)]
 
-## one hawk species: every record
-hk <- rows[pred_taxon_id == HAWK]
-hawk <- list(species = gsub("_", " ", HAWK), pred_g = hk$pred_g[1], n = nrow(hk), sources = uniqueN(hk$source_id),
-             y = round(sort(log10(hk$prey_g)), 3))
+## spindles: every record of a few living predators with very different diets
+SPIN <- fread(text = Sys.getenv("SPINDLES", "taxon,label
+Lanius_excubitor,Lanius
+Strix_aluco,Strix
+Salvator_merianae,Salvator
+Vulpes_vulpes,Vulpes
+Morelia_spilota,Morelia
+Alligator_mississippiensis,Alligator"))
+spindles <- lapply(seq_len(nrow(SPIN)), function(i) {
+  x <- rows[pred_taxon_id == SPIN$taxon[i]]
+  stopifnot(nrow(x) > 0)
+  # fit of the Compsognathus meal (Conrad 2017: 9.1 g prey, 1.57 kg predator) as a ratio:
+  # kernel density (bw 0.15 log10) of this species' log10(prey/predator) at Compsognathus's ratio
+  cr <- log10(9.095 / 1568)
+  list(species = gsub("_", " ", SPIN$taxon[i]), label = SPIN$label[i], major = x$major_clade[1], minor = x$minor_clade[1],
+       pred_g = median(x$pred_g), n = nrow(x), sources = uniqueN(x$source_id), y = round(sort(log10(x$prey_g)), 3),
+       comp_fit = signif(mean(dnorm(cr, log10(x$prey_g / x$pred_g), 0.15)), 4))
+})
+
+## every well-sampled species as a density spindle (log10 prey on a fixed grid), coloured by
+## minor clade; minor clades with fewer than 3 such species fold into "other <major>"
+MINREC <- as.integer(Sys.getenv("SPIN_MIN", "20"))
+grid <- seq(-3.5, 6.5, by = 0.1)
+sp_all <- rows[, .(n = .N, src = uniqueN(source_id), pred_g = median(pred_g), y = list(log10(prey_g))),
+               by = .(major_clade, minor_clade, pred_taxon_id)][n >= MINREC]
+small <- sp_all[, .N, by = minor_clade][N < 3, minor_clade]
+sp_all[, group := fifelse(minor_clade %in% small, paste("other", major_clade), minor_clade)]
+sp_all[group == "other Crocodylia", group := "Crocodylia"]
+dens <- lapply(seq_len(nrow(sp_all)), function(i) {
+  y <- sp_all$y[[i]]; d <- sapply(grid, function(g) sum(dnorm(g, y, 0.15)))
+  d <- d / max(d); keep <- which(d > 0.03)
+  list(sp = sp_all$pred_taxon_id[i], major = sp_all$major_clade[i], group = sp_all$group[i], n = sp_all$n[i],
+       x = round(log10(sp_all$pred_g[i]), 3), y0 = grid[min(keep)], d = round(d[min(keep):max(keep)], 2))
+})
+spin_groups <- sp_all[, .(species = .N), by = .(major = major_clade, group)][order(major, -species)]
+
+## fits along the trees: each extant minor clade's predicted meal size (as % of predator mass)
+## at its median predator mass, new species from a new source, stomach contents (posterior
+## medians of the clade line, spread and variance components). A minor clade "differs" when it
+## has >= 20 species and the 90% interval of its slope excludes its major clade's line slope
+## (major:<clade> in tree_prediction/params.csv).
+tf <- local({
+  sm <- fread(file.path(FIT, "summary.csv")); gl <- sm[, setNames(as.list(median), label)]
+  get <- function(v) sm[startsWith(label, paste0(v, ":")), .(minor = sub("^[^:]+:", "", label), median, q5, q95)]
+  ci <- get("clade_intercept"); cs <- get("clade_slope"); cg <- get("clade_sigma")
+  maj <- fread(file.path(TREE, "params.csv"))[cand_type == "major" & par == "slope", .(major = sub("major:", "", candidate), major_slope = median)]
+  m <- rows[, .(m = median(m), species = uniqueN(pred_taxon_id), major = major_clade[1]), by = .(minor = minor_clade)]
+  x <- Reduce(function(a, b) merge(a, b, by = "minor"), list(m, ci[, .(minor, int = median)], cs[, .(minor, slope = median, slope_lo = q5, slope_hi = q95)], cg[, .(minor, sigma = median)]))
+  x <- merge(x, maj, by = "major", all.x = TRUE)
+  x[, `:=`(mu = int + slope * m, sd = sqrt((sigma * exp(gl$gamma1 * m))^2 + gl$tau_u^2 + gl$tau_w^2))]
+  x[, lnpred := m + log(1000)]
+  x[, `:=`(r50 = (mu - lnpred) / log(10) + 2, r10 = (mu - 1.2816 * sd - lnpred) / log(10) + 2, r90 = (mu + 1.2816 * sd - lnpred) / log(10) + 2,
+           pred_g = exp(lnpred))]
+  x[, differs := fifelse(species >= 20 & !is.na(major_slope) & (major_slope < slope_lo | major_slope > slope_hi),
+                         fifelse(slope > major_slope, "steeper", "shallower"), "")]
+  x[, .(minor, major, species, pred_g = signif(pred_g, 3), slope = round(slope, 2), major_slope = round(major_slope, 2), differs,
+        r10 = round(r10, 3), r50 = round(r50, 3), r90 = round(r90, 3))]
+})
+## theropod tree: median dated MRCA ages among the theropod taxa with records -> UPGMA on 2 x age
+thero_tree <- local({
+  mr <- readRDS("db/tree/theropod/mrca_ages.rds"); med <- apply(simplify2array(mr), c(1, 2), median)
+  tx <- intersect(rownames(med), fread(file.path(FOSSIL, "records.csv"))[!startsWith(record_class, "excluded") & group == "Theropoda", unique(pred_taxon_id)])
+  A <- med[tx, tx]; diag(A) <- 0
+  tr <- ape::as.phylo(hclust(as.dist(2 * A), method = "average"))
+  list(newick = ape::write.tree(tr), split = fread("db/tree/theropod/summary.csv")[taxon_id %in% tx, .(taxon_id, split_med)])
+})
 
 ## fossils
 fr <- fread(file.path(FOSSIL, "records.csv"))
@@ -62,13 +124,14 @@ fos <- fr[, .(pair_id, group, taxon = gsub("_", " ", pred_taxon_id), prey = gsub
 
 ## tree prediction lines and fossil support
 tl <- if (file.exists(file.path(TREE, "lines.csv"))) fread(file.path(TREE, "lines.csv")) else NULL
-tree <- if (!is.null(tl)) list(source = TREE, lines = tl[candidate %in% c("tree:Theropoda@165", "none", "major:Aves", "Crocodylia",
+thero_tip <- if (!is.null(tl)) tl[cand_type == "tree" & startsWith(candidate, "tree:Theropoda@"), candidate[1]] else NA
+tree <- if (!is.null(tl)) list(source = TREE, theropod_tip = thero_tip, lines = tl[candidate %in% c(thero_tip, "none", "major:Aves", "Crocodylia",
                                                                        "Accipitriformes", "Strigiformes")]) else NULL
 sp <- if (file.exists(file.path(FOSSIL, "support.csv"))) fread(file.path(FOSSIL, "support.csv")) else NULL
 support <- if (!is.null(sp)) list(source = FOSSIL,
-  rows = sp[unit %in% c("Theropoda", "Avialae", "Crocodyliformes", "Repenomamus_robustus", "Sanajeh_indicus",
-                        "Aplestosuchus_sordidus", "Confractosuchus_sauroktonos") &
-              comparison %in% c("all_minor", "major_vs_none", "tree_vs_major_vs_none"),
+  rows = sp[(unit %in% c("Theropoda", "Avialae", "Crocodyliformes", "Repenomamus_robustus", "Sanajeh_indicus",
+                        "Aplestosuchus_sordidus", "Confractosuchus_sauroktonos") | startsWith(unit, "Theropoda:")) &
+              comparison %in% c("all_minor", "major_vs_none", "tree_vs_major_vs_none", "dated_tree_vs_major_vs_none"),
             .(unit, comparison, candidate, lpd = round(lpd, 3), mcse = round(mcse, 3), rel = round(rel_support, 4))]) else NULL
 
 ## skeleton tree (terrestrial) and its shared-history matrix
@@ -77,7 +140,7 @@ skel <- list(newick = readLines(file.path(SKW, "skeleton_tree.tre"))[1],
              corr = fread(file.path(SKW, "skeleton_corr.csv")))
 
 D <- list(built = format(Sys.time(), "%Y-%m-%d %H:%M"), draft = TRUE,
-          counts = cnt, fits = fits, skeleton = skel, points = pts, hawk = hawk, fossils = fos, tree = tree, support = support)
+          counts = cnt, fits = fits, skeleton = skel, points = pts, spindles = spindles, treefits = list(extant = tf, theropod_tree = thero_tree), allspin = list(step = 0.1, min_records = MINREC, groups = spin_groups, species = dens), fossils = fos, tree = tree, support = support)
 js <- toJSON(D, dataframe = "rows", auto_unbox = TRUE, digits = 5, na = "null")
 writeLines(js, "static/data/data.json")
 writeLines(paste0("window.DATA = ", js, ";"), "static/data/data.js")

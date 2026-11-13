@@ -189,6 +189,8 @@
 
   Deck.start = function (slides) {
     S = slides;
+    if (/[?&]capture\b/.test(location.search)) document.body.classList.add('capture');   // export: no controls
+    Deck.go = (s, b, how) => go(s, b, how || 'jump');
     if (/[?&]presenter\b/.test(location.search)) return presenter();
     const deck = Deck.el('div', '', document.body); deck.id = 'deck';
     frames = S.map((sl) => makeFrame(sl, deck));

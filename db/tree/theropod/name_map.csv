@@ -1,0 +1,22 @@
+taxon_id,tip,rule,basis
+Anchiornis,Anchiornis_huxleyi,"",genus in db (cf. A. huxleyi per Zheng et al. 2018); tip A. huxleyi
+Compsognathus_longipes,Compsognathus_longipes,"",exact
+Daspletosaurus,Daspletosaurus_torosus,"",genus in db (OTM 200 Daspletosaurus sp.); tip D. torosus
+Gorgosaurus_libratus,Gorgosaurus_libratus,"",exact
+Huaxiagnathus_orientalis,Huaxiagnathus_orientalis,"",exact
+Microraptor_gui,Microraptor_gui,"",exact
+Microraptor_zhaoianus,Microraptor_zhaoianus,"",exact
+Scipionyx_samniticus,Scipionyx_samniticus,"",exact
+Sinocalliopteryx_gigas,Sinocalliopteryx_gigas,"",exact
+Sinosauropteryx_prima,Sinosauropteryx_prima,"",exact
+Velociraptor_mongoliensis,Velociraptor_mongoliensis,"",exact
+Coelophysis_bauri,Coelophysis_bauri,"",exact
+Baryonyx_walkeri,Baryonyx_walkeri,"",exact
+Tyrannosaurus_rex,Tyrannosaurus_rex,"",exact
+Confuciusornis_sanctus,Confuciusornis_sanctus,"",exact
+Yanornis,Yanornis_martini,"",genus in db (Yanornis sp. STM9); tip Y. martini
+Yanornis_martini,Yanornis_martini,"",exact
+Jianchangornis_microdonta,Jianchangornis_microdonta,"",exact
+Huadanosaurus_sinensis,"",MRCA of Compsognathus_longipes;Sinosauropteryx_prima;Huaxiagnathus_orientalis,Not in the Lloyd et al. 2016 metatrees (described 2025). db/taxa.csv family Compsognathidae; attached at the MRCA of the three compsognathids in the metatrees. JM to confirm against Qiu et al. 2025.
+Piscivoravis_lii,"",MRCA of Yanornis_martini;Jianchangornis_microdonta;Ichthyornis_dispar,Not in the metatrees. Ornithuromorph (Zhou et al. 2014); attached at the MRCA of the three ornithuromorphs in the metatrees. JM to confirm.
+Kunpengornis_anhuimusei,"",MRCA of Yanornis_martini;Jianchangornis_microdonta;Ichthyornis_dispar,"Not in the metatrees (described 2026). Euornithine ornithuromorph (Huang et al. 2026, per db/taxa.csv); same rule as Piscivoravis. JM to confirm."

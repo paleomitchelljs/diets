@@ -1,6 +1,6 @@
 group,attach_to,attach_age_ma,sens_ages_ma,basis
-Theropoda,Aves,165,150;230,"Approximate split of the avialan line from the other coelurosaurs in the sample (tyrannosauroids, compsognathids, dromaeosaurids, troodontids); 150 = Paraves, 230 = Theropoda origin. General-knowledge ages, not from a dated tree: JM to confirm."
-Avialae,Aves,140,125;155,"Approximate split of the sampled Early Cretaceous avialans (Confuciusornis, ornithuromorphs) from the crown-bird line. JM to confirm."
-Crocodyliformes,Crocodylia,190,150;230,"Approximate split of notosuchians and non-crown eusuchian-grade forms from the crown-crocodylian line. JM to confirm."
-Repenomamus,Mammalia,175,165;200,"Approximate split of eutriconodonts from the therian line (skeleton mammal crown is 157.7 Ma). JM to confirm."
-Sanajeh,Serpentes,100,92;140,"Madtsoiids as stem or near-crown snakes; skeleton Serpentes crown is 90.5 Ma. JM to confirm."
+Theropoda,Aves,162.5,167.6;201.1,"Median split from the crown-bird line across the 11 theropod taxa with records, dated Lloyd et al. 2016 metatrees (a02; tyrannosaurs 167.6, compsognathids 162.5, paravians 161.8 Ma). 201.1 = coelurosaur splits with Eshanosaurus kept. Was 165 (general knowledge)."
+Avialae,Aves,130.5,119.9;155.5,"Median split across the stem-bird taxa with records, dated Lloyd et al. 2016 metatrees (a02; Confuciusornis 155.5, ornithuromorphs 130.5, Yanornis 119.9 Ma). Was 140 (general knowledge)."
+Crocodyliformes,Crocodylia,190,150;230,Approximate split of notosuchians and non-crown eusuchian-grade forms from the crown-crocodylian line. JM to confirm.
+Repenomamus,Mammalia,175,165;200,Approximate split of eutriconodonts from the therian line (skeleton mammal crown is 157.7 Ma). JM to confirm.
+Sanajeh,Serpentes,100,92;140,Madtsoiids as stem or near-crown snakes; skeleton Serpentes crown is 90.5 Ma. JM to confirm.

@@ -44,7 +44,9 @@ score_ids <- function(u, seed) {
 rank_summary <- function(lpd, truth_minor, truth_major) {
   mi <- which(ctype == "minor"); mj <- which(ctype %in% c("major", "none"))
   pm <- softmax(lpd[mi]); pj <- softmax(lpd[mj])
+  mt <- which(ctype %in% c("major", "none", "tree", "tree_multi"))
   list(top_minor = cid[mi][which.max(lpd[mi])], top_major = cid[mj][which.max(lpd[mj])],
+       top_with_tree = cid[mt][which.max(lpd[mt])],
        p_true_minor = if (is.na(truth_minor)) NA_real_ else pm[cid[mi] == truth_minor],
        p_true_major = if (is.na(truth_major)) NA_real_ else pj[cid[mj] == truth_major],
        p_none = pj[cid[mj] == "none"])
@@ -54,15 +56,24 @@ rank_summary <- function(lpd, truth_minor, truth_major) {
 if (grepl("a", PART)) {
   recs <- fossil_table()[!startsWith(record_class, "excluded") & group == UNIT]
   u0 <- pack_unit(recs, F$info$obs_levels)
+  if (UNIT %in% c("Theropoda", "Avialae")) {          # dated composite tree as candidate and truth
+    cn <- dated_candidate(F, u0$taxa); cn$group <- UNIT
+    cands[[length(cands) + 1]] <- cn
+    tipcs[[length(tipcs) + 1]] <- lapply(seq_len(nrow(F$dr)), function(d) tip_conditional_multi(F, d, cn))
+    cid <- sapply(cands, `[[`, "id"); ctype <- sapply(cands, `[[`, "type"); cmaj <- sapply(cands, function(x) x$major)
+  }
   simulate_unit <- function(truth, seed) {
     set.seed(seed)
     d <- sample(nrow(F$dr), 1); u <- u0; dr <- F$dr
-    if (truth$type == "minor") { ef <- c(F$A[d, truth$k], F$B[d, truth$k], F$G[d, truth$k]) }
-    else { tc <- tip_conditional(F, d, truth$cvec); ef <- tc[1, ] + tc[2, ] * rnorm(3) }
+    if (truth$type == "minor") { ef <- matrix(c(F$A[d, truth$k], F$B[d, truth$k], F$G[d, truth$k]), u$T, 3, byrow = TRUE) }
+    else if (truth$type == "tree_multi") { tc <- tip_conditional_multi(F, d, truth)
+      ef <- sapply(1:3, function(e) tc$mean[, e] + tc$L[[e]] %*% rnorm(u$T)); ef <- matrix(ef, u$T, 3) }
+    else { tc <- tip_conditional(F, d, truth$cvec); ef <- matrix(tc[1, ] + tc[2, ] * rnorm(3), u$T, 3, byrow = TRUE) }
+    ef <- ef[u$tax, , drop = FALSE]
     m_true <- draw_masses(u, matrix(rnorm(u$P), 1))[1, u$spec]
     uu <- dr[d, "tau_u"] * rnorm(u$T)[u$tax]; ww <- dr[d, "tau_w"] * rnorm(u$S)[u$src]
-    mu <- dr[d, "alpha0"] + ef[1] + uu + ww + (dr[d, "beta0"] + ef[2]) * m_true + F$D[d, u$o]
-    s  <- exp(dr[d, "gamma0"] + ef[3] + dr[d, "gamma1"] * m_true + F$Z[d, u$o])
+    mu <- dr[d, "alpha0"] + ef[, 1] + uu + ww + (dr[d, "beta0"] + ef[, 2]) * m_true + F$D[d, u$o]
+    s  <- exp(dr[d, "gamma0"] + ef[, 3] + dr[d, "gamma1"] * m_true + F$Z[d, u$o])
     y  <- rnorm(u$n, mu, s)
     width <- u$y_hi - u$y_lo
     for (i in seq_len(u$n)) switch(u$cls[i],
@@ -91,7 +102,8 @@ if (grepl("a", PART)) {
              top_minor_correct = if (truth_type[1] == "minor") mean(top_minor == truth) else NA_real_,
              top_major_correct = mean(top_major == fifelse(truth_type == "minor", paste0("major:", sapply(truth, function(x) cands[[match(x, cid)]]$major)), truth)),
              mean_p_true_minor = mean(p_true_minor), mean_p_true_major = mean(p_true_major),
-             none_wins = mean(top_major == "none"), mean_p_none = mean(p_none)),
+             none_wins = mean(top_major == "none"), mean_p_none = mean(p_none),
+             top_with_tree_correct = mean(top_with_tree == truth)),
          by = .(truth, truth_type)]
   fwrite(S, file.path(out, sprintf("design_%s_summary.csv", UNIT)))
   options(width = 160); cat("\n(a) design simulation at the", UNIT, "design:\n"); print(S, digits = 3)
@@ -102,6 +114,9 @@ if (grepl("a", PART)) {
 
 ## ---- (b) thinned extant samples -----------------------------------------------------
 if (grepl("b", PART)) {
+  keepb <- which(ctype != "tree_multi")                # the dated candidate is built for the fossil taxa only
+  cands <- cands[keepb]; tipcs <- tipcs[keepb]
+  cid <- cid[keepb]; ctype <- ctype[keepb]; cmaj <- cmaj[keepb]
   rows <- fread(file.path(WORK, "analysis_rows.csv"))
   fos <- fossil_table()[!startsWith(record_class, "excluded") & group == "Theropoda"]
   pred_sd <- median(fos$pred_sd, na.rm = TRUE); y_se <- median(fos[record_class == "point_interval", y_se])

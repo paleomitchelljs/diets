@@ -50,18 +50,35 @@ units <- c(lapply(unique(use$group), function(g) list(id = g, type = "group", gr
            lapply(unique(use$pred_taxon_id), function(t) list(id = t, type = "taxon",
              group = use[pred_taxon_id == t, group][1], recs = use[pred_taxon_id == t])))
 units <- Filter(function(x) uniqueN(x$recs$pred_taxon_id) > 1 || x$type == "taxon", units)
+# theropod clades (family in db/taxa.csv; Anchiornis is a troodontid, grouped with the dromaeosaurids as Paraves)
+fam <- fread("db/taxa.csv")[, .(pred_taxon_id = taxon_id, family)]
+tr <- merge(use[group == "Theropoda"], fam, by = "pred_taxon_id", all.x = TRUE)
+tr[, clade := fcase(family == "Tyrannosauridae", "Tyrannosauridae", family == "Compsognathidae", "Compsognathidae",
+                    family %in% c("Dromaeosauridae", "Troodontidae"), "Paraves", default = NA_character_)]
+stopifnot(!anyNA(tr$clade))
+for (k in unique(tr$clade)) units[[length(units) + 1]] <-
+  list(id = paste0("Theropoda:", k), type = "subgroup", group = "Theropoda", recs = use[pair_id %in% tr[clade == k, pair_id]])
 
 lpd_rows <- list(); sup_rows <- list(); pct_rows <- list()
 for (ui in seq_along(units)) {
   un <- units[[ui]]
   keep <- which(ctype %in% c("minor", "major", "none") | cgrp %in% un$group)
   u <- pack_unit(un$recs, F$info$obs_levels)
+  cands_u <- cands[keep]; tipcs_u <- tipcs[keep]
+  if (un$group %in% c("Theropoda", "Avialae")) {          # dated composite tree, one tip per taxon
+    for (dv in list(c("db/tree/theropod", "tree:dated"), c("db/tree/theropod/sens_withEshano", "tree:dated+Eshanosaurus"))) {
+      cn <- dated_candidate(F, u$taxa, dv[1], dv[2]); cn$group <- un$group
+      cands_u[[length(cands_u) + 1]] <- cn
+      tipcs_u[[length(tipcs_u) + 1]] <- lapply(seq_len(nrow(F$dr)), function(d) tip_conditional_multi(F, d, cn))
+    }
+  }
+  cid_u <- sapply(cands_u, `[[`, "id"); ctype_u <- sapply(cands_u, `[[`, "type"); cmaj_u <- sapply(cands_u, function(x) x$major)
   t0 <- Sys.time()
-  sc <- score_unit(F, u, cands[keep], tipcs[keep], M = NINNER, seed = ui, want_pct = TRUE)
+  sc <- score_unit(F, u, cands_u, tipcs_u, M = NINNER, seed = ui, want_pct = TRUE)
   ls <- lpd_summary(sc$L)
-  n_ext <- sapply(cands[keep], function(cn) sum(!sapply(u$obs, function(o) has_obs(cn, o))))
+  n_ext <- sapply(cands_u, function(cn) sum(!sapply(u$obs, function(o) has_obs(cn, o))))
   lt <- data.table(unit = un$id, unit_type = un$type, group = un$group, n_records = u$n,
-                   n_taxa = u$T, candidate = cid[keep], cand_type = ctype[keep], cand_major = cmaj[keep],
+                   n_taxa = u$T, candidate = cid_u, cand_type = ctype_u, cand_major = cmaj_u,
                    lpd = ls[, "lpd"], mcse = ls[, "mcse"], n_extrapolated = n_ext)
   lpd_rows[[ui]] <- lt
   # comparisons (equal prior weight within each)
@@ -73,13 +90,14 @@ for (ui in seq_along(units)) {
     cmp("major_vs_none", majors),
     cmp("all_minor", lt[cand_type == "minor", candidate]),
     cmp(paste0("minor_within_", best_major), lt[cand_type == "minor" & cand_major == best_major, candidate]),
-    cmp("tree_vs_major_vs_none", c(lt[cand_type == "tree", candidate], majors)))
+    cmp("tree_vs_major_vs_none", c(lt[cand_type == "tree", candidate], majors)),
+    cmp("dated_tree_vs_major_vs_none", c(lt[cand_type == "tree_multi", candidate], majors)))
   # per-record percentiles against minor and major candidates
-  sel <- which(ctype[keep] %in% c("minor", "major", "tree"))
+  sel <- which(ctype_u %in% c("minor", "major", "tree", "tree_multi"))
   pct_rows[[ui]] <- rbindlist(lapply(sel, function(ci) data.table(
-    unit = un$id, unit_type = un$type, pair_id = u$pair_id, candidate = cid[keep][ci],
+    unit = un$id, unit_type = un$type, pair_id = u$pair_id, candidate = cid_u[ci],
     pct_point = sc$pct[, 1, ci], pct_lo = sc$pct[, 2, ci], pct_hi = sc$pct[, 3, ci],
-    extrapolated_obs = !sapply(u$obs, function(o) has_obs(cands[keep][[ci]], o)))))
+    extrapolated_obs = !sapply(u$obs, function(o) has_obs(cands_u[[ci]], o)))))
   cat(sprintf("  %-28s %2d rec  %5.1f s\n", un$id, u$n, as.numeric(Sys.time() - t0, units = "secs")))
 }
 lpd <- rbindlist(lpd_rows); sup <- rbindlist(sup_rows); pct <- rbindlist(pct_rows)
@@ -87,10 +105,10 @@ pct <- pct[unit_type == "taxon"]                      # one row per record and c
 fwrite(lpd, file.path(out, "lpd.csv")); fwrite(sup, file.path(out, "support.csv")); fwrite(pct, file.path(out, "percentiles.csv"))
 
 options(width = 180)
-for (g in unique(sup[unit_type == "group", unit])) {
+for (g in unique(sup[unit_type %in% c("group", "subgroup"), unit])) {
   cat("\n====", g, "====\n")
   x <- sup[unit == g][order(comparison, -rel_support)]
-  print(x[rel_support > 0.01 | comparison %in% c("major_vs_none", "tree_vs_major_vs_none"),
+  print(x[rel_support > 0.01 | comparison %in% c("major_vs_none", "tree_vs_major_vs_none", "dated_tree_vs_major_vs_none"),
           .(comparison, candidate, lpd = round(lpd, 2), mcse = round(mcse, 3), rel = round(rel_support, 3), n_extrapolated)])
 }
 cat("\n==== taxa: top minor clade and top major-or-none ====\n")

@@ -1,4 +1,5 @@
 /* The talk: one entry per slide. builds[] are the speaker notes, one per press.
+ * anim: { build: ms } marks builds whose arrival animates; tools/export records them as GIFs.
  * All numbers come from data/data.js (code/site_export.R). DRAFT: see `draft` on each slide. */
 (function (root) {
   'use strict';
@@ -56,33 +57,46 @@
   });
 
   /* ---------- 1 one specimen is not a species ---------- */
+  // spindles arrive one per click, worst fit to the Compsognathus meal first, best last
+  const spinOrder = X.spindles.slice().sort((a, b) => a.comp_fit - b.comp_fit);
   S.push({
     title: 'One gut is <em>one meal</em>',
-    builds: [
-      'Compsognathus with Bavarisaurus in its gut. One predator, one prey, one point. Predator mass is an interval; the lizard is nearly a point.',
-      `Now a living predator of about the same size: the red-tailed hawk, ${X.hawk.n} prey records from ${X.hawk.sources} studies. The spindle is where its meals fall. One fossil gut is one draw from a spindle like this, and we do not know where in it the draw came from.`
-    ],
+    anim: Object.fromEntries(spinOrder.map((_, i) => [i + 1, 900])),
+    builds: ['Compsognathus with Bavarisaurus in its gut. One predator, one prey, one point: a meal about half a percent of its own mass.']
+      .concat(spinOrder.map((sp, i) => `${sp.species}: every recorded meal, ${sp.n} records from ${sp.sources} studies. ` +
+        (i === 0 ? 'Of these living predators, this is the worst match to the Compsognathus meal as a share of body mass.'
+         : i === spinOrder.length - 1 ? 'The best match of the six. Even so, the fossil is one draw from a spindle like this, and we do not know where in it the draw fell.'
+         : `Match to the Compsognathus meal, ${i + 1} of ${spinOrder.length} from worst.`))),
     make(fr) {
-      const Pl = P.loglog(plotBox(fr), { x: [1, 5], y: [-2, 4], w: 1480, h: 710 });
-      P.ratioGuides(Pl, [1, 0.1, 0.01]);
-      const hx = lg(X.hawk.pred_g);
-      const hawk = D.svg('g', { class: 'fade hidden' }, Pl.g);
-      const kd = P.kde(X.hawk.y, 0.12, -2, 4);
-      const mxd = Math.max(...kd.map((d) => d[1])), half = 0.32;
-      const right = kd.map(([y, d]) => [hx + half * d / mxd, y]), left = kd.map(([y, d]) => [hx - half * d / mxd, y]);
-      D.svg('path', { d: P.path(Pl, right) + P.path(Pl, left.reverse()).replace(/^M/, 'L') + 'Z', fill: 'var(--aves)', opacity: 0.35, stroke: 'var(--aves)', 'stroke-width': 2 }, hawk);
-      X.hawk.y.forEach((y, i) => D.svg('circle', { cx: Pl.sx(hx + (((i * 7919) % 100) / 100 - 0.5) * 0.12), cy: Pl.sy(y), r: 3, fill: 'var(--aves)', opacity: 0.5 }, hawk));
-      const hl = label(Pl, Pl.sx(hx), Pl.sy(3.55), 'Red-tailed hawk', 'lbl', 'middle', hawk);
+      const Pl = P.loglog(plotBox(fr), { x: [1, 5], y: [-2, 6], w: 1480, h: 710 });
+      const spin = (sp, half) => {
+        const g = D.svg('g', { class: 'fade hidden' }, Pl.g), lab = D.svg('g', { class: 'fade hidden' }, Pl.over);
+        const hx = lg(sp.pred_g), col = P.color(sp.major);
+        const kd = P.kde(sp.y, 0.14, -2, 6, 160), mxd = Math.max(...kd.map((d) => d[1]));
+        const keep = kd.filter((d) => d[1] > mxd * 0.02);
+        const R = keep.map(([y, d]) => [hx + half * d / mxd, y]), Lf = keep.map(([y, d]) => [hx - half * d / mxd, y]);
+        D.svg('path', { d: P.path(Pl, R) + P.path(Pl, Lf.reverse()).replace(/^M/, 'L') + 'Z', fill: col, opacity: 0.45, stroke: col, 'stroke-width': 2.5 }, g);
+        const top = keep[keep.length - 1][0];
+        const t = D.svg('text', { x: Pl.sx(hx), y: Pl.sy(top) - 16, 'text-anchor': 'middle', class: 'lbl', 'font-style': 'italic' }, lab); t.textContent = sp.label;
+        const hit = D.svg('rect', { x: Pl.sx(hx - half), y: Pl.sy(top), width: Pl.sx(hx + half) - Pl.sx(hx - half), height: Pl.sy(keep[0][0]) - Pl.sy(top), fill: 'transparent' }, g);
+        hit.addEventListener('pointermove', (e) => D.tip(e, `<b><i>${sp.species}</i></b><br>${sp.n} prey records, ${sp.sources} studies<br>predator ${P.fmt(sp.pred_g)}`));
+        hit.addEventListener('pointerleave', D.untip);
+        return [g, lab];
+      };
+      const layers = spinOrder.map((x) => spin(x, 0.17));
       const comp = fossils.find((r) => r.pair_id === 'Conrad2017_01');
-      const cm = fossilMark(Pl, comp, Pl.g, { r: 12 });
-      const cl = label(Pl, Pl.sx(lg(comp.pred)) + 22, Pl.sy(lg(comp.prey_g)) + 44, 'Compsognathus');
-      return { show(b) { hawk.classList.toggle('hidden', b < 1); hl.parentNode === hawk; } };
+      fossilMark(Pl, comp, Pl.over, { r: 13 });
+      label(Pl, Pl.sx(lg(comp.pred)) + 24, Pl.sy(lg(comp.prey_g)) + 46, 'Compsognathus', 'lbl', 'start');
+      return { show(b) {
+        layers.forEach((els, i) => els.forEach((e) => e.classList.toggle('hidden', b < i + 1)));
+      } };
     }
   });
 
   /* ---------- 2 borrowing strength ---------- */
   S.push({
     title: 'Borrowing from relatives is <em>pooling</em>',
+    anim: { 1: 2600 },
     builds: [
       'Three clades on their own. Crocodylians: six species. Iguanians: 47 records. Strigiforms: 29,448 records. Each line is what the clade says about itself alone. The dashed line is all tetrapods together.',
       'Now let each clade borrow from the rest. Thin clades slide toward the shared line, because their own data cannot hold them far from it. Strigiforms barely move: 29,000 records do not need help. Nobody estimates Scipionyx from one hatchling alone; this is that reasoning written down.'
@@ -95,7 +109,7 @@
       const show = ['Crocodylia', 'Iguania', 'Strigiformes'];
       const items = show.map((k) => {
         const c = counts[k], xa = mx(c.m_lo), xb = mx(c.m_hi);
-        X.points.filter((p) => p.k === k).forEach((p) => D.svg('circle', { cx: Pl.sx(p.x), cy: Pl.sy(p.y), r: 3.5, fill: P.color(c.major), opacity: 0.22 }, Pl.g));
+        X.points.filter((p) => p.k === k).forEach((p) => D.svg('circle', { cx: Pl.sx(p.x), cy: Pl.sy(p.y), r: 5, fill: P.color(c.major), opacity: 0.3 }, Pl.g));
         const path = D.svg('path', { fill: 'none', stroke: P.color(c.major), 'stroke-width': 5, 'stroke-linecap': 'round' }, Pl.g);
         const n = k === 'Crocodylia' ? `${c.species} species` : `${c.rows.toLocaleString()} records`;
         const t = label(Pl, 0, 0, `${nm(k)} · ${n}`);
@@ -118,6 +132,7 @@
   /* ---------- 3 three rules ---------- */
   S.push({
     title: 'The names are <em>rules for whom to borrow from</em>',
+    anim: { 1: 1800, 2: 1800 },
         builds: [
       'Iguanians on the right: 22 species, 47 records. On the left, the clades we can borrow from. Rule one: borrow from nobody. The line is the iguanians alone. (No pooling.)',
       'Rule two: borrow from everybody equally. Every clade counts the same, birds and snakes and cats alike. In comparative-methods language this is white noise around a shared mean, or an Ornstein-Uhlenbeck model with one optimum and strong pull.',
@@ -134,16 +149,16 @@
       setY(tree);
       const edges = D.svg('g', {}, svg);
       const drawN = (n, pd) => {
-        D.svg('path', { d: `M${sx(pd)},${n.y}H${sx(n.depth)}`, stroke: 'var(--rule)', 'stroke-width': 3, fill: 'none' }, edges);
-        if (n.kids.length) { D.svg('path', { d: `M${sx(n.depth)},${n.kids[0].y}V${n.kids[n.kids.length - 1].y}`, stroke: 'var(--rule)', 'stroke-width': 3 }, edges); n.kids.forEach((k) => drawN(k, n.depth)); }
+        D.svg('path', { d: `M${sx(pd)},${n.y}H${sx(n.depth)}`, stroke: 'var(--rule)', 'stroke-width': 4, fill: 'none' }, edges);
+        if (n.kids.length) { D.svg('path', { d: `M${sx(n.depth)},${n.kids[0].y}V${n.kids[n.kids.length - 1].y}`, stroke: 'var(--rule)', 'stroke-width': 4 }, edges); n.kids.forEach((k) => drawN(k, n.depth)); }
       };
       drawN(tree, 0);
       const corr = Object.fromEntries(X.skeleton.corr.map((r) => [r.minor_clade, r]));
       const tipEls = tips.map((t) => {
         const c = counts[t.name] || {};
         const g = D.svg('g', { class: 'fade' }, svg);
-        D.svg('circle', { cx: sx(t.depth), cy: t.y, r: 9, fill: P.color(c.major) }, g);
-        const tx = D.svg('text', { x: sx(t.depth) + 16, y: t.y + 8, class: 'lbl small' }, g); tx.textContent = nm(t.name);
+        D.svg('circle', { cx: sx(t.depth), cy: t.y, r: 11, fill: P.color(c.major) }, g);
+        const tx = D.svg('text', { x: sx(t.depth) + 18, y: t.y + 10, class: 'lbl small' }, g); tx.textContent = nm(t.name);
         return { t, g };
       });
       const ruleT = D.svg('text', { x: 10, y: 10, class: 'lbl' }, svg);
@@ -152,9 +167,9 @@
       const Pl = P.loglog(plotBox(fr, 700, 150, 840, 710), { x: [0.5, 3.5], y: [-2, 3], w: 840, h: 710 });
       const c = counts[THIN], xa = mx(c.m_lo), xb = mx(c.m_hi);
       D.svg('path', { d: P.path(Pl, P.linePts(global, 0.5, 3.5)), class: 'guide', 'stroke-width': 3 }, Pl.g);
-      X.points.filter((p) => p.k === THIN).forEach((p) => D.svg('circle', { cx: Pl.sx(p.x), cy: Pl.sy(p.y), r: 6, fill: 'var(--squamata)', opacity: 0.45 }, Pl.g));
+      X.points.filter((p) => p.k === THIN).forEach((p) => D.svg('circle', { cx: Pl.sx(p.x), cy: Pl.sy(p.y), r: 8, fill: 'var(--squamata)', opacity: 0.5 }, Pl.g));
       const line = D.svg('path', { fill: 'none', stroke: 'var(--squamata)', 'stroke-width': 6, 'stroke-linecap': 'round' }, Pl.g);
-      const tag = label(Pl, Pl.left + 20, Pl.top + 40, '', 'lbl');
+      const tag = label(Pl, Pl.left + Pl.pw - 20, Pl.top + Pl.ph - 28, '', 'lbl', 'end');
       const rules = [
         { name: 'Nobody', model: 'no pooling', fit: F.unpooled, w: (k) => k === THIN ? 1 : 0.12 },
         { name: 'Everybody, equally', model: 'λ = 0 · white noise / strong OU', fit: F.lambda0, w: () => 1 },
@@ -180,15 +195,16 @@
   const treeLines = (cand) => X.tree.lines.filter((l) => l.candidate === cand);
   S.push({
     title: 'The tree <em>predicts</em> first',
+    anim: { 1: 900, 2: 900 },
     builds: [
       'Before any fossil: theropods sit on the bird stem, between crocodylians and birds. The tree turns that position into a prediction.',
       'This band is where a new theropod lineage should fall, borrowing from birds and crocodylians by shared history. It is wide, and that is the honest answer: close relatives in the living data scale differently, so the tree cannot narrow it much.',
-      'Now the fossils, one at a time. Every non-avian theropod gut with a prey mass or bracket. Bars are prey known only to within a bracket.'
+      'Now the fossils: every non-avian theropod gut with a prey mass or bracket. Bars are prey known only to within a bracket.'
     ],
     make(fr) {
       const Pl = P.loglog(plotBox(fr), { x: [1.5, 7], y: [-3, 6], w: 1480, h: 710 });
       P.ratioGuides(Pl, [1, 0.1, 0.01, 0.001]);
-      const tl = treeLines('tree:Theropoda@165');
+      const tl = treeLines(X.tree.theropod_tip);
       const band = D.svg('g', { class: 'fade hidden' }, Pl.g);
       if (tl.length) {
         const lo = tl.map((l) => [lg(l.pred_g), lg(l.pred_q10)]), hi = tl.map((l) => [lg(l.pred_g), lg(l.pred_q90)]);
@@ -198,12 +214,9 @@
       const pts = D.svg('g', {}, Pl.g);
       const marks = theroRecs.map((r) => fossilMark(Pl, r, pts));
       marks.forEach((m) => m.classList.add('hidden'));
-      let timers = [];
-      return { show(b, how) {
+      return { show(b) {
         band.classList.toggle('hidden', b < 1);
-        timers.forEach(clearTimeout); timers = [];
-        marks.forEach((m) => { m.classList.remove('dropin'); m.classList.toggle('hidden', b < 2); });
-        if (b === 2 && how === 'step') marks.forEach((m, i) => { m.classList.add('hidden'); timers.push(setTimeout(() => { m.classList.remove('hidden'); m.classList.add('dropin'); }, 250 * i)); });
+        marks.forEach((m) => m.classList.toggle('hidden', b < 2));       // all at once; specimens get names on the next slide
       } };
     }
   });
@@ -226,7 +239,7 @@
       const h2 = fr.querySelector('h2');
       const Pl = P.loglog(plotBox(fr), { x: [1.5, 7], y: [-3, 6], w: 1480, h: 710 });
       P.ratioGuides(Pl, [1, 0.1, 0.01, 0.001]);
-      const tl = treeLines('tree:Theropoda@165');
+      const tl = treeLines(X.tree.theropod_tip);
       if (tl.length) D.svg('path', { d: P.band(Pl, tl.map((l) => [lg(l.pred_g), lg(l.pred_q10)]), tl.map((l) => [lg(l.pred_g), lg(l.pred_q90)])), fill: 'var(--accent-soft)' }, Pl.g);
       const bg = D.svg('g', { opacity: 0.25 }, Pl.g);
       theroRecs.forEach((r) => fossilMark(Pl, r, bg, { color: 'var(--muted)', r: 6 }));
@@ -250,43 +263,174 @@
     }
   });
 
+  /* ---------- 5b every living spindle, theropods on top ---------- */
+  S.push({
+    title: 'Theropods against <em>every living diet</em>',
+    anim: { 1: 900 },
+    builds: [
+      `Every living predator species with at least ${X.allspin.min_records} vertebrate prey records: ${X.allspin.species.length} spindles. Colour is the major clade: birds, mammals, squamates, and the one crocodylian with enough records. Snakes sit low and flat; cats climb steeply; owls are narrow; canids are wide.`,
+      'And the theropod gut records on top. They fall inside the living cloud, mostly in its lower half for their size, and no single colour owns them.'
+    ],
+    make(fr) {
+      const Pl = P.loglog(plotBox(fr, 60, 150, 1130, 710), { x: [1, 7], y: [-3, 6], w: 1130, h: 710 });
+      P.ratioGuides(Pl, [1, 0.01]);
+      const shade = {}; X.allspin.groups.forEach((g) => { shade[g.group] = P.color(g.major); });   // one colour per major clade
+      const half = 0.11, step = X.allspin.step;
+      const cloud = D.svg('g', {}, Pl.g);
+      X.allspin.species.forEach((sp) => {
+        const R = sp.d.map((d, i) => [sp.x + half * d, sp.y0 + i * step]), L = sp.d.map((d, i) => [sp.x - half * d, sp.y0 + i * step]);
+        const path = D.svg('path', { d: P.path(Pl, R) + P.path(Pl, L.reverse()).replace(/^M/, 'L') + 'Z',
+          fill: shade[sp.group], 'fill-opacity': 0.28, stroke: shade[sp.group], 'stroke-opacity': 0.7, 'stroke-width': 1.5 }, cloud);
+        path.addEventListener('pointermove', (e) => D.tip(e, `<b><i>${sp.sp.replace(/_/g, ' ')}</i></b><br>${nm(sp.group.replace(/^other (.*)$/, 'other $1'))} · ${sp.n} records`));
+        path.addEventListener('pointerleave', D.untip);
+      });
+      const pts = D.svg('g', { class: 'fade hidden' }, Pl.g);
+      theroRecs.forEach((r) => fossilMark(Pl, r, pts, { r: 10 }));
+      // legend: major clades
+      const lg_ = D.svg('svg', { width: 330, height: 710 }, plotBox(fr, 1215, 160, 330, 710));
+      let y = 40;
+      [['Aves', 'Birds'], ['Mammalia', 'Mammals'], ['Squamata', 'Squamates'], ['Crocodylia', 'Crocodylians']].forEach(([maj, lab]) => {
+        D.svg('rect', { x: 0, y: y - 22, width: 28, height: 28, rx: 5, fill: P.color(maj), 'fill-opacity': 0.7 }, lg_);
+        const t = D.svg('text', { x: 42, y: y, class: 'lbl small' }, lg_); t.textContent = lab;
+        y += 50;
+      });
+      y += 10;
+      D.svg('circle', { cx: 13, cy: y - 7, r: 10, fill: 'var(--fossil)', class: 'ring' }, lg_);
+      const ft = D.svg('text', { x: 38, y: y, class: 'lbl small' }, lg_); ft.textContent = 'Theropods';
+      return { show(b) { pts.classList.toggle('hidden', b < 1); } };
+    }
+  });
+
+  /* ---------- 5c fits along the trees ---------- */
+  function drawTree(svg, newick, x0, w, top, h, opts = {}) {
+    const tree = P.newick(newick), tips = P.tips(tree);
+    if (opts.clado) {                                     // equal steps per node level, tips aligned
+      const ht = (n) => (n.h = n.kids.length ? 1 + Math.max(...n.kids.map(ht)) : 0);
+      ht(tree); const H = tree.h, set = (n) => { n.depth = H - n.h; n.kids.forEach(set); }; set(tree);
+      tips.forEach((t) => { t.depth = H; });
+    }
+    const maxd = Math.max(...tips.map((t) => t.depth)), sx = (d) => x0 + d / maxd * w;
+    tips.forEach((t, i) => { t.y = top + (tips.length === 1 ? h / 2 : i * h / (tips.length - 1)); });
+    const setY = (n) => { if (n.kids.length) { n.kids.forEach(setY); n.y = (n.kids[0].y + n.kids[n.kids.length - 1].y) / 2; } };
+    setY(tree);
+    const g = D.svg('g', {}, svg);
+    const drawN = (n, pd) => {
+      D.svg('path', { d: `M${sx(pd)},${n.y}H${sx(n.depth)}`, stroke: opts.stroke || 'var(--rule)', 'stroke-width': 4, fill: 'none' }, g);
+      if (n.kids.length) { D.svg('path', { d: `M${sx(n.depth)},${n.kids[0].y}V${n.kids[n.kids.length - 1].y}`, stroke: opts.stroke || 'var(--rule)', 'stroke-width': 4 }, g); n.kids.forEach((k) => drawN(k, n.depth)); }
+    };
+    drawN(tree, 0);
+    tips.forEach((t) => { t.x = sx(t.depth); });
+    return tips;
+  }
+  S.push({
+    title: 'Fits along the tree, <em>theropods</em> beside them',
+    anim: { 1: 900 },
+    builds: [
+      'Each living group at its typical size: the dot is the median meal as a share of predator mass, the bar is where 80 percent of a new species\' meals would fall. Colour is the major clade. Pale with a triangle: a group whose scaling clearly differs from its clade. Hawks and cats steeper, owls and snakes shallower.',
+      'The theropods on their own dated tree, every gut record as a share of its predator. Tyrannosaurids, compsognathids, paravians. They spread across the same range as the living groups, and the spread within one genus, Microraptor, is as wide as a whole living clade.'
+    ],
+    make(fr) {
+      const TF = X.treefits, ext = Object.fromEntries(TF.extant.map((r) => [r.minor, r]));
+      const rx = [-2, 3], tick = [-2, -1, 0, 1, 2, 3], pct = (v) => { const x = Math.pow(10, v); return x >= 1 ? x.toLocaleString() + '%' : (+x.toPrecision(1)) + '%'; };
+      const panel = (x, w) => { const box = plotBox(fr, x, 150, w, 720); return D.svg('svg', { width: w, height: 720 }, box); };
+      const axis = (svg, x0, x1, bottom, title) => {
+        const sx = (v) => x0 + (v - rx[0]) / (rx[1] - rx[0]) * (x1 - x0);
+        tick.forEach((t) => {
+          D.svg('line', { x1: sx(t), x2: sx(t), y1: 10, y2: bottom, class: 'gridline' }, svg);
+          D.svg('line', { x1: sx(t), x2: sx(t), y1: bottom, y2: bottom + 10, class: 'tick', stroke: 'var(--muted)', 'stroke-width': 2.5 }, svg);
+          if (t % 2 === 0) { const tx = D.svg('text', { x: sx(t), y: bottom + 40, 'text-anchor': 'middle', class: 'lbl small' }, svg); tx.textContent = pct(t); }
+        });
+        D.svg('line', { x1: x0, x2: x1, y1: bottom, y2: bottom, stroke: 'var(--muted)', 'stroke-width': 2.5 }, svg);
+        const at = D.svg('text', { x: (x0 + x1) / 2, y: bottom + 82, 'text-anchor': 'middle', class: 'lbl' }, svg); at.textContent = title;
+        return sx;
+      };
+      // extant
+      const L = panel(30, 790), bottom = 600;
+      const tipsL = drawTree(L, X.skeleton.newick, 0, 150, 20, bottom - 40);
+      const sxL = axis(L, 450, 780, bottom, 'Meal as % of predator');
+      tipsL.forEach((t) => {
+        const r = ext[t.name]; if (!r) return;
+        const base = P.color(r.major), col = r.differs ? `color-mix(in oklab, ${base} 50%, white)` : base;
+        const lab = D.svg('text', { x: t.x + 14, y: t.y + 10, class: 'lbl small' }, L);
+        lab.textContent = nm(t.name) + (r.differs === 'steeper' ? ' ▲' : r.differs === 'shallower' ? ' ▼' : '');
+        if (r.differs) lab.setAttribute('fill', 'var(--ink)');
+        const g = D.svg('g', {}, L);
+        D.svg('line', { x1: sxL(r.r10), x2: sxL(r.r90), y1: t.y, y2: t.y, stroke: col, 'stroke-width': 7, 'stroke-linecap': 'round', opacity: 0.85 }, g);
+        D.svg('circle', { cx: sxL(r.r50), cy: t.y, r: 10, fill: col, stroke: r.differs ? 'var(--ink)' : 'var(--board)', 'stroke-width': r.differs ? 2.5 : 2 }, g);
+        g.addEventListener('pointermove', (e) => D.tip(e, `<b>${nm(t.name)}</b> (${r.species} species)<br>at ${P.fmt(r.pred_g)}: median meal ${pct(r.r50)} of predator<br>slope ${r.slope} vs ${r.major} ${r.major_slope}${r.differs ? ' · ' + r.differs : ''}`));
+        g.addEventListener('pointerleave', D.untip);
+      });
+      // theropods
+      const Rg = D.svg('g', { class: 'fade hidden' }, panel(830, 740));
+      const R = Rg.ownerSVGElement;
+      const tipsR = drawTree(Rg, TF.theropod_tree.newick, 0, 140, 20, bottom - 40, { stroke: 'var(--fossil)', clado: true });
+      const genusCount = {}; tipsR.forEach((t) => { const g = t.name.split(' ')[0]; genusCount[g] = (genusCount[g] || 0) + 1; });
+      const sxR = axis(Rg, 410, 730, bottom, 'Meal as % of predator');
+      tipsR.forEach((t) => {
+        const id = t.name.replace(/ /g, '_');
+        const lab = D.svg('text', { x: t.x + 14, y: t.y + 10, class: 'lbl small', 'font-style': 'italic' }, Rg);
+        const genus = t.name.split(' ')[0];
+        lab.textContent = genusCount[genus] > 1 ? t.name.replace(/^(\w)\w+ (\w+)$/, '$1. $2') : genus;   // genus unless it has several species here
+        fossils.filter((f) => f.group === 'Theropoda' && f.taxon === t.name).forEach((f, k) => {
+          const pr = f.pred || Math.sqrt(f.pred_lo * f.pred_hi);
+          const yy = t.y + (k % 2 ? 7 : -7) * (k > 0 ? 1 : 0);
+          if (f.prey_g) {
+            const c = D.svg('circle', { cx: sxR(Math.log10(f.prey_g / pr * 100)), cy: yy, r: 9, fill: 'var(--fossil)', class: 'ring' }, Rg);
+            c.addEventListener('pointermove', (e) => D.tip(e, `<b>${f.taxon}</b> ate <b>${f.prey}</b><br>${(f.prey_g / pr * 100).toPrecision(2)}% of predator mass`));
+            c.addEventListener('pointerleave', D.untip);
+          } else {
+            D.svg('line', { x1: sxR(Math.log10(f.prey_lo / pr * 100)), x2: sxR(Math.log10(f.prey_hi / pr * 100)), y1: yy, y2: yy,
+              stroke: 'var(--fossil)', 'stroke-width': 8, 'stroke-linecap': 'round', opacity: 0.6 }, Rg);
+          }
+        });
+      });
+      return { show(b) { Rg.classList.toggle('hidden', b < 1); } };
+    }
+  });
+
   /* ---------- 6 which living animals ---------- */
   const sup = (unit, cmp) => (X.support ? X.support.rows : []).filter((r) => r.unit === unit && r.comparison === cmp);
   S.push({
     title: 'Which living animals do they <em>eat like</em>?',
     builds: [
-      'Relative support for each living group as the source of the theropod records, all groups given equal odds beforehand. The dashed line is what "cannot tell" looks like: every group equal.',
-      'The same question one level up. If the bars are near the line, the model is telling you it cannot tell, which a regression through eleven taxa would never say.'
+      'For all theropods, then each theropod clade: support for each living group as the source of the records, and for the dated dinosaur tree, all given equal odds beforehand. The dashed line is "cannot tell": every option equal. Paravians lean toward the tree; compsognathids toward crocodylians and squamates; tyrannosaurids, four records, are flat. None of these is far from the line. The model is telling us how little these records can say, which a regression line through eleven taxa never would.'
     ],
     make(fr) {
-      const box = plotBox(fr), W = 1480, Hh = 710;
-      const svg = D.svg('svg', { width: W, height: Hh }, box);
-      const left = 300, right = 60, pw = W - left - right;
-      const views = [sup('Theropoda', 'all_minor'), sup('Theropoda', 'tree_vs_major_vs_none')].map((rows, vi) => {
-        const g = D.svg('g', { class: 'fade' }, svg);
-        rows = rows.slice().sort((a, b) => b.rel - a.rel);
-        const n = rows.length || 1, bh = Math.min(48, (Hh - 80) / n), max = Math.max(0.5, ...rows.map((r) => r.rel));
-        const sx = (v) => left + v / max * pw;
-        for (let t = 0; t <= max + 1e-9; t += 0.1) {
-          D.svg('line', { x1: sx(t), x2: sx(t), y1: 0, y2: n * bh, class: 'gridline' }, g);
-          const tx = D.svg('text', { x: sx(t), y: n * bh + 34, 'text-anchor': 'middle', class: 'lbl small' }, g); tx.textContent = Math.round(t * 100) + '%';
-        }
-        rows.forEach((r, i) => {
-          const c = r.candidate, maj = c.startsWith('major:') ? c.slice(6) : c.startsWith('tree:') ? 'fossil' : c === 'none' ? null : (counts[c] || {}).major;
-          const y = i * bh;
-          const bar = D.svg('rect', { x: left, y: y + 4, width: Math.max(2, sx(r.rel) - left), height: bh - 8, rx: 4, fill: maj ? P.color(maj) : 'var(--muted)' }, g);
-          bar.addEventListener('pointermove', (e) => D.tip(e, `<b>${c}</b><br>support ${(r.rel * 100).toFixed(1)}%<br>log predictive density ${r.lpd} ± ${r.mcse}`));
-          bar.addEventListener('pointerleave', D.untip);
-          const name = c.startsWith('major:') ? c.slice(6) : c.startsWith('tree:') ? 'Tree prediction' : c === 'none' ? 'None of these' : nm(c);
-          const t = D.svg('text', { x: left - 14, y: y + bh / 2 + 8, 'text-anchor': 'end', class: 'lbl small' }, g); t.textContent = name + (ziphodont.has(c) ? '  ✦' : '');
-        });
-        const eq = 1 / n;
-        D.svg('line', { x1: sx(eq), x2: sx(eq), y1: -6, y2: n * bh + 6, class: 'guide', 'stroke-width': 2.5 }, g);
-        const lt = D.svg('text', { x: sx(eq) + 8, y: n * bh + 64, class: 'guide-lbl' }, g); lt.textContent = 'cannot tell';
-        if (vi === 0) { const z = D.svg('text', { x: W - right, y: n * bh + 64, 'text-anchor': 'end', class: 'lbl small' }, g); z.textContent = '✦ ziphodont'; }
-        return g;
+      const units = [['Theropoda', 'All theropods'], ['Theropoda:Tyrannosauridae', 'Tyrannosaurids'],
+                     ['Theropoda:Compsognathidae', 'Compsognathids'], ['Theropoda:Paraves', 'Paravians']];
+      const order = [['major:Aves', 'Aves', 'aves'], ['major:Mammalia', 'Mamm.', 'mammalia'], ['major:Squamata', 'Squam.', 'squamata'],
+                     ['major:Crocodylia', 'Croc.', 'crocodylia'], ['none', 'None', null], ['tree:dated', 'Tree', 'fossil']];
+      const softmax = (v) => { const m = Math.max(...v), e = v.map((x) => Math.exp(x - m)), t = e.reduce((a, b) => a + b, 0); return e.map((x) => x / t); };
+      const panels = units.map(([u, name], ui) => {
+        const rows = sup(u, 'dated_tree_vs_major_vs_none');
+        const lp = order.map(([c]) => { const r = rows.find((x) => x.candidate === c); return r ? r.lpd : -Infinity; });
+        const p = softmax(lp);
+        const n = (rows[0] || {}).n_records;
+        return { name, p };
       });
-      return { show(b) { views.forEach((v, i) => v.style.display = i === b ? '' : 'none'); } };
+      const top = Math.max(0.5, ...panels.flatMap((x) => x.p));                // shared, honest scale
+      panels.forEach(({ name, p }, ui) => {
+        const box = plotBox(fr, 110 + ui * 362, 160, 350, 700), svg = D.svg('svg', { width: 350, height: 700 }, box);
+        for (let v = 0; v <= top + 1e-9; v += 0.25) {
+          const yy = 600 - v / top * 500;
+          D.svg('line', { x1: 0, x2: 350, y1: yy, y2: yy, class: 'gridline' }, svg);
+          if (ui === 0) { const tl = D.svg('text', { x: -12, y: yy + 10, 'text-anchor': 'end', class: 'lbl small' }, svg); tl.textContent = Math.round(v * 100) + '%'; }
+        }
+        const t = D.svg('text', { x: 175, y: 30, 'text-anchor': 'middle', class: 'lbl' }, svg); t.textContent = name;
+        const base = 600, sh = 500, bw = 46, gap = 10, x0 = 175 - (order.length * (bw + gap) - gap) / 2;
+        const yeq = base - (1 / order.length) / top * sh;
+        const ord = order.map((o, i) => [o, p[i]]).sort((a, b) => b[1] - a[1]);      // most to least supported
+        ord.forEach(([[c, lab, col], pv], i) => {
+          const x = x0 + i * (bw + gap), h = pv / top * sh;
+          const bar = D.svg('rect', { x, y: base - h, width: bw, height: Math.max(2, h), rx: 4, fill: col ? `var(--${col})` : 'var(--muted)' }, svg);
+          bar.addEventListener('pointermove', (e) => D.tip(e, `<b>${name}</b> · ${lab}<br>support ${(pv * 100).toFixed(0)}%`));
+          bar.addEventListener('pointerleave', D.untip);
+          const tx = D.svg('text', { x: x + bw / 2, y: base + 16, class: 'lbl small', 'text-anchor': 'end',
+            transform: `rotate(-50 ${x + bw / 2} ${base + 16})` }, svg); tx.textContent = lab;
+        });
+        D.svg('line', { x1: x0 - 8, x2: x0 + order.length * (bw + gap), y1: yeq, y2: yeq, class: 'guide', 'stroke-width': 2.5 }, svg);
+        if (ui === 3) { const ct = D.svg('text', { x: x0 + order.length * (bw + gap), y: yeq - 10, 'text-anchor': 'end', class: 'guide-lbl' }, svg); ct.textContent = 'cannot tell'; }
+      });
     }
   });
 
@@ -301,8 +445,8 @@
       const box = plotBox(fr), W = 1480, Hh = 710, svg = D.svg('svg', { width: W, height: Hh }, box);
       const rows = X.fits.primary.clades.filter((c) => counts[c.minor]).map((c) => Object.assign({ major: counts[c.minor].major }, c))
         .sort((a, b) => a.major.localeCompare(b.major) || b.slope - a.slope);
-      const left = 300, pw = W - left - 80, x0 = 0, x1 = 1.6, sx = (v) => left + (v - x0) / (x1 - x0) * pw, bh = (Hh - 70) / rows.length;
-      for (let t = 0; t <= 1.6; t += 0.4) { D.svg('line', { x1: sx(t), x2: sx(t), y1: 0, y2: rows.length * bh, class: 'gridline' }, svg); const tx = D.svg('text', { x: sx(t), y: rows.length * bh + 30, 'text-anchor': 'middle', class: 'lbl small' }, svg); tx.textContent = t.toFixed(1); }
+      const left = 300, pw = W - left - 80, x0 = 0, x1 = 1.6, sx = (v) => left + (v - x0) / (x1 - x0) * pw, bh = (Hh - 100) / rows.length;
+      for (let t = 0; t <= 1.6; t += 0.4) { D.svg('line', { x1: sx(t), x2: sx(t), y1: 0, y2: rows.length * bh, class: 'gridline' }, svg); const tx = D.svg('text', { x: sx(t), y: rows.length * bh + 40, 'text-anchor': 'middle', class: 'lbl small' }, svg); tx.textContent = t.toFixed(1); }
       D.svg('line', { x1: sx(1), x2: sx(1), y1: 0, y2: rows.length * bh, class: 'guide', 'stroke-width': 2.5 }, svg);
       const xt = D.svg('text', { x: left + pw / 2, y: Hh - 4, 'text-anchor': 'middle', class: 'lbl small' }, svg); xt.textContent = 'How fast meals grow as predators grow';
       const st = D.svg('text', { x: sx(1), y: -8, 'text-anchor': 'middle', class: 'guide-lbl' }, svg); st.textContent = 'in step';
@@ -310,8 +454,8 @@
         const y = i * bh + bh / 2, g = D.svg('g', { class: 'fade' }, svg);
         D.svg('line', { x1: sx(c.slope_lo), x2: sx(c.slope_hi), y1: y, y2: y, stroke: P.color(c.major), 'stroke-width': 4, 'stroke-linecap': 'round' }, g);
         D.svg('circle', { cx: sx(c.slope), cy: y, r: 9, fill: P.color(c.major), class: 'ring' }, g);
-        const t = D.svg('text', { x: left - 14, y: y + 8, 'text-anchor': 'end', class: 'lbl small' }, g); t.textContent = nm(c.minor);
-        const v = D.svg('text', { x: sx(c.slope_hi) + 12, y: y + 8, class: 'lbl small' }, g); v.textContent = c.slope.toFixed(2);
+        const t = D.svg('text', { x: left - 14, y: y + 10, 'text-anchor': 'end', class: 'lbl small' }, g); t.textContent = nm(c.minor);
+        const v = D.svg('text', { x: sx(c.slope_hi) + 12, y: y + 10, class: 'lbl small' }, g); v.textContent = c.slope.toFixed(2);
         return { c, g, v };
       });
       const hi = [['Feliformia', 'Caniformia'], ['Accipitriformes', 'Strigiformes']];
@@ -343,7 +487,7 @@
           const x = 30 + i * 82, h = r.rel / top * sh;
           D.svg('rect', { x, y: base - h, width: 66, height: h, rx: 4, fill: o === 'none' ? 'var(--muted)' : P.color(o),
             stroke: o === right ? 'var(--ink)' : 'none', 'stroke-width': 4 }, svg);
-          const tx = D.svg('text', { x: x + 33, y: base + 32, 'text-anchor': 'middle', class: 'lbl small' }, svg); tx.textContent = { Aves: 'Aves', Mammalia: 'Mamm.', Squamata: 'Squam.', Crocodylia: 'Croc.', none: 'None' }[o];
+          const tx = D.svg('text', { x: x + 33, y: base + 40, 'text-anchor': 'middle', class: 'lbl small' }, svg); tx.textContent = { Aves: 'Aves', Mammalia: 'Mamm.', Squamata: 'Squam.', Crocodylia: 'Croc.', none: 'None' }[o];
           const v = D.svg('text', { x: x + 33, y: base - h - 10, 'text-anchor': 'middle', class: 'lbl small' }, svg); v.textContent = Math.round(r.rel * 100) + '%';
         });
       });

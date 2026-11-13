@@ -69,7 +69,7 @@ print(dcast(params, candidate + cand_type ~ par, value.var = "median")[order(can
 cat("\nintervals (10-90%):\n")
 print(params[, .(candidate, par, txt = sprintf("%.2f [%.2f, %.2f]", median, q10, q90))][, dcast(.SD, candidate ~ par, value.var = "txt")])
 cat("\nborrowing weights, primary theropod tip:\n")
-print(weights[candidate == "tree:Theropoda@165", .(minor_clade, shared_history = round(shared_history, 3),
+print(weights[candidate == params[cand_type == "tree" & startsWith(candidate, "tree:Theropoda@"), candidate[1]], .(minor_clade, shared_history = round(shared_history, 3),
       w_intercept = round(w_intercept, 3), w_slope = round(w_slope, 3), w_spread = round(w_spread, 3))])
 cat("\nlambda posterior median (a, b, g):", round(apply(dr[, c("lambda_a", "lambda_b", "lambda_g")], 2, median), 3), "\n")
 cat("DONE\n")

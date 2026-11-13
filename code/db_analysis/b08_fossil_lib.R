@@ -153,7 +153,7 @@ fossil_table <- function() {
 
 # Pack a unit's records into index vectors.
 pack_unit <- function(recs, obs_levels) {
-  list(n = nrow(recs), pair_id = recs$pair_id,
+  list(n = nrow(recs), pair_id = recs$pair_id, taxa = unique(recs$pred_taxon_id),
        tax = match(recs$pred_taxon_id, unique(recs$pred_taxon_id)), T = uniqueN(recs$pred_taxon_id),
        src = match(recs$source_id, unique(recs$source_id)), S = uniqueN(recs$source_id),
        spec = match(recs$specimen_key, unique(recs$specimen_key)),
@@ -179,6 +179,11 @@ unit_ll <- function(F, d, cand, u, Zs, tipc = NULL, want_pct = FALSE) {
   dr <- F$dr; M <- nrow(Zs$e)
   if (cand$type == "minor") {
     Ae <- rep(F$A[d, cand$k], M); Be <- rep(F$B[d, cand$k], M); Ge <- rep(F$G[d, cand$k], M)
+  } else if (cand$type == "tree_multi") {           # one tip per taxon, drawn jointly
+    stopifnot(identical(cand$taxa, u$taxa))
+    eff <- lapply(1:3, function(e) (matrix(tipc$mean[, e], M, u$T, byrow = TRUE) +
+                                     Zs$et[, , e, drop = FALSE][, , 1] %*% t(tipc$L[[e]]))[, u$tax, drop = FALSE])
+    Ae <- eff[[1]]; Be <- eff[[2]]; Ge <- eff[[3]]
   } else {
     Ae <- tipc[1, 1] + tipc[2, 1] * Zs$e[, 1]
     Be <- tipc[1, 2] + tipc[2, 2] * Zs$e[, 2]
@@ -223,6 +228,7 @@ score_unit <- function(F, u, cands, tipcs, M = 200, seed = 1, want_pct = FALSE) 
     set.seed((seed * 1000 + d) %% 2147483647)
     Zs <- list(e = matrix(rnorm(M * 3), M), m = matrix(rnorm(M * u$P), M),
                u = matrix(rnorm(M * u$T), M), w = matrix(rnorm(M * u$S), M))
+    Zs$et <- array(rnorm(M * u$T * 3), c(M, u$T, 3))     # drawn last: other candidates' streams unchanged
     for (ci in seq_len(nc)) {
       r <- unit_ll(F, d, cands[[ci]], u, Zs, tipcs[[ci]][[d]], want_pct)
       L[d, ci] <- r$ll
@@ -234,7 +240,40 @@ score_unit <- function(F, u, cands, tipcs, M = 200, seed = 1, want_pct = FALSE) 
 }
 
 precompute_tips <- function(F, cands) lapply(cands, function(cn)
-  if (cn$type == "minor") vector("list", nrow(F$dr)) else lapply(seq_len(nrow(F$dr)), function(d) tip_conditional(F, d, cn$cvec)))
+  if (cn$type == "minor") vector("list", nrow(F$dr))
+  else if (cn$type == "tree_multi") lapply(seq_len(nrow(F$dr)), function(d) tip_conditional_multi(F, d, cn))
+  else lapply(seq_len(nrow(F$dr)), function(d) tip_conditional(F, d, cn$cvec)))
+
+## ---- dated composite tree (code/db_analysis/a02_theropod_tree.R) ---------------------
+# Each fossil taxon is its own tip attached to the crown-bird line at its dated split; fossil
+# pairs share history to their dated MRCA. Shared history is a fraction of the skeleton root
+# age, as for the extant clades; the diagonal is 1 (as for the single tree tip).
+dated_candidate <- function(F, taxa, dir = "db/tree/theropod", id = "tree:dated") {
+  sm <- fread(file.path(dir, "summary.csv"))
+  mr <- readRDS(file.path(dir, "mrca_ages.rds"))
+  med <- apply(simplify2array(mr), c(1, 2), median)
+  stopifnot(all(taxa %in% sm$taxon_id))
+  sa <- sm$split_med[match(taxa, sm$taxon_id)]
+  Cfo <- t(sapply(sa, function(a) tip_vector(F, "Aves", a)))
+  Cff <- 1 - med[taxa, taxa, drop = FALSE] / F$root_age; diag(Cff) <- 1
+  list(id = id, type = "tree_multi", major = "Aves", taxa = taxa, split = sa, Cfo = Cfo, Cff = Cff)
+}
+tip_conditional_multi <- function(F, d, cn) {
+  T <- length(cn$taxa); mean <- matrix(0, T, 3); L <- vector("list", 3)
+  for (e in 1:3) {
+    lam <- F$dr[d, c("lambda_a", "lambda_b", "lambda_g")[e]]
+    tau <- F$dr[d, c("tau_a", "tau_b", "tau_g")[e]]
+    x <- list(F$A, F$B, F$G)[[e]][d, ]
+    if (tau <= 0) { L[[e]] <- matrix(0, T, T); next }
+    R <- lam * F$Cm + (1 - lam) * diag(F$K)
+    Rfo <- lam * cn$Cfo; Rff <- lam * cn$Cff + (1 - lam) * diag(T)
+    W <- t(solve(R, t(Rfo)))
+    mean[, e] <- W %*% x
+    S <- tau^2 * (Rff - W %*% t(Rfo)); S <- (S + t(S)) / 2
+    L[[e]] <- t(chol(S + diag(1e-10, T)))
+  }
+  list(mean = mean, L = L)
+}
 
 lpd_summary <- function(L, nbatch = 20) {
   ND <- nrow(L); b <- rep(seq_len(nbatch), length.out = ND)

@@ -16,7 +16,7 @@
 
   /* opts: x [lo, hi] and y [lo, hi] in log10 g, w, h, xlab, ylab, left, bottom */
   Plot.loglog = function (host, o) {
-    const left = o.left || 130, bottom = o.bottom || 80, top = 16, right = 24;
+    const left = o.left || 170, bottom = o.bottom || 104, top = 16, right = 40;
     const w = o.w, h = o.h, pw = w - left - right, ph = h - top - bottom;
     const svg = D.svg('svg', { width: w, height: h, viewBox: `0 0 ${w} ${h}` }, host);
     const sx = (v) => left + (v - o.x[0]) / (o.x[1] - o.x[0]) * pw;
@@ -24,16 +24,18 @@
     const ax = D.svg('g', { class: 'axis' }, svg);
     for (let t = Math.ceil(o.x[0]); t <= o.x[1]; t++) {
       D.svg('line', { x1: sx(t), x2: sx(t), y1: top, y2: top + ph, class: 'gridline' }, ax);
-      D.svg('text', { x: sx(t), y: top + ph + 32, 'text-anchor': 'middle' }, ax).textContent = Plot.mass(t);
+      D.svg('line', { x1: sx(t), x2: sx(t), y1: top + ph, y2: top + ph + 12, class: 'tick' }, ax);
+      D.svg('text', { x: sx(t), y: top + ph + 46, 'text-anchor': 'middle' }, ax).textContent = Plot.mass(t);
     }
     for (let t = Math.ceil(o.y[0]); t <= o.y[1]; t++) {
       D.svg('line', { x1: left, x2: left + pw, y1: sy(t), y2: sy(t), class: 'gridline' }, ax);
-      D.svg('text', { x: left - 12, y: sy(t) + 7, 'text-anchor': 'end' }, ax).textContent = Plot.mass(t);
+      D.svg('line', { x1: left - 12, x2: left, y1: sy(t), y2: sy(t), class: 'tick' }, ax);
+      D.svg('text', { x: left - 20, y: sy(t) + 10, 'text-anchor': 'end' }, ax).textContent = Plot.mass(t);
     }
     D.svg('line', { x1: left, x2: left + pw, y1: top + ph, y2: top + ph }, ax);
     D.svg('line', { x1: left, x2: left, y1: top, y2: top + ph }, ax);
     D.svg('text', { x: left + pw / 2, y: h - 8, 'text-anchor': 'middle', class: 'title' }, ax).textContent = o.xlab || 'Predator size';
-    D.svg('text', { x: -(top + ph / 2), y: 26, transform: 'rotate(-90)', 'text-anchor': 'middle', class: 'title' }, ax).textContent = o.ylab || 'Meal size';
+    D.svg('text', { x: -(top + ph / 2), y: 32, transform: 'rotate(-90)', 'text-anchor': 'middle', class: 'title' }, ax).textContent = o.ylab || 'Meal size';
     const id = 'c' + Math.random().toString(36).slice(2);
     const cp = D.svg('clipPath', { id }, D.svg('defs', {}, svg));
     D.svg('rect', { x: left, y: top, width: pw, height: ph }, cp);

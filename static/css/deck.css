@@ -44,15 +44,16 @@ body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
 }
 
 /* ---------- plot marks ---------- */
-.axis line, .axis path { stroke: var(--rule); stroke-width: 1.5; }
-.axis text { fill: var(--muted); font: 22px var(--font-ui); }
-.axis .title { fill: var(--ink-2); font: 600 26px var(--font-ui); }
-.gridline { stroke: var(--grid); stroke-width: 1; }
-.lbl { fill: var(--ink); font: 600 26px var(--font-ui); }
-.lbl.small { font-size: 22px; fill: var(--ink-2); }
+.axis line, .axis path { stroke: var(--muted); stroke-width: 2.5; }
+.axis .tick { stroke: var(--muted); stroke-width: 2.5; }
+.axis text { fill: var(--ink-2); font: 600 30px var(--font-ui); }
+.axis .title { fill: var(--ink); font: 700 36px var(--font-ui); }
+.gridline, .axis .gridline { stroke: var(--grid); stroke-width: 1.5; }
+.lbl { fill: var(--ink); font: 700 32px var(--font-ui); }
+.lbl.small { font-size: 28px; font-weight: 600; fill: var(--ink-2); }
 .lbl.muted { fill: var(--muted); font-weight: 400; }
-.guide { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 8; fill: none; }
-.guide-lbl { fill: var(--muted); font: italic 21px var(--font-ui); }
+.guide { stroke: var(--muted); stroke-width: 2.5; stroke-dasharray: 8 9; fill: none; }
+.guide-lbl { fill: var(--muted); font: italic 600 28px var(--font-ui); }
 .fade { transition: opacity 0.6s ease; }
 .hidden { opacity: 0; }
 .dropin { animation: drop 0.55s cubic-bezier(.2,.8,.3,1.2) both; }
@@ -100,3 +101,7 @@ body.presenter { overflow: auto; }
 .pres .timer button { font-size: 16px; margin-left: 12px; vertical-align: middle; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--rule); background: none; cursor: pointer; }
 .pres .pos { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .dropin, .fade { animation: none !important; transition: none !important; } }
+
+/* export capture (tools/export): no controls, tooltip or cursor */
+body.capture .ctl, body.capture .helpbox, body.capture .tip { display: none !important; }
+body.capture { cursor: none; }

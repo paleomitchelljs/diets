@@ -98,3 +98,17 @@ Crocodylia barely moves between rules (166 records pin it); Iguania moves visibl
 ## Scripts
 
 `b05_terrestrial_cells.R`, `b06_rules.stan`, `b06_fit_rules.R`, `run_b06_all.sh`, `b07_ppc.R`, `b08_fossil_lib.R`, `b08_fossil_test.R`, `b09_calibration.R`, `b10_tree_prediction.R`, `run_steps123.sh`, `fossil_tree_tips.csv` (attachment ages are general-knowledge approximations; JM to confirm). `b03_skeleton_tree.R` gained a `WORK` variable. Site data: `code/site_export.R`.
+
+## Dated composite tree for the fossils (added 2026-11-12, `code/db_analysis/a02_theropod_tree.R`)
+
+Topology: Lloyd et al. 2016 dinosaur metatrees (100 trees; `db/tree/raw/lloyd2016/`). The cal3-rescaled versions in JM's BAMM project are not usable for absolute ages (paravian split 224 Ma, root 252–447 Ma). Dated here by minimum branch length (tip = range midpoint, 0.1 Myr per node). *Eshanosaurus* dropped in the primary (alone moves every coelurosaur split from the crown-bird line from 162–168 to 201 Ma); kept as a sensitivity. The 100 metatrees agree on every node used.
+
+Split from the crown-bird line: tyrannosaurs 167.6, compsognathids 162.5 (*Huadanosaurus* attached by rule), paravians 161.8, *Confuciusornis* 155.5, ornithuromorphs 130.5 (*Piscivoravis*, *Kunpengornis* by rule), *Yanornis* 119.9 Ma.
+
+Two uses:
+- Single tree tip for the band (slide 5) now at the theropod median, 162.5 Ma (was 165 by rule). Prediction unchanged in practice: ln prey at 1 kg 3.83 [2.54, 5.09].
+- "tree:dated": each fossil taxon its own tip at its dated split, fossil pairs sharing history to their dated MRCA, drawn jointly given the extant clades.
+
+Support for tree:dated among {tree:dated, 4 major clades, none}, theropods: 0.08 (all records), 0.07 (no combat), 0.24 (no juvenile predators; highest of the six), 0.08 (no brackets), 0.07 (stomach only). Stem birds: 0.03–0.09.
+
+Calibration at the theropod design: when data are simulated from tree:dated, it ranks first 74% of the time (stem-bird design: 36%). So the test can recognise the dated-tree pattern when it is true, and the real theropod records mostly do not show it. The single exception (no juvenile predators) means this is not a stable conclusion either. Single-tip candidates (one shared effect for all theropods) are never recognised (0–2%), because they are indistinguishable from the major-clade candidates.
