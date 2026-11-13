@@ -2,14 +2,14 @@
   "site": "/Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/static/index.html",
   "width": 1600,
   "height": 900,
-  "built": "2026-11-13T11:31:26.271Z",
+  "built": "2026-11-13T12:07:10.754Z",
   "slides": [
     {
       "builds": [
         {
           "media": "media/s0_b0.png",
           "title": "Preferred prey size for theropod dinosaurs",
-          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that? On the right, some of what is in the living data. Mustela nivalis with Capreolus capreolus, 345 times its own mass (Elmeros 2006, Acta Theriologica): 1 of 132 weasel guts; probably scavenged carrion (road-kill or hunters' remains). Aquila chrysaetos with Bos taurus, 144 times its own mass (Marr & Knight 1983, The Murrelet): cattle carrion, one record. Sarcophilus harrisii with Bos taurus, 90 times its own mass (Pemberton et al. 2008, Pap. Proc. R. Soc. Tasmania): cattle hair in scats; scavenging. Nerodia taxispilota with Ictalurus punctatus, 48 times its own mass (Camp et al. 1980, J. Herpetology): one catfish, 2.6% of food volume; prey mass is the adult species average. None of these is an error. They are carrion, or a small individual given its species’ average mass, and a fossil gut can hide the same things."
+          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that? On the right, some of what is in the living data. Mustela nivalis with Capreolus capreolus, 345 times its own mass (Elmeros 2006, Acta Theriologica): 1 of 132 weasel guts; probably scavenged carrion (road-kill or hunters' remains). Aquila chrysaetos with Bos taurus, 144 times its own mass (Marr & Knight 1983, The Murrelet): cattle carrion, one record. Sarcophilus harrisii with Bos taurus, 90 times its own mass (Pemberton et al. 2008, Pap. Proc. R. Soc. Tasmania): cattle hair in scats; scavenging. Panthera leo with Loxodonta africana, 6 times its own mass (Joubert 2006, Afr. J. Ecol.): 74 elephants killed by lions in four dry seasons, most aged 4 to 15 years; real kills, with the mass of a 6-year-old calf estimated from its age. The three big numbers are carrion, entered at the prey species’ average mass. The lions are real kills. A fossil gut cannot tell those apart."
         }
       ]
     },

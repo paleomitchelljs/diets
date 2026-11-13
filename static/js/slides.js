@@ -126,7 +126,7 @@
   /* ---------- 0 title ---------- */
   S.push({
     builds: [`Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is ${nSpecies.toLocaleString()} living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?` +
-      (X.highlights ? ' On the right, some of what is in the living data. ' + X.highlights.map((h) => `${h.pred} with ${h.prey}, ${Math.round(h.ratio)} times its own mass (${h.cite}): ${h.what}.`).join(' ') + ' None of these is an error. They are carrion, or a small individual given its species’ average mass, and a fossil gut can hide the same things.' : '')],
+      (X.highlights ? ' On the right, some of what is in the living data. ' + X.highlights.map((h) => `${h.pred} with ${h.prey}, ${Math.round(h.ratio)} times its own mass (${h.cite}): ${h.what}.`).join(' ') + ' The three big numbers are carrion, entered at the prey species’ average mass. The lions are real kills. A fossil gut cannot tell those apart.' : '')],
     make(fr) {
       const H = X.highlights || [];
       if (H.length) D.el('div', 'hl', fr, '<p class="cap">Recorded meals of extant predators</p>' + H.map((h) =>

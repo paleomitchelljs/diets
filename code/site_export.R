@@ -200,9 +200,20 @@ highlights <- local({
 Elmeros2006_DM182_L69C1918|elmeros2006.png|Mustela nivalis|Capreolus capreolus|Elmeros 2006, Acta Theriologica|1 of 132 weasel guts; probably scavenged carrion (road-kill or hunters' remains)
 Marr1983_L440C1848|marr1983.png|Aquila chrysaetos|Bos taurus|Marr & Knight 1983, The Murrelet|cattle carrion, one record
 Pemberton2008_DM147_L184C1818|pemberton2008.png|Sarcophilus harrisii|Bos taurus|Pemberton et al. 2008, Pap. Proc. R. Soc. Tasmania|cattle hair in scats; scavenging
-Camp1980_DM178_L84C217|camp1980.png|Nerodia taxispilota|Ictalurus punctatus|Camp et al. 1980, J. Herpetology|one catfish, 2.6% of food volume; prey mass is the adult species average", sep = "|", quote = "")
+", sep = "|", quote = "")
   x <- merge(h, rows[, .(pair_id, pred_g, prey_g, obs)], by = "pair_id", sort = FALSE)
   stopifnot(nrow(x) == nrow(h))
+  # One card that is NOT a database row (Joubert 2006 is not ingested): lions killing elephant calves at Savute.
+  # Prey = a 6-year-old male calf ('a single male lion ran ... into the side of a 6-year-old male calf').
+  # Shoulder height at 6 yr from Lee & Moss 1995 Table I (bulls: 304 cm, K 0.07134, age0 -5.3446 -> 168.7 cm;
+  # bulls < 20: 270, 0.09666, -4.3652 -> 170.9 cm); mass from height by Laws et al. 1975 (5.07e-4 SH^2.803) and
+  # Larramendi 2016 Table 7 (males, 3.28e-4 SH^2.899): 886-974 kg; the geometric mean of the four is used.
+  # Predator mass = the lion mass already in the analysis rows (a species average, sexes pooled).
+  calf <- { sh <- c(304 * (1 - exp(-0.07134 * (6 + 5.3446))), 270 * (1 - exp(-0.09666 * (6 + 4.3652))))
+            exp(mean(log(c(5.07e-4 * sh^2.803, 3.28e-4 * sh^2.899)))) * 1000 }
+  x <- rbind(x, data.table(pair_id = NA_character_, img = "joubert2006.png", pred = "Panthera leo", prey = "Loxodonta africana",
+    cite = "Joubert 2006, Afr. J. Ecol.", what = "74 elephants killed by lions in four dry seasons, most aged 4 to 15 years; real kills, with the mass of a 6-year-old calf estimated from its age",
+    pred_g = rows[pred_taxon_id == "Panthera_leo", median(pred_g)], prey_g = signif(calf, 3), obs = "direct_observation"))
   x[, ratio := signif(prey_g / pred_g, 3)][]
 })
 
