@@ -1,105 +1,157 @@
 # DietProject
 
-**Predator–prey body-mass ratios in living and extinct vertebrates.**
+**Predator–prey body-mass ratios in living and extinct vertebrates** — a database + modelling
+pipeline that builds an extant predator–prey mass reference and places fossil gut contents (dinosaur
+diets, etc.) against it.
 
-A database and modelling pipeline for paired predator–prey body masses, built to:
+This README is the map. For the scientific narrative see the memory files (linked at the bottom) and
+`docs/history/` for how earlier model phases were decided.
 
-1. **Map** the predator–prey mass ratio — `PPMR = ln(prey mass) − ln(predator mass)` —
-   across living vertebrates, and how it varies by clade, predator size, and feeding mode.
-2. **Place extinct taxa** (dinosaur gut contents, coprolites, healed bite marks) against
-   that extant reference — asking whether a preserved fossil diet falls along the bird,
-   crocodylian, squamate, or mammal line, and how PPMR has evolved.
+---
 
-## The organizing problem: preservation / observation bias
+## 1. The question and the core idea
 
-Fossil diet evidence is overwhelmingly **gut contents**, which carry a strong size-dependent
-preservation bias (large/robust prey survive and are identifiable; small/soft prey vanish).
-Extant diet data, by contrast, come from a mix of **stomach contents, scat, pellets, and
-direct observation** — and each mode is size-biased differently. So a naive comparison of a
-fossil gut to an extant "bird line" (which is mostly scat/pellet data) is apples-to-oranges.
+Two goals:
+1. **Map** how prey mass scales with predator mass across living clades (birds, crocodilians, lizards,
+   snakes, mammals), and how it varies by predator size and observation mode.
+2. **Place extinct taxa** — theropod gut contents and other fossil diets — against that extant reference.
 
-Two findings shape the methodology (see `data/` outputs and the notes below):
+**The organizing problem is taphonomic/observational bias.** Fossil diet is almost all *gut contents*,
+which preferentially preserve **vertebrate** prey, biased toward **larger** items (small/soft prey
+digest away). Extant diet data is a mix of stomach, scat, pellet, and direct-observation, each biased
+differently. A naive fossil-gut-vs-extant comparison is apples-to-oranges.
 
-- **Observation mode and clade are nearly aliased** in the extant data (crocodilians are
-  sampled almost only by stomach, birds almost only by scat/pellets), and the within-taxon
-  overlap needed to *calibrate* a mode correction barely exists. So we **don't try to convert
-  scat to gut**; instead we compare **gut-to-gut** (fossil gut vs extant stomach contents) and
-  treat observation mode as an explicit **observation process** in the hierarchical model.
-- **The "macropredator band."** Vertebrate-eating predators — snakes (−1.4 to −2.5),
-  terrestrial mammalian carnivores (−1.99), vertebrate-eating birds (−1.89), and **fossil
-  theropods (−1.7 to −5.5) and the fossil crocodyliform *Confractosuchus* (≈ −3.5)** — all
-  cluster at relatively *large* prey (ln-PPMR ≈ −1.5 to −3.5). Small-prey specialists
-  (crocodilians, lizards, marine mammals) sit far lower (≈ −7 to −8). Preserved fossil diets
-  fall in the macropredator band, *not* the small-prey regime.
+**Current approach = matched filter, not bias-correction.** Rather than model the preservation filter and
+"correct" fossils back to an unbiased reference (poorly identified), we **subset the extant data to share
+the fossil filter** and compare like-to-like:
+- **Vertebrate prey only** (invertebrate prey excluded — matches "bone preserves, cuticle doesn't").
+- **Observation mode modelled, fossils predicted at `obstype = Stomach`** — extant stomach contents carry
+  the same digestion filter as a fossil gut (small prey under-represented), so Stomach is the matched
+  analog. All stomach data is retained in full; other modes inform the offset only.
 
-## Pipeline (`code/`, run from repo root)
+(Full rationale: memory `diet-project-findings.md` → "THE MATCHED-FILTER REFRAME".)
 
-| script | what it does |
-|---|---|
-| `x00_reformatData.R` | wide `raw_data.csv` → long `longform.csv` (one row per prey item); applies `mass_overrides.csv` |
-| `x01_simpleAnalysis.R` | lme4 baseline + simple brms (centered predictor, Student-t; `RUN_BRMS=TRUE`) |
-| `x02_phyloModel.R` | phylogenetic partial-pooling brms (phylo + non-phylo species, clade-varying slope). Placeholder taxonomy tree; drop a real Newick at `data/tree.tre` |
-| `x03_massData.R` | classify taxa by clade; fill **mammal** masses (PanTHERIA) + **bird** masses (AVONET); write `mass_overrides.csv` + `mass_gaps.csv` |
-| `x04_summariseFit.R` | summarize a `fit_*.rds`: effects, Rhat/ESS, phylo-signal λ |
-| `x05_cladeSlopes.R` | per-clade & Aves-subclade PPMR-vs-size slopes (stomach-only) + plots |
-| `x06_modeReframe.R` | observation-mode / preservation-bias reframe (the obstype confound analysis) |
-| `x07_gutComparison.R` | **gut-to-gut**: extant stomach PPMR by clade vs fossil gut points (Squamata split into Serpentes/Lacertilia) |
-| `x08_intake.R` | builds/refreshes `intake_manifest.csv` — the source-material registry (see `pdfs/INTAKE.md`) |
-| `x09…x16` | structured-data ingests: gator stomach (`x09`), RaptorDiets (`x10`), Tucker mammals (`x13`), Avian Diet DB (`x14`), bird-gut PPMR (`x15`), FishBase coefficients (`x16`); plus the sources-doc generator (`x11`) and the PPMR-through-time plot (`x12`) |
+---
+
+## 2. Current state (2026-06)
+
+**Model:** `data/fit_gutslopes_cfix.rds` (+ `gut_model_meta.rds`) — extant-only, clade-FIXED,
+vertebrate-prey-only. Built by `code/run_vertonly.sh`. Converged (R-hat ≈ 1.00, 0 divergences).
+
+```
+preyMass | weights(certainty) ~ predmass_c*clade + predmass_c*obstype + (1|species) + (1|pred_specimen)
+sigma ~ 0 + clade + predmass_c + obstype          # gaussian; response = ln(prey mass), NOT PPMR
+```
+15,260 rows (8,699 = Stomach gut contents). Per-clade prey~predator slopes at Stomach:
+Aves 1.08 · Mammalia 0.89 · Lacertilia 0.89 · Serpentes 0.70 · Crocodylia 0.17 (wide CrI; 3-species data limit).
+
+**Headline fossil result** (`code/x07_fossilPlacement.R`): controlling for the gut filter (predicting at
+Stomach) pulls apparent theropod relative prey size *down* vs same-size birds, and on a vertebrate-to-
+vertebrate, size-matched basis the theropod gut sample most resembles **saurophagous lizards (Lacertilia)**
+— the speculation being shared *ziphodont* prey-processing, not shared ecology (untestable with current
+data; see the conference abstract `abstract_svp26.docx`).
+
+**Open caveats:** Crocodylia is the thin cell (recently extended from a near-point at 925 g to a 2.8 kg–100 kg
+range via new croc records, ref 206–226). The ziphodont mechanism is a hypothesis the current model cannot
+adjudicate (processing ⟂ ecology are confounded in the one clade that matches). See "roadmap" below.
+
+---
+
+## 3. Pipeline (`code/`, run from repo root; each script finds ROOT from its own path)
+
+### Core current pipeline (extant reference → fossil placement)
+| step | script | in → out |
+|---|---|---|
+| 1 | `x00_reformatData.R` | `raw_data.csv` → `longform.csv` (one row per prey item; adds `prey_type` invert/vert; applies `mass_overrides.csv` to NA masses only) |
+| 2 | `x03_massData.R` | fill mammal (PanTHERIA) + bird (AVONET) masses → `mass_overrides.csv`, `mass_gaps.csv` |
+| 3 | `x20_gutSlopesStan.R` | the model. Assembles longform + ADB + `extant_new_observations.csv`, vert-only matched filter, clade-fixed brms fit → `fit_gutslopes_cfix.rds`, `gut_model_meta.rds`, `gut_slopes_posterior.csv`, `gut_sigma_by_clade.csv`. **Driver: `run_vertonly.sh`** (sets cores/iter; `GUT_FULL=1` also fits an obstype:clade variant + LOO) |
+| 4 | `x22_buildFossilPoints.R` | curated fossil cases → `fossil_ppmr_points.csv` (theropod gut + predation events, tier-tagged) |
+| 5 | `x07_fossilPlacement.R` | posterior-predict each fossil vs the extant clades at Stomach → `fossil_placement.csv`, `theropod_best_match.csv`, `theropod_clade_similarity.csv` + figures |
 
 ```bash
-Rscript code/x00_reformatData.R          # rebuild longform.csv
-Rscript code/x03_massData.R              # regenerate mass_overrides + gaps (needs data/AVONET, data/pantheria)
-Rscript code/x06_modeReframe.R           # mode/bias reframe (lme4, fast)
-Rscript code/x07_gutComparison.R         # gut-to-gut comparison + figures
-Rscript code/x12_ppmrThroughTime.R       # PPMR-through-time visual
-# Bayesian fits (run on a real machine; cores=4. Sandbox: STAN_CORES=1, but slow.)
-RUN_BRMS=TRUE Rscript code/x01_simpleAnalysis.R   # data/fit_simple.rds
-RUN_BRMS=TRUE Rscript code/x02_phyloModel.R       # data/fit_phylo.rds
-Rscript code/x04_summariseFit.R data/fit_phylo.rds
+Rscript code/x00_reformatData.R           # rebuild longform.csv (only if raw_data/overrides changed)
+Rscript code/x03_massData.R               # rebuild mass fills (needs data/AVONET, data/pantheria)
+bash    code/run_vertonly.sh              # fit the model + place fossils (STAN_CORES=4; ~30 min if machine free)
+# x07 is invoked by run_vertonly.sh; run it alone to re-place fossils on an existing fit:
+Rscript code/x07_fossilPlacement.R
 ```
 
-## Data (`data/`)
+### Data ingestion (build the structured tables x20 consumes)
+`x08_intake.R` (intake registry → `intake_manifest.csv`) · `x09_ingestGatorJekyll.R` · `x10_ingestRaptorDiets.R` ·
+`x11_sourcesDoc.R` (→ `INTEGRATED_SOURCES.md`) · `x13_ingestTuckerMammals.R` · `x14_ingestAvianDietDB.R` ·
+`x15_avianGutPPMR.R` (→ `aviandiet_gut_ppmr.csv`, the Aves Stomach source) · `x16_fishbaseCoef.R` ·
+`x18_predatorTraits.R` (→ `predator_traits.csv`) · `x19_fossilMassEstimates.R` (femur→mass → `fossil_mass_estimates.csv`) ·
+`x23_teguDiet.R` (tegu structured tables).
 
-**Tracked (curated / small / project's own):**
-- `raw_data.csv` — the source predator-records × prey-species matrix (the project's compilation).
-- `fossil_predprey.csv`, `fossil_diet_extractions.csv` — fossil gut/coprolite/bite-mark cases.
-- `extant_new_observations.csv` — long-format staging for hand-extracted papers (with `source_file` provenance).
-- `mass_overrides.csv`, `mass_gaps.csv`, `intake_manifest.csv`.
-- `reconciliations.md` (data-quality log), `observation_bias_notes.md` (methodological notes),
-  `external_data_wanted.md` (what to fetch), `INTEGRATED_SOURCES.md` (auto-generated).
-- `structured/` small lookups: `tucker2016_mammal_ppmr.csv`, `gator_jekyll_stomach.csv`,
-  `aviandiet_gut_ppmr.csv`, `raptor_diets_gut.csv`, `fishbase_lw_coef.csv`.
-- `mass_references/theropoda_benson.csv` (dinosaur femur→mass calibration).
+### Earlier-phase / exploratory (kept; not on the current fossil-placement path)
+`x01_simpleAnalysis.R`, `x02_phyloModel.R` (phylogenetic fit — revisit under roadmap P3) ·
+`x05_cladeSlopes.R`, `x06_modeReframe.R` (lme4 clade-slope + obstype-confound quick-looks) ·
+`x17_predmassScaling.R` (partial-pooled scaling) · `x12_ppmrThroughTime.R` · `x21_slopeForests.R` ·
+`x04_summariseFit.R` (summarize any `fit_*.rds`) · `x_validate.R` (data-validation checks).
+Superseded scripts live in `code/_legacy/` (old `x07_gutComparison`, the prey_type-variant `x22_compareVariants` + its driver).
 
-**Not tracked (gitignored — copyrighted, large, or third-party; refetch per `external_data_wanted.md`):**
-- `pdfs/` (copyrighted journal PDFs + raw data drops; only `pdfs/INTAKE.md` is tracked), `images/`.
-- `data/AVONET/`, `data/pantheria`, `data/mass_references/*.xls*`.
-- large `data/structured/*` (FishBase / aviandietdb / aviandiet_long+gut / raptor_diets_long raw exports).
-- regenerable outputs (`longform.csv`, `fit_*.rds`, `phylo_*`, `*.log`) and `archive_*/`.
+---
 
-## Source-material intake
+## 4. Where things live
 
-`pdfs/INTAKE.md` documents the system: `intake_manifest.csv` tracks every source file
-(queued / done / structured / superseded); processed files move to `pdfs/_processed/`; every
-extracted observation carries a `source_file` linking back to its origin.
+```
+code/              analysis pipeline (above). code/_legacy/ = superseded scripts.
+data/              raw_data.csv (source) + curated tables + the current fit + regenerable outputs.
+  data/structured/   ingested third-party tables (aviandiet, fishbase, raptor, tucker, gator, tegu, varanus…)
+  data/_archive/     superseded fits/outputs, parked (gitignored, regenerable)
+  data/AVONET/, data/pantheria, data/mass_references/  third-party mass sources (gitignored)
+figures/           project plots (fossil placement, model facets, PPMR-vs-time, similarity…)
+docs/history/      retired decision docs (how earlier model phases were chosen)
+pdfs/              source PDFs (gitignored, copyrighted). pdfs/extant_to_ingest/toadd/ = clean DROP ZONE for new papers.
+                   pdfs/_processed/ = filed after extraction (organized by batch/disposition, each with a README).
+logs/              run logs (gitignored).
+abstract_svp26.docx   the SVP 2026 conference abstract.
+```
 
-## Conventions
+### Key data files (tracked, curated)
+- `raw_data.csv` — the source predator-records × prey-species matrix. **Never silently edited.** Field names
+  are in ROW 3; prey matrix starts col 31 (row1 prey genus, row2 prey class, row3 prey mass).
+- `extant_new_observations.csv` — hand-extracted records (229 rows; has `source_file` provenance + `prey_stage`).
+  New paper extractions go here, not into raw_data.
+- `longform_refs.csv` — RefNo → citation map for the raw_data studies.
+- `fossil_predprey.csv`, `fossil_diet_extractions.csv` — curated fossil cases (feed x22).
+- `mass_overrides.csv` (NA-only fills), `mass_gaps.csv`, `predator_traits.csv`, `prey_habitat_by_taxon.csv`,
+  `actualistic_studies.csv` (digestion/feeding-trial registry for calibrating the preservation filter).
+- Docs: `DATA_AUDIT.md`, `observation_bias_notes.md`, `reconciliations.md` (data-quality log),
+  `external_data_wanted.md` (fetch list), `INTEGRATED_SOURCES.md`, `key_cites.md`,
+  `theropod_gut_mass_estimates.md`, `data/structured/ai_found_2026-06-02_intake.md` (the running intake ledger).
 
-- **No silent edits to `raw_data.csv`.** New extant observations → `extant_new_observations.csv`;
-  mass fills → `mass_overrides.csv` (applied to NAs only; delete to revert).
-- **Data-quality issues → `data/reconciliations.md`** (comparison table, candidate explanations,
-  resolution). See the NIGP 127587 femur entry for the template.
-- **Carrion/scavenging is signal, not noise** — hunt-vs-scavenge is unobservable in fossils;
-  the comparison is observed gut-ratio (modern) vs observed gut-ratio (extinct).
-- **Archives are write-once** (`archive_owl/`, `archive_old_pipeline/`).
+---
 
-## Status / roadmap
+## 5. Conventions
 
-- **Done:** model hygiene (centered predictor, Student-t); the mode/bias reframe; the gut-to-gut
-  comparison; the intake system; ingestion of the Avian Diet DB (→ a 697-species bird gut
-  reference), RaptorDiets, the Tucker mammal-carnivore compilation, and AVONET/FishBase mass sources.
-- **Next:** (P2) a fossil-placement bridge with full mass-uncertainty propagation; (P3) a real
-  time-calibrated phylogeny to replace the placeholder tree and let fossils sit *inside* the tree;
-  an observation-process model with a size-dependent preservation filter `g_mode(size)` — which
-  digestion / feeding-trial data could **empirically calibrate** (see `observation_bias_notes.md`).
+- **No silent edits to `raw_data.csv`.** New observations → `extant_new_observations.csv`; mass fills →
+  `mass_overrides.csv` (NA-only; delete to revert).
+- **Records need prey to species/genus (+ stage).** Prey mass is inferred from the taxon (PanTHERIA/AVONET/
+  FishBase/squamate-SVL), so category-only diet studies aren't usable. Record genus + species + stage
+  ("juvenile"/"egg"/etc.) — stage scales the inferred mass.
+- **Carrion is signal, not noise** — hunt-vs-scavenge is unobservable in fossils; the comparison is
+  observed gut-ratio (modern) vs observed gut-ratio (fossil). No scavenging/hunting flags.
+- **Verify before flagging data** — read the source before calling a record pathological (memory
+  `verify-before-flagging-data.md`).
+- **Data-quality issues → `reconciliations.md`**; archives (`archive_*/`, `code/_legacy/`, `data/_archive/`) are write-once.
+- **PanTHERIA is malformed** — read mammal mass by column POSITION 5 (memory `pantheria-file-malformed.md`).
+
+## 6. Running Bayesian fits
+`STAN_CORES=4` when the machine is free (lower `uptime` load); the fit takes ~30 min. The model is launched
+detached for long runs (`nohup caffeinate -dimsu bash code/run_vertonly.sh &`); the fit is saved immediately
+after sampling, so a sleep/interruption can't lose it. (Repo is SHARED — github.com/paleomitchelljs/diets,
+collaborator branches `annika`/`cassie`; do not touch them. pdfs/ must never be pushed.)
+
+## 7. Roadmap
+- **Densify Crocodylia** — the thin/uncertain cell; mine more croc stomach data with prey-to-species.
+- **Bound the within-vertebrate size filter** — the one taphonomic axis subsetting can't match; calibrate
+  with actualistic digestion data (`actualistic_studies.csv`: Andrews corrosion, Fisher croc digestion).
+- **Test the ziphodont/processing hypothesis** — needs a dentition/oral-processing covariate with within-clade
+  variation (felid-slicing vs canid-crushing) to break the processing⟂clade confound.
+- **Real time-calibrated phylogeny** (P3) — replace the placeholder tree in `x02` so fossils sit inside the tree.
+
+---
+*Memory (auto-loaded each session): `diet-project-pipeline.md` (this map, in brief), `diet-project-findings.md`
+(scientific findings + the matched-filter reframe), `x20-model-redesign.md` (the model), plus
+`pantheria-file-malformed.md` and `verify-before-flagging-data.md`.*

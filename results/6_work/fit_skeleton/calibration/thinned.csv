@@ -1,0 +1,19 @@
+truth,rep,obs_used,n_records,top_minor,top_major,p_true_minor,p_true_major,p_none
+Serpentes,1,stomach_content,17,Serpentes,none,0.457367977142344,0.197949398903395,0.213823497553172
+Serpentes,2,stomach_content,32,Cetacea,major:Crocodylia,0.225047053342483,0.351155257582874,0.152478294216132
+Accipitriformes,3,stomach_content,26,Accipitriformes,major:Aves,0.228810208080829,0.346670836726557,0.0912278641798704
+Accipitriformes,4,stomach_content,19,Strigiformes,major:Mammalia,0.0374056156661302,0.282553295360551,0.0979702407183012
+Feliformia,5,stomach_content,25,Iguania,major:Squamata,0.080577240534237,0.204712497718013,0.214270449698044
+Feliformia,6,stomach_content,25,Feliformia,major:Crocodylia,0.305066478168624,0.143417871320678,0.175488151020045
+Strigiformes,7,stomach_content,25,Strigiformes,major:Aves,0.354275106094198,0.341020210026374,0.188008934455382
+Strigiformes,8,stomach_content,22,Falconiformes,major:Mammalia,0.116608799210671,0.13787532973912,0.298784135310536
+Charadriiformes,9,unknown,21,Charadriiformes,major:Aves,0.489203020650609,0.313182778240019,0.233508532652583
+Charadriiformes,10,unknown,15,Charadriiformes,major:Aves,0.632428045170753,0.329360459610503,0.30281125419219
+Caniformia,11,stomach_content,23,Pelecaniformes,major:Mammalia,0.0889446909327759,0.318302650672691,0.188590603342157
+Caniformia,12,stomach_content,19,Dasyuromorphia,major:Mammalia,0.317109564503081,0.357980126476342,0.20769719816694
+Passeriformes,13,regurgitate;unknown,17,Crocodylia,none,0.140132032020276,0.0883207112037019,0.373920608219325
+Passeriformes,14,regurgitate,16,Teiioidea,major:Squamata,0.106904630102196,0.149841374357783,0.189262030973128
+Iguania,15,unknown;direct_observation,16,Iguania,none,0.313949405383713,0.116457287604524,0.371043070121258
+Iguania,16,unknown;stomach_content,19,other Squamata,none,0.141757546080303,0.150564603872618,0.321681937114156
+Falconiformes,17,pellet_scat;direct_observation;prey_remains;unknown,27,Falconiformes,major:Mammalia,0.266682004941935,0.260671642233445,0.148534860877002
+Falconiformes,18,pellet_scat;prey_remains;stomach_content;unknown,27,Strigiformes,major:Squamata,0.163388308944705,0.146315422101926,0.153098044064086

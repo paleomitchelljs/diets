@@ -1,0 +1,46 @@
+accepted_name,tree,tree_label,reason
+Accipiter cooperi,Jetz2012,Accipiter_cooperii,spelling (cooperii)
+Buteo melanoleucus,Jetz2012,Geranoaetus_melanoleucus,generic placement: BirdTree uses Geranoaetus
+Geranoaetus melanoleucas,Jetz2012,Geranoaetus_melanoleucus,spelling; same species as Geranoaetus melanoleucus (duplicate taxon in db/taxa.csv)
+Buteo poecilochrous,Jetz2012,Buteo_polyosoma,BirdTree/BirdLife 2012 treat poecilochrous within polyosoma (Variable Hawk); no separate tip
+Butorides striatus,Jetz2012,Butorides_striata,gender agreement (striata)
+Cnipodectes subbruneus,Jetz2012,Cnipodectes_subbrunneus,spelling (subbrunneus)
+Falco eleanorae,Jetz2012,Falco_eleonorae,spelling (eleonorae)
+Myrmotherula fulviventris,Jetz2012,Epinecrophylla_fulviventris,generic placement: BirdTree uses Epinecrophylla
+Nycticorax violaceus,Jetz2012,Nyctanassa_violacea,generic placement: BirdTree uses Nyctanassa violacea
+Otus choliba,Jetz2012,Megascops_choliba,generic placement: BirdTree uses Megascops
+Otus kennicottii,Jetz2012,Megascops_kennicottii,generic placement: BirdTree uses Megascops
+Strix mauritanica,Jetz2012,Strix_aluco,Maghreb Owl treated within Strix aluco in BirdTree taxonomy (no separate tip)
+Tyto cappensis,Jetz2012,Tyto_capensis,spelling (capensis)
+Tyto delicatula,Jetz2012,Tyto_alba,Australasian barn owl treated within Tyto alba in BirdTree taxonomy (no separate tip)
+Tyto furcata,Jetz2012,Tyto_alba,American barn owl treated within Tyto alba in BirdTree taxonomy (no separate tip)
+Canis dingo,Upham2019,Canis_lupus,dingo treated within Canis lupus in MamPhy taxonomy (no separate tip)
+Herpestes auropunctatus,Upham2019,Herpestes_javanicus,small Indian mongoose treated within Herpestes javanicus in MamPhy taxonomy
+Hydrictis maculicollis,Upham2019,Lutra_maculicollis,generic placement: MamPhy uses Lutra
+Lycaeon pictus,Upham2019,Lycaon_pictus,spelling (Lycaon)
+Lycalopex griseus,Upham2019,Pseudalopex_griseus,generic placement: MamPhy uses Pseudalopex
+Mustela vison,Upham2019,Neovison_vison,generic placement: MamPhy uses Neovison
+Puma yagouaroundi,Upham2019,Herpailurus_yagouaroundi,generic placement: MamPhy uses Herpailurus
+Uncia uncia,Upham2019,Panthera_uncia,generic placement: MamPhy uses Panthera
+Cnemidophorus longicaudus,Tonini2016,Aurivela_longicauda,generic placement and gender: Tonini uses Aurivela longicauda
+Crotalus lutosus,Tonini2016,Crotalus_oreganus,Great Basin rattlesnake treated as C. oreganus lutosus in the Reptile Database version Tonini used (no separate tip)
+Glaucomastix abaetensis,Tonini2016,Ameivula_abaetensis,generic placement: Tonini predates Glaucomastix (2016); uses Ameivula
+Glaucomastix littoralis,Tonini2016,Ameivula_littoralis,generic placement: Tonini predates Glaucomastix (2016); uses Ameivula
+Kentropix striata,Tonini2016,Kentropyx_striata,spelling (Kentropyx); duplicate of Kentropyx striatus in db/taxa.csv
+Kentropyx striatus,Tonini2016,Kentropyx_striata,gender agreement (striata)
+Liolaemus koslowsky,Tonini2016,Liolaemus_koslowskyi,spelling (koslowskyi)
+Morelia spilota imbricata,Tonini2016,Morelia_spilota,subspecies; species tip
+Pristidactylus cf scapulatus,Tonini2016,Pristidactylus_scapulatus,"source identification is 'cf.'; matched to the named species, flagged"
+Python reticulatus,Tonini2016,Malayopython_reticulatus,generic placement: Tonini uses Malayopython
+Sistrurus catenatus edwardsii,Tonini2016,Sistrurus_catenatus,subspecies; species tip (edwardsii now often placed in S. tergeminus; Tonini has no S. tergeminus tip)
+Xenodon rhabdocephalus,Tonini2016,Xenodon_rabdocephalus,spelling (rabdocephalus)
+Australian hobby,Jetz2012,Falco_longipennis,"accepted_name is a common name (db/taxa.csv error to fix); Australian Hobby = Falco longipennis"
+Tawny owl,Jetz2012,Strix_aluco,"accepted_name is a common name (db/taxa.csv error to fix); Tawny Owl = Strix aluco, also present as Strix_aluco"
+Tawny fish owl,Jetz2012,Ketupa_flavipes,"accepted_name is a common name (db/taxa.csv error to fix); Tawny Fish Owl = Ketupa flavipes in BirdTree"
+Lycalopex vetulus,Upham2019,Pseudalopex_vetulus,generic placement: MamPhy uses Pseudalopex
+Otaria flavescens,Upham2019,Otaria_bryonia,MamPhy uses Otaria bryonia (sic; = O. byronia) for the South American sea lion; O. flavescens is a senior synonym
+Physeter catodon,Upham2019,Physeter_macrocephalus,synonym: MamPhy uses P. macrocephalus
+Dendrelaphis punctulata,Tonini2016,Dendrelaphis_punctulatus,gender agreement (punctulatus)
+Psammophis phillipsii,Tonini2016,Psammophis_phillipsi,spelling (phillipsi)
+Tomodon dorsatus,Tonini2016,Tomodon_dorsatum,gender agreement (dorsatum)
+Pituophis lodingi,Tonini2016,Pituophis_melanoleucus,black pinesnake treated as P. melanoleucus lodingi in Tonini's taxonomy (no separate tip)

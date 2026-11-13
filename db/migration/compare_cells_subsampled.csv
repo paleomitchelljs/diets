@@ -1,0 +1,15 @@
+"clade","obstype","x20_june","x20_now","db_AD","diff_db_minus_june"
+"Aves","Follow",1500,1500,1500,0
+"Aves","Pellet",1500,1500,1500,0
+"Aves","Stomach",255,255,232,-23
+"Crocodylia","Follow",0,1,1,1
+"Crocodylia","Stomach",1189,1231,5,-1184
+"Lacertilia","Follow",72,75,1,-71
+"Lacertilia","Scat",161,161,300,139
+"Lacertilia","Stomach",923,923,208,-715
+"Mammalia","Follow",1464,1464,1191,-273
+"Mammalia","Scat",1500,1500,1500,0
+"Mammalia","Stomach",4830,4830,4617,-213
+"Serpentes","Follow",1,1,2,1
+"Serpentes","Scat",363,363,298,-65
+"Serpentes","Stomach",1502,1502,1055,-447

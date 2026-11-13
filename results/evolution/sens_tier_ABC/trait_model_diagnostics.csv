@@ -1,0 +1,2 @@
+tag,n_rows,n_species,n_studies,max_rhat,min_neff_ratio,divergences
+sens_tier_ABC,169,64,61,1.01278421233902,0.0505152661176687,95

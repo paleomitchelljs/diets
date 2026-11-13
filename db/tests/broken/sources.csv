@@ -1,0 +1,9 @@
+"source_id","citation","doi","file_name","data_type","extracted_from","compiled_in","notes"
+"TEST_paper_fossil","TEST FIXTURE - not a real record (fossil paper)","","","journal_article","db/tests (synthetic)","",""
+"TEST_paper_extant","TEST FIXTURE - not a real record (extant paper)","","","journal_article","db/tests (synthetic)","",""
+"TEST_compilation","TEST FIXTURE - not a real record (compiled database)","","","compilation_database","db/tests (synthetic)","",""
+"TEST_study_in_compilation","TEST FIXTURE - not a real record (study reached through a compilation)","","","journal_article","db/tests (synthetic)","TEST_compilation",""
+"BAD_no_citation","","","","journal_article","x","",""
+"BAD_compiled_in","TEST FIXTURE - not a real record","","","journal_article","x","TEST_no_such_compilation",""
+"BAD_newline","TEST FIXTURE - not a real record","","","journal_article","x","","first line
+second line"

@@ -1,0 +1,10 @@
+"script","source_file","reason","rows"
+"01_rawdata","data/raw_data.csv","duplicate entry within raw_data.csv: the same records are entered under another RefNo, which is kept (evidence/rawdata_study_decisions.csv)",21
+"03_extant_new_observations","data/extant_new_observations.csv","duplicate of ref_id 97: the same Tropidurus hispidus x T. jaguaribanus predation (Passos et al. 2016), entered once from the paper (ref 97, kept) and once via Oliveira et al. 2025 Table S2 row 79",1
+"04_raptordiets","data/structured/raptor_diets_long.csv","duplicate record: the same publication, predator species and evidence kind is kept from another upstream table (evidence/duplicate_records.csv)",3043
+"01_rawdata","data/raw_data.csv","duplicate record: the same publication, predator species and evidence kind is kept from AvianDietDB (evidence/duplicate_records.csv)",25
+"03_extant_new_observations","data/extant_new_observations.csv","no prey taxon recorded (row states the predator's diet breadth only; species detail in Data S1 not extracted)",6
+"01_rawdata","data/raw_data.csv","non-animal food item (prey class string is plant, fungus, placeholder or unclassified); not a predator-prey link",268
+"08_tegu","data/structured/tegu_diet_dietcategories.csv","non-animal or man-made item (fruit, vegetation, seeds, man-made material); not a predator-prey link",647
+"01_rawdata","data/raw_data.csv","record has no prey count > 0 in any prey column",1
+"06_jekyll","data/structured/gator_jekyll_stomach.csv","seeds are not prey (non-animal food item)",4

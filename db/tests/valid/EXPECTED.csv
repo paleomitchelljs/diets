@@ -1,0 +1,5 @@
+"severity","table","key","check"
+"WARN","pairs.csv","OK_B_downgraded","unverified_method"
+"WARN","pairs.csv","OK_E_unknown","unknown_method"
+"WARN","pairs.csv","OK_E_bracket","bracket_only"
+"WARN","pairs.csv","OK_A_fossil","bracket_only"

@@ -1,0 +1,11 @@
+pred_taxon_id,published_position,source_of_position,stem_of,young_bound,old_bound
+Gorgosaurus_libratus,Tyrannosauridae (non-avian theropod),Therrien et al. 2023 Sci Adv (title: 'a young tyrannosaurid'),crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Compsognathus_longipes,Compsognathidae (non-avian theropod),Ostrom 1978; Conrad 2017 (coelurosaur),crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Sinocalliopteryx_gigas,Compsognathidae (non-avian theropod),Xing et al. 2012 PLoS ONE ('the large compsognathid'),crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Scipionyx_samniticus,Compsognathidae (non-avian theropod),Dal Sasso & Maganuco 2011 (title: 'Theropoda: Compsognathidae'),crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Microraptor_gui,Dromaeosauridae (non-avian paravian),O'Connor et al. 2011 PNAS ('a four-winged dromaeosaurid'),crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Microraptor_zhaoianus,Dromaeosauridae (non-avian paravian),O'Connor et al. 2019 Curr Biol; Hone et al. 2022,crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Yanornis,Ornithuromorpha (stem avialan outside crown Aves),Zhou et al. 2002/2004; Zheng et al. 2014 PLoS ONE,crown Aves,max(age; crown Aves age in Jetz tree j),Archosauria 243.30 Ma (TimeTree 5)
+Confractosuchus_sauroktonos,sister to susisuchids + hylaeochampsids (stem eusuchian outside crown Crocodylia),White et al. 2022 Gondwana Res (abstract),crown Crocodylia,max(age; crown Crocodylia 88.04 Ma TimeTree 5),Archosauria 243.30 Ma (TimeTree 5)
+Aplestosuchus_sordidus,Baurusuchidae (Notosuchia; outside crown Crocodylia),Godoy et al. 2014 PLoS ONE,crown Crocodylia,max(age; crown Crocodylia 88.04 Ma TimeTree 5),Archosauria 243.30 Ma (TimeTree 5)
+Repenomamus_robustus,Triconodonta / Gobiconodontidae (crown Mammalia outside crown Theria),Hu et al. 2005 Nature ('Mammalia ... Triconodonta'); Han et al. 2023 ('gobiconodontid'),crown Theria,max(age; crown Theria age in Upham tree j),crown Mammalia age in Upham tree j

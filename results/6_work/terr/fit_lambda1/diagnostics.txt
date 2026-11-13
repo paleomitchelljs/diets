@@ -1,0 +1,20 @@
+rule lambda1 | max rhat 1.0091 | min ess_bulk 545 | min ess_tail 927 | divergences 0,0,0,0 | treedepth hits 0,0,0,0 | time 4116 s
+$num_divergent
+[1] 0 0 0 0
+
+$num_max_treedepth
+[1] 0 0 0 0
+
+$ebfmi
+[1] 0.6420622 0.6529189 0.6896259 0.7290240
+
+$total
+[1] 4116.394
+
+$chains
+  chain_id  warmup sampling   total
+1        1 1481.39  2514.78 3996.17
+2        2 1659.89  2456.02 4115.92
+3        3 1494.66  1535.56 3030.22
+4        4 1236.24  2541.99 3778.23
+

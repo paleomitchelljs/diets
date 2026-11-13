@@ -1,0 +1,55 @@
+region,raw,accepted,family,analysis_clade,mass_method_id,note
+OZ,Ctenophorus_caudicinctus,Ctenophorus caudicinctus,Agamidae,Lacertilia,Meiri2010_T3_Agamidae,
+OZ,Ctenophorus_cristatus,Ctenophorus cristatus,Agamidae,Lacertilia,Meiri2010_T3_Agamidae,
+OZ,Ctenophorus_isolepis,Ctenophorus isolepis,Agamidae,Lacertilia,Meiri2010_T3_Agamidae,
+OZ,Ctenophorus_nuchalis,Ctenophorus nuchalis,Agamidae,Lacertilia,Meiri2010_T3_Agamidae,
+OZ,Ctenophorus_scutulatus,Ctenophorus scutulatus,Agamidae,Lacertilia,Meiri2010_T3_Agamidae,
+OZ,Pogona_minor,Pogona minor,Agamidae,Lacertilia,Meiri2010_T3_Agamidae,
+OZ,Ctenotus_ariadnae,Ctenotus ariadnae,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_atlas,Ctenotus atlas,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_brooksi,Ctenotus brooksi,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_calurus,Ctenotus calurus,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_colletti,Ctenotus colletti,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_dux,Ctenotus dux,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_grandis,Ctenotus grandis,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_hanloni,Ctenotus hanloni,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_helenae,Ctenotus helenae,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_leonhardii,Ctenotus leonhardii,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_pantherinus,Ctenotus pantherinus,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_piankai,Ctenotus piankai,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_schomburgkii,Ctenotus schomburgkii,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Ctenotus_quatt.,Ctenotus quattuordecimlineatus,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,"source abbreviation ""quatt.""; OZ_Species.csv code quat = quattuordecimlineatus"
+OZ,Cryptoblepharus_buchananii,Cryptoblepharus buchananii,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Eremiascincus_richardsoni,Eremiascincus richardsonii,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,source spelling richardsoni
+OZ,Liopholis_inornata,Liopholis inornata,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Liopholis_striata,Liopholis striata,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Menetia_greyi,Menetia greyi,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Tiliqua_multifasciata,Tiliqua multifasciata,Scincidae,Lacertilia,Meiri2010_T3_Scincidae,
+OZ,Diplodactylus_conspicillatus,Diplodactylus conspicillatus,Diplodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Diplodactylidae (Meiri 2010 predates the split)
+OZ,Diplodactylus_damaeus,Diplodactylus damaeus,Diplodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Diplodactylidae (Meiri 2010 predates the split)
+OZ,Strophurus_ciliaris,Strophurus ciliaris,Diplodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Diplodactylidae
+OZ,Gehyra_purpurascens,Gehyra purpurascens,Gekkonidae,Lacertilia,Meiri2010_T3_Gekkonidae,
+OZ,Heteronotia_binoei,Heteronotia binoei,Gekkonidae,Lacertilia,Meiri2010_T3_Gekkonidae,
+OZ,Nephrurus_laevissimus,Nephrurus laevissimus,Carphodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Carphodactylidae
+OZ,Nephrurus_levis,Nephrurus levis,Carphodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Carphodactylidae
+OZ,Nephrurus_vertebralis,Nephrurus vertebralis,Carphodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Carphodactylidae
+OZ,Rhynchoedura_ornata,Rhynchoedura ornata,Diplodactylidae,Lacertilia,Meiri2010_T3_Gekkonidae,gekkonid Meiri row used for Diplodactylidae
+OZ,Lialis_burtoni,Lialis burtonis,Pygopodidae,Lacertilia,Meiri2010_T3_Sauria,source spelling burtoni; OZ_Species.csv burtonis; all-lizard Meiri row (no Pygopodidae row)
+OZ,Pygopus_nigriceps,Pygopus nigriceps,Pygopodidae,Lacertilia,Meiri2010_T3_Sauria,all-lizard Meiri row (no Pygopodidae row)
+OZ,Varanus_brevicauda,Varanus brevicauda,Varanidae,Lacertilia,Meiri2010_T3_Varanidae,
+OZ,Varanus_eremius,Varanus eremius,Varanidae,Lacertilia,Meiri2010_T3_Varanidae,
+OZ,Varanus_gouldii,Varanus gouldii,Varanidae,Lacertilia,Meiri2010_T3_Varanidae,
+OZ,Varanus_tristis,Varanus tristis,Varanidae,Lacertilia,Meiri2010_T3_Varanidae,
+OZ,Brachyurophis_fasciolatus,Brachyurophis fasciolatus,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Brachyurophis_semifasciatus,Brachyurophis semifasciatus,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Demansia_psammophis,Demansia psammophis,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Pseudonaja_modesta,Pseudonaja modesta,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Pseudonaja_nuchalis,Pseudonaja nuchalis,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Simoselaps_anomalus,Simoselaps anomalus,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Simoselaps_bertholdi,Simoselaps bertholdi,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+OZ,Suta_monachus,Suta monachus,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+NA,tigr,Aspidoscelis tigris,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,code tigr decoded as Aspidoscelis (Cnemidophorus) tigris; no species key in the folder
+NA,uta,Uta stansburiana,Phrynosomatidae,Lacertilia,Meiri2010_T3_Phrynosomatidae,code uta decoded as Uta stansburiana; no species key in the folder
+NA,call,Callisaurus draconoides,Phrynosomatidae,Lacertilia,Meiri2010_T3_Phrynosomatidae,code call decoded as Callisaurus draconoides; no species key in the folder
+NA,gamb,Gambelia wislizenii,Crotaphytidae,Lacertilia,Meiri2010_T3_Sauria,code gamb decoded as Gambelia wislizenii; no species key in the folder; all-lizard Meiri row (no Crotaphytidae row)
+NA,smag,Sceloporus magister,Phrynosomatidae,Lacertilia,Meiri2010_T3_Phrynosomatidae,code smag decoded as Sceloporus magister; no species key in the folder

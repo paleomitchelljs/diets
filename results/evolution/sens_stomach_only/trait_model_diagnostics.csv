@@ -1,0 +1,2 @@
+tag,n_rows,n_species,n_studies,max_rhat,min_neff_ratio,divergences
+sens_stomach_only,1315,77,71,1.01548516065176,0.111793667311996,1

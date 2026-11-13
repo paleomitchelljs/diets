@@ -1,0 +1,23 @@
+rec,prey_name,prey_lookup_name,prey_class,n_items,quote,notes,prey_mass_method
+n01,Gryllus campestris,,Insecta,95,"Table 1 TOTAL n = 95","Table 1 total, all localities; caches, pellets and food remains pooled",
+n02,Gryllus,,Insecta,19,"Table 1 TOTAL n = 19","Table 1 total, all localities; caches, pellets and food remains pooled",
+n03,Gryllotalpa gryllotalpa,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n04,Chorthippus parallelus,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n05,Heteroptera,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n06,Coleoptera,,Insecta,2,"Table 1 TOTAL n = 2","Table 1 total, all localities; caches, pellets and food remains pooled",
+n07,Carabidae,,Insecta,34,"Table 1 TOTAL n = 34","Table 1 total, all localities; caches, pellets and food remains pooled",
+n08,Calathus,,Insecta,4,"Table 1 TOTAL n = 4","Table 1 total, all localities; caches, pellets and food remains pooled",
+n09,Harpalus rufipes,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n10,Harpalus,,Insecta,10,"Table 1 TOTAL n = 10","Table 1 total, all localities; caches, pellets and food remains pooled",
+n11,Scarabaeidae,,Insecta,4,"Table 1 TOTAL n = 4","Table 1 total, all localities; caches, pellets and food remains pooled",
+n12,Geotrupes,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n13,Pentodon,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n14,Formicidae,,Insecta,4,"Table 1 TOTAL n = 4","Table 1 total, all localities; caches, pellets and food remains pooled",
+n15,Lepidoptera,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n16,Insecta,,Insecta,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n17,Lacerta agilis,,Reptilia,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n18,Rodentia,,Mammalia,7,"Table 1 TOTAL n = 7","Table 1 total, all localities; caches, pellets and food remains pooled",
+n19,Microtus subterraneus,,Mammalia,3,"Table 1 TOTAL n = 3","Table 1 total, all localities; caches, pellets and food remains pooled",lookup
+n20,Microtus arvalis,,Mammalia,4,"Table 1 TOTAL n = 4","Table 1 total, all localities; caches, pellets and food remains pooled; source label "Microtus ex gr. arvalis" (species group), species mean used",lookup
+n21,Soricidae,,Mammalia,1,"Table 1 TOTAL n = 1","Table 1 total, all localities; caches, pellets and food remains pooled",
+n22,Mammalia,,Mammalia,5,"Table 1 TOTAL n = 5","Table 1 total, all localities; caches, pellets and food remains pooled; source label "Micromammalia g. sp."",

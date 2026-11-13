@@ -1,0 +1,20 @@
+rule free | max rhat 1.0298 | min ess_bulk 148 | min ess_tail 929 | divergences 0,0,0,0 | treedepth hits 0,0,0,0 | time 3093 s
+$num_divergent
+[1] 0 0 0 0
+
+$num_max_treedepth
+[1] 0 0 0 0
+
+$ebfmi
+[1] 0.6758608 0.6616972 0.7813418 0.7304559
+
+$total
+[1] 3092.613
+
+$chains
+  chain_id  warmup sampling   total
+1        1 1435.32 1203.380 2638.70
+2        2 1354.31  933.247 2287.55
+3        3 1482.07 1610.260 3092.33
+4        4 1290.90  935.861 2226.76
+

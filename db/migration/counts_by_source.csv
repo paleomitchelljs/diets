@@ -1,0 +1,11 @@
+"script","input","rows_in","unit_in","note_in","dropped","sources_out","pairs_out","measurements_out","pairs_both_masses","individual_pairs"
+"00_merged_sources","merged:","63","merged publications in evidence/duplicate_studies.csv","",0,63,0,0,0,0
+"01_rawdata","data/raw_data.csv","517","predator records (rows 4+ of raw_data.csv)","7683 record x prey cells with count > 0; longform.csv has 171406 item rows",315,143,7369,156,6000,77
+"02_aviandietdb","data/structured/aviandiet_gut_ppmr.csv","214","rows of aviandiet_gut_ppmr.csv","",0,14,214,0,214,3
+"03_extant_new_observations","data/extant_new_observations.csv","251","rows of extant_new_observations.csv","",7,79,244,176,188,92
+"04_raptordiets","data/structured/raptor_diets_long.csv","58533","rows of raptor_diets_long.csv","",3043,1048,55490,0,38092,0
+"05_tucker2016","data/structured/tucker2016_mammal_ppmr.csv","107","rows of tucker2016_mammal_ppmr.csv","x13 already dropped 7 of 114 species that lack a prey mass",0,1,107,0,107,0
+"06_jekyll","data/structured/gator_jekyll_stomach.csv","69","rows of gator_jekyll_stomach.csv (alligator x prey category)","27 alligators",4,1,65,119,0,65
+"07_glaudas2019","data/structured/glaudas2019_snake_rpm.csv","115","rows of glaudas2019_snake_rpm.csv (one per snake species)","",0,1,115,115,115,0
+"08_tegu","data/structured/tegu_diet_","9625","rows of tegu_diet_dietcategories.csv (275 tegus x 35 categories)","2414 with Found = 1",647,1,1767,273,0,1767
+"09_varanus","data/structured/varanus_","95","prey taxa in the two Varanus tables (88 Mazzotti Table 2 rows + 7 Weavers top prey)","",0,1,95,0,0,0

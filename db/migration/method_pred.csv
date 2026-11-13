@@ -1,0 +1,10 @@
+"pred_mass_method","01_rawdata","02_aviandietdb","03_extant_new_observations","04_raptordiets","05_tucker2016","06_jekyll","07_glaudas2019","08_tegu","09_varanus"
+"(no mass)",51,0,49,154,0,26,0,3,95
+"assigned_approximate",0,0,13,0,0,0,0,0,0
+"measured",468,0,59,0,0,20,0,1764,0
+"regressed_from_bone",0,0,0,0,0,0,0,0,0
+"regressed_from_length",0,0,68,0,0,19,115,0,0
+"size_class_midpoint",75,0,42,0,0,0,0,0,0
+"species_average_database",1967,214,9,55336,0,0,0,0,0
+"species_average_literature",4775,0,0,0,107,0,0,0,0
+"unknown",33,0,4,0,0,0,0,0,0

@@ -1,0 +1,26 @@
+metric,value
+species,Varanus_niloticus
+source,Mazzotti_et_al_2020_JHerp_54_189_doi10.1670/18-115
+location,Florida_PalmBeach_Broward
+n_GI_tracts,68
+n_with_food,65
+pred_mass_g_min,110
+pred_mass_g_max,12300
+pred_SVL_cm_min,19.1
+pred_SVL_cm_max,78.7
+size_classes,hatchling<20cm(n2);juvenile20.1-33.9cm(n8);adult>=34cm(n58)
+n_prey_items,1484
+pct_items_Insecta,72
+pct_items_Reptile_egg,12
+pct_items_Gastropoda,8
+pct_items_Amphibia,3
+pct_items_Reptilia,2
+pct_items_Mammalia,1
+pct_items_Aves,0.3
+pct_items_Actinopterygii,0.1
+shannon_H_adult,2.08
+shannon_H_overall_range,1.01-2.08
+vertebrate_prey_taxa,"amphibians(Rhinella marina CaneToad/Anaxyrus/Lithobates/Osteopilus); reptiles(Nerodia watersnakes/Basiliscus/Hemidactylus/Iguana); reptile+bird eggs(Iguana iguana/turtle); birds(adults only); mammals(Rattus rattus/Sigmodon hispidus - adults only); fish(Jordanella floridae)"
+foraging_mode,active_forager_generalist; mammals/birds/fish ONLY in adults; adults most diverse
+obs_type,Stomach_GI
+note,"OCCURRENCE-BASED (percent occurrence; individual prey items NOT quantified per paper); NO prey masses & no per-individual predator masses -> NOT used for PPMR. Predator-mass reference + diet breadth only, parallel to tegu (Salvator). Prey-species list in nilemonitor/mazzotti2020_table2_prey_items.csv (88 taxa)."

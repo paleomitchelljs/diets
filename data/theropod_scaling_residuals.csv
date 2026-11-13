@@ -1,0 +1,8 @@
+"pred","prey","prey_clade","pred_mass","prey_mass","source","ppmr","evidence","lpred","lprey","predmass_c","resid_Crocodylia","resid_Lacertilia","resid_Aves","resid_Mammalia","resid_Serpentes","best_match"
+"Sinocalliopteryx_gigas","Confuciusornis","Theropoda",55570,230,"Xingetal_2012",-5.49,"gut/assoc",10.925398766274,5.4380793089232,3.03239318721345,4.49,2.79,1.27,-0.86,-1.87,"Mammalia"
+"Gorgosaurus_libratus_juvenile","Citipes_elegans_yearling","Theropoda_Caenagnathidae",335000,10500,"Therrien_et_al_2023_SciAdv",-3.46,"gut_content",12.7218858108072,9.25913053614561,4.82888023174669,7.92,5.96,4.21,1.75,0.61,"Serpentes"
+"Microraptor_gui","Enantiornithes","Theropoda",764,65,"Oconnoretal_2011",-2.46,"gut/assoc",6.63856778916652,4.17438726989564,-1.254437789894,4.17,3.07,2.11,0.74,0.09,"Serpentes"
+"Sinocalliopteryx_gigas","Sinornithosaurus","Theropoda",8317,942,"Xingetal_2012",-2.18,"gut/assoc",9.02605689186869,6.84800527457636,1.13305131280817,6.32,4.88,3.61,1.82,0.97,"Serpentes"
+"Sinocalliopteryx_gigas","cfPsittacosaurus","Ornithischia",56408,10606.60465,"Xingetal_2012",-1.67,"gut/assoc",10.9403662713989,9.26923216625497,3.04736069233836,8.32,6.61,5.1,2.96,1.95,"Serpentes"
+"Velociraptor_mongoliensis","Azdarchid","Pterosauria",13000,9000,"Honeetal_2012",-0.37,"gut/assoc",9.47270463644367,9.10497985631836,1.57969905738316,8.48,6.98,5.65,3.78,2.89,"Serpentes"
+"Velociraptor_mongoliensis","Protoceratops_andrewsi","Ornithischia_Ceratopsia",15000,63000,"Carpenter_2000",1.44,"attack_predation_event",9.61580548008435,11.0508900053737,1.72279990102383,10.39,8.87,7.53,5.63,4.73,"Serpentes"

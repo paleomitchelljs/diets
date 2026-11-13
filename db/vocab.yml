@@ -1,0 +1,44 @@
+# Controlled vocabularies for db/. Values are from docs/ASSESSMENT_AND_PLAN_2026-11.md,
+# Phase 1, with two changes JM made on 2026-11-11: pair_resolution has five tiers
+# defined by where each mass comes from, and mass_method has `unknown`. On 2026-11-12 JM added
+# observation_type `unknown` and mass_method `reconstructed_from_remains`.
+# Definitions are in db/SCHEMA.md.
+# code/db_validate.R reads this file; a value not listed here fails validation.
+# Add a value only by editing this file and its definition in SCHEMA.md together.
+
+observation_type:
+  - stomach_content
+  - regurgitate
+  - pellet
+  - scat
+  - prey_remains
+  - direct_observation
+  - combat_association
+  - bite_trace
+  - dna_detection
+  - unknown        # added 2026-11-12 (JM): the source does not say how the link was observed
+
+interaction_outcome:
+  - consumed
+  - killed_not_consumed
+  - attempted_failed
+  - unknown
+
+pair_resolution:
+  - A_both_measured
+  - B_pred_measured_prey_average
+  - C_prey_measured_pred_average
+  - D_both_average
+  - E_coarse_or_aggregate
+
+mass_method:
+  - measured
+  - regressed_from_length
+  - regressed_from_bone
+  - reconstructed_from_remains   # added 2026-11-12 (JM)
+  - species_average_database
+  - species_average_literature
+  - size_class_midpoint
+  - ratio_derived
+  - assigned_approximate
+  - unknown

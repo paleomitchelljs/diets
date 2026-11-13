@@ -1,0 +1,25 @@
+rank,taxon,habitat_zone,note
+class,Actinopterygii,aquatic,ray-finned fish
+class,Chondrichthyes,aquatic,sharks/rays
+class,Osteichthyes,aquatic,bony fish (coarse)
+class,Amphibia,semiaquatic,"frogs/salamanders; many breed in water"
+order,Anura,semiaquatic,frogs/toads
+order,Caudata,semiaquatic,salamanders/newts
+class,Reptilia,terrestrial,coarse default; override by order
+order,Squamata,terrestrial,"lizards+snakes; some semiaquatic/fossorial (verify)"
+order,Testudines,semiaquatic,turtles
+order,Crocodylia,semiaquatic,crocodilian prey (rare)
+class,Aves,aerial,volant prey; flight = escape axis + carriability ceiling
+class,Mammalia,terrestrial,coarse default; override by order
+order,Rodentia,terrestrial,"many fossorial/semifossorial -> burrow-prey; refine"
+order,Soricomorpha,terrestrial,shrews/moles; moles fossorial
+order,Eulipotyphla,terrestrial,insectivores (incl. moles=fossorial)
+order,Lagomorpha,terrestrial,rabbits/hares
+order,Chiroptera,aerial,bats; volant prey
+order,Primates,arboreal,many arboreal
+order,Didelphimorphia,scansorial,opossums; climbing
+order,Diprotodontia,scansorial,"possums arboreal; others terrestrial (refine)"
+order,Carnivora,terrestrial,"as prey (intraguild); refine"
+class,Insecta,terrestrial,"invertebrate prey; aerial for flying insects (refine)"
+class,Malacostraca,aquatic,crustaceans
+phylum,Mollusca,aquatic,"mostly aquatic prey (refine: terrestrial snails exist)"

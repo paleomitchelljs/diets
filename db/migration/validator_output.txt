@@ -1,0 +1,124 @@
+=== db_validate ===
+  tables : /Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/db 
+  vocab  : /Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/db/vocab.yml 
+  index  : /Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/docs/methodology_index.csv 
+
+  sources.csv         3807 rows
+  taxa.csv           10853 rows
+  methods.csv           46 rows
+  pairs.csv         104982 rows
+  measurements.csv    1442 rows
+
+WARN  methods.csv [index_status]  2 rows
+      line 8     ChristiansenFarina2004_FL  method_file='Christiansen_Farina_2004_HistBiol_theropod_mass.pdf'  -- methodology index status is 'NEEDED' (paper not on disk)
+      line 35    Hu2005_SI_Alexander1979_VanValkenburgh1990  method_file='Alexander_etal_1979_JZool_mammal_limb_allometry.pdf'  -- methodology index status is 'NEEDED' (paper not on disk)
+WARN  pairs.csv [unknown_method]  516 rows
+      line 1999  Angelici2000_DM136_L208C2128  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2000  Angelici2000_DM136_L208C2413  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2001  Angelici2000_DM136_L208C244  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2002  Angelici2000_DM136_L208C2475  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2006  Angelici2000_DM136_L208C2692  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2007  Angelici2000_DM136_L208C3200  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2008  Angelici2000_DM136_L208C3243  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2020  Angelici2000_DM136_L209C2413  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2022  Angelici2000_DM136_L209C260  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2023  Angelici2000_DM136_L209C2692  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2024  Angelici2000_DM136_L209C289  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2025  Angelici2000_DM136_L209C3243  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2034  Angelici2000_DM136_L210C2128  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2035  Angelici2000_DM136_L210C2413  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2036  Angelici2000_DM136_L210C244  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2039  Angelici2000_DM136_L210C2692  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2040  Angelici2000_DM136_L210C2799  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2041  Angelici2000_DM136_L210C3052  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2042  Angelici2000_DM136_L210C3199  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2043  Angelici2000_DM136_L210C3200  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2044  Angelici2000_DM136_L210C3243  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2045  Angelici2000_DM136_L210C3279  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2054  Angelici2000_DM136_L211C2128  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2055  Angelici2000_DM136_L211C2413  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2056  Angelici2000_DM136_L211C2475  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2060  Angelici2000_DM136_L211C2692  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2061  Angelici2000_DM136_L211C3052  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2062  Angelici2000_DM136_L211C3200  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2742  Auffenberg1981_ref91  pred_mass_method='unknown'  -- pred_mass_method is 'unknown'
+      line 2742  Auffenberg1981_ref91  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 2743  Auffenberg1981_ref92  pred_mass_method='unknown'  -- pred_mass_method is 'unknown'
+      line 2743  Auffenberg1981_ref92  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 5599  Begg2006_DM199_L17C1614  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 5601  Begg2006_DM199_L17C1656  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 5603  Begg2006_DM199_L17C1731  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 9129  Bowland1993_DM169_L100C346  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 9455  Brown1965_DM87_L336C2781  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 9713  Brzezinski2010_DM162_L128C2556  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 9780  Brzezinski2010_DM162_L132C2556  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10627 CapizziLuiselli1997_ref16  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10628 CapizziLuiselli1997_ref17  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10629 CapizziLuiselli1997_ref18  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10630 CapizziLuiselli1997_ref19  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10631 CapizziLuiselli1997_ref20  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10632 CapizziLuiselli1997_ref21  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 10633 CapizziLuiselli1997_ref22  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 14867 Cui2008_L90C792  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 14874 Cui2008_L91C792  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 16176 Delany1986_DM126_L236C103  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      line 16177 Delany1986_DM126_L236C112  prey_mass_method='unknown'  -- prey_mass_method is 'unknown'
+      ... and 466 more (use --max-print=Inf or --report=FILE)
+WARN  pairs.csv [unverified_method]  22 rows
+      line 12775 Chen1998_01  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 14397 Conrad2017_01  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15309 DalSasso2011_01  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15310 DalSasso2011_02  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15311 DalSasso2011_03  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15312 DalSasso2011_04  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15313 DalSasso2011_05  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15314 DalSasso2011_06  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 15315 DalSasso2011_07  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 31398 Hone2022_01  pred_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 31664 Hu2005_01  pred_mass_method_id='Hu2005_SI_Alexander1979_VanValkenburgh1990'  -- method 'Hu2005_SI_Alexander1979_VanValkenburgh1990' is marked verified = FALSE
+      line 32133 Hwang2004_01  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 64693 OConnor2011_01  pred_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 64694 OConnor2019_01  pred_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 64694 OConnor2019_01  prey_mass_method_id='Hone2022_Meiri2010_unstated'  -- method 'Hone2022_Meiri2010_unstated' is marked verified = FALSE
+      line 68251 Peyer2006_01  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 95919 Therrien2023_01  pred_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 95919 Therrien2023_01  prey_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 95920 Therrien2023_02  pred_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 95920 Therrien2023_02  prey_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+      line 102798 Xing2012_01  pred_mass_method_id='Benson2014_S11_FCestimated'  -- method 'Benson2014_S11_FCestimated' is marked verified = FALSE
+      line 102802 Xing2013_01  pred_mass_method_id='ChristiansenFarina2004_FL'  -- method 'ChristiansenFarina2004_FL' is marked verified = FALSE
+WARN  pairs.csv [bracket_only]  32 rows
+      line 15310 DalSasso2011_02  prey_mass_lo_g='1.938'  -- prey mass is a bracket with no point value
+      line 15311 DalSasso2011_03  prey_mass_lo_g='0.06967'  -- prey mass is a bracket with no point value
+      line 15316 Dalsatt2006_01  pred_mass_lo_g='180'  -- pred mass is a bracket with no point value
+      line 31769 Huang2026_01  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 32034 Hurum2006_01  prey_mass_lo_g='4.333'  -- prey mass is a bracket with no point value
+      line 32035 Hurum2006_02  prey_mass_lo_g='4.333'  -- prey mass is a bracket with no point value
+      line 70963 Qiu2025_01  prey_mass_lo_g='4.667'  -- prey mass is a bracket with no point value
+      line 70964 Qiu2025_02  prey_mass_lo_g='4.333'  -- prey mass is a bracket with no point value
+      line 99764 Varricchio2001_01  pred_mass_lo_g='330300'  -- pred mass is a bracket with no point value
+      line 99765 Varricchio2001_02  pred_mass_lo_g='330300'  -- pred mass is a bracket with no point value
+      line 102493 Wilson2010_01  prey_mass_lo_g='216.5'  -- prey mass is a bracket with no point value
+      line 102802 Xing2013_01  prey_mass_lo_g='0.00252'  -- prey mass is a bracket with no point value
+      line 104495 Zheng2014_02  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104496 Zheng2014_03  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104497 Zheng2014_04  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104498 Zheng2014_05  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104499 Zheng2014_06  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104502 Zheng2014_09  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104503 Zheng2014_10  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104504 Zheng2014_11  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104505 Zheng2014_12  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104507 Zheng2014_14  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104508 Zheng2014_15  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104509 Zheng2014_16  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104510 Zheng2014_17  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104511 Zheng2014_18  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104512 Zheng2018_01  prey_mass_lo_g='0.3976'  -- prey mass is a bracket with no point value
+      line 104513 Zheng2018_02  prey_mass_lo_g='0.2654'  -- prey mass is a bracket with no point value
+      line 104514 Zheng2018_03  prey_mass_lo_g='0.02042'  -- prey mass is a bracket with no point value
+      line 104520 Zhou2002_01  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+      line 104570 Zhou2014_01  prey_mass_lo_g='0.01841'  -- prey mass is a bracket with no point value
+      line 104571 Zhou2014_02  prey_mass_lo_g='0.3593'  -- prey mass is a bracket with no point value
+
+RESULT: PASS  (0 errors in 0 checks; 572 warnings)

@@ -1,0 +1,75 @@
+pair_id,source_id,group,pred_taxon_id,pred_specimen,prey_taxon_id,observation_type,obs,pred_stage,record_class,pred_mass_g,pred_mass_lo_g,pred_mass_hi_g,prey_mass_g,prey_mass_lo_g,prey_mass_hi_g,age_ma
+Dalsatt2006_01,Dalsatt2006,Avialae,Confuciusornis_sanctus,IVPP V13313,Jinanichthys,stomach_content,stomach_content,unknown,point_interval,,180,1620,5.78,0.578,57.8,120.3
+Zhou2009_01,Zhou2009,Avialae,Jianchangornis_microdonta,IVPP V16708,Teleostei,stomach_content,stomach_content,subadult,excluded: no prey mass,490.1,201.3,1193,,,,120
+Huang2026_01,Huang2026,Avialae,Kunpengornis_anhuimusei,AGB 15483,Teleostei,stomach_content,stomach_content,unknown,bracket,587.1,241.1,1430,,0.3593,98.3,120
+Zhou2014_01,Zhou2014,Avialae,Piscivoravis_lii,IVPP V17078,Teleostei,stomach_content,stomach_content,subadult,bracket,463.8,190.5,1129,,0.01841,98.3,120
+Zhou2014_02,Zhou2014,Avialae,Piscivoravis_lii,IVPP V17078,Teleostei,stomach_content,stomach_content,subadult,bracket,463.8,190.5,1129,,0.3593,98.3,120
+Zheng2014_01,Zheng2014,Avialae,Yanornis,STM9-15,Jinanichthys,stomach_content,stomach_content,unknown,point_interval,545,223.8,1327,5.78,2.092,12.29,122.5
+Zheng2014_02,Zheng2014,Avialae,Yanornis,STM9-15,Teleostei,stomach_content,stomach_content,unknown,bracket,545,223.8,1327,,0.3593,98.3,122.5
+Zheng2014_03,Zheng2014,Avialae,Yanornis,STM9-18,Teleostei,stomach_content,stomach_content,unknown,bracket,450.9,185.2,1098,,0.3593,98.3,122.5
+Zheng2014_04,Zheng2014,Avialae,Yanornis,STM9-18,Teleostei,stomach_content,stomach_content,unknown,bracket,450.9,185.2,1098,,0.3593,98.3,122.5
+Zheng2014_05,Zheng2014,Avialae,Yanornis,STM9-19,Protopsephurus,stomach_content,stomach_content,unknown,bracket,490.1,201.3,1193,,0.3593,98.3,122.5
+Zheng2014_06,Zheng2014,Avialae,Yanornis,STM9-19,Teleostei,stomach_content,stomach_content,unknown,bracket,490.1,201.3,1193,,0.3593,98.3,122.5
+Zheng2014_07,Zheng2014,Avialae,Yanornis,STM9-26,Jinanichthys,stomach_content,stomach_content,unknown,point_interval,517.2,212.4,1259,5.78,1.927,17.34,122.5
+Zheng2014_08,Zheng2014,Avialae,Yanornis,STM9-31,Jinanichthys,stomach_content,stomach_content,unknown,point_interval,380.4,46.12,3138,5.78,1.927,17.34,122.5
+Zheng2014_09,Zheng2014,Avialae,Yanornis,STM9-31,Teleostei,stomach_content,stomach_content,unknown,bracket,380.4,46.12,3138,,0.3593,98.3,122.5
+Zheng2014_10,Zheng2014,Avialae,Yanornis,STM9-37,Teleostei,stomach_content,stomach_content,unknown,bracket,531,218.1,1293,,0.3593,98.3,122.5
+Zheng2014_11,Zheng2014,Avialae,Yanornis,STM9-46,Teleostei,stomach_content,stomach_content,unknown,bracket,545,223.8,1327,,0.3593,98.3,122.5
+Zheng2014_12,Zheng2014,Avialae,Yanornis,STM9-46,Teleostei,stomach_content,stomach_content,unknown,bracket,545,223.8,1327,,0.3593,98.3,122.5
+Zheng2014_13,Zheng2014,Avialae,Yanornis,STM9-49,Jinanichthys,stomach_content,stomach_content,unknown,point_interval,438.2,180,1067,5.78,1.927,17.34,122.5
+Zheng2014_14,Zheng2014,Avialae,Yanornis,STM9-49,Teleostei,stomach_content,stomach_content,unknown,bracket,438.2,180,1067,,0.3593,98.3,122.5
+Zheng2014_15,Zheng2014,Avialae,Yanornis,STM9-51,Teleostei,stomach_content,stomach_content,unknown,bracket,377.6,155,919.4,,0.3593,98.3,122.5
+Zheng2014_16,Zheng2014,Avialae,Yanornis,STM9-51,Teleostei,stomach_content,stomach_content,unknown,bracket,377.6,155,919.4,,0.3593,98.3,122.5
+Zheng2014_17,Zheng2014,Avialae,Yanornis,STM9-52,Teleostei,stomach_content,stomach_content,unknown,bracket,389.3,159.9,948,,0.3593,98.3,122.5
+Zheng2014_18,Zheng2014,Avialae,Yanornis,STM9-52,Teleostei,stomach_content,stomach_content,unknown,bracket,389.3,159.9,948,,0.3593,98.3,122.5
+Zhou2002_01,Zhou2002,Avialae,Yanornis_martini,IVPP V13259,Teleostei,stomach_content,stomach_content,unknown,bracket,482.1,198,1174,,0.3593,98.3,122.5
+Godoy2014_01,Godoy2014,Crocodyliformes,Aplestosuchus_sordidus,LPRP/USP 0229a,Sphagesauridae,stomach_content,stomach_content,unknown,point_interval,43170,33640,55410,817.5,301.3,1063,88.75
+White2022_01,White2022,Crocodyliformes,Confractosuchus_sauroktonos,AODF0890,Ornithopoda,stomach_content,stomach_content,unknown,point_interval,37400,26580,57660,1304,1000,1700,93
+Zhou2010_01,Zhou2010,Lacertilia,Yabeinosaurus,"",Teleostei,stomach_content,stomach_content,unknown,excluded: no predator mass,,,,,,,125.5
+Han2023_01,Han2023,Repenomamus,Repenomamus_robustus,WZSSM VF000011 (mammal),Psittacosaurus_lujiatunensis,combat_association,direct_observation,subadult,point_interval,3430,2010,4850,10600,4600,16600,133.5
+Hu2005_01,Hu2005,Repenomamus,Repenomamus_robustus,IVPP V13605,Psittacosaurus,stomach_content,stomach_content,adult,point_interval,4899,4000,6000,82.6,37.28,106.8,133.5
+Wilson2010_01,Wilson2010,Sanajeh,Sanajeh_indicus,GSI/GC/2901-2906,Titanosauria,combat_association,direct_observation,adult,bracket,5321,5321,16660,,216.5,2316,67.5
+Kear2006_01,Kear2006,Testudines,Notochelone,AM F87832,Inoceramidae,stomach_content,stomach_content,unknown,excluded: invertebrate prey,,,,,,,106.75
+Kear2006_02,Kear2006,Testudines,Notochelone,QM F49190,Inoceramidae,stomach_content,stomach_content,unknown,excluded: invertebrate prey,,,,,,,106.75
+Kear2006_03,Kear2006,Testudines,Notochelone,SAM P41107,Inoceramidae,stomach_content,stomach_content,unknown,excluded: invertebrate prey,,,,,,,106.75
+Zheng2018_01,Zheng2018,Theropoda,Anchiornis,STM0-179,Lacertilia,pellet,pellet_scat,unknown,bracket,863.5,362.3,1581,,0.3976,6.368,158.15
+Zheng2018_02,Zheng2018,Theropoda,Anchiornis,STM0-179,Lacertilia,pellet,pellet_scat,unknown,bracket,863.5,362.3,1581,,0.2654,4.893,158.15
+Zheng2018_03,Zheng2018,Theropoda,Anchiornis,STM0-179,Lacertilia,pellet,pellet_scat,unknown,bracket,863.5,362.3,1581,,0.02042,0.4499,158.15
+Zheng2018_04,Zheng2018,Theropoda,Anchiornis,STM0-224,Ptycholepidae,pellet,pellet_scat,unknown,excluded: no prey mass,827.5,347.2,1515,,,,158.15
+Zheng2018_05,Zheng2018,Theropoda,Anchiornis,STMA0-4,Ptycholepidae,pellet,pellet_scat,unknown,excluded: no prey mass,103.4,43.4,189.4,,,,158.15
+Zheng2018_06,Zheng2018,Theropoda,Anchiornis,STM0-38,Ptycholepidae,pellet,pellet_scat,unknown,excluded: no prey mass,160.3,67.25,293.4,,,,158.15
+Zheng2018_07,Zheng2018,Theropoda,Anchiornis,"",Ptycholepidae,pellet,pellet_scat,unknown,excluded: no predator mass,,,,,,,158.15
+Zheng2018_08,Zheng2018,Theropoda,Anchiornis,"",Ptycholepidae,pellet,pellet_scat,unknown,excluded: no predator mass,,,,,,,158.15
+Charig1997_01,Charig1997,Theropoda,Baryonyx_walkeri,BMNH R9951,Lepidotes,stomach_content,stomach_content,juvenile,excluded: no prey mass,2576000,897000,7400000,,,,123.6
+Charig1997_02,Charig1997,Theropoda,Baryonyx_walkeri,BMNH R9951,Iguanodon,stomach_content,stomach_content,juvenile,excluded: no prey mass,2576000,897000,7400000,,,,123.6
+Nesbitt2006_01,Nesbitt2006,Theropoda,Coelophysis_bauri,AMNH FR 7224,Crocodylomorpha,stomach_content,stomach_content,adult,excluded: no prey mass,8285,4393,15170,,,,210
+Conrad2017_01,Conrad2017,Theropoda,Compsognathus_longipes,SNSB-BSPG AS I 563,Bavarisaurus,stomach_content,stomach_content,subadult,point_interval,1568,856.3,2870,9.095,7.453,9.199,147.1
+Peyer2006_01,Peyer2006,Theropoda,Compsognathus_longipes,MNHN CNJ 79,Lepidosauria,stomach_content,stomach_content,unknown,excluded: no prey mass,2324,1269,4255,,,,146.05
+Varricchio2001_01,Varricchio2001,Theropoda,Daspletosaurus,OTM 200,Hadrosauridae,stomach_content,stomach_content,unknown,point_interval,,330300,5886000,219500,144300,334300,77.85
+Varricchio2001_02,Varricchio2001,Theropoda,Daspletosaurus,OTM 200,Hadrosauridae,stomach_content,stomach_content,unknown,point_interval,,330300,5886000,15220,11810,19680,77.85
+Therrien2023_01,Therrien2023,Theropoda,Gorgosaurus_libratus,TMP 2009.12.14,Citipes_elegans,stomach_content,stomach_content,juvenile,point_interval,334400,193700,649200,9200,5284,17710,75.3
+Therrien2023_02,Therrien2023,Theropoda,Gorgosaurus_libratus,TMP 2009.12.14,Citipes_elegans,stomach_content,stomach_content,juvenile,point_interval,334400,193700,649200,11500,6529,21880,75.3
+Qiu2025_01,Qiu2025,Theropoda,Huadanosaurus_sinensis,IVPP V 14202,Gobiconodontidae,stomach_content,stomach_content,juvenile,bracket,1815,991.4,3774,,4.667,280.8,125
+Qiu2025_02,Qiu2025,Theropoda,Huadanosaurus_sinensis,IVPP V 14202,Eutheria,stomach_content,stomach_content,juvenile,bracket,1815,991.4,3774,,4.333,129,125
+Hwang2004_01,Hwang2004,Theropoda,Huaxiagnathus_orientalis,CAGS-IG02-301,Vertebrata_indet,stomach_content,stomach_content,juvenile,excluded: no prey mass,20360,11120,37270,,,,125
+OConnor2011_01,OConnor2011,Theropoda,Microraptor_gui,IVPP V17972,Enantiornithes,stomach_content,stomach_content,unknown,point_interval,760,760,3569,65,60,70,120
+Xing2013_01,Xing2013,Theropoda,Microraptor_gui,QM V1002,Teleostei,stomach_content,stomach_content,unknown,bracket,1890,890.5,2985,,0.00252,98.3,120
+Hone2022_01,Hone2022,Theropoda,Microraptor_zhaoianus,IVPP V12330,Mammalia,stomach_content,stomach_content,unknown,point_interval,150,63.33,255.9,25.1,21,30,120
+OConnor2019_01,OConnor2019,Theropoda,Microraptor_zhaoianus,STM5-32,Indrasaurus_wangi,stomach_content,stomach_content,unknown,point_interval,570,216.3,725.1,8.485,6,12,120
+DalSasso2011_01,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Vertebrata_indet,stomach_content,stomach_content,hatchling,excluded: no prey mass,220,120.2,402.8,,,,106.75
+DalSasso2011_02,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Lepidosauria,stomach_content,stomach_content,hatchling,bracket,220,120.2,402.8,,1.938,307.5,106.75
+DalSasso2011_03,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Lepidosauria,stomach_content,stomach_content,hatchling,bracket,220,120.2,402.8,,0.06967,8.038,106.75
+DalSasso2011_04,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Osteichthyes,stomach_content,stomach_content,hatchling,excluded: no prey mass,220,120.2,402.8,,,,106.75
+DalSasso2011_05,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Clupeomorpha,stomach_content,stomach_content,hatchling,point_interval,220,120.2,402.8,0.2141,0.0488,0.648,106.75
+DalSasso2011_06,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Vertebrata_indet,stomach_content,stomach_content,hatchling,excluded: no prey mass,220,120.2,402.8,,,,106.75
+DalSasso2011_07,DalSasso2011,Theropoda,Scipionyx_samniticus,SBA-SA 163760,Teleostei,stomach_content,stomach_content,hatchling,point_interval,220,120.2,402.8,1.248,0.3904,3,106.75
+Xing2012_01,Xing2012,Theropoda,Sinocalliopteryx_gigas,JMP-V-05-8-01,Sinornithosaurus,stomach_content,stomach_content,unknown,point_interval,32320,17650,59160,2623,1433,9899,125
+Xing2012_04,Xing2012,Theropoda,Sinocalliopteryx_gigas,CAGS-IG-T1,Confuciusornis_sanctus,stomach_content,stomach_content,unknown,point_interval,58160,22900,162500,540.5,180.2,1621,125
+Xing2012_05,Xing2012,Theropoda,Sinocalliopteryx_gigas,CAGS-IG-T1,Confuciusornis_sanctus,stomach_content,stomach_content,unknown,point_interval,58160,22900,162500,540.5,180.2,1621,125
+Xing2012_06,Xing2012,Theropoda,Sinocalliopteryx_gigas,CAGS-IG-T1,Ornithischia,stomach_content,stomach_content,unknown,excluded: no prey mass,58160,22900,162500,,,,125
+Chen1998_01,Chen1998,Theropoda,Sinosauropteryx_prima,NIGP 127587,Lacertilia,stomach_content,stomach_content,adult,point_interval,991.6,541.6,1815,33.81,18.6,60.16,125
+Hurum2006_01,Hurum2006,Theropoda,Sinosauropteryx_prima,CAGS GMV 2124,Zhangheotherium,stomach_content,stomach_content,unknown,bracket,1937,1058,4055,,4.333,129,125
+Hurum2006_02,Hurum2006,Theropoda,Sinosauropteryx_prima,CAGS GMV 2124,Sinobaatar,stomach_content,stomach_content,unknown,bracket,1937,1058,4055,,4.333,129,125
+Carpenter1998_02,Carpenter1998,Theropoda,Tyrannosaurus_rex,"",Edmontosaurus_annectens,bite_trace,,unknown,excluded: bite trace,,,,4456000,1950000,10010000,67.5
+DePalma2013_01,DePalma2013,Theropoda,Tyrannosaurus_rex,PBMNH.P.09.039 (tooth crown embedded in the prey),Edmontosaurus,bite_trace,,subadult,excluded: bite trace,,,,5427000,4456000,6610000,67.5
+Carpenter1998_01,Carpenter1998,Theropoda,Velociraptor_mongoliensis,GI SPS 100/25,Protoceratops_andrewsi,combat_association,direct_observation,unknown,point_interval,18840,10290,34500,24030,17980,34450,77.85

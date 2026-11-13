@@ -1,0 +1,6 @@
+"clade","overlap_PPMR","sizematched_med_pctile","sizematched_KS_D","n_sizematched"
+"Lacertilia",0.741,0.38,0.193,19
+"Crocodylia",0.667,0.77,0.463,15
+"Mammalia",0.585,0.13,0.523,15
+"Aves",0.546,0.24,0.401,15
+"Serpentes",0.464,0.15,0.472,19

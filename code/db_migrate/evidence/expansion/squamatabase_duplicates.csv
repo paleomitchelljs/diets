@@ -1,0 +1,8 @@
+sb_ref_prefix,db_source_id,note
+"Food habits, consumption rates, and predation rates of western rattlesnakes and gopher snakes in southwestern Idaho. 1988",Diller1988_DM163,"Diller & Johnson 1988 Herpetologica 44(2): raw_data RefNo 163. Same year, journal and predator (Crotalus viridis). Matched by title keywords; SquamataBase gives no authors."
+"Feeding habits of the Diamond Python, Morelia s. spilota",Slip1988_DM109,"Slip & Shine 1988 J Herpetol 22: raw_data. Same year, journal, predator."
+"Diet and feeding in the Cape cobra, Naja nivea. 2017",Layloo2017_DM170,"Layloo et al. 2017 Afr J Herpetol 66: raw_data. Same year, journal, predator."
+"Feeding Habits of Nerodia taxispilota",Camp1980_DM178,"Camp et al. 1980 J Herpetol 14: raw_data. Same year, journal; predators N. taxispilota, N. sipedon, N. fasciata."
+"Notes on the distribution and natural history of the King Cobra",Dolia2018,"Dolia 2018 Herpetology Notes 11 (pdfs/extant_to_ingest/literature/31999.pdf): already migrated by 03_extant_new_observations.R."
+"PREY HANDLING AND DIET OF LOUISIANA PINE SNAKES",Rudolph2002_DM193,"Rudolph et al. Herpetol Nat Hist: raw_data RefNo 193. Same year and predator (Pituophis ruthveni)."
+"Food habits of an alpine population of the sand viper",Luiselli1996_DM190,"Luiselli 1996 J Herpetol 30(1): raw_data. Same year, journal, predator (Vipera ammodytes)."

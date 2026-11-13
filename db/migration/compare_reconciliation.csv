@@ -1,0 +1,33 @@
+"src","june","outcome","items"
+"aviandietdb",TRUE,"identical",214
+"extant_new",TRUE,"observation type unknown is outside x20's four levels",65
+"extant_new",FALSE,"tier E in db: pred size_class_midpoint, prey assigned_approximate",42
+"extant_new",TRUE,"tier E in db: pred measured, prey unknown",31
+"extant_new",TRUE,"mass changed (re-read or recomputed)",18
+"extant_new",TRUE,"tier E in db: pred assigned_approximate, prey assigned_approximate",12
+"extant_new",TRUE,"tier E in db: pred measured, prey assigned_approximate",5
+"extant_new",TRUE,"prey mass removed (stomach-remains weight moved to measurements.csv)",3
+"extant_new",TRUE,"tier E in db: pred species_average_database, prey species_average_literature",2
+"extant_new",FALSE,"tier E in db: pred unknown, prey unknown",2
+"extant_new",TRUE,"tier E in db: pred unknown, prey unknown",2
+"extant_new",TRUE,"identical",1
+"extant_new",FALSE,"mass changed (re-read or recomputed)",1
+"extant_new",TRUE,"no db pair (dropped at migration)",1
+"extant_new",TRUE,"observation type dna_detection is outside x20's four levels",1
+"extant_new",FALSE,"tier E in db: pred assigned_approximate, prey unknown",1
+"extant_new",TRUE,"tier E in db: pred species_average_database, prey assigned_approximate",1
+"raw_data",TRUE,"identical",135264
+"raw_data",TRUE,"tier E in db: pred species_average_literature, prey unknown",4560
+"raw_data",TRUE,"tier E in db: pred species_average_literature, prey assigned_approximate",1236
+"raw_data",TRUE,"observation level Pellet -> Follow (prey_remains)",651
+"raw_data",TRUE,"tier E in db: pred species_average_database, prey assigned_approximate",609
+"raw_data",TRUE,"observation level Stomach -> Scat (scat)",533
+"raw_data",TRUE,"tier E in db: pred measured, prey unknown",510
+"raw_data",TRUE,"prey mass removed (stomach-remains weight moved to measurements.csv)",151
+"raw_data",TRUE,"no db pair (dropped at migration)",103
+"raw_data",TRUE,"tier E in db: pred size_class_midpoint, prey none",96
+"raw_data",TRUE,"tier E in db: pred unknown, prey species_average_literature",66
+"raw_data",TRUE,"tier E in db: pred species_average_database, prey unknown",13
+"raw_data",TRUE,"tier E in db: pred measured, prey assigned_approximate",2
+"raw_data",TRUE,"observation level Stomach -> Follow (direct_observation)",1
+"raw_data",TRUE,"tier E in db: pred unknown, prey species_average_database",1

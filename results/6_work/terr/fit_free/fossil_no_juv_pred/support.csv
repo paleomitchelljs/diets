@@ -1,0 +1,683 @@
+unit,unit_type,group,n_records,n_taxa,candidate,cand_type,cand_major,lpd,mcse,n_extrapolated,comparison,rel_support
+Avialae,group,Avialae,21,4,major:Aves,major,Aves,-9.8890098945003,0.0700345983608105,0,major_vs_none,0.0925231228580219
+Avialae,group,Avialae,21,4,major:Crocodylia,major,Crocodylia,-8.85638014083654,0.0494524571417335,0,major_vs_none,0.259845791070099
+Avialae,group,Avialae,21,4,major:Mammalia,major,Mammalia,-9.75965699558029,0.0801786142929995,0,major_vs_none,0.105299796760975
+Avialae,group,Avialae,21,4,major:Squamata,major,Squamata,-8.66768252840196,0.0636347243127123,0,major_vs_none,0.31380945051871
+Avialae,group,Avialae,21,4,none,none,,-8.98483670427294,0.0634881135477712,0,major_vs_none,0.228521838792195
+Avialae,group,Avialae,21,4,Accipitriformes,minor,Aves,-13.9196049137679,0.0326660829024094,0,all_minor,0.000721391543508438
+Avialae,group,Avialae,21,4,Charadriiformes,minor,Aves,-19.4267996831997,0.196751581084019,0,all_minor,2.92702713027036e-06
+Avialae,group,Avialae,21,4,Falconiformes,minor,Aves,-11.7433253816753,0.0439963756600509,0,all_minor,0.00635795191264958
+Avialae,group,Avialae,21,4,Passeriformes,minor,Aves,-9.06667659108495,0.0756800452793852,21,all_minor,0.0924210798716875
+Avialae,group,Avialae,21,4,Pelecaniformes,minor,Aves,-18.6401389850011,0.109670276623028,0,all_minor,6.42790054005896e-06
+Avialae,group,Avialae,21,4,Strigiformes,minor,Aves,-10.54614856731,0.0252727590345715,0,all_minor,0.0210496327525765
+Avialae,group,Avialae,21,4,other Aves,minor,Aves,-18.3418552956125,0.169486087684232,0,all_minor,8.66187891847221e-06
+Avialae,group,Avialae,21,4,Crocodylia,minor,Crocodylia,-9.88404862852775,0.0469725944968887,0,all_minor,0.0408122814614158
+Avialae,group,Avialae,21,4,Caniformia,minor,Mammalia,-16.2084552064486,0.0409345536911872,0,all_minor,7.31368068259475e-05
+Avialae,group,Avialae,21,4,Dasyuromorphia,minor,Mammalia,-17.5928706955269,0.086415448129753,21,all_minor,1.83185876751783e-05
+Avialae,group,Avialae,21,4,Feliformia,minor,Mammalia,-10.5297648433574,0.0183489919242014,0,all_minor,0.0213973447557469
+Avialae,group,Avialae,21,4,other Mammalia,minor,Mammalia,-11.0959555824426,0.209345081667803,0,all_minor,0.0121469255718175
+Avialae,group,Avialae,21,4,Iguania,minor,Squamata,-9.43034660515699,0.118621716561777,0,all_minor,0.0642437906609525
+Avialae,group,Avialae,21,4,Serpentes,minor,Squamata,-10.0470268844052,0.0122018040526912,0,all_minor,0.0346745086672836
+Avialae,group,Avialae,21,4,Teiioidea,minor,Squamata,-8.79782639670679,0.0241459327240212,0,all_minor,0.120929204083536
+Avialae,group,Avialae,21,4,Varanidae,minor,Squamata,-14.5722821593327,0.0478338576483165,0,all_minor,0.000375592508044641
+Avialae,group,Avialae,21,4,other Squamata,minor,Squamata,-7.22182876506864,0.123388303881077,21,all_minor,0.584760824009691
+Avialae,group,Avialae,21,4,Iguania,minor,Squamata,-9.43034660515699,0.118621716561777,0,minor_within_Squamata,0.0798075453067166
+Avialae,group,Avialae,21,4,Serpentes,minor,Squamata,-10.0470268844052,0.0122018040526912,0,minor_within_Squamata,0.043074784239566
+Avialae,group,Avialae,21,4,Teiioidea,minor,Squamata,-8.79782639670679,0.0241459327240212,0,minor_within_Squamata,0.1502256145615
+Avialae,group,Avialae,21,4,Varanidae,minor,Squamata,-14.5722821593327,0.0478338576483165,0,minor_within_Squamata,0.000466583864280831
+Avialae,group,Avialae,21,4,other Squamata,minor,Squamata,-7.22182876506864,0.123388303881077,21,minor_within_Squamata,0.726425472027937
+Avialae,group,Avialae,21,4,major:Aves,major,Aves,-9.8890098945003,0.0700345983608105,0,tree_vs_major_vs_none,0.0819290874104396
+Avialae,group,Avialae,21,4,major:Crocodylia,major,Crocodylia,-8.85638014083654,0.0494524571417335,0,tree_vs_major_vs_none,0.230093060763688
+Avialae,group,Avialae,21,4,major:Mammalia,major,Mammalia,-9.75965699558029,0.0801786142929995,0,tree_vs_major_vs_none,0.0932428131113761
+Avialae,group,Avialae,21,4,major:Squamata,major,Squamata,-8.66768252840196,0.0636347243127123,0,tree_vs_major_vs_none,0.277877800787399
+Avialae,group,Avialae,21,4,none,none,,-8.98483670427294,0.0634881135477712,0,tree_vs_major_vs_none,0.202355747701363
+Avialae,group,Avialae,21,4,tree:Avialae@130.5,tree,Aves,-9.55427614196088,0.0616902192930603,0,tree_vs_major_vs_none,0.114501490225735
+Avialae,group,Avialae,21,4,major:Aves,major,Aves,-9.8890098945003,0.0700345983608105,0,dated_tree_vs_major_vs_none,0.0846947907184343
+Avialae,group,Avialae,21,4,major:Crocodylia,major,Crocodylia,-8.85638014083654,0.0494524571417335,0,dated_tree_vs_major_vs_none,0.237860377102911
+Avialae,group,Avialae,21,4,major:Mammalia,major,Mammalia,-9.75965699558029,0.0801786142929995,0,dated_tree_vs_major_vs_none,0.0963904370483663
+Avialae,group,Avialae,21,4,major:Squamata,major,Squamata,-8.66768252840196,0.0636347243127123,0,dated_tree_vs_major_vs_none,0.287258200071061
+Avialae,group,Avialae,21,4,none,none,,-8.98483670427294,0.0634881135477712,0,dated_tree_vs_major_vs_none,0.209186727741525
+Avialae,group,Avialae,21,4,tree:dated,tree_multi,Aves,-10.5831650049132,0.0342400095557536,0,dated_tree_vs_major_vs_none,0.042304733658851
+Avialae,group,Avialae,21,4,tree:dated+Eshanosaurus,tree_multi,Aves,-10.5831650049132,0.0342400095557536,0,dated_tree_vs_major_vs_none,0.042304733658851
+Crocodyliformes,group,Crocodyliformes,2,2,major:Aves,major,Aves,-4.06213143694843,0.00876894188144969,0,major_vs_none,0.189798660901356
+Crocodyliformes,group,Crocodyliformes,2,2,major:Crocodylia,major,Crocodylia,-4.01268262003179,0.0106008096384303,0,major_vs_none,0.19941989916384
+Crocodyliformes,group,Crocodyliformes,2,2,major:Mammalia,major,Mammalia,-4.04335982139319,0.0119010049793587,0,major_vs_none,0.193395138637388
+Crocodyliformes,group,Crocodyliformes,2,2,major:Squamata,major,Squamata,-3.93160817055962,0.0117974268987506,0,major_vs_none,0.216261234785002
+Crocodyliformes,group,Crocodyliformes,2,2,none,none,,-4.00416833177077,0.0155137809920439,0,major_vs_none,0.201125066512414
+Crocodyliformes,group,Crocodyliformes,2,2,Accipitriformes,minor,Aves,-4.16147605552969,0.0103999887057124,0,all_minor,0.0552838553990098
+Crocodyliformes,group,Crocodyliformes,2,2,Charadriiformes,minor,Aves,-5.13214954337124,0.0125374800724344,0,all_minor,0.0209430622141545
+Crocodyliformes,group,Crocodyliformes,2,2,Falconiformes,minor,Aves,-3.60858287415631,0.0185424780663476,0,all_minor,0.0960985379008057
+Crocodyliformes,group,Crocodyliformes,2,2,Passeriformes,minor,Aves,-3.65821518839227,0.0255785632633957,2,all_minor,0.0914453738842867
+Crocodyliformes,group,Crocodyliformes,2,2,Pelecaniformes,minor,Aves,-4.98793193351439,0.0120111441359477,0,all_minor,0.0241920735958928
+Crocodyliformes,group,Crocodyliformes,2,2,Strigiformes,minor,Aves,-3.58297646864432,0.0162758165327802,0,all_minor,0.0985910520036895
+Crocodyliformes,group,Crocodyliformes,2,2,other Aves,minor,Aves,-5.00594975653393,0.0137968946942261,0,all_minor,0.0237600884975347
+Crocodyliformes,group,Crocodyliformes,2,2,Crocodylia,minor,Crocodylia,-4.0657860662431,0.017567557496475,0,all_minor,0.060835342391455
+Crocodyliformes,group,Crocodyliformes,2,2,Caniformia,minor,Mammalia,-4.3735101985042,0.00403701856434897,0,all_minor,0.0447211604236624
+Crocodyliformes,group,Crocodyliformes,2,2,Dasyuromorphia,minor,Mammalia,-4.58455788711575,0.0160673117099319,2,all_minor,0.0362123089960046
+Crocodyliformes,group,Crocodyliformes,2,2,Feliformia,minor,Mammalia,-4.07048426780108,0.00596740461767808,0,all_minor,0.0605501960530416
+Crocodyliformes,group,Crocodyliformes,2,2,other Mammalia,minor,Mammalia,-3.88850868282821,0.0445975922723925,0,all_minor,0.0726351012178221
+Crocodyliformes,group,Crocodyliformes,2,2,Iguania,minor,Squamata,-3.54511848311661,0.0231326968260972,0,all_minor,0.102395062385225
+Crocodyliformes,group,Crocodyliformes,2,2,Serpentes,minor,Squamata,-4.67153957983465,0.0077508830390624,0,all_minor,0.033195601952281
+Crocodyliformes,group,Crocodyliformes,2,2,Teiioidea,minor,Squamata,-4.68235932618575,0.0442611144603154,0,all_minor,0.0328383700236101
+Crocodyliformes,group,Crocodyliformes,2,2,Varanidae,minor,Squamata,-4.42567950247879,0.00791411485187802,0,all_minor,0.0424479013420905
+Crocodyliformes,group,Crocodyliformes,2,2,other Squamata,minor,Squamata,-3.53096213017419,0.0511172497138025,2,all_minor,0.103854911719434
+Crocodyliformes,group,Crocodyliformes,2,2,Iguania,minor,Squamata,-3.54511848311661,0.0231326968260972,0,minor_within_Squamata,0.325340645453406
+Crocodyliformes,group,Crocodyliformes,2,2,Serpentes,minor,Squamata,-4.67153957983465,0.0077508830390624,0,minor_within_Squamata,0.105472649889491
+Crocodyliformes,group,Crocodyliformes,2,2,Teiioidea,minor,Squamata,-4.68235932618575,0.0442611144603154,0,minor_within_Squamata,0.104337614043592
+Crocodyliformes,group,Crocodyliformes,2,2,Varanidae,minor,Squamata,-4.42567950247879,0.00791411485187802,0,minor_within_Squamata,0.134870054269052
+Crocodyliformes,group,Crocodyliformes,2,2,other Squamata,minor,Squamata,-3.53096213017419,0.0511172497138025,2,minor_within_Squamata,0.329979036344459
+Crocodyliformes,group,Crocodyliformes,2,2,major:Aves,major,Aves,-4.06213143694843,0.00876894188144969,0,tree_vs_major_vs_none,0.158152227713746
+Crocodyliformes,group,Crocodyliformes,2,2,major:Crocodylia,major,Crocodylia,-4.01268262003179,0.0106008096384303,0,tree_vs_major_vs_none,0.166169250896893
+Crocodyliformes,group,Crocodyliformes,2,2,major:Mammalia,major,Mammalia,-4.04335982139319,0.0119010049793587,0,tree_vs_major_vs_none,0.161149040036736
+Crocodyliformes,group,Crocodyliformes,2,2,major:Squamata,major,Squamata,-3.93160817055962,0.0117974268987506,0,tree_vs_major_vs_none,0.180202515059626
+Crocodyliformes,group,Crocodyliformes,2,2,none,none,,-4.00416833177077,0.0155137809920439,0,tree_vs_major_vs_none,0.167590103992068
+Crocodyliformes,group,Crocodyliformes,2,2,tree:Crocodyliformes@190,tree,Crocodylia,-4.00927257779124,0.0115377474692203,0,tree_vs_major_vs_none,0.166736862300931
+Crocodyliformes,group,Crocodyliformes,2,2,major:Aves,major,Aves,-4.06213143694843,0.00876894188144969,0,dated_tree_vs_major_vs_none,0.189798660901356
+Crocodyliformes,group,Crocodyliformes,2,2,major:Crocodylia,major,Crocodylia,-4.01268262003179,0.0106008096384303,0,dated_tree_vs_major_vs_none,0.19941989916384
+Crocodyliformes,group,Crocodyliformes,2,2,major:Mammalia,major,Mammalia,-4.04335982139319,0.0119010049793587,0,dated_tree_vs_major_vs_none,0.193395138637388
+Crocodyliformes,group,Crocodyliformes,2,2,major:Squamata,major,Squamata,-3.93160817055962,0.0117974268987506,0,dated_tree_vs_major_vs_none,0.216261234785002
+Crocodyliformes,group,Crocodyliformes,2,2,none,none,,-4.00416833177077,0.0155137809920439,0,dated_tree_vs_major_vs_none,0.201125066512414
+Theropoda,group,Theropoda,16,7,major:Aves,major,Aves,-30.1267375703724,0.0829146518288019,0,major_vs_none,0.175841624798224
+Theropoda,group,Theropoda,16,7,major:Crocodylia,major,Crocodylia,-29.7881559870414,0.0873661999413656,3,major_vs_none,0.246698098102436
+Theropoda,group,Theropoda,16,7,major:Mammalia,major,Mammalia,-30.23221698745,0.108460503307272,0,major_vs_none,0.158238646400088
+Theropoda,group,Theropoda,16,7,major:Squamata,major,Squamata,-29.8203267428108,0.100231705250363,0,major_vs_none,0.238887936822304
+Theropoda,group,Theropoda,16,7,none,none,,-30.1015123116993,0.0937767259062955,0,major_vs_none,0.180333693876948
+Theropoda,group,Theropoda,16,7,Accipitriformes,minor,Aves,-32.8224248268606,0.172676194174269,0,all_minor,0.00483087448825858
+Theropoda,group,Theropoda,16,7,Charadriiformes,minor,Aves,-33.376528622405,0.0747869654513063,4,all_minor,0.00277575757294838
+Theropoda,group,Theropoda,16,7,Falconiformes,minor,Aves,-31.3648036591321,0.222761139864147,0,all_minor,0.0207521254441519
+Theropoda,group,Theropoda,16,7,Passeriformes,minor,Aves,-29.0072757937777,0.0755467005122415,13,all_minor,0.219242086659737
+Theropoda,group,Theropoda,16,7,Pelecaniformes,minor,Aves,-32.7165991889846,0.0630015527428796,4,all_minor,0.00537013550883355
+Theropoda,group,Theropoda,16,7,Strigiformes,minor,Aves,-32.3933963061409,0.255531406747123,0,all_minor,0.0074190871608405
+Theropoda,group,Theropoda,16,7,other Aves,minor,Aves,-32.8597164344938,0.0942207764848642,0,all_minor,0.00465404110539265
+Theropoda,group,Theropoda,16,7,Crocodylia,minor,Crocodylia,-29.1678776630149,0.0701505248452863,3,all_minor,0.186713371567628
+Theropoda,group,Theropoda,16,7,Caniformia,minor,Mammalia,-32.9556302255326,0.0644277438908103,0,all_minor,0.00422839338324245
+Theropoda,group,Theropoda,16,7,Dasyuromorphia,minor,Mammalia,-34.2360928864592,0.134738599854468,13,all_minor,0.00117510727951983
+Theropoda,group,Theropoda,16,7,Feliformia,minor,Mammalia,-29.0256163890622,0.075645100602235,0,all_minor,0.215257705923601
+Theropoda,group,Theropoda,16,7,other Mammalia,minor,Mammalia,-31.0022930918745,0.234467837157212,1,all_minor,0.0298194015304003
+Theropoda,group,Theropoda,16,7,Iguania,minor,Squamata,-29.6001600567427,0.134617757813442,3,all_minor,0.121181845748696
+Theropoda,group,Theropoda,16,7,Serpentes,minor,Squamata,-33.7104459592864,0.146279766098796,0,all_minor,0.00198775601597568
+Theropoda,group,Theropoda,16,7,Teiioidea,minor,Squamata,-30.8030184503382,0.161998285612651,3,all_minor,0.0363950902123307
+Theropoda,group,Theropoda,16,7,Varanidae,minor,Squamata,-30.2821724274614,0.0356885796777086,0,all_minor,0.0612693614110952
+Theropoda,group,Theropoda,16,7,other Squamata,minor,Squamata,-30.0545842451827,0.198918611817741,16,all_minor,0.0769278589873493
+Theropoda,group,Theropoda,16,7,major:Aves,major,Aves,-30.1267375703724,0.0829146518288019,0,tree_vs_major_vs_none,0.147050270347648
+Theropoda,group,Theropoda,16,7,major:Crocodylia,major,Crocodylia,-29.7881559870414,0.0873661999413656,3,tree_vs_major_vs_none,0.206305088808416
+Theropoda,group,Theropoda,16,7,major:Mammalia,major,Mammalia,-30.23221698745,0.108460503307272,0,tree_vs_major_vs_none,0.132329508211037
+Theropoda,group,Theropoda,16,7,major:Squamata,major,Squamata,-29.8203267428108,0.100231705250363,0,tree_vs_major_vs_none,0.199773720999343
+Theropoda,group,Theropoda,16,7,none,none,,-30.1015123116993,0.0937767259062955,0,tree_vs_major_vs_none,0.150806832385815
+Theropoda,group,Theropoda,16,7,tree:Theropoda@162.5,tree,Aves,-30.019265376297,0.0800929171237401,0,tree_vs_major_vs_none,0.163734579247742
+Theropoda,group,Theropoda,16,7,major:Aves,major,Aves,-30.1267375703724,0.0829146518288019,0,dated_tree_vs_major_vs_none,0.0887687567820752
+Theropoda,group,Theropoda,16,7,major:Crocodylia,major,Crocodylia,-29.7881559870414,0.0873661999413656,3,dated_tree_vs_major_vs_none,0.124538677882353
+Theropoda,group,Theropoda,16,7,major:Mammalia,major,Mammalia,-30.23221698745,0.108460503307272,0,dated_tree_vs_major_vs_none,0.079882382410493
+Theropoda,group,Theropoda,16,7,major:Squamata,major,Squamata,-29.8203267428108,0.100231705250363,0,dated_tree_vs_major_vs_none,0.120595935042594
+Theropoda,group,Theropoda,16,7,none,none,,-30.1015123116993,0.0937767259062955,0,dated_tree_vs_major_vs_none,0.0910364529999363
+Theropoda,group,Theropoda,16,7,tree:dated,tree_multi,Aves,-29.1337362227357,0.219993692949258,0,dated_tree_vs_major_vs_none,0.239615629963831
+Theropoda,group,Theropoda,16,7,tree:dated+Eshanosaurus,tree_multi,Aves,-29.0693066334493,0.2103950115056,0,dated_tree_vs_major_vs_none,0.255562164918717
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Aves,major,Aves,-2.11633082410721,0.00535548482175629,0,major_vs_none,0.190576345829026
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-1.96694426868216,0.00572641609320922,0,major_vs_none,0.221282338343838
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-2.1933269504374,0.00691172138732295,0,major_vs_none,0.176453388461339
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Squamata,major,Squamata,-1.99108244739925,0.00566987593652053,0,major_vs_none,0.21600493539982
+Confuciusornis_sanctus,taxon,Avialae,1,1,none,none,,-2.0898877419777,0.00789045542518329,0,major_vs_none,0.195682991965977
+Confuciusornis_sanctus,taxon,Avialae,1,1,Accipitriformes,minor,Aves,-2.35545585986418,0.0051790998411784,0,all_minor,0.0439828211543215
+Confuciusornis_sanctus,taxon,Avialae,1,1,Charadriiformes,minor,Aves,-2.31283192632362,0.00380001750060521,0,all_minor,0.0458980697548489
+Confuciusornis_sanctus,taxon,Avialae,1,1,Falconiformes,minor,Aves,-2.23847661324903,0.00925733033553071,0,all_minor,0.0494409177551358
+Confuciusornis_sanctus,taxon,Avialae,1,1,Passeriformes,minor,Aves,-1.80446566839335,0.0110885045356988,1,all_minor,0.076308880505386
+Confuciusornis_sanctus,taxon,Avialae,1,1,Pelecaniformes,minor,Aves,-2.26588988885621,0.00644549453496984,0,all_minor,0.048103988774505
+Confuciusornis_sanctus,taxon,Avialae,1,1,Strigiformes,minor,Aves,-2.15534291288796,0.00663628677245747,0,all_minor,0.0537268070072628
+Confuciusornis_sanctus,taxon,Avialae,1,1,other Aves,minor,Aves,-2.28667788949404,0.00762387621346042,0,all_minor,0.0471143252276574
+Confuciusornis_sanctus,taxon,Avialae,1,1,Crocodylia,minor,Crocodylia,-1.75880611424822,0.00567150025140867,0,all_minor,0.0798738787456775
+Confuciusornis_sanctus,taxon,Avialae,1,1,Caniformia,minor,Mammalia,-2.37184751353318,0.00476559616032788,0,all_minor,0.0432677466204504
+Confuciusornis_sanctus,taxon,Avialae,1,1,Dasyuromorphia,minor,Mammalia,-2.57752483952717,0.0139774896988665,1,all_minor,0.035224087399798
+Confuciusornis_sanctus,taxon,Avialae,1,1,Feliformia,minor,Mammalia,-1.84467869706134,0.00484765522289197,0,all_minor,0.0733011495934859
+Confuciusornis_sanctus,taxon,Avialae,1,1,other Mammalia,minor,Mammalia,-2.26061888789166,0.0188941270815871,0,all_minor,0.0483582143688054
+Confuciusornis_sanctus,taxon,Avialae,1,1,Iguania,minor,Squamata,-2.01557808532065,0.0188727677762883,0,all_minor,0.0617860063225958
+Confuciusornis_sanctus,taxon,Avialae,1,1,Serpentes,minor,Squamata,-1.89723253980209,0.00291992893185041,0,all_minor,0.069548367754588
+Confuciusornis_sanctus,taxon,Avialae,1,1,Teiioidea,minor,Squamata,-1.68163623013852,0.00313174520221339,0,all_minor,0.0862818065128923
+Confuciusornis_sanctus,taxon,Avialae,1,1,Varanidae,minor,Squamata,-2.06021397972809,0.00401129902140594,0,all_minor,0.0590887770948138
+Confuciusornis_sanctus,taxon,Avialae,1,1,other Squamata,minor,Squamata,-1.77368610076494,0.0219662787084058,1,all_minor,0.0786941554077754
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Aves,major,Aves,-2.11633082410721,0.00535548482175629,0,tree_vs_major_vs_none,0.159644221428892
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-1.96694426868216,0.00572641609320922,0,tree_vs_major_vs_none,0.185366376226772
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-2.1933269504374,0.00691172138732295,0,tree_vs_major_vs_none,0.147813537387649
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Squamata,major,Squamata,-1.99108244739925,0.00566987593652053,0,tree_vs_major_vs_none,0.180945539629767
+Confuciusornis_sanctus,taxon,Avialae,1,1,none,none,,-2.0898877419777,0.00789045542518329,0,tree_vs_major_vs_none,0.16392201646741
+Confuciusornis_sanctus,taxon,Avialae,1,1,tree:Avialae@130.5,tree,Aves,-2.09978087970456,0.00542224377263614,0,tree_vs_major_vs_none,0.162308308859511
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Aves,major,Aves,-2.11633082410721,0.00535548482175629,0,dated_tree_vs_major_vs_none,0.137217512961495
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-1.96694426868216,0.00572641609320922,0,dated_tree_vs_major_vs_none,0.159326237460163
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-2.1933269504374,0.00691172138732295,0,dated_tree_vs_major_vs_none,0.127048795132296
+Confuciusornis_sanctus,taxon,Avialae,1,1,major:Squamata,major,Squamata,-1.99108244739925,0.00566987593652053,0,dated_tree_vs_major_vs_none,0.155526436893499
+Confuciusornis_sanctus,taxon,Avialae,1,1,none,none,,-2.0898877419777,0.00789045542518329,0,dated_tree_vs_major_vs_none,0.140894366347673
+Confuciusornis_sanctus,taxon,Avialae,1,1,tree:dated,tree_multi,Aves,-2.09630342954041,0.00579147133253763,0,dated_tree_vs_major_vs_none,0.139993325602437
+Confuciusornis_sanctus,taxon,Avialae,1,1,tree:dated+Eshanosaurus,tree_multi,Aves,-2.09630342954041,0.00579147133253763,0,dated_tree_vs_major_vs_none,0.139993325602437
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Aves,major,Aves,-0.448426636357589,0.00329422793239332,0,major_vs_none,0.192929625547559
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-0.334444641394801,0.00495569321019528,0,major_vs_none,0.216222394658221
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-0.509859455213134,0.0060730954366874,0,major_vs_none,0.181434130247141
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Squamata,major,Squamata,-0.349589322987972,0.00465192035659611,0,major_vs_none,0.212972447165263
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,none,none,,-0.430387944170018,0.00703603818271818,0,major_vs_none,0.196441402381816
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Accipitriformes,minor,Aves,-0.614696329070939,0.00272762855996565,0,all_minor,0.0478580362291642
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Charadriiformes,minor,Aves,-0.636534092609185,0.00363474036397505,0,all_minor,0.0468242525947827
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Falconiformes,minor,Aves,-0.486766869954694,0.00555054197723783,0,all_minor,0.0543893579707388
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Passeriformes,minor,Aves,-0.204813363358696,0.00659905970095218,1,all_minor,0.0721049009111274
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Pelecaniformes,minor,Aves,-0.594914724642285,0.00542689088979946,0,all_minor,0.0488141707291158
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Strigiformes,minor,Aves,-0.388629350714124,0.00346554060512411,0,all_minor,0.0599976880168633
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,other Aves,minor,Aves,-0.612606518799943,0.00676464581503674,0,all_minor,0.04795815502303
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Crocodylia,minor,Crocodylia,-0.174249866559954,0.00343063579378343,0,all_minor,0.074342702138053
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Caniformia,minor,Mammalia,-0.664458909076609,0.00415827540192775,0,all_minor,0.045534781844393
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Dasyuromorphia,minor,Mammalia,-0.841247647393745,0.0115124565433142,1,all_minor,0.0381561798092315
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Feliformia,minor,Mammalia,-0.230770173194543,0.0030789823590369,0,all_minor,0.0702573694522652
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,other Mammalia,minor,Mammalia,-0.528965519121453,0.0124458102500021,0,all_minor,0.0521419527585442
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Iguania,minor,Squamata,-0.337725512148346,0.0127494856037623,0,all_minor,0.0631308695973489
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Serpentes,minor,Squamata,-0.254223730404125,0.00146430239515269,0,all_minor,0.0686287572466433
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Teiioidea,minor,Squamata,-0.127946280131577,0.00198459137176056,0,all_minor,0.0778659765159666
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,Varanidae,minor,Squamata,-0.411445979611666,0.00310853932708223,0,all_minor,0.0586442422854798
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,other Squamata,minor,Squamata,-0.18768460086826,0.0140179653881868,1,all_minor,0.0733506068772524
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Aves,major,Aves,-0.448426636357589,0.00329422793239332,0,tree_vs_major_vs_none,0.161407608366478
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-0.334444641394801,0.00495569321019528,0,tree_vs_major_vs_none,0.180894663004739
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-0.509859455213134,0.0060730954366874,0,tree_vs_major_vs_none,0.151790317096863
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Squamata,major,Squamata,-0.349589322987972,0.00465192035659611,0,tree_vs_major_vs_none,0.178175711725659
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,none,none,,-0.430387944170018,0.00703603818271818,0,tree_vs_major_vs_none,0.164345609714511
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,tree:Avialae@130.5,tree,Aves,-0.436243480054625,0.00380656559481538,0,tree_vs_major_vs_none,0.163386090091751
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Aves,major,Aves,-0.448426636357589,0.00329422793239332,0,dated_tree_vs_major_vs_none,0.138798834248019
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-0.334444641394801,0.00495569321019528,0,dated_tree_vs_major_vs_none,0.15555628759295
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-0.509859455213134,0.0060730954366874,0,dated_tree_vs_major_vs_none,0.130528661420631
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,major:Squamata,major,Squamata,-0.349589322987972,0.00465192035659611,0,dated_tree_vs_major_vs_none,0.153218186733066
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,none,none,,-0.430387944170018,0.00703603818271818,0,dated_tree_vs_major_vs_none,0.141325302276714
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,tree:dated,tree_multi,Aves,-0.43776649591978,0.00322133185937005,0,dated_tree_vs_major_vs_none,0.14028636386431
+Kunpengornis_anhuimusei,taxon,Avialae,1,1,tree:dated+Eshanosaurus,tree_multi,Aves,-0.43776649591978,0.00322133185937005,0,dated_tree_vs_major_vs_none,0.14028636386431
+Yanornis,taxon,Avialae,18,1,major:Aves,major,Aves,-7.81694962069099,0.040834380136369,0,major_vs_none,0.108934375334212
+Yanornis,taxon,Avialae,18,1,major:Crocodylia,major,Crocodylia,-6.98454789551947,0.0450771143170973,0,major_vs_none,0.250421967481104
+Yanornis,taxon,Avialae,18,1,major:Mammalia,major,Mammalia,-7.73875761432971,0.0444830927521216,0,major_vs_none,0.117794036515035
+Yanornis,taxon,Avialae,18,1,major:Squamata,major,Squamata,-6.81127612711993,0.0483495786204463,0,major_vs_none,0.297799110497946
+Yanornis,taxon,Avialae,18,1,none,none,,-7.09137039379212,0.0502596859247943,0,major_vs_none,0.225050510171702
+Yanornis,taxon,Avialae,18,1,Accipitriformes,minor,Aves,-10.425673136023,0.0259973016239407,0,all_minor,0.00347086380598183
+Yanornis,taxon,Avialae,18,1,Charadriiformes,minor,Aves,-16.0133294763572,0.193317893205139,0,all_minor,1.29941913329974e-05
+Yanornis,taxon,Avialae,18,1,Falconiformes,minor,Aves,-8.67292360853559,0.0326412822200623,0,all_minor,0.0200284352420221
+Yanornis,taxon,Avialae,18,1,Passeriformes,minor,Aves,-7.02486600467237,0.0481818226462335,18,all_minor,0.104085286936919
+Yanornis,taxon,Avialae,18,1,Pelecaniformes,minor,Aves,-15.3789186045794,0.0926156443073839,0,all_minor,2.45058853935337e-05
+Yanornis,taxon,Avialae,18,1,Strigiformes,minor,Aves,-7.64867781749573,0.0271952857778587,0,all_minor,0.0557790759979438
+Yanornis,taxon,Avialae,18,1,other Aves,minor,Aves,-15.1422938953865,0.140033402983372,0,all_minor,3.10481125173172e-05
+Yanornis,taxon,Avialae,18,1,Crocodylia,minor,Crocodylia,-7.83201836102211,0.0356373819625393,0,all_minor,0.0464352223403129
+Yanornis,taxon,Avialae,18,1,Caniformia,minor,Mammalia,-12.6284484856947,0.0229978424382422,0,all_minor,0.000383516800323369
+Yanornis,taxon,Avialae,18,1,Dasyuromorphia,minor,Mammalia,-13.7807777066485,0.0762122820325245,18,all_minor,0.000121152999652374
+Yanornis,taxon,Avialae,18,1,Feliformia,minor,Mammalia,-8.27868707623363,0.0127301084854345,0,all_minor,0.029707203491761
+Yanornis,taxon,Avialae,18,1,other Mammalia,minor,Mammalia,-8.47318623111467,0.126242410443237,0,all_minor,0.024456362409808
+Yanornis,taxon,Avialae,18,1,Iguania,minor,Squamata,-7.16094878201174,0.086600801376215,0,all_minor,0.0908425558370511
+Yanornis,taxon,Avialae,18,1,Serpentes,minor,Squamata,-7.64299690912284,0.00951815995675028,0,all_minor,0.0560968535958924
+Yanornis,taxon,Avialae,18,1,Teiioidea,minor,Squamata,-6.9007584655609,0.0226978285554881,0,all_minor,0.117838868355937
+Yanornis,taxon,Avialae,18,1,Varanidae,minor,Squamata,-11.8010430383013,0.0410166045484172,0,all_minor,0.000877247246019527
+Yanornis,taxon,Avialae,18,1,other Squamata,minor,Squamata,-5.56125401585041,0.0914535949319461,18,all_minor,0.449808806751132
+Yanornis,taxon,Avialae,18,1,Iguania,minor,Squamata,-7.16094878201174,0.086600801376215,0,minor_within_Squamata,0.126970069367789
+Yanornis,taxon,Avialae,18,1,Serpentes,minor,Squamata,-7.64299690912284,0.00951815995675028,0,minor_within_Squamata,0.0784062197144845
+Yanornis,taxon,Avialae,18,1,Teiioidea,minor,Squamata,-6.9007584655609,0.0226978285554881,0,minor_within_Squamata,0.164702645709497
+Yanornis,taxon,Avialae,18,1,Varanidae,minor,Squamata,-11.8010430383013,0.0410166045484172,0,minor_within_Squamata,0.00122612296245381
+Yanornis,taxon,Avialae,18,1,other Squamata,minor,Squamata,-5.56125401585041,0.0914535949319461,18,minor_within_Squamata,0.628694942245776
+Yanornis,taxon,Avialae,18,1,major:Aves,major,Aves,-7.81694962069099,0.040834380136369,0,tree_vs_major_vs_none,0.0955461286585342
+Yanornis,taxon,Avialae,18,1,major:Crocodylia,major,Crocodylia,-6.98454789551947,0.0450771143170973,0,tree_vs_major_vs_none,0.219644620446622
+Yanornis,taxon,Avialae,18,1,major:Mammalia,major,Mammalia,-7.73875761432971,0.0444830927521216,0,tree_vs_major_vs_none,0.103316920242521
+Yanornis,taxon,Avialae,18,1,major:Squamata,major,Squamata,-6.81127612711993,0.0483495786204463,0,tree_vs_major_vs_none,0.261199020407818
+Yanornis,taxon,Avialae,18,1,none,none,,-7.09137039379212,0.0502596859247943,0,tree_vs_major_vs_none,0.197391364604274
+Yanornis,taxon,Avialae,18,1,tree:Avialae@130.5,tree,Aves,-7.56517192663152,0.0359689841362944,0,tree_vs_major_vs_none,0.122901945640231
+Yanornis,taxon,Avialae,18,1,major:Aves,major,Aves,-7.81694962069099,0.040834380136369,0,dated_tree_vs_major_vs_none,0.0870007233939077
+Yanornis,taxon,Avialae,18,1,major:Crocodylia,major,Crocodylia,-6.98454789551947,0.0450771143170973,0,dated_tree_vs_major_vs_none,0.200000158423264
+Yanornis,taxon,Avialae,18,1,major:Mammalia,major,Mammalia,-7.73875761432971,0.0444830927521216,0,dated_tree_vs_major_vs_none,0.0940765149371349
+Yanornis,taxon,Avialae,18,1,major:Squamata,major,Squamata,-6.81127612711993,0.0483495786204463,0,dated_tree_vs_major_vs_none,0.237838037441306
+Yanornis,taxon,Avialae,18,1,none,none,,-7.09137039379212,0.0502596859247943,0,dated_tree_vs_major_vs_none,0.179737177773644
+Yanornis,taxon,Avialae,18,1,tree:dated,tree_multi,Aves,-7.6709815198135,0.0367904087195348,0,dated_tree_vs_major_vs_none,0.100673694015372
+Yanornis,taxon,Avialae,18,1,tree:dated+Eshanosaurus,tree_multi,Aves,-7.6709815198135,0.0367904087195348,0,dated_tree_vs_major_vs_none,0.100673694015372
+Yanornis_martini,taxon,Avialae,1,1,major:Aves,major,Aves,-0.41929437820234,0.00368813106023786,0,major_vs_none,0.19315019021972
+Yanornis_martini,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-0.31354363579907,0.00469333427394857,0,major_vs_none,0.214695085886557
+Yanornis_martini,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-0.470707987221834,0.005722522557964,0,major_vs_none,0.183470605182421
+Yanornis_martini,taxon,Avialae,1,1,major:Squamata,major,Squamata,-0.32575815537151,0.00431956947845841,0,major_vs_none,0.212088639210402
+Yanornis_martini,taxon,Avialae,1,1,none,none,,-0.401614238077432,0.00675192220378903,0,major_vs_none,0.1965954795009
+Yanornis_martini,taxon,Avialae,1,1,Accipitriformes,minor,Aves,-0.544081337150558,0.00380449098786809,0,all_minor,0.0496930993443182
+Yanornis_martini,taxon,Avialae,1,1,Charadriiformes,minor,Aves,-0.615015519225734,0.00393313001808765,0,all_minor,0.0462902749705186
+Yanornis_martini,taxon,Avialae,1,1,Falconiformes,minor,Aves,-0.430848647875866,0.00510723573380597,0,all_minor,0.0556509287408563
+Yanornis_martini,taxon,Avialae,1,1,Passeriformes,minor,Aves,-0.177974435096797,0.00624245325932464,1,all_minor,0.071662885623474
+Yanornis_martini,taxon,Avialae,1,1,Pelecaniformes,minor,Aves,-0.56988428847512,0.00539162037314759,0,all_minor,0.0484272719922742
+Yanornis_martini,taxon,Avialae,1,1,Strigiformes,minor,Aves,-0.358827832517685,0.00372601514665997,0,all_minor,0.0598068128607506
+Yanornis_martini,taxon,Avialae,1,1,other Aves,minor,Aves,-0.589344358853932,0.00674942794667474,0,all_minor,0.047493984246043
+Yanornis_martini,taxon,Avialae,1,1,Crocodylia,minor,Crocodylia,-0.165132488570014,0.0032545922379537,0,all_minor,0.0725891111086314
+Yanornis_martini,taxon,Avialae,1,1,Caniformia,minor,Mammalia,-0.609001945952452,0.0033530525110173,0,all_minor,0.0465694836102816
+Yanornis_martini,taxon,Avialae,1,1,Dasyuromorphia,minor,Mammalia,-0.782427393408445,0.0122271457632325,1,all_minor,0.039154682564301
+Yanornis_martini,taxon,Avialae,1,1,Feliformia,minor,Mammalia,-0.19308603950761,0.00276103209205,0,all_minor,0.0705880858727357
+Yanornis_martini,taxon,Avialae,1,1,other Mammalia,minor,Mammalia,-0.474592700484415,0.0105421830501844,0,all_minor,0.0532690088148116
+Yanornis_martini,taxon,Avialae,1,1,Iguania,minor,Squamata,-0.288616303945815,0.0111189495267004,0,all_minor,0.0641568656628372
+Yanornis_martini,taxon,Avialae,1,1,Serpentes,minor,Squamata,-0.240079050108928,0.00160621198839151,0,all_minor,0.0673476738693021
+Yanornis_martini,taxon,Avialae,1,1,Teiioidea,minor,Squamata,-0.119978406646872,0.00195562194009668,0,all_minor,0.0759419329232782
+Yanornis_martini,taxon,Avialae,1,1,Varanidae,minor,Squamata,-0.37948192410783,0.00326575745915401,0,all_minor,0.0585842266359076
+Yanornis_martini,taxon,Avialae,1,1,other Squamata,minor,Squamata,-0.16259318452893,0.0130261431428868,1,all_minor,0.0727736711596787
+Yanornis_martini,taxon,Avialae,1,1,major:Aves,major,Aves,-0.41929437820234,0.00368813106023786,0,tree_vs_major_vs_none,0.161586100295043
+Yanornis_martini,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-0.31354363579907,0.00469333427394857,0,tree_vs_major_vs_none,0.179610186463985
+Yanornis_martini,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-0.470707987221834,0.005722522557964,0,tree_vs_major_vs_none,0.153488327277723
+Yanornis_martini,taxon,Avialae,1,1,major:Squamata,major,Squamata,-0.32575815537151,0.00431956947845841,0,tree_vs_major_vs_none,0.17742967836535
+Yanornis_martini,taxon,Avialae,1,1,none,none,,-0.401614238077432,0.00675192220378903,0,tree_vs_major_vs_none,0.164468369573168
+Yanornis_martini,taxon,Avialae,1,1,tree:Avialae@130.5,tree,Aves,-0.408025222904927,0.00392615896979414,0,tree_vs_major_vs_none,0.163417338024731
+Yanornis_martini,taxon,Avialae,1,1,major:Aves,major,Aves,-0.41929437820234,0.00368813106023786,0,dated_tree_vs_major_vs_none,0.138923907159201
+Yanornis_martini,taxon,Avialae,1,1,major:Crocodylia,major,Crocodylia,-0.31354363579907,0.00469333427394857,0,dated_tree_vs_major_vs_none,0.154420143957982
+Yanornis_martini,taxon,Avialae,1,1,major:Mammalia,major,Mammalia,-0.470707987221834,0.005722522557964,0,dated_tree_vs_major_vs_none,0.131961833906611
+Yanornis_martini,taxon,Avialae,1,1,major:Squamata,major,Squamata,-0.32575815537151,0.00431956947845841,0,dated_tree_vs_major_vs_none,0.152545448646309
+Yanornis_martini,taxon,Avialae,1,1,none,none,,-0.401614238077432,0.00675192220378903,0,dated_tree_vs_major_vs_none,0.141401942762949
+Yanornis_martini,taxon,Avialae,1,1,tree:dated,tree_multi,Aves,-0.408914988225304,0.00404613753887657,0,dated_tree_vs_major_vs_none,0.140373361783474
+Yanornis_martini,taxon,Avialae,1,1,tree:dated+Eshanosaurus,tree_multi,Aves,-0.408914988225304,0.00404613753887657,0,dated_tree_vs_major_vs_none,0.140373361783474
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Aves,major,Aves,-2.0934162442819,0.00541151560768219,0,major_vs_none,0.197851308112914
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Crocodylia,major,Crocodylia,-2.06192047074177,0.00682731746043268,0,major_vs_none,0.204181959167246
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Mammalia,major,Mammalia,-2.13327301892333,0.00681331161218787,0,major_vs_none,0.190120675509355
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Squamata,major,Squamata,-2.03036304000878,0.00691045077309136,0,major_vs_none,0.210728164657856
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,none,none,,-2.09713003463316,0.00884009292658845,0,major_vs_none,0.197117892552629
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Accipitriformes,minor,Aves,-2.16505818894544,0.0065977740120616,0,all_minor,0.0551326613188291
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Charadriiformes,minor,Aves,-2.56563000331175,0.00606728999968942,0,all_minor,0.0369354018403411
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Falconiformes,minor,Aves,-1.85079240459184,0.0134860827876061,0,all_minor,0.0754905957809487
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Passeriformes,minor,Aves,-1.82563082820052,0.015693923721591,1,all_minor,0.0774141566011968
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Pelecaniformes,minor,Aves,-2.49878602235095,0.00647695916706002,0,all_minor,0.0394886967032788
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Strigiformes,minor,Aves,-1.73914820734062,0.00698584499994413,0,all_minor,0.0844071645941469
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,other Aves,minor,Aves,-2.50776277865658,0.00670781641293777,0,all_minor,0.0391358025881274
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Crocodylia,minor,Crocodylia,-1.98263447540882,0.00799731862295538,0,all_minor,0.0661659525355393
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Caniformia,minor,Mammalia,-2.23370516850174,0.00258107162746776,0,all_minor,0.0514749522559484
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Dasyuromorphia,minor,Mammalia,-2.35159714238375,0.00974463228737161,1,all_minor,0.0457505288634798
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Feliformia,minor,Mammalia,-2.12809952033166,0.00409405464170107,0,all_minor,0.0572084133188923
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,other Mammalia,minor,Mammalia,-2.01852139151347,0.0273120972349151,0,all_minor,0.0638335620121839
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Iguania,minor,Squamata,-1.8342241731728,0.0163572663814597,0,all_minor,0.0767517602243203
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Serpentes,minor,Squamata,-2.22053098357207,0.004126994532297,0,all_minor,0.052157579451684
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Teiioidea,minor,Squamata,-2.2763650519354,0.0235462702769436,0,all_minor,0.0493252165397836
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Varanidae,minor,Squamata,-2.23604113136412,0.00483662938178668,0,all_minor,0.0513548490121087
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,other Squamata,minor,Squamata,-1.81844164691402,0.0281105297881715,1,all_minor,0.0779727063591909
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Iguania,minor,Squamata,-1.8342241731728,0.0163572663814597,0,minor_within_Squamata,0.249548814150951
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Serpentes,minor,Squamata,-2.22053098357207,0.004126994532297,0,minor_within_Squamata,0.169583890494637
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Teiioidea,minor,Squamata,-2.2763650519354,0.0235462702769436,0,minor_within_Squamata,0.160374814326949
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,Varanidae,minor,Squamata,-2.23604113136412,0.00483662938178668,0,minor_within_Squamata,0.166973912186734
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,other Squamata,minor,Squamata,-1.81844164691402,0.0281105297881715,1,minor_within_Squamata,0.253518568840729
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Aves,major,Aves,-2.0934162442819,0.00541151560768219,0,tree_vs_major_vs_none,0.164724344815323
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Crocodylia,major,Crocodylia,-2.06192047074177,0.00682731746043268,0,tree_vs_major_vs_none,0.169995031964807
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Mammalia,major,Mammalia,-2.13327301892333,0.00681331161218787,0,tree_vs_major_vs_none,0.158288080113436
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Squamata,major,Squamata,-2.03036304000878,0.00691045077309136,0,tree_vs_major_vs_none,0.175445182488208
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,none,none,,-2.09713003463316,0.00884009292658845,0,tree_vs_major_vs_none,0.164113727686746
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,tree:Crocodyliformes@190,tree,Crocodylia,-2.07710263218446,0.00691242060685343,0,tree_vs_major_vs_none,0.16743363293148
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Aves,major,Aves,-2.0934162442819,0.00541151560768219,0,dated_tree_vs_major_vs_none,0.197851308112914
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Crocodylia,major,Crocodylia,-2.06192047074177,0.00682731746043268,0,dated_tree_vs_major_vs_none,0.204181959167246
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Mammalia,major,Mammalia,-2.13327301892333,0.00681331161218787,0,dated_tree_vs_major_vs_none,0.190120675509355
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,major:Squamata,major,Squamata,-2.03036304000878,0.00691045077309136,0,dated_tree_vs_major_vs_none,0.210728164657856
+Aplestosuchus_sordidus,taxon,Crocodyliformes,1,1,none,none,,-2.09713003463316,0.00884009292658845,0,dated_tree_vs_major_vs_none,0.197117892552629
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Aves,major,Aves,-2.09281224355202,0.00457253932394676,0,major_vs_none,0.197911285612111
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Crocodylia,major,Crocodylia,-2.09818123969459,0.00778150516419762,0,major_vs_none,0.196851548092093
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Mammalia,major,Mammalia,-2.07349246737516,0.00712754098714156,0,major_vs_none,0.201772061933521
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Squamata,major,Squamata,-2.05717775207123,0.00759297051198657,0,major_vs_none,0.205090915138254
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,none,none,,-2.09047602962623,0.00949438870333493,0,major_vs_none,0.198374189224022
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Accipitriformes,minor,Aves,-2.00255918814106,0.00470022795927017,0,all_minor,0.0647826121947751
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Charadriiformes,minor,Aves,-2.57493198340119,0.00662896769250416,0,all_minor,0.0365493879961248
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Falconiformes,minor,Aves,-1.77076533382245,0.00758753943371366,0,all_minor,0.0816817902398636
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Passeriformes,minor,Aves,-1.87315727244823,0.0198371917601894,1,all_minor,0.0737321662719348
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Pelecaniformes,minor,Aves,-2.49583356094753,0.00559039417452735,0,all_minor,0.0395577988424631
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Strigiformes,minor,Aves,-1.86309634801012,0.0100016362466055,0,all_minor,0.0744777242377267
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,other Aves,minor,Aves,-2.51128270087726,0.00721252028758455,0,all_minor,0.0389513614030505
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Crocodylia,minor,Crocodylia,-2.10249567621965,0.00976618927730536,0,all_minor,0.0586214545949324
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Caniformia,minor,Mammalia,-2.14036462252253,0.00178317710403529,0,all_minor,0.0564430295354191
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Dasyuromorphia,minor,Mammalia,-2.2484230533866,0.00725334974389547,1,all_minor,0.0506618606343525
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Feliformia,minor,Mammalia,-1.94344072457715,0.00293010464232775,0,all_minor,0.0687279323202599
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,other Mammalia,minor,Mammalia,-1.95230376625678,0.0241007280274054,0,all_minor,0.06812148524428
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Iguania,minor,Squamata,-1.75617447350433,0.0135654952796346,0,all_minor,0.0828823350234991
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Serpentes,minor,Squamata,-2.45586283933419,0.00592056150124807,0,all_minor,0.041170977801117
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Teiioidea,minor,Squamata,-2.51870311554377,0.0283857273271122,0,all_minor,0.0386633958827419
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Varanidae,minor,Squamata,-2.19392138529975,0.00371384163743239,0,all_minor,0.053499646150191
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,other Squamata,minor,Squamata,-1.90424810455332,0.0344361158143627,1,all_minor,0.0714750416272685
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Iguania,minor,Squamata,-1.75617447350433,0.0135654952796346,0,minor_within_Squamata,0.288094590370808
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Serpentes,minor,Squamata,-2.45586283933419,0.00592056150124807,0,minor_within_Squamata,0.143108130115006
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Teiioidea,minor,Squamata,-2.51870311554377,0.0283857273271122,0,minor_within_Squamata,0.134391908674204
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,Varanidae,minor,Squamata,-2.19392138529975,0.00371384163743239,0,minor_within_Squamata,0.185961925882668
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,other Squamata,minor,Squamata,-1.90424810455332,0.0344361158143627,1,minor_within_Squamata,0.248443444957314
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Aves,major,Aves,-2.09281224355202,0.00457253932394676,0,tree_vs_major_vs_none,0.165220424602388
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Crocodylia,major,Crocodylia,-2.09818123969459,0.00778150516419762,0,tree_vs_major_vs_none,0.16433573385581
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Mammalia,major,Mammalia,-2.07349246737516,0.00712754098714156,0,tree_vs_major_vs_none,0.16844348033236
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Squamata,major,Squamata,-2.05717775207123,0.00759297051198657,0,tree_vs_major_vs_none,0.171214127463387
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,none,none,,-2.09047602962623,0.00949438870333493,0,tree_vs_major_vs_none,0.165606866088397
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,tree:Crocodyliformes@190,tree,Crocodylia,-2.09306077243069,0.00748087693094134,0,tree_vs_major_vs_none,0.165179367657658
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Aves,major,Aves,-2.09281224355202,0.00457253932394676,0,dated_tree_vs_major_vs_none,0.197911285612111
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Crocodylia,major,Crocodylia,-2.09818123969459,0.00778150516419762,0,dated_tree_vs_major_vs_none,0.196851548092093
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Mammalia,major,Mammalia,-2.07349246737516,0.00712754098714156,0,dated_tree_vs_major_vs_none,0.201772061933521
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,major:Squamata,major,Squamata,-2.05717775207123,0.00759297051198657,0,dated_tree_vs_major_vs_none,0.205090915138254
+Confractosuchus_sauroktonos,taxon,Crocodyliformes,1,1,none,none,,-2.09047602962623,0.00949438870333493,0,dated_tree_vs_major_vs_none,0.198374189224022
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Aves,major,Aves,-1.9322041202453,0.00436024267656676,0,major_vs_none,0.195320842162392
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Crocodylia,major,Crocodylia,-1.84778711303266,0.00597784376973285,0,major_vs_none,0.212525197563175
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Mammalia,major,Mammalia,-2.02183669934609,0.00629345921128903,0,major_vs_none,0.178575409070832
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Squamata,major,Squamata,-1.82466429485985,0.00657962339970316,0,major_vs_none,0.217496634375958
+Repenomamus_robustus,taxon,Repenomamus,1,1,none,none,,-1.92831515622049,0.00946122804973483,0,major_vs_none,0.196081916827644
+Repenomamus_robustus,taxon,Repenomamus,1,1,Accipitriformes,minor,Aves,-2.16167146107081,0.00486281641751335,0,all_minor,0.0459145285813733
+Repenomamus_robustus,taxon,Repenomamus,1,1,Charadriiformes,minor,Aves,-2.36521282390492,0.00523632648222748,0,all_minor,0.0374587463831076
+Repenomamus_robustus,taxon,Repenomamus,1,1,Falconiformes,minor,Aves,-1.85125402061324,0.0152601121008286,0,all_minor,0.0626271590254674
+Repenomamus_robustus,taxon,Repenomamus,1,1,Passeriformes,minor,Aves,-1.63390592578693,0.0106665420300813,1,all_minor,0.0778315697007902
+Repenomamus_robustus,taxon,Repenomamus,1,1,Pelecaniformes,minor,Aves,-2.31343095968742,0.00730750028381912,0,all_minor,0.0394495284925225
+Repenomamus_robustus,taxon,Repenomamus,1,1,Strigiformes,minor,Aves,-1.52299000970808,0.00277332989632289,0,all_minor,0.086961287222712
+Repenomamus_robustus,taxon,Repenomamus,1,1,other Aves,minor,Aves,-2.31262674909342,0.00627151816359876,0,all_minor,0.0394812669817685
+Repenomamus_robustus,taxon,Repenomamus,1,1,Crocodylia,minor,Crocodylia,-1.74873464044698,0.00429216881948441,0,all_minor,0.0693883103409126
+Repenomamus_robustus,taxon,Repenomamus,1,1,Caniformia,minor,Mammalia,-2.19052070021755,0.00269700732902389,0,all_minor,0.0446088537840998
+Repenomamus_robustus,taxon,Repenomamus,1,1,Dasyuromorphia,minor,Mammalia,-2.34567165676343,0.00988494799345773,1,all_minor,0.0381979327676132
+Repenomamus_robustus,taxon,Repenomamus,1,1,Feliformia,minor,Mammalia,-1.8561318570041,0.00239531149664574,0,all_minor,0.0623224178331881
+Repenomamus_robustus,taxon,Repenomamus,1,1,other Mammalia,minor,Mammalia,-1.95496859383176,0.0213386954036181,0,all_minor,0.0564572921430342
+Repenomamus_robustus,taxon,Repenomamus,1,1,Iguania,minor,Squamata,-1.76939221749037,0.0187454527029719,0,all_minor,0.0679696197790347
+Repenomamus_robustus,taxon,Repenomamus,1,1,Serpentes,minor,Squamata,-1.64739926309308,0.00191496293621535,0,all_minor,0.076788415719237
+Repenomamus_robustus,taxon,Repenomamus,1,1,Teiioidea,minor,Squamata,-1.82090549187089,0.0143689899284223,0,all_minor,0.0645569359936488
+Repenomamus_robustus,taxon,Repenomamus,1,1,Varanidae,minor,Squamata,-2.06325032152662,0.00400177615131385,0,all_minor,0.0506633481682531
+Repenomamus_robustus,taxon,Repenomamus,1,1,other Squamata,minor,Squamata,-1.61492761463955,0.0225276966774617,1,all_minor,0.0793227870832372
+Repenomamus_robustus,taxon,Repenomamus,1,1,Iguania,minor,Squamata,-1.76939221749037,0.0187454527029719,0,minor_within_Squamata,0.200322422851498
+Repenomamus_robustus,taxon,Repenomamus,1,1,Serpentes,minor,Squamata,-1.64739926309308,0.00191496293621535,0,minor_within_Squamata,0.226313484374534
+Repenomamus_robustus,taxon,Repenomamus,1,1,Teiioidea,minor,Squamata,-1.82090549187089,0.0143689899284223,0,minor_within_Squamata,0.190264442734248
+Repenomamus_robustus,taxon,Repenomamus,1,1,Varanidae,minor,Squamata,-2.06325032152662,0.00400177615131385,0,minor_within_Squamata,0.149316778405224
+Repenomamus_robustus,taxon,Repenomamus,1,1,other Squamata,minor,Squamata,-1.61492761463955,0.0225276966774617,1,minor_within_Squamata,0.233782871634496
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Aves,major,Aves,-1.9322041202453,0.00436024267656676,0,tree_vs_major_vs_none,0.165422207787116
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Crocodylia,major,Crocodylia,-1.84778711303266,0.00597784376973285,0,tree_vs_major_vs_none,0.179993015604877
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Mammalia,major,Mammalia,-2.02183669934609,0.00629345921128903,0,tree_vs_major_vs_none,0.151240072989364
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Squamata,major,Squamata,-1.82466429485985,0.00657962339970316,0,tree_vs_major_vs_none,0.184203452362881
+Repenomamus_robustus,taxon,Repenomamus,1,1,none,none,,-1.92831515622049,0.00946122804973483,0,tree_vs_major_vs_none,0.166066781351426
+Repenomamus_robustus,taxon,Repenomamus,1,1,tree:Repenomamus@175,tree,Mammalia,-2.0097806265969,0.00648529543300978,0,tree_vs_major_vs_none,0.153074469904336
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Aves,major,Aves,-1.9322041202453,0.00436024267656676,0,dated_tree_vs_major_vs_none,0.195320842162392
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Crocodylia,major,Crocodylia,-1.84778711303266,0.00597784376973285,0,dated_tree_vs_major_vs_none,0.212525197563175
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Mammalia,major,Mammalia,-2.02183669934609,0.00629345921128903,0,dated_tree_vs_major_vs_none,0.178575409070832
+Repenomamus_robustus,taxon,Repenomamus,1,1,major:Squamata,major,Squamata,-1.82466429485985,0.00657962339970316,0,dated_tree_vs_major_vs_none,0.217496634375958
+Repenomamus_robustus,taxon,Repenomamus,1,1,none,none,,-1.92831515622049,0.00946122804973483,0,dated_tree_vs_major_vs_none,0.196081916827644
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Aves,major,Aves,-1.07899060470773,0.00594799792356712,0,major_vs_none,0.202196665945686
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Crocodylia,major,Crocodylia,-1.17607734536324,0.0121248830976741,0,major_vs_none,0.183488881962929
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Mammalia,major,Mammalia,-1.00054754172135,0.0070126560264078,0,major_vs_none,0.218696271822335
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Squamata,major,Squamata,-1.11524029556357,0.0107563081490837,0,major_vs_none,0.194998355793666
+Sanajeh_indicus,taxon,Sanajeh,1,1,none,none,,-1.08681972572032,0.0123354638246986,0,major_vs_none,0.200619824475383
+Sanajeh_indicus,taxon,Sanajeh,1,1,Accipitriformes,minor,Aves,-0.82142679193441,0.00184919203774602,0,all_minor,0.0762447075370273
+Sanajeh_indicus,taxon,Sanajeh,1,1,Charadriiformes,minor,Aves,-1.48177758072183,0.0071454912464868,1,all_minor,0.0393933576662595
+Sanajeh_indicus,taxon,Sanajeh,1,1,Falconiformes,minor,Aves,-0.725455183329153,0.00474053353183103,0,all_minor,0.0839246701306894
+Sanajeh_indicus,taxon,Sanajeh,1,1,Passeriformes,minor,Aves,-1.02418162464952,0.0261484048446914,1,all_minor,0.0622521561076835
+Sanajeh_indicus,taxon,Sanajeh,1,1,Pelecaniformes,minor,Aves,-1.40272852033182,0.00537989745447303,1,all_minor,0.0426337535045551
+Sanajeh_indicus,taxon,Sanajeh,1,1,Strigiformes,minor,Aves,-0.891183558086627,0.00824033104402415,0,all_minor,0.0711073877283014
+Sanajeh_indicus,taxon,Sanajeh,1,1,other Aves,minor,Aves,-1.41433830494413,0.00759083818517407,0,all_minor,0.0421416469620903
+Sanajeh_indicus,taxon,Sanajeh,1,1,Crocodylia,minor,Crocodylia,-1.39942973252499,0.0168800245957612,0,all_minor,0.042774625436333
+Sanajeh_indicus,taxon,Sanajeh,1,1,Caniformia,minor,Mammalia,-0.995071633695147,0.00150873308669674,0,all_minor,0.0640909495933952
+Sanajeh_indicus,taxon,Sanajeh,1,1,Dasyuromorphia,minor,Mammalia,-1.0805410356859,0.00433720743768599,1,all_minor,0.0588406980962226
+Sanajeh_indicus,taxon,Sanajeh,1,1,Feliformia,minor,Mammalia,-0.785367525269658,0.00190651324686231,0,all_minor,0.0790442063799099
+Sanajeh_indicus,taxon,Sanajeh,1,1,other Mammalia,minor,Mammalia,-0.858956886145601,0.0141217022675001,1,all_minor,0.0734362666406494
+Sanajeh_indicus,taxon,Sanajeh,1,1,Iguania,minor,Squamata,-0.767480665776532,0.0133501675554499,0,all_minor,0.0804707794143031
+Sanajeh_indicus,taxon,Sanajeh,1,1,Serpentes,minor,Squamata,-1.41807869408332,0.0061577705693771,0,all_minor,0.04198431522787
+Sanajeh_indicus,taxon,Sanajeh,1,1,Teiioidea,minor,Squamata,-1.81815919868119,0.033834168025212,0,all_minor,0.0281406625724041
+Sanajeh_indicus,taxon,Sanajeh,1,1,Varanidae,minor,Squamata,-1.11805766412969,0.00441467987093652,0,all_minor,0.0566740895313302
+Sanajeh_indicus,taxon,Sanajeh,1,1,other Squamata,minor,Squamata,-1.11503373271456,0.0438230998969714,1,all_minor,0.0568457274709763
+Sanajeh_indicus,taxon,Sanajeh,1,1,Caniformia,minor,Mammalia,-0.995071633695147,0.00150873308669674,0,minor_within_Mammalia,0.232709255598956
+Sanajeh_indicus,taxon,Sanajeh,1,1,Dasyuromorphia,minor,Mammalia,-1.0805410356859,0.00433720743768599,1,minor_within_Mammalia,0.213646000562706
+Sanajeh_indicus,taxon,Sanajeh,1,1,Feliformia,minor,Mammalia,-0.785367525269658,0.00190651324686231,0,minor_within_Mammalia,0.287003368537618
+Sanajeh_indicus,taxon,Sanajeh,1,1,other Mammalia,minor,Mammalia,-0.858956886145601,0.0141217022675001,1,minor_within_Mammalia,0.26664137530072
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Aves,major,Aves,-1.07899060470773,0.00594799792356712,0,tree_vs_major_vs_none,0.169716960807275
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Crocodylia,major,Crocodylia,-1.17607734536324,0.0121248830976741,0,tree_vs_major_vs_none,0.154014287243679
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Mammalia,major,Mammalia,-1.00054754172135,0.0070126560264078,0,tree_vs_major_vs_none,0.18356616524794
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Squamata,major,Squamata,-1.11524029556357,0.0107563081490837,0,tree_vs_major_vs_none,0.163674945642311
+Sanajeh_indicus,taxon,Sanajeh,1,1,none,none,,-1.08681972572032,0.0123354638246986,0,tree_vs_major_vs_none,0.168393414047672
+Sanajeh_indicus,taxon,Sanajeh,1,1,tree:Sanajeh@100,tree,Squamata,-1.13399281935636,0.00974084204399332,0,tree_vs_major_vs_none,0.160634227011124
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Aves,major,Aves,-1.07899060470773,0.00594799792356712,0,dated_tree_vs_major_vs_none,0.202196665945686
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Crocodylia,major,Crocodylia,-1.17607734536324,0.0121248830976741,0,dated_tree_vs_major_vs_none,0.183488881962929
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Mammalia,major,Mammalia,-1.00054754172135,0.0070126560264078,0,dated_tree_vs_major_vs_none,0.218696271822335
+Sanajeh_indicus,taxon,Sanajeh,1,1,major:Squamata,major,Squamata,-1.11524029556357,0.0107563081490837,0,dated_tree_vs_major_vs_none,0.194998355793666
+Sanajeh_indicus,taxon,Sanajeh,1,1,none,none,,-1.08681972572032,0.0123354638246986,0,dated_tree_vs_major_vs_none,0.200619824475383
+Anchiornis,taxon,Theropoda,3,1,major:Aves,major,Aves,-5.87212118047702,0.0405566139405488,0,major_vs_none,0.138263182602202
+Anchiornis,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-5.07316443250235,0.0398798937620032,3,major_vs_none,0.307389519710138
+Anchiornis,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-6.14980892656409,0.0484405560991588,0,major_vs_none,0.104738968764312
+Anchiornis,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-5.33968602769734,0.0493948651858059,0,major_vs_none,0.235472501926962
+Anchiornis,taxon,Theropoda,3,1,none,none,,-5.43466965042291,0.0643617271613984,0,major_vs_none,0.214135826996386
+Anchiornis,taxon,Theropoda,3,1,Accipitriformes,minor,Aves,-9.70319128986632,0.114949299684319,0,all_minor,0.00127701634073633
+Anchiornis,taxon,Theropoda,3,1,Charadriiformes,minor,Aves,-5.35643423122753,0.0279860544063712,3,all_minor,0.098620922200195
+Anchiornis,taxon,Theropoda,3,1,Falconiformes,minor,Aves,-9.55349629928582,0.128701414609729,0,all_minor,0.00148322884542194
+Anchiornis,taxon,Theropoda,3,1,Passeriformes,minor,Aves,-6.19863575114299,0.13309545263537,0,all_minor,0.0424820618146897
+Anchiornis,taxon,Theropoda,3,1,Pelecaniformes,minor,Aves,-5.40804912032104,0.0351000028276266,3,all_minor,0.0936597507663649
+Anchiornis,taxon,Theropoda,3,1,Strigiformes,minor,Aves,-9.28014169086572,0.134910634781749,0,all_minor,0.00194950593179155
+Anchiornis,taxon,Theropoda,3,1,other Aves,minor,Aves,-5.51458691121518,0.0453250925033697,0,all_minor,0.0841945971067331
+Anchiornis,taxon,Theropoda,3,1,Crocodylia,minor,Crocodylia,-4.58941000567589,0.0495957272239982,3,all_minor,0.21236524740288
+Anchiornis,taxon,Theropoda,3,1,Caniformia,minor,Mammalia,-8.44308746781327,0.0489805070218604,0,all_minor,0.00450248828066033
+Anchiornis,taxon,Theropoda,3,1,Dasyuromorphia,minor,Mammalia,-8.99651178960025,0.0819811891011921,0,all_minor,0.00258882957861701
+Anchiornis,taxon,Theropoda,3,1,Feliformia,minor,Mammalia,-6.33895195206786,0.0428780468568139,0,all_minor,0.0369204541676633
+Anchiornis,taxon,Theropoda,3,1,other Mammalia,minor,Mammalia,-8.22273706886124,0.121625500575129,0,all_minor,0.00561241211509259
+Anchiornis,taxon,Theropoda,3,1,Iguania,minor,Squamata,-7.77979128859526,0.127202130722851,3,all_minor,0.00874014145597746
+Anchiornis,taxon,Theropoda,3,1,Serpentes,minor,Squamata,-6.90634990487825,0.0449649916497267,0,all_minor,0.0209338561151514
+Anchiornis,taxon,Theropoda,3,1,Teiioidea,minor,Squamata,-4.47352641177553,0.0636031123724106,3,all_minor,0.238457536690559
+Anchiornis,taxon,Theropoda,3,1,Varanidae,minor,Squamata,-5.66627481226229,0.0316211894412091,0,all_minor,0.0723447474132882
+Anchiornis,taxon,Theropoda,3,1,other Squamata,minor,Squamata,-5.64544872553652,0.140036823669558,3,all_minor,0.0738672037741782
+Anchiornis,taxon,Theropoda,3,1,major:Aves,major,Aves,-5.87212118047702,0.0405566139405488,0,tree_vs_major_vs_none,0.117130583411958
+Anchiornis,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-5.07316443250235,0.0398798937620032,3,tree_vs_major_vs_none,0.260407095372304
+Anchiornis,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-6.14980892656409,0.0484405560991588,0,tree_vs_major_vs_none,0.0887303205845297
+Anchiornis,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-5.33968602769734,0.0493948651858059,0,tree_vs_major_vs_none,0.199482110921256
+Anchiornis,taxon,Theropoda,3,1,none,none,,-5.43466965042291,0.0643617271613984,0,tree_vs_major_vs_none,0.181406603503783
+Anchiornis,taxon,Theropoda,3,1,tree:Theropoda@162.5,tree,Aves,-5.60599746713516,0.0452232344771456,0,tree_vs_major_vs_none,0.152843286206169
+Anchiornis,taxon,Theropoda,3,1,major:Aves,major,Aves,-5.87212118047702,0.0405566139405488,0,dated_tree_vs_major_vs_none,0.100591763019473
+Anchiornis,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-5.07316443250235,0.0398798937620032,3,dated_tree_vs_major_vs_none,0.223637653490983
+Anchiornis,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-6.14980892656409,0.0484405560991588,0,dated_tree_vs_major_vs_none,0.0762016129424457
+Anchiornis,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-5.33968602769734,0.0493948651858059,0,dated_tree_vs_major_vs_none,0.171315267489453
+Anchiornis,taxon,Theropoda,3,1,none,none,,-5.43466965042291,0.0643617271613984,0,dated_tree_vs_major_vs_none,0.15579201894385
+Anchiornis,taxon,Theropoda,3,1,tree:dated,tree_multi,Aves,-5.56884074135606,0.0378265213387894,0,dated_tree_vs_major_vs_none,0.136230842056898
+Anchiornis,taxon,Theropoda,3,1,tree:dated+Eshanosaurus,tree_multi,Aves,-5.56884074135606,0.0378265213387894,0,dated_tree_vs_major_vs_none,0.136230842056898
+Daspletosaurus,taxon,Theropoda,2,1,major:Aves,major,Aves,-5.04576694277508,0.00699722010110708,0,major_vs_none,0.192587950804898
+Daspletosaurus,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-5.05005051762317,0.00927511281239745,0,major_vs_none,0.191764750282054
+Daspletosaurus,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-4.92089137036159,0.010300914736777,0,major_vs_none,0.21820358629906
+Daspletosaurus,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-5.01225828058801,0.0108340879127884,0,major_vs_none,0.199150655054061
+Daspletosaurus,taxon,Theropoda,2,1,none,none,,-5.01657385433051,0.0117789019505855,0,major_vs_none,0.198293057559926
+Daspletosaurus,taxon,Theropoda,2,1,Accipitriformes,minor,Aves,-4.57861827970772,0.00661117543592494,0,all_minor,0.092693157608355
+Daspletosaurus,taxon,Theropoda,2,1,Charadriiformes,minor,Aves,-5.92640818966513,0.0162967630131033,0,all_minor,0.0240829650865231
+Daspletosaurus,taxon,Theropoda,2,1,Falconiformes,minor,Aves,-4.42060983661382,0.0150272382143192,0,all_minor,0.108560009250097
+Daspletosaurus,taxon,Theropoda,2,1,Passeriformes,minor,Aves,-4.68810793602696,0.0390779267939547,2,all_minor,0.083080083272189
+Daspletosaurus,taxon,Theropoda,2,1,Pelecaniformes,minor,Aves,-5.72588802698656,0.0103335833407597,0,all_minor,0.0294303045466215
+Daspletosaurus,taxon,Theropoda,2,1,Strigiformes,minor,Aves,-5.52693656184937,0.0429811867148362,0,all_minor,0.035908583998236
+Daspletosaurus,taxon,Theropoda,2,1,other Aves,minor,Aves,-5.79064066525302,0.0176601273773916,0,all_minor,0.0275850034583385
+Daspletosaurus,taxon,Theropoda,2,1,Crocodylia,minor,Crocodylia,-5.09351969318728,0.0227134106170877,0,all_minor,0.0553896771944114
+Daspletosaurus,taxon,Theropoda,2,1,Caniformia,minor,Mammalia,-4.88574743581163,0.00325272269733908,0,all_minor,0.068180970537363
+Daspletosaurus,taxon,Theropoda,2,1,Dasyuromorphia,minor,Mammalia,-5.05017625453745,0.0100011333580051,2,all_minor,0.0578432452019043
+Daspletosaurus,taxon,Theropoda,2,1,Feliformia,minor,Mammalia,-4.77964060344603,0.0108123632001067,0,all_minor,0.0758131934750721
+Daspletosaurus,taxon,Theropoda,2,1,other Mammalia,minor,Mammalia,-4.74350853079467,0.0367336822501526,0,all_minor,0.0786025708215041
+Daspletosaurus,taxon,Theropoda,2,1,Iguania,minor,Squamata,-4.36341700993193,0.0199998922861241,0,all_minor,0.114949847830043
+Daspletosaurus,taxon,Theropoda,2,1,Serpentes,minor,Squamata,-7.20830494543613,0.0157576006416639,0,all_minor,0.00668327403122402
+Daspletosaurus,taxon,Theropoda,2,1,Teiioidea,minor,Squamata,-6.17495375564862,0.0526438337931281,0,all_minor,0.0187831310356945
+Daspletosaurus,taxon,Theropoda,2,1,Varanidae,minor,Squamata,-5.11634183312644,0.00636845104492852,0,all_minor,0.0541398819768276
+Daspletosaurus,taxon,Theropoda,2,1,other Squamata,minor,Squamata,-4.88438244216406,0.0573000001991669,2,all_minor,0.0682741006755958
+Daspletosaurus,taxon,Theropoda,2,1,Caniformia,minor,Mammalia,-4.88574743581163,0.00325272269733908,0,minor_within_Mammalia,0.243121435569382
+Daspletosaurus,taxon,Theropoda,2,1,Dasyuromorphia,minor,Mammalia,-5.05017625453745,0.0100011333580051,2,minor_within_Mammalia,0.206258912136961
+Daspletosaurus,taxon,Theropoda,2,1,Feliformia,minor,Mammalia,-4.77964060344603,0.0108123632001067,0,minor_within_Mammalia,0.270336609870612
+Daspletosaurus,taxon,Theropoda,2,1,other Mammalia,minor,Mammalia,-4.74350853079467,0.0367336822501526,0,minor_within_Mammalia,0.280283042423044
+Daspletosaurus,taxon,Theropoda,2,1,major:Aves,major,Aves,-5.04576694277508,0.00699722010110708,0,tree_vs_major_vs_none,0.161395082591517
+Daspletosaurus,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-5.05005051762317,0.00927511281239745,0,tree_vs_major_vs_none,0.160705213283399
+Daspletosaurus,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-4.92089137036159,0.010300914736777,0,tree_vs_major_vs_none,0.182861833698925
+Daspletosaurus,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-5.01225828058801,0.0108340879127884,0,tree_vs_major_vs_none,0.166894846153519
+Daspletosaurus,taxon,Theropoda,2,1,none,none,,-5.01657385433051,0.0117789019505855,0,tree_vs_major_vs_none,0.166176151043998
+Daspletosaurus,taxon,Theropoda,2,1,tree:Theropoda@162.5,tree,Aves,-5.04223040285264,0.00766147706376814,0,tree_vs_major_vs_none,0.161966873228642
+Daspletosaurus,taxon,Theropoda,2,1,major:Aves,major,Aves,-5.04576694277508,0.00699722010110708,0,dated_tree_vs_major_vs_none,0.13882404762567
+Daspletosaurus,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-5.05005051762317,0.00927511281239745,0,dated_tree_vs_major_vs_none,0.138230656252476
+Daspletosaurus,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-4.92089137036159,0.010300914736777,0,dated_tree_vs_major_vs_none,0.157288682546709
+Daspletosaurus,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-5.01225828058801,0.0108340879127884,0,dated_tree_vs_major_vs_none,0.143554671548046
+Daspletosaurus,taxon,Theropoda,2,1,none,none,,-5.01657385433051,0.0117789019505855,0,dated_tree_vs_major_vs_none,0.142936485649749
+Daspletosaurus,taxon,Theropoda,2,1,tree:dated,tree_multi,Aves,-5.04108232133317,0.00848518009729025,0,dated_tree_vs_major_vs_none,0.139475911411231
+Daspletosaurus,taxon,Theropoda,2,1,tree:dated+Eshanosaurus,tree_multi,Aves,-5.03955180534913,0.00905373610302115,0,dated_tree_vs_major_vs_none,0.139689544966117
+Microraptor_gui,taxon,Theropoda,2,1,major:Aves,major,Aves,-2.47112024096647,0.0055094915842773,0,major_vs_none,0.201229829410956
+Microraptor_gui,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-2.42965040470177,0.00640473429325767,0,major_vs_none,0.209750246595591
+Microraptor_gui,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-2.58723638611573,0.00782773567256219,0,major_vs_none,0.17916936641751
+Microraptor_gui,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-2.39950526841457,0.00594349758811567,0,major_vs_none,0.216169464359112
+Microraptor_gui,taxon,Theropoda,2,1,none,none,,-2.50935496865011,0.0103385931557164,0,major_vs_none,0.193681093216831
+Microraptor_gui,taxon,Theropoda,2,1,Accipitriformes,minor,Aves,-2.72592887436718,0.00811662388099447,0,all_minor,0.0441835323415133
+Microraptor_gui,taxon,Theropoda,2,1,Charadriiformes,minor,Aves,-2.82793660458346,0.00593572422175723,0,all_minor,0.0398987269745231
+Microraptor_gui,taxon,Theropoda,2,1,Falconiformes,minor,Aves,-2.36834227969351,0.0167034031168519,0,all_minor,0.063176900939212
+Microraptor_gui,taxon,Theropoda,2,1,Passeriformes,minor,Aves,-2.17072548068495,0.0098868789111683,2,all_minor,0.0769807616461449
+Microraptor_gui,taxon,Theropoda,2,1,Pelecaniformes,minor,Aves,-2.79294530163861,0.00988687303651747,0,all_minor,0.0413195486508751
+Microraptor_gui,taxon,Theropoda,2,1,Strigiformes,minor,Aves,-2.00400433617321,0.00556667079062566,0,all_minor,0.0909469788214682
+Microraptor_gui,taxon,Theropoda,2,1,other Aves,minor,Aves,-2.79200131399319,0.00985983413004228,0,all_minor,0.0413585722102972
+Microraptor_gui,taxon,Theropoda,2,1,Crocodylia,minor,Crocodylia,-2.35348047619069,0.0117635027509006,0,all_minor,0.064122835361745
+Microraptor_gui,taxon,Theropoda,2,1,Caniformia,minor,Mammalia,-2.82835723083921,0.00606348600071903,0,all_minor,0.039881948051462
+Microraptor_gui,taxon,Theropoda,2,1,Dasyuromorphia,minor,Mammalia,-3.10001275342982,0.0176951407821588,2,all_minor,0.0303947005480921
+Microraptor_gui,taxon,Theropoda,2,1,Feliformia,minor,Mammalia,-2.38742028101846,0.00367446840156612,0,all_minor,0.0619830364244835
+Microraptor_gui,taxon,Theropoda,2,1,other Mammalia,minor,Mammalia,-2.473707023832,0.0224368014959842,0,all_minor,0.0568589704177252
+Microraptor_gui,taxon,Theropoda,2,1,Iguania,minor,Squamata,-2.26157881219333,0.0182715637688952,0,all_minor,0.0702951081028741
+Microraptor_gui,taxon,Theropoda,2,1,Serpentes,minor,Squamata,-1.98280792927016,0.00236593765019636,0,all_minor,0.092895303789588
+Microraptor_gui,taxon,Theropoda,2,1,Teiioidea,minor,Squamata,-2.36274341527059,0.0184369493416468,0,all_minor,0.0635316119049323
+Microraptor_gui,taxon,Theropoda,2,1,Varanidae,minor,Squamata,-2.5703283609543,0.0063366978121007,0,all_minor,0.0516222438320881
+Microraptor_gui,taxon,Theropoda,2,1,other Squamata,minor,Squamata,-2.25797040056213,0.0207993972776334,2,all_minor,0.0705492199829759
+Microraptor_gui,taxon,Theropoda,2,1,Iguania,minor,Squamata,-2.26157881219333,0.0182715637688952,0,minor_within_Squamata,0.201480138204689
+Microraptor_gui,taxon,Theropoda,2,1,Serpentes,minor,Squamata,-1.98280792927016,0.00236593765019636,0,minor_within_Squamata,0.266256915327619
+Microraptor_gui,taxon,Theropoda,2,1,Teiioidea,minor,Squamata,-2.36274341527059,0.0184369493416468,0,minor_within_Squamata,0.182094576598981
+Microraptor_gui,taxon,Theropoda,2,1,Varanidae,minor,Squamata,-2.5703283609543,0.0063366978121007,0,minor_within_Squamata,0.147959895111108
+Microraptor_gui,taxon,Theropoda,2,1,other Squamata,minor,Squamata,-2.25797040056213,0.0207993972776334,2,minor_within_Squamata,0.202208474757603
+Microraptor_gui,taxon,Theropoda,2,1,major:Aves,major,Aves,-2.47112024096647,0.0055094915842773,0,tree_vs_major_vs_none,0.167523497014416
+Microraptor_gui,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-2.42965040470177,0.00640473429325767,0,tree_vs_major_vs_none,0.174616730095068
+Microraptor_gui,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-2.58723638611573,0.00782773567256219,0,tree_vs_major_vs_none,0.14915819840418
+Microraptor_gui,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-2.39950526841457,0.00594349758811567,0,tree_vs_major_vs_none,0.179960718165773
+Microraptor_gui,taxon,Theropoda,2,1,none,none,,-2.50935496865011,0.0103385931557164,0,tree_vs_major_vs_none,0.16123918673606
+Microraptor_gui,taxon,Theropoda,2,1,tree:Theropoda@162.5,tree,Aves,-2.47125054419213,0.00644777035952668,0,tree_vs_major_vs_none,0.167501669584504
+Microraptor_gui,taxon,Theropoda,2,1,major:Aves,major,Aves,-2.47112024096647,0.0055094915842773,0,dated_tree_vs_major_vs_none,0.143300590437416
+Microraptor_gui,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-2.42965040470177,0.00640473429325767,0,dated_tree_vs_major_vs_none,0.149368183979115
+Microraptor_gui,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-2.58723638611573,0.00782773567256219,0,dated_tree_vs_major_vs_none,0.127590805354671
+Microraptor_gui,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-2.39950526841457,0.00594349758811567,0,dated_tree_vs_major_vs_none,0.15393946299054
+Microraptor_gui,taxon,Theropoda,2,1,none,none,,-2.50935496865011,0.0103385931557164,0,dated_tree_vs_major_vs_none,0.137924954246495
+Microraptor_gui,taxon,Theropoda,2,1,tree:dated,tree_multi,Aves,-2.46668203438379,0.00837602343661092,0,dated_tree_vs_major_vs_none,0.143938001495882
+Microraptor_gui,taxon,Theropoda,2,1,tree:dated+Eshanosaurus,tree_multi,Aves,-2.46668203438379,0.00837602343661092,0,dated_tree_vs_major_vs_none,0.143938001495882
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Aves,major,Aves,-3.78354542615839,0.0075332242248557,0,major_vs_none,0.207817387123154
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-3.79154180664891,0.012246663585099,0,major_vs_none,0.206162226688999
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-3.92059508445832,0.00788118822969777,0,major_vs_none,0.181201575658349
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-3.74191861184055,0.0112598268661318,0,major_vs_none,0.216650739577022
+Microraptor_zhaoianus,taxon,Theropoda,2,1,none,none,,-3.88286961583264,0.0113020989880645,0,major_vs_none,0.188168070952475
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Accipitriformes,minor,Aves,-3.75982964541786,0.00398761074320131,0,all_minor,0.0556669662454963
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Charadriiformes,minor,Aves,-4.34777021094263,0.00920153921615336,0,all_minor,0.0309213331799687
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Falconiformes,minor,Aves,-3.52312689318066,0.00986900364913305,0,all_minor,0.0705336328404351
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Passeriformes,minor,Aves,-3.40381656610812,0.011419580507576,2,all_minor,0.0794716206281636
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Pelecaniformes,minor,Aves,-4.26873241498812,0.012626479323871,0,all_minor,0.0334644652090407
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Strigiformes,minor,Aves,-3.2626691469623,0.00670320062809368,0,all_minor,0.091519073475783
+Microraptor_zhaoianus,taxon,Theropoda,2,1,other Aves,minor,Aves,-4.25277425087125,0.0106545201499826,0,all_minor,0.0340027804745737
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Crocodylia,minor,Crocodylia,-3.78373544946773,0.0267655080450978,0,all_minor,0.0543519831466264
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Caniformia,minor,Mammalia,-3.92587335660624,0.00434850041457844,0,all_minor,0.0471504330804887
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Dasyuromorphia,minor,Mammalia,-4.21347763807981,0.018715095815563,2,all_minor,0.0353655758261016
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Feliformia,minor,Mammalia,-3.95366700334263,0.0139470426056005,0,all_minor,0.0458579945876657
+Microraptor_zhaoianus,taxon,Theropoda,2,1,other Mammalia,minor,Mammalia,-3.66740740105329,0.019316310378978,0,all_minor,0.0610570791089169
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Iguania,minor,Squamata,-3.48945499716968,0.0113086904161497,0,all_minor,0.0729490719848195
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Serpentes,minor,Squamata,-3.0961007979625,0.00272540666794398,0,all_minor,0.108106381136751
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Teiioidea,minor,Squamata,-3.58077032001525,0.0186911864253096,0,all_minor,0.0665827963285391
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Varanidae,minor,Squamata,-3.95096248711677,0.0109549740519148,0,all_minor,0.0459821861414507
+Microraptor_zhaoianus,taxon,Theropoda,2,1,other Squamata,minor,Squamata,-3.5742758039166,0.0242763888455974,2,all_minor,0.0670166266051796
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Iguania,minor,Squamata,-3.48945499716968,0.0113086904161497,0,minor_within_Squamata,0.202278355808653
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Serpentes,minor,Squamata,-3.0961007979625,0.00272540666794398,0,minor_within_Squamata,0.299765033793934
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Teiioidea,minor,Squamata,-3.58077032001525,0.0186911864253096,0,minor_within_Squamata,0.184625495568772
+Microraptor_zhaoianus,taxon,Theropoda,2,1,Varanidae,minor,Squamata,-3.95096248711677,0.0109549740519148,0,minor_within_Squamata,0.127502663928551
+Microraptor_zhaoianus,taxon,Theropoda,2,1,other Squamata,minor,Squamata,-3.5742758039166,0.0242763888455974,2,minor_within_Squamata,0.18582845090009
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Aves,major,Aves,-3.78354542615839,0.0075332242248557,0,tree_vs_major_vs_none,0.17289322937137
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-3.79154180664891,0.012246663585099,0,tree_vs_major_vs_none,0.171516222199111
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-3.92059508445832,0.00788118822969777,0,tree_vs_major_vs_none,0.150750262124059
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-3.74191861184055,0.0112598268661318,0,tree_vs_major_vs_none,0.180242117994533
+Microraptor_zhaoianus,taxon,Theropoda,2,1,none,none,,-3.88286961583264,0.0113020989880645,0,tree_vs_major_vs_none,0.156546022938279
+Microraptor_zhaoianus,taxon,Theropoda,2,1,tree:Theropoda@162.5,tree,Aves,-3.8119453384984,0.00899652759593169,0,tree_vs_major_vs_none,0.168052145372648
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Aves,major,Aves,-3.78354542615839,0.0075332242248557,0,dated_tree_vs_major_vs_none,0.147868022339258
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Crocodylia,major,Crocodylia,-3.79154180664891,0.012246663585099,0,dated_tree_vs_major_vs_none,0.146690328290455
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Mammalia,major,Mammalia,-3.92059508445832,0.00788118822969777,0,dated_tree_vs_major_vs_none,0.128930110267815
+Microraptor_zhaoianus,taxon,Theropoda,2,1,major:Squamata,major,Squamata,-3.74191861184055,0.0112598268661318,0,dated_tree_vs_major_vs_none,0.154153205576621
+Microraptor_zhaoianus,taxon,Theropoda,2,1,none,none,,-3.88286961583264,0.0113020989880645,0,dated_tree_vs_major_vs_none,0.133886971173624
+Microraptor_zhaoianus,taxon,Theropoda,2,1,tree:dated,tree_multi,Aves,-3.80841692461659,0.00953430277488045,0,dated_tree_vs_major_vs_none,0.144235681176113
+Microraptor_zhaoianus,taxon,Theropoda,2,1,tree:dated+Eshanosaurus,tree_multi,Aves,-3.80841692461659,0.00953430277488045,0,dated_tree_vs_major_vs_none,0.144235681176113
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Aves,major,Aves,-6.26180470519616,0.0119141824424957,0,major_vs_none,0.187231733648652
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-6.18280086600848,0.0143529098417002,0,major_vs_none,0.202623769292474
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-6.26805887106154,0.0144398917809016,0,major_vs_none,0.186064409455661
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-6.08698988623748,0.0154397247338672,0,major_vs_none,0.222997795550979
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,none,none,,-6.19043753475955,0.0212033520269482,0,major_vs_none,0.201082292052236
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Accipitriformes,minor,Aves,-6.5022441597502,0.0154901879572217,0,all_minor,0.0472045541715636
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Charadriiformes,minor,Aves,-7.76431991749562,0.017535844329586,0,all_minor,0.0133619967847548
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Falconiformes,minor,Aves,-5.74672602378744,0.0241882707007271,0,all_minor,0.100485004818965
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Passeriformes,minor,Aves,-5.73898758815632,0.0257720064132561,3,all_minor,0.101265618027708
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Pelecaniformes,minor,Aves,-7.57820596599092,0.0182070488277927,0,all_minor,0.0160953203521313
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Strigiformes,minor,Aves,-5.52291094697444,0.0135993265323292,0,all_minor,0.125690632154625
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,other Aves,minor,Aves,-7.58790842416979,0.0195499167468772,0,all_minor,0.0159399113234918
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Crocodylia,minor,Crocodylia,-6.1741791349686,0.0177898270634678,0,all_minor,0.0655331026799506
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Caniformia,minor,Mammalia,-6.78282850423989,0.00607488203132723,0,all_minor,0.0356555933274079
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Dasyuromorphia,minor,Mammalia,-7.0457335373298,0.0230283937898086,3,all_minor,0.0274125516259832
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Feliformia,minor,Mammalia,-6.45269458952205,0.00845517626573491,0,all_minor,0.0496024359713635
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,other Mammalia,minor,Mammalia,-6.04537779354377,0.0516020916356272,0,all_minor,0.0745415539350257
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Iguania,minor,Squamata,-5.67300874308026,0.0265704603901935,0,all_minor,0.108172350305475
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Serpentes,minor,Squamata,-6.68328546817865,0.0102500335303953,0,all_minor,0.0393875220219826
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Teiioidea,minor,Squamata,-6.71037508719238,0.0432894743560806,0,all_minor,0.0383348516503387
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Varanidae,minor,Squamata,-6.83369043616945,0.0124348160757614,0,all_minor,0.0338874282730684
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,other Squamata,minor,Squamata,-5.6798990403287,0.0479057588406455,3,all_minor,0.107429572576166
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Iguania,minor,Squamata,-5.67300874308026,0.0265704603901935,0,minor_within_Squamata,0.330588246379792
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Serpentes,minor,Squamata,-6.68328546817865,0.0102500335303953,0,minor_within_Squamata,0.120373198860168
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Teiioidea,minor,Squamata,-6.71037508719238,0.0432894743560806,0,minor_within_Squamata,0.117156106403593
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,Varanidae,minor,Squamata,-6.83369043616945,0.0124348160757614,0,minor_within_Squamata,0.103564223717784
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,other Squamata,minor,Squamata,-5.6798990403287,0.0479057588406455,3,minor_within_Squamata,0.328318224638664
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Aves,major,Aves,-6.26180470519616,0.0119141824424957,0,tree_vs_major_vs_none,0.156799543819703
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-6.18280086600848,0.0143529098417002,0,tree_vs_major_vs_none,0.169689795490058
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-6.26805887106154,0.0144398917809016,0,tree_vs_major_vs_none,0.155821953657054
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-6.08698988623748,0.0154397247338672,0,tree_vs_major_vs_none,0.186752277158358
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,none,none,,-6.19043753475955,0.0212033520269482,0,tree_vs_major_vs_none,0.168398866204901
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,tree:Theropoda@162.5,tree,Aves,-6.22586376769322,0.0127632150176437,0,tree_vs_major_vs_none,0.162537563669927
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Aves,major,Aves,-6.26180470519616,0.0119141824424957,0,dated_tree_vs_major_vs_none,0.133519717247657
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-6.18280086600848,0.0143529098417002,0,dated_tree_vs_major_vs_none,0.14449616983387
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-6.26805887106154,0.0144398917809016,0,dated_tree_vs_major_vs_none,0.132687268638934
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-6.08698988623748,0.0154397247338672,0,dated_tree_vs_major_vs_none,0.159025406797177
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,none,none,,-6.19043753475955,0.0212033520269482,0,dated_tree_vs_major_vs_none,0.143396903159096
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,tree:dated,tree_multi,Aves,-6.19828831924268,0.0157146167584822,0,dated_tree_vs_major_vs_none,0.142275532555928
+Sinocalliopteryx_gigas,taxon,Theropoda,3,1,tree:dated+Eshanosaurus,tree_multi,Aves,-6.18208946057591,0.0165938909206556,0,dated_tree_vs_major_vs_none,0.144599001767338
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Aves,major,Aves,-3.11311267271257,0.0121302852042615,0,major_vs_none,0.174157872802523
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-2.8589115326233,0.0136309546631054,0,major_vs_none,0.224564583506308
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-3.19920062985213,0.0148636938136227,0,major_vs_none,0.159792203921856
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-2.78567054465226,0.0134701872057392,0,major_vs_none,0.241629202702802
+Sinosauropteryx_prima,taxon,Theropoda,3,1,none,none,,-2.97547708247305,0.020272609594158,0,major_vs_none,0.199856137066511
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Accipitriformes,minor,Aves,-3.69667656997525,0.0107898135633934,0,all_minor,0.0292519996368205
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Charadriiformes,minor,Aves,-4.44325415676685,0.0138421247618801,0,all_minor,0.0138650370075897
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Falconiformes,minor,Aves,-3.03104572760483,0.0252218700947435,0,all_minor,0.0569161298073387
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Passeriformes,minor,Aves,-2.46179556797366,0.0167498565759977,3,all_minor,0.100567479198116
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Pelecaniformes,minor,Aves,-4.30177890639865,0.0191887209802865,0,all_minor,0.015972134315003
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Strigiformes,minor,Aves,-2.43016507801496,0.00698903601421127,0,all_minor,0.10379932075803
+Sinosauropteryx_prima,taxon,Theropoda,3,1,other Aves,minor,Aves,-4.29609159623573,0.0174666341986859,0,all_minor,0.0160632316005263
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Crocodylia,minor,Crocodylia,-2.75921688887648,0.010638702050726,0,all_minor,0.0746945862354873
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Caniformia,minor,Mammalia,-3.98490348654415,0.00801013042317289,0,all_minor,0.021927049648439
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Dasyuromorphia,minor,Mammalia,-4.41169369388593,0.025914132291217,3,all_minor,0.0143096024381497
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Feliformia,minor,Mammalia,-2.84125621675803,0.00734686545849919,0,all_minor,0.0688113215084641
+Sinosauropteryx_prima,taxon,Theropoda,3,1,other Mammalia,minor,Mammalia,-3.15717950915424,0.0349233204279324,0,all_minor,0.0501713926039719
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Iguania,minor,Squamata,-2.64374612916512,0.0338640081702427,0,all_minor,0.0838373301770399
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Serpentes,minor,Squamata,-2.41397765968906,0.00221463242182277,0,all_minor,0.105493236861107
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Teiioidea,minor,Squamata,-2.64453965288119,0.0164066956483785,0,all_minor,0.0837708296556124
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Varanidae,minor,Squamata,-3.5947188438869,0.0094108052290937,0,all_minor,0.0323918115552826
+Sinosauropteryx_prima,taxon,Theropoda,3,1,other Squamata,minor,Squamata,-2.2193644741392,0.0359746064501515,3,all_minor,0.128157506993022
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Iguania,minor,Squamata,-2.64374612916512,0.0338640081702427,0,minor_within_Squamata,0.193329163841554
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Serpentes,minor,Squamata,-2.41397765968906,0.00221463242182277,0,minor_within_Squamata,0.243267757098522
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Teiioidea,minor,Squamata,-2.64453965288119,0.0164066956483785,0,minor_within_Squamata,0.193175813416684
+Sinosauropteryx_prima,taxon,Theropoda,3,1,Varanidae,minor,Squamata,-3.5947188438869,0.0094108052290937,0,minor_within_Squamata,0.0746956258038259
+Sinosauropteryx_prima,taxon,Theropoda,3,1,other Squamata,minor,Squamata,-2.2193644741392,0.0359746064501515,3,minor_within_Squamata,0.295531639839414
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Aves,major,Aves,-3.11311267271257,0.0121302852042615,0,tree_vs_major_vs_none,0.146379464372607
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-2.8589115326233,0.0136309546631054,0,tree_vs_major_vs_none,0.188746238810483
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-3.19920062985213,0.0148636938136227,0,tree_vs_major_vs_none,0.134305138462054
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-2.78567054465226,0.0134701872057392,0,tree_vs_major_vs_none,0.203089028932511
+Sinosauropteryx_prima,taxon,Theropoda,3,1,none,none,,-2.97547708247305,0.020272609594158,0,tree_vs_major_vs_none,0.16797882188505
+Sinosauropteryx_prima,taxon,Theropoda,3,1,tree:Theropoda@162.5,tree,Aves,-3.02726287380472,0.0125996691777247,0,tree_vs_major_vs_none,0.159501307537296
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Aves,major,Aves,-3.11311267271257,0.0121302852042615,0,dated_tree_vs_major_vs_none,0.125403723772837
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Crocodylia,major,Crocodylia,-2.8589115326233,0.0136309546631054,0,dated_tree_vs_major_vs_none,0.161699465812373
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Mammalia,major,Mammalia,-3.19920062985213,0.0148636938136227,0,dated_tree_vs_major_vs_none,0.115059612747974
+Sinosauropteryx_prima,taxon,Theropoda,3,1,major:Squamata,major,Squamata,-2.78567054465226,0.0134701872057392,0,dated_tree_vs_major_vs_none,0.173986976893955
+Sinosauropteryx_prima,taxon,Theropoda,3,1,none,none,,-2.97547708247305,0.020272609594158,0,dated_tree_vs_major_vs_none,0.143907957783875
+Sinosauropteryx_prima,taxon,Theropoda,3,1,tree:dated,tree_multi,Aves,-3.02256046170158,0.0172633006854907,0,dated_tree_vs_major_vs_none,0.137289321379624
+Sinosauropteryx_prima,taxon,Theropoda,3,1,tree:dated+Eshanosaurus,tree_multi,Aves,-2.98423629701557,0.0184106171419135,0,dated_tree_vs_major_vs_none,0.142652941609362
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Aves,major,Aves,-2.84083697198927,0.0141150445319549,0,major_vs_none,0.199707518746756
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Crocodylia,major,Crocodylia,-3.12237867446518,0.0228619061089009,0,major_vs_none,0.150703177062822
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Mammalia,major,Mammalia,-2.50123925381519,0.0138760432177522,0,major_vs_none,0.280465748310329
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Squamata,major,Squamata,-3.07105641771177,0.0208191139265074,0,major_vs_none,0.158639517733242
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,none,none,,-2.78828103994505,0.0240063473731516,0,major_vs_none,0.210484038146852
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Accipitriformes,minor,Aves,-2.05335228239534,0.00874809174506944,0,all_minor,0.120927919837463
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Charadriiformes,minor,Aves,-2.877344453693,0.013552821245016,1,all_minor,0.0530482826886583
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Falconiformes,minor,Aves,-2.57111432298879,0.0436183620939131,0,all_minor,0.0720552094921707
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Passeriformes,minor,Aves,-3.47035910690945,0.0876262247344952,1,all_minor,0.0293175947661841
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Pelecaniformes,minor,Aves,-2.75144819592541,0.0159020156013716,1,all_minor,0.0601654790868924
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Strigiformes,minor,Aves,-4.31409401800966,0.0355808042674206,0,all_minor,0.0126095306479019
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,other Aves,minor,Aves,-2.8017897005272,0.0186067385979724,0,all_minor,0.0572116326742561
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Crocodylia,minor,Crocodylia,-4.1233480248764,0.0336047636322821,0,all_minor,0.0152594490619097
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Caniformia,minor,Mammalia,-2.19799924066015,0.00426383946794567,0,all_minor,0.104642283091651
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Dasyuromorphia,minor,Mammalia,-2.12964184737273,0.0102058027982202,1,all_minor,0.112045506778395
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Feliformia,minor,Mammalia,-2.191308368992,0.0052901831907124,0,all_minor,0.105344778712141
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,other Mammalia,minor,Mammalia,-2.43525539190903,0.0432949790105521,1,all_minor,0.0825407041050242
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Iguania,minor,Squamata,-2.66342922435483,0.0532049518754803,0,all_minor,0.0657012349628154
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Serpentes,minor,Squamata,-5.42436170636313,0.0134945313069955,0,all_minor,0.004154471567453
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Teiioidea,minor,Squamata,-5.48013374647475,0.0679922285114123,0,all_minor,0.0039291110336016
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Varanidae,minor,Squamata,-2.50512332451818,0.0115237971256542,0,all_minor,0.0769706070342296
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,other Squamata,minor,Squamata,-3.66732296077453,0.140753128767718,1,all_minor,0.0240762044592533
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Caniformia,minor,Mammalia,-2.19799924066015,0.00426383946794567,0,minor_within_Mammalia,0.258648532060973
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Dasyuromorphia,minor,Mammalia,-2.12964184737273,0.0102058027982202,1,minor_within_Mammalia,0.276947377255494
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,Feliformia,minor,Mammalia,-2.191308368992,0.0052901831907124,0,minor_within_Mammalia,0.260384918688355
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,other Mammalia,minor,Mammalia,-2.43525539190903,0.0432949790105521,1,minor_within_Mammalia,0.204019171995178
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Aves,major,Aves,-2.84083697198927,0.0141150445319549,0,tree_vs_major_vs_none,0.167224822801043
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Crocodylia,major,Crocodylia,-3.12237867446518,0.0228619061089009,0,tree_vs_major_vs_none,0.126191103059278
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Mammalia,major,Mammalia,-2.50123925381519,0.0138760432177522,0,tree_vs_major_vs_none,0.234847617942869
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Squamata,major,Squamata,-3.07105641771177,0.0208191139265074,0,tree_vs_major_vs_none,0.132836587268526
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,none,none,,-2.78828103994505,0.0240063473731516,0,tree_vs_major_vs_none,0.176248526857865
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,tree:Theropoda@162.5,tree,Aves,-2.86856721918561,0.01553905010208,0,tree_vs_major_vs_none,0.162651342070418
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Aves,major,Aves,-2.84083697198927,0.0141150445319549,0,dated_tree_vs_major_vs_none,0.144089216229456
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Crocodylia,major,Crocodylia,-3.12237867446518,0.0228619061089009,0,dated_tree_vs_major_vs_none,0.108732524456462
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Mammalia,major,Mammalia,-2.50123925381519,0.0138760432177522,0,dated_tree_vs_major_vs_none,0.202356376499218
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,major:Squamata,major,Squamata,-3.07105641771177,0.0208191139265074,0,dated_tree_vs_major_vs_none,0.114458603845495
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,none,none,,-2.78828103994505,0.0240063473731516,0,dated_tree_vs_major_vs_none,0.15186448800583
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,tree:dated,tree_multi,Aves,-2.87500309931403,0.0166347786553309,0,dated_tree_vs_major_vs_none,0.13924939548177
+Velociraptor_mongoliensis,taxon,Theropoda,1,1,tree:dated+Eshanosaurus,tree_multi,Aves,-2.87500309931403,0.0166347786553309,0,dated_tree_vs_major_vs_none,0.13924939548177

@@ -2,6 +2,9 @@
 # The site reads only this file. DRAFT: until the terrestrial fits and the fossil test
 # finish, model numbers come from whatever fit folder is named below; every block carries
 # its source so the site can mark draft values.
+# Current talk build:
+#   FIT=results/6_work/terr/fit_free LAM0=results/6_work/terr/fit_lambda0 LAM1=results/6_work/terr/fit_lambda1 \
+#   UNPOOLED=results/6_work/terr/fit_unpooled Rscript code/site_export.R
 # Env: FIT (results/6_work/fit_skeleton), ROWS (results/6_work/terr/analysis_rows.csv),
 #      LAM0 (results/6_work/fit_primary), UNPOOLED (empty -> per-clade OLS placeholder),
 #      FOSSIL (<FIT>/fossil), TREE (<FIT>/tree_prediction)
@@ -102,9 +105,43 @@ tf <- local({
            pred_g = exp(lnpred))]
   x[, differs := fifelse(species >= 20 & !is.na(major_slope) & (major_slope < slope_lo | major_slope > slope_hi),
                          fifelse(slope > major_slope, "steeper", "shallower"), "")]
-  x[, .(minor, major, species, pred_g = signif(pred_g, 3), slope = round(slope, 2), major_slope = round(major_slope, 2), differs,
-        r10 = round(r10, 3), r50 = round(r50, 3), r90 = round(r90, 3))]
+  # posterior intervals from the joint draws, at each clade's median predator mass:
+  #   c5/c95  90% interval of the clade's median meal as % of predator (the line, not new meals)
+  #   dev     clade line minus the global line (alpha0 + beta0 m), log10 units, with 90% interval
+  #   ds      clade slope minus the global slope, 90% interval
+  # dev_differs / slope_differs: that interval excludes zero.
+  ci <- local({
+    f <- readRDS(file.path(FIT, "fit.rds"))
+    lev <- readRDS(file.path(FIT, "stan_data.rds"))$minor_levels
+    d <- posterior::as_draws_matrix(f$draws(c("alpha0", "beta0", "clade_intercept", "clade_slope")))
+    rbindlist(lapply(seq_along(lev), function(k) {
+      mk <- x[minor == lev[k], m]; if (!length(mk)) return(NULL)
+      mu <- d[, sprintf("clade_intercept[%d]", k)] + d[, sprintf("clade_slope[%d]", k)] * mk
+      r <- (mu - (mk + log(1000))) / log(10) + 2
+      dv <- (mu - d[, "alpha0"] - d[, "beta0"] * mk) / log(10)
+      ds <- d[, sprintf("clade_slope[%d]", k)] - d[, "beta0"]
+      q <- function(v) as.numeric(quantile(v, c(0.05, 0.5, 0.95)))
+      data.table(minor = lev[k], c5 = q(r)[1], c95 = q(r)[3], dev = q(dv)[2], dev_lo = q(dv)[1], dev_hi = q(dv)[3],
+                 ds = q(ds)[2], ds_lo = q(ds)[1], ds_hi = q(ds)[3])
+    }))
+  })
+  x <- merge(x, ci, by = "minor")
+  x <- merge(x, rows[, .(rows = .N), by = .(minor = minor_clade)], by = "minor")
+  x[, `:=`(dev_differs = fifelse(dev_lo > 0, "above", fifelse(dev_hi < 0, "below", "")),
+           slope_differs = fifelse(ds_lo > 0, "steeper", fifelse(ds_hi < 0, "shallower", "")))]
+  x[, .(minor, major, species, rows, pred_g = signif(pred_g, 3), slope = round(slope, 2), major_slope = round(major_slope, 2), differs,
+        r10 = round(r10, 3), r50 = round(r50, 3), r90 = round(r90, 3), c5 = round(c5, 3), c95 = round(c95, 3),
+        dev = round(dev, 3), dev_lo = round(dev_lo, 3), dev_hi = round(dev_hi, 3),
+        ds = round(ds, 3), ds_lo = round(ds_lo, 3), ds_hi = round(ds_hi, 3), dev_differs, slope_differs)]
 })
+## observation type: the fit's shift in ln prey mass for each kind of record, against stomach contents
+obs <- local({
+  sm <- fread(file.path(FIT, "summary.csv"))[startsWith(label, "delta:"), .(obs = sub("delta:", "", label), d = median, d_lo = q5, d_hi = q95)]
+  merge(sm, rows[, .(rows = .N, species = uniqueN(pred_taxon_id), sources = uniqueN(source_id)), by = obs], by = "obs")
+})
+## major-clade lines (tree_prediction/params.csv): int = ln prey at 1 kg (m = 0), slope
+majors <- dcast(fread(file.path(TREE, "params.csv"))[cand_type == "major"], candidate ~ par, value.var = "median")[
+  , .(major = sub("major:", "", candidate), int = ln_prey_at_1kg, slope)]
 ## theropod tree: median dated MRCA ages among the theropod taxa with records -> UPGMA on 2 x age
 thero_tree <- local({
   mr <- readRDS("db/tree/theropod/mrca_ages.rds"); med <- apply(simplify2array(mr), c(1, 2), median)
@@ -140,7 +177,7 @@ skel <- list(newick = readLines(file.path(SKW, "skeleton_tree.tre"))[1],
              corr = fread(file.path(SKW, "skeleton_corr.csv")))
 
 D <- list(built = format(Sys.time(), "%Y-%m-%d %H:%M"), draft = TRUE,
-          counts = cnt, fits = fits, skeleton = skel, points = pts, spindles = spindles, treefits = list(extant = tf, theropod_tree = thero_tree), allspin = list(step = 0.1, min_records = MINREC, groups = spin_groups, species = dens), fossils = fos, tree = tree, support = support)
+          counts = cnt, fits = fits, skeleton = skel, points = pts, spindles = spindles, treefits = list(extant = tf, theropod_tree = thero_tree), majors = majors, obs = obs, allspin = list(step = 0.1, min_records = MINREC, groups = spin_groups, species = dens), fossils = fos, tree = tree, support = support)
 js <- toJSON(D, dataframe = "rows", auto_unbox = TRUE, digits = 5, na = "null")
 writeLines(js, "static/data/data.json")
 writeLines(paste0("window.DATA = ", js, ";"), "static/data/data.js")

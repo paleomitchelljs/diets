@@ -1,0 +1,72 @@
+# Curated squamate genus table for the Phase 2 migration (2026-11-12).
+# analysis_clade replaces x20's genus regex (assessment problem M10). family = current usage.
+# mass_eq = registered method used when a mass is computed from SVL; empty = no suitable verified equation.
+# Meiri 2010 families follow the Reptile Database of July 2009; where a modern family is absent from
+# Meiri's Table 3 (Liolaemidae, Leiosauridae, Phyllodactylidae, Sphaerodactylidae, Crotaphytidae) the
+# all-lizard (Sauria) row is used. Feldman & Meiri 2013 Colubridae includes Colubrinae, Dipsadinae,
+# Natricinae and Grayiinae (Pyron et al. 2011 taxonomy cited in their Methods).
+genus,family,analysis_clade,mass_eq,notes
+Varanus,Varanidae,Lacertilia,Meiri2010_T3_Varanidae,
+Salvator,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Tupinambis,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Kentropyx,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Kentropix,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,misspelling of Kentropyx in extant_new_observations.csv; kept as spelled
+Ameiva,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Ameivula,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Cnemidophorus,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Glaucomastix,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Aspidoscelis,Teiidae,Lacertilia,Meiri2010_T3_Teiidae,
+Tropidurus,Tropiduridae,Lacertilia,Meiri2010_T3_Tropiduridae,
+Microlophus,Tropiduridae,Lacertilia,Meiri2010_T3_Tropiduridae,
+Eurolophosaurus,Tropiduridae,Lacertilia,Meiri2010_T3_Tropiduridae,
+Liolaemus,Liolaemidae,Lacertilia,Meiri2010_T3_Sauria,
+Phymaturus,Liolaemidae,Lacertilia,Meiri2010_T3_Sauria,
+Diplolaemus,Leiosauridae,Lacertilia,Meiri2010_T3_Sauria,
+Pristidactylus,Leiosauridae,Lacertilia,Meiri2010_T3_Sauria,
+Homonota,Phyllodactylidae,Lacertilia,Meiri2010_T3_Sauria,
+Phyllodactylus,Phyllodactylidae,Lacertilia,Meiri2010_T3_Sauria,
+Hemidactylus,Gekkonidae,Lacertilia,Meiri2010_T3_Gekkonidae,
+Coleodactylus,Sphaerodactylidae,Lacertilia,Meiri2010_T3_Sauria,
+Colobosauroides,Gymnophthalmidae,Lacertilia,Meiri2010_T3_Gymnophthalmidae,
+Colobosaura,Gymnophthalmidae,Lacertilia,Meiri2010_T3_Gymnophthalmidae,
+Cercosaura,Gymnophthalmidae,Lacertilia,Meiri2010_T3_Gymnophthalmidae,
+Leposoma,Gymnophthalmidae,Lacertilia,Meiri2010_T3_Gymnophthalmidae,
+Vanzosaura,Gymnophthalmidae,Lacertilia,Meiri2010_T3_Gymnophthalmidae,
+Petracola,Gymnophthalmidae,Lacertilia,Meiri2010_T3_Gymnophthalmidae,
+Scriptosaura,Gymnophthalmidae,Lacertilia,,limbless gymnophthalmid; no legless-specific verified equation
+Brasiliscincus,Mabuyidae,Lacertilia,Meiri2010_T3_Scincidae,Scincidae in the 2009 taxonomy
+Notomabuya,Mabuyidae,Lacertilia,Meiri2010_T3_Scincidae,Scincidae in the 2009 taxonomy
+Psychosaura,Mabuyidae,Lacertilia,Meiri2010_T3_Scincidae,Scincidae in the 2009 taxonomy
+Ophiodes,Diploglossidae,Lacertilia,,limb-reduced; Meiri 2010 shows leg-reduced lizards are lighter for a given SVL; no family row verified
+Crotaphytus,Crotaphytidae,Lacertilia,Meiri2010_T3_Sauria,
+Anolis,Dactyloidae,Lacertilia,Meiri2010_T3_Polychrotidae,Polychrotidae in the 2009 taxonomy
+Norops,Dactyloidae,Lacertilia,Meiri2010_T3_Polychrotidae,Polychrotidae in the 2009 taxonomy
+Sceloporus,Phrynosomatidae,Lacertilia,Meiri2010_T3_Phrynosomatidae,
+Phrynosoma,Phrynosomatidae,Lacertilia,Meiri2010_T3_Phrynosomatidae,
+Lacerta,Lacertidae,Lacertilia,Meiri2010_T3_Lacertidae,
+Pituophis,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Elaphe,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Zamenis,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Hemorrhois,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Lampropeltis,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Nerodia,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,Natricinae
+Thamnophis,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,Natricinae
+Coluber,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Masticophis,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Philodryas,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,Dipsadinae
+Atractus,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,Dipsadinae
+Xenodon,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,Dipsadinae
+Chironius,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Sonora,Colubridae,Serpentes,FeldmanMeiri2013_T1_Colubridae_SVL,
+Vipera,Viperidae,Serpentes,FeldmanMeiri2013_T1_Viperidae_SVL,
+Bitis,Viperidae,Serpentes,FeldmanMeiri2013_T1_Viperidae_SVL,
+Crotalus,Viperidae,Serpentes,FeldmanMeiri2013_T1_Viperidae_SVL,
+Sistrurus,Viperidae,Serpentes,FeldmanMeiri2013_T1_Viperidae_SVL,
+Bothrops,Viperidae,Serpentes,FeldmanMeiri2013_T1_Viperidae_SVL,
+Trimeresurus,Viperidae,Serpentes,FeldmanMeiri2013_T1_Viperidae_SVL,
+Naja,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+Ophiophagus,Elapidae,Serpentes,FeldmanMeiri2013_T1_Elapidae_SVL,
+Morelia,Pythonidae,Serpentes,FeldmanMeiri2013_T1_Pythonidae_SVL,
+Python,Pythonidae,Serpentes,FeldmanMeiri2013_T1_Pythonidae_SVL,
+Acrochordus,Acrochordidae,Serpentes,FeldmanMeiri2013_T1_All_SVL,no family row in Table 1
+Boa,Boidae,Serpentes,FeldmanMeiri2013_T1_Boidae_SVL,

@@ -74,6 +74,14 @@ PreyMass    <- suppressWarnings(as.numeric(hdr[StartCol:ncol(Table)]))
 PreyGenus   <- as.character(Table[1, StartCol:ncol(Table)])
 PreySpecies <- as.character(Table[2, StartCol:ncol(Table)])
 PreySp      <- paste(PreyGenus, PreySpecies, sep = "_")
+## prey TYPE (invert/vert): row 2 (here held in PreySpecies) is the prey CLASS string, e.g. Actinopterygii.
+## Lets the model separate the bimodal diet (tiny invert prey vs larger vert prey) and place vertebrate-prey
+## fossils against vertebrate-prey extant predation (apples-to-apples). Carried per prey item below.
+## vert = animal prey with a backbone (incl. carrion = a vertebrate carcass, eggs = vertebrate reproductive
+## prey); invert = animal prey without; NA = non-animal "prey" (PLANT/Fungus/fruit = frugivory/herbivory,
+## DUMMY/Indet placeholders) -> these are NOT predation and are dropped from the predator-prey fit downstream.
+prey_type_vec <- ifelse(grepl("Actinopter|Acinopter|Chondrich|Sarcopter|Osteichthy|Pisces|Teleost|Mammal|Aves|Reptil|Amphib|Squamat|Anura|Chelon|Testud|Serpent|Lacert|Crocodyl|Amniota|Carrion|Egg|fish|vertebr", PreySpecies, ignore.case=TRUE), "vert",
+                 ifelse(grepl("Insect|Arachn|Crustac|Malacostr|Myriapod|Chilopod|Diplopod|Gastropod|Mollusc|Annelid|Hexapod|Arthropod|Bivalv|Oligochaet|Clitellat|Branchiopod|Collembol|Decapod|Isopod|Orthopter|Coleopter|Hymenopt|Lepidopt|Hemipter|Cephalopod|Scorpion|Solifug|invert", PreySpecies, ignore.case=TRUE), "invert", NA))
 
 # prey-count block as a numeric matrix (one row per predator record)
 Counts <- suppressWarnings(matrix(as.numeric(as.matrix(Table[dataRows, StartCol:ncol(Table)])),
@@ -118,8 +126,11 @@ SDs    <- rep(NA_real_, length(dataRows))
 
 for (j in seq_along(dataRows)) {
 	if (is.na(PredMass[j])) next
-	preyMassList <- genDistro(Counts[j, ], PreyMass)
-	if (!length(preyMassList)) next
+	cnt  <- suppressWarnings(as.numeric(Counts[j, ]))
+	keep <- !is.na(cnt) & !is.na(PreyMass) & cnt > 0
+	if (!any(keep)) next
+	preyMassList <- rep(PreyMass[keep],     cnt[keep])     # expand counts -> one row per prey item
+	preyTypeList <- rep(prey_type_vec[keep], cnt[keep])    # parallel prey-type, same keep
 
 	logPrey <- log(preyMassList)
 	logPred <- log(PredMass[j])
@@ -138,6 +149,7 @@ for (j in seq_along(dataRows)) {
 		clade      = Class[j],
 		obstype    = ObsType[j],
 		study      = factor(RefN[j]),
+		prey_type  = preyTypeList,
 		stringsAsFactors = FALSE
 	)
 }

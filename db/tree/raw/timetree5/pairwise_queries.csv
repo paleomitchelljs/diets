@@ -1,0 +1,10 @@
+node,query,taxon_a_id,taxon_b_id,scientific_name_a,scientific_name_b,all_total,precomputed_age,precomputed_ci_low,precomputed_ci_high,adjusted_age,query_date
+Amniota,Homo-Gallus,9606,9031,Homo sapiens,Gallus gallus,37,318.82487763205,316.68717845111,320.962576813,318.82488,2026-11-12
+Sauria,Anolis-Gallus,28377,9031,Anolis carolinensis,Gallus gallus,37,280.68497209618,276.55179265583,284.81815153654,280.68497,2026-11-12
+Archosauria,Alligator-Gallus,8496,9031,Alligator mississippiensis,Gallus gallus,41,243.29558186209,239.62412922815,246.96703449603,243.29558,2026-11-12
+Crocodylia_crown,Alligator-Crocodylus,8496,8501,Alligator mississippiensis,Crocodylus niloticus,21,88.040024702123,77.047518595627,99.032530808619,88.04002,2026-11-12
+Alligatoridae,Alligator-Caiman,8496,8499,Alligator mississippiensis,Caiman crocodilus,19,66.648893750008,59.191009329357,74.10677817066,66.64889,2026-11-12
+Caimaninae,Caiman-Paleosuchus,8499,84099,Caiman crocodilus,Paleosuchus palpebrosus,5,35.869823207494,28.058906140855,43.680740274134,35.86982,2026-11-12
+Lepidosauria,Sphenodon-Anolis,8508,28377,Sphenodon punctatus,Anolis carolinensis,27,244.98188931258,236.5602831424,253.40349548276,244.98189,2026-11-12
+Mammalia_crown,Ornithorhynchus-Homo,9258,9606,Ornithorhynchus anatinus,Homo sapiens,36,181.19191752502,168.09370425709,194.29013079294,181.19192,2026-11-12
+Theria_crown,Didelphis-Homo,9267,9606,Didelphis virginiana,Homo sapiens,42,159.1581830164,152.24224520775,166.07412082505,159.15818,2026-11-12

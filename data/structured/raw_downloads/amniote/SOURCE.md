@@ -1,0 +1,2 @@
+# Amniote life-history database
+Myhrvold NP, Baldridge E, Chan B, Sivam D, Freeman DL, Ernest SKM (2015) An amniote life-history database to perform comparative analyses with birds, mammals, and reptiles. Ecology 96:3109. doi:10.1890/15-0846R.1. Data: figshare 10.6084/m9.figshare.3563457 (ESA archive E096-269). Downloaded 2026-11-12 from esapubs.org/archive/ecol/E096/269/Data_Files/Amniote_Database_Aug_2015.csv for Phase 4b Part 2 (prey and predator species masses of reptiles). Missing values are -999. Not modified.

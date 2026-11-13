@@ -73,6 +73,77 @@ Wilson et al. 2010 (PLoS Biol 8(3):e1000322) — basal snake preserved coiled ar
 
 ---
 
+## theropoda_benson.csv — masses are in KILOGRAMS, not grams [NOTE 2026-05-31]
+
+`data/mass_references/theropoda_benson.csv` `mass` column is in **kg** (e.g. Brachiosaurus_altithorax = 56000 = 56 t; Gyposaurus 38 kg). The fossil tables (`fossil_predprey.csv`, `fossil_diet_extractions.csv`) and `longform.csv` use **grams**. When converting femur → mass for fossil predators/prey, **multiply the Benson estimate by 1000**.
+
+Fitted femur→mass (for filling PENDING / length-only cases): `ln(mass_kg) = -13.0 + 3.07 * ln(femur_mm)` (lm on n=381 Benson rows, R²=0.97). E.g. Huadanosaurus femur 105.69 mm → ~3.7 kg (3700 g) [95% PI ~1–13 kg]. Carry the prediction interval to propagate mass uncertainty.
+
+---
+
+## Scipionyx samniticus (SALERNO) — total length was in the mass column [RESOLVED 2026-06-01]
+
+`fossil_predprey.csv` rows 20–23 (4 gut items: 2 fish TL 45/25 mm, 2 lizards TL 110/275 mm; Dal Sasso & Maganuco 2011) had the predator's **220 mm total length entered into `mass_pred`**, mislabeled `mass_source = benson` — but this perinate has no femur, so Benson was never applicable. The 220 looked like a plausible small-theropod mass (g), which is exactly why it hid.
+
+- **Fix applied** (all 4 rows): `total_length` blank → **220**; `mass_pred` 220 → **30** (x19 `hatchling_coarse`, ~15–60 g from TL 220 mm); `mass_source` `benson` → `hatchling_coarse_TL220mm_~15-60g_see_x19`.
+- No downstream effect on PPMR (these rows have `mass_prey` blank → already dropped by x07; x19 is the source of truth for Scipionyx's 4 estimated points). This was a record-cleanliness fix.
+- Lesson for the audit: a length-in-mass error is NOT caught by "mass==total_length" when the length sits *only* in the mass cell. Better detector: `mass_source` claims a femur method (benson/campione) while `femur_l` is blank.
+
+---
+
+## Sinosauropteryx — two spellings of one species [RESOLVED 2026-06-01]
+
+`fossil_predprey.csv` carried both **`Sinosauropteryx_primus`** (row 11, NIGP-127587, femur 86.4, eating *Dalinghosaurus*) and **`Sinosauropteryx_prima`** (femur 93.07 rows). The valid epithet is *prima*; *primus* is a typo (wrong gender ending). The x12 `age()` lookup had been carrying BOTH spellings as a workaround.
+
+- **Fix applied**: row 11 `Sinosauropteryx_primus` → `Sinosauropteryx_prima`. (The duplicate `primus` key in x12 is now dead/harmless; can be removed on next x12 edit.)
+- Its `mass_pred` remains blank — that is the SEPARATE, correctly-flagged `benson_RECOMPUTE_from_FL_86.4` pending item (see NIGP 127587 above), not a new error.
+
+---
+
+## Sinocalliopteryx gigas — `brms_benson` mass with no femur [RESOLVED 2026-06-01]
+
+**Resolution**: JM supplied the missing femur — **CAGS-IG-T1 femur = 210 mm**. Recomputed mass via the project lm-Benson (x19 fitB): **30,471 g (~30.5 kg) [95% PI 8.6–108 kg]**, replacing the unsupported ~55–56 kg. Applied to both CAGS-IG-T1 rows (13, 14; same specimen, two prey — also fixes that they previously carried two different masses, 55,570 vs 56,408). `femur_l` blank → 210; `mass_pred` → 30471; `mass_sd` cleared; `mass_source` → `benson_lm_FL210mm_was55/56kg_no_femur`. Note: the holotype row (JMP-V-05-8-01, femur 152.3) still carries the legacy `brms_benson` 8,317 g (lm-Benson would give 11,367 g for that femur — a ~0.73× brms-vs-lm gap); harmonize the genus to one Benson variant in a future pass.
+
+---
+
+### (original flag, kept for the record)
+
+`fossil_predprey.csv` has two `Sinocalliopteryx_gigas` rows with **`mass_pred` ≈ 55,570 / 56,408 g (~55–56 kg)** and `mass_source = brms_benson`, but **`femur_l` is blank** — Benson cannot have been run without a femur, so the source label and the value are internally inconsistent. (Two other Sinocalliopteryx rows DO have femur 152.3 mm → 8,317 g, which is consistent.) Likely either (a) the holotype's femur length is missing from the record and ~55 kg is a real estimate from it, or (b) the mass came from a different method/dimension and the source is mislabeled, or (c) a transcription error.
+
+- **Action (needs JM)**: confirm the holotype *Sinocalliopteryx* femur length (Ji et al. 2007 / Xing et al. 2012) and the basis for the ~55 kg figure; then either fill `femur_l` + keep the mass, or correct `mass_source` to the true method. Until resolved, treat these two rows' predator mass as UNVERIFIED.
+
+---
+
+## Sinocalliopteryx gigas × cf Psittacosaurus — record removed [RESOLVED 2026-06-01]
+
+`fossil_predprey.csv` had a CAGS-IG-T1 prey "cf Psittacosaurus" (Ornithischia, ~10.6 kg from a 135 mm scapula, `scaled_from_IVPP_12_0888_2`) attributed to Xing et al. 2012 — but that paper documents only **confuciusornithids + a dromaeosaurid** for Sinocalliopteryx; no ornithischian. JM confirmed no source. **Row removed.** Sinocalliopteryx retains its real prey: Sinornithosaurus (holotype) + Confuciusornis (CAGS-IG-T1).
+
+---
+
+## fossil_predprey.csv `mass_sd` column is CORRUPT [NOTE 2026-06-01]
+
+The `mass_sd` values cluster at ~1565–1655 g for EVERY row regardless of `mass_pred` (764 → "sd 1606", 11680 → "sd 1565", 8317 → "sd 1647", 924 → "sd 1648"). A ~constant ~1600 SD across a 15× mass range is not a real SD — it's a misaligned/pasted artifact. **Consequence**: x19 read Anchiornis's bogus `mass_sd`=1648 as the predator MASS (true `mass_pred`=924, itself too high — see below). **Action**: discard this column in consolidation; recompute masses + proper prediction intervals from femur via lm-Benson.
+
+---
+
+## Anchiornis (STM0-179, Zheng et al. 2018) — reclassify gut→PELLET [RESOLVED 2026-06-01, source PDF read]
+
+Source `pdfs/fossil_cases/x_004_anchiornis_diets.pdf` READ. **STM0-179 is a regurgitated GASTRIC PELLET, not gut contents** — reclassify `evidence_type` gut_content → **pellet** (distinct fossil obstype; see `key_cites.md`). JM: keep it as a PPMR point (a novel fossil obstype is an asset).
+
+Two of my earlier alarms were WRONG and are retracted (the source fixed them):
+- **Femur 71 mm is CORRECT** — Zheng Table 1 lists STM0-179 femur = 71 mm (STM0-224 = 70 mm); these are genuinely larger *Anchiornis* individuals. So Benson's ~0.9–1.1 kg from a 71 mm femur is SOUND, not "4–9× too large." My ~0.11 kg figure was a smaller/different specimen, mis-applied from memory.
+- Therefore **no mass-magnitude error**. The real issues were only: (a) obstype gut→pellet; (b) the corrupt `mass_sd`=1648 that x19 misread as the predator MASS (use lm-Benson(71 mm) instead).
+
+Prey = Squamata indet, ≥3 lizards ("at least two relatively large lizards and one small lizard"). **Action in consolidation**: obstype=pellet, predator mass = lm-Benson(71 mm), distinct symbol, kept as a PPMR point.
+
+---
+
+## Velociraptor × Protoceratops (Fighting Dinosaurs) — double-entered across files [OPEN 2026-06-01]
+
+Present in BOTH `fossil_predprey.csv` row 18 (Carpenter 2000; mass 18840 g, prey Protoceratops 1250 mm TL, no prey mass) AND `fossil_diet_extractions.csv` ref 18 (the attack case; Velociraptor 10–20 kg, Protoceratops 44–82 kg, PPMR +1.44). Same event, two files, different mass conventions. **Action**: keep ONE (the diet_extractions version is the curated attack record with masses) during consolidation; drop/archive the predprey duplicate.
+
+---
+
 ## How to use this file
 
 When you (or future-you) verify an item here:

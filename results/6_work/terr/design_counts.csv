@@ -1,0 +1,66 @@
+major_clade,minor_clade,obs,rows,species,sources
+Aves,Accipitriformes,direct_observation,1887,49,90
+Aves,Accipitriformes,dna_detection,40,2,3
+Aves,Accipitriformes,pellet_scat,7595,74,219
+Aves,Accipitriformes,prey_remains,3451,45,119
+Aves,Accipitriformes,regurgitate,83,1,1
+Aves,Accipitriformes,stomach_content,589,21,18
+Aves,Accipitriformes,unknown,44,7,4
+Aves,Charadriiformes,stomach_content,1,1,1
+Aves,Charadriiformes,unknown,112,26,6
+Aves,Falconiformes,direct_observation,719,13,25
+Aves,Falconiformes,dna_detection,64,1,2
+Aves,Falconiformes,pellet_scat,2641,22,86
+Aves,Falconiformes,prey_remains,1761,16,47
+Aves,Falconiformes,regurgitate,1,1,1
+Aves,Falconiformes,stomach_content,122,6,8
+Aves,Falconiformes,unknown,19,2,2
+Aves,Passeriformes,pellet_scat,72,1,3
+Aves,Passeriformes,prey_remains,27,1,3
+Aves,Passeriformes,regurgitate,29,20,1
+Aves,Passeriformes,unknown,8,2,2
+Aves,Pelecaniformes,regurgitate,4,2,3
+Aves,Pelecaniformes,stomach_content,24,4,4
+Aves,Pelecaniformes,unknown,73,8,4
+Aves,Strigiformes,direct_observation,129,7,10
+Aves,Strigiformes,dna_detection,5,1,1
+Aves,Strigiformes,pellet_scat,28055,63,595
+Aves,Strigiformes,prey_remains,919,15,26
+Aves,Strigiformes,stomach_content,313,17,23
+Aves,Strigiformes,unknown,27,3,3
+Aves,other Aves,direct_observation,3,3,3
+Aves,other Aves,pellet_scat,1,1,1
+Aves,other Aves,regurgitate,3,2,2
+Aves,other Aves,stomach_content,6,2,2
+Aves,other Aves,unknown,33,4,1
+Crocodylia,Crocodylia,direct_observation,1,1,1
+Crocodylia,Crocodylia,stomach_content,165,5,9
+Mammalia,Caniformia,direct_observation,63,3,3
+Mammalia,Caniformia,pellet_scat,8164,49,309
+Mammalia,Caniformia,prey_remains,93,4,11
+Mammalia,Caniformia,stomach_content,1531,17,66
+Mammalia,Caniformia,unknown,100,10,7
+Mammalia,Dasyuromorphia,pellet_scat,647,6,15
+Mammalia,Feliformia,direct_observation,225,7,9
+Mammalia,Feliformia,pellet_scat,6119,43,244
+Mammalia,Feliformia,prey_remains,1124,13,52
+Mammalia,Feliformia,stomach_content,699,19,38
+Mammalia,Feliformia,unknown,55,7,5
+Mammalia,other Mammalia,pellet_scat,7,2,2
+Mammalia,other Mammalia,stomach_content,4,2,2
+Squamata,Iguania,direct_observation,2,2,2
+Squamata,Iguania,stomach_content,4,1,1
+Squamata,Iguania,unknown,41,20,30
+Squamata,Serpentes,direct_observation,733,260,551
+Squamata,Serpentes,pellet_scat,224,40,39
+Squamata,Serpentes,regurgitate,751,191,269
+Squamata,Serpentes,stomach_content,5109,674,546
+Squamata,Serpentes,unknown,379,57,25
+Squamata,Teiioidea,direct_observation,3,1,1
+Squamata,Teiioidea,stomach_content,279,2,3
+Squamata,Teiioidea,unknown,18,12,17
+Squamata,Varanidae,direct_observation,3,2,2
+Squamata,Varanidae,pellet_scat,74,3,3
+Squamata,Varanidae,regurgitate,2,1,2
+Squamata,Varanidae,stomach_content,97,9,5
+Squamata,other Squamata,unknown,7,4,5

@@ -37,9 +37,17 @@ data/longform.csv
 data/phylo_tree.rds
 data/phylo_A.rds
 data/phylo_model.stan
-data/fit_simple.rds
-data/fit_phylo.rds
+# all Bayesian fits + meta are regenerable (run code/run_vertonly.sh etc.)
+data/*.rds
 data/*.log
+# superseded fits/outputs parked out of the way (regenerable)
+data/_archive/
+# run logs
+logs/
+# model fits and raw Stan chain draws under results/ (regenerable; many exceed GitHub's 100 MB limit).
+# Summaries, diagnostics and derived tables next to them stay tracked.
+results/**/*.rds
+results/**/*-[0-9]-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].csv
 
 # --- Historical archives (large; may include copyrighted material) ---
 archive_owl/

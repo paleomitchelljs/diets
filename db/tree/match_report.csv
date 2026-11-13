@@ -1,0 +1,15 @@
+group,set,n,matched,exact,crosswalk,manual,rate
+Aves,extant predator species,238,238,208,12,18,1
+Mammalia,extant predator species,138,138,127,0,11,1
+Serpentes,extant predator species,131,130,121,0,9,0.992
+Crocodylia,extant predator species,9,3,3,0,0,0.333
+Lacertilia,extant predator species,51,50,43,0,7,0.98
+Tonini2016,all vertebrate species in taxa.csv,514,436,420,0,16,0.848
+no tree: Actinopterygii,all vertebrate species in taxa.csv,250,0,0,0,0,0
+Upham2019,all vertebrate species in taxa.csv,1455,1238,1227,0,11,0.851
+Jetz2012,all vertebrate species in taxa.csv,1825,1680,1493,169,18,0.921
+no tree: Reptilia,all vertebrate species in taxa.csv,168,0,0,0,0,0
+TimeTree5,all vertebrate species in taxa.csv,9,3,3,0,0,0.333
+no tree: Amphibia,all vertebrate species in taxa.csv,131,0,0,0,0,0
+no tree: Eggs,all vertebrate species in taxa.csv,5,0,0,0,0,0
+no tree: CARRION,all vertebrate species in taxa.csv,1,0,0,0,0,0

@@ -1,0 +1,10 @@
+truth,n,obs_used,top_minor_correct,top_major_correct,mean_p_true_minor,mean_p_true_major,none_wins
+Serpentes,2,stomach_content,0.5,0,0.341207515242413,0.274552328243134,0.5
+Accipitriformes,2,stomach_content,0.5,0.5,0.13310791187348,0.314612066043554,0
+Feliformia,2,stomach_content,0.5,0,0.19282185935143,0.174065184519346,0
+Strigiformes,2,stomach_content,0.5,0.5,0.235441952652435,0.239447769882747,0
+Charadriiformes,2,unknown,1,1,0.560815532910681,0.321271618925261,0
+Caniformia,2,stomach_content,0,1,0.203027127717928,0.338141388574517,0
+Passeriformes,2,regurgitate;unknown,0,0,0.123518331061236,0.119081042780742,0.5
+Iguania,2,unknown;direct_observation,0.5,0,0.227853475732008,0.133510945738571,1
+Falconiformes,2,pellet_scat;direct_observation;prey_remains;unknown,0.5,0,0.21503515694332,0.203493532167686,0

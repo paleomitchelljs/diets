@@ -57,8 +57,14 @@
   function makeFrame(slide, parent) {
     const wrap = Deck.el('div', 'frame-wrap', parent);
     const fr = Deck.el('div', 'frame', wrap);
-    if (slide.title) Deck.el('h2', '', fr, slide.title);
+    const head = slide.title || (slide.titles || [])[0];
+    if (slide.kicker) { Deck.el('div', 'kicker', fr, slide.kicker); fr.classList.add('has-kicker'); }
+    if (head) Deck.el('h2', '', fr, head);
     const inst = slide.make ? slide.make(fr) || {} : {};
+    if (slide.titles) {                                   // heading follows the build
+      const h2 = fr.querySelector('h2'), orig = inst.show;
+      inst.show = (b, how) => { h2.innerHTML = slide.titles[b] || slide.titles[0]; if (orig) orig.call(inst, b, how); };
+    }
     if (slide.draft) { const t = Deck.el('div', 'draft-tag', fr, 'draft'); t.title = slide.draft; }
     return { wrap, fr, inst };
   }

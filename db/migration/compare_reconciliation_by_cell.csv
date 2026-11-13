@@ -1,0 +1,66 @@
+"clade_x20","obs_x20","outcome","items"
+"Aves","Follow","identical",8134
+"Mammalia","Follow","identical",4862
+"Serpentes","Follow","identical",1
+"Aves","Pellet","identical",92487
+"Lacertilia","Scat","identical",3722
+"Mammalia","Scat","identical",19913
+"Serpentes","Scat","identical",260
+"Aves","Stomach","identical",215
+"Crocodylia","Stomach","identical",5
+"Lacertilia","Stomach","identical",208
+"Mammalia","Stomach","identical",4617
+"Serpentes","Stomach","identical",1055
+"Lacertilia","Follow","mass changed (re-read or recomputed)",1
+"Aves","Stomach","mass changed (re-read or recomputed)",17
+"Lacertilia","Follow","no db pair (dropped at migration)",1
+"Serpentes","Scat","no db pair (dropped at migration)",103
+"Aves","Pellet","observation level Pellet -> Follow (prey_remains)",651
+"Serpentes","Stomach","observation level Stomach -> Follow (direct_observation)",1
+"Lacertilia","Stomach","observation level Stomach -> Scat (scat)",495
+"Serpentes","Stomach","observation level Stomach -> Scat (scat)",38
+"Aves","Stomach","observation type dna_detection is outside x20's four levels",1
+"Lacertilia","Follow","observation type unknown is outside x20's four levels",65
+"Lacertilia","Follow","prey mass removed (stomach-remains weight moved to measurements.csv)",2
+"Lacertilia","Scat","prey mass removed (stomach-remains weight moved to measurements.csv)",11
+"Lacertilia","Stomach","prey mass removed (stomach-remains weight moved to measurements.csv)",141
+"Lacertilia","Follow","tier E in db: pred assigned_approximate, prey assigned_approximate",1
+"Aves","Pellet","tier E in db: pred assigned_approximate, prey assigned_approximate",6
+"Aves","Stomach","tier E in db: pred assigned_approximate, prey assigned_approximate",1
+"Lacertilia","Stomach","tier E in db: pred assigned_approximate, prey assigned_approximate",4
+"Aves","Stomach","tier E in db: pred measured, prey assigned_approximate",4
+"Crocodylia","Stomach","tier E in db: pred measured, prey assigned_approximate",1
+"Lacertilia","Stomach","tier E in db: pred measured, prey assigned_approximate",2
+"Aves","Stomach","tier E in db: pred measured, prey unknown",16
+"Crocodylia","Stomach","tier E in db: pred measured, prey unknown",277
+"Lacertilia","Stomach","tier E in db: pred measured, prey unknown",13
+"Serpentes","Stomach","tier E in db: pred measured, prey unknown",235
+"Crocodylia","Stomach","tier E in db: pred size_class_midpoint, prey none",96
+"Aves","Follow","tier E in db: pred species_average_database, prey assigned_approximate",54
+"Aves","Pellet","tier E in db: pred species_average_database, prey assigned_approximate",164
+"Mammalia","Scat","tier E in db: pred species_average_database, prey assigned_approximate",258
+"Aves","Stomach","tier E in db: pred species_average_database, prey assigned_approximate",1
+"Mammalia","Stomach","tier E in db: pred species_average_database, prey assigned_approximate",133
+"Aves","Follow","tier E in db: pred species_average_database, prey species_average_literature",2
+"Aves","Pellet","tier E in db: pred species_average_database, prey unknown",1
+"Mammalia","Scat","tier E in db: pred species_average_database, prey unknown",12
+"Aves","Follow","tier E in db: pred species_average_literature, prey assigned_approximate",193
+"Mammalia","Follow","tier E in db: pred species_average_literature, prey assigned_approximate",134
+"Aves","Pellet","tier E in db: pred species_average_literature, prey assigned_approximate",836
+"Mammalia","Scat","tier E in db: pred species_average_literature, prey assigned_approximate",18
+"Crocodylia","Stomach","tier E in db: pred species_average_literature, prey assigned_approximate",1
+"Lacertilia","Stomach","tier E in db: pred species_average_literature, prey assigned_approximate",18
+"Mammalia","Stomach","tier E in db: pred species_average_literature, prey assigned_approximate",10
+"Serpentes","Stomach","tier E in db: pred species_average_literature, prey assigned_approximate",26
+"Aves","Follow","tier E in db: pred species_average_literature, prey unknown",23
+"Mammalia","Follow","tier E in db: pred species_average_literature, prey unknown",2366
+"Aves","Pellet","tier E in db: pred species_average_literature, prey unknown",1125
+"Mammalia","Scat","tier E in db: pred species_average_literature, prey unknown",19
+"Crocodylia","Stomach","tier E in db: pred species_average_literature, prey unknown",809
+"Lacertilia","Stomach","tier E in db: pred species_average_literature, prey unknown",42
+"Mammalia","Stomach","tier E in db: pred species_average_literature, prey unknown",70
+"Serpentes","Stomach","tier E in db: pred species_average_literature, prey unknown",106
+"Aves","Pellet","tier E in db: pred unknown, prey species_average_database",1
+"Aves","Pellet","tier E in db: pred unknown, prey species_average_literature",25
+"Serpentes","Stomach","tier E in db: pred unknown, prey species_average_literature",41
+"Lacertilia","Follow","tier E in db: pred unknown, prey unknown",2

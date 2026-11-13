@@ -1,0 +1,22 @@
+major_clade,minor_clade,n_species_in_tree,monophyletic,crown_age_ma,attached_by
+Aves,Accipitriformes,91,FALSE,77.6488723079001,MRCA of its species
+Aves,Charadriiformes,1,TRUE,0,MRCA of its species
+Aves,Falconiformes,26,FALSE,48.2277248437001,MRCA of its species
+Aves,Passeriformes,21,TRUE,67.5792909477001,MRCA of its species
+Aves,Pelecaniformes,5,TRUE,63.7539016380001,MRCA of its species
+Aves,Procellariiformes,2,TRUE,61.6850858190001,MRCA of its species
+Aves,Strigiformes,59,FALSE,60.8957750325001,MRCA of its species
+Aves,Suliformes,1,TRUE,0,MRCA of its species
+Aves,other Aves,5,FALSE,82.3871717000001,MRCA of its species
+Crocodylia,Crocodylia,3,TRUE,66.6489,MRCA of its species
+Mammalia,Caniformia,38,FALSE,39.562758082,MRCA of its species
+Mammalia,Cetacea,5,FALSE,19.8168343900001,MRCA of its species
+Mammalia,Dasyuromorphia,1,TRUE,0,MRCA of its species
+Mammalia,Feliformia,30,FALSE,25.34293056,MRCA of its species
+Mammalia,Pinnipedia,8,FALSE,14.2798622022,MRCA of its species
+Mammalia,other Mammalia,0,,,no species in tree: major-clade crown node
+Squamata,Iguania,21,TRUE,78.2981519000001,MRCA of its species
+Squamata,Serpentes,109,FALSE,90.5028409000001,MRCA of its species
+Squamata,Teiioidea,11,TRUE,90.2420939,MRCA of its species
+Squamata,Varanidae,12,TRUE,27.3419467000001,MRCA of its species
+Squamata,other Squamata,4,FALSE,171.8561439,MRCA of its species

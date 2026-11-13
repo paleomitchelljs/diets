@@ -1,0 +1,569 @@
+unit,unit_type,pair_id,candidate,pct_point,pct_lo,pct_hi,extrapolated_obs
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Accipitriformes,0.0967287405960568,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Charadriiformes,0.337588941318313,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Falconiformes,0.0938017592584504,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Passeriformes,0.260887964460707,,,TRUE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Pelecaniformes,0.334056499671947,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Strigiformes,0.0892492590684354,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,other Aves,0.314231483387738,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Crocodylia,0.431779007032504,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Caniformia,0.133968266822531,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Dasyuromorphia,0.103079576599398,,,TRUE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Feliformia,0.308584098482008,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,other Mammalia,0.116850749751964,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Iguania,0.149669015388865,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Serpentes,0.195774147383281,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Teiioidea,0.445084277589084,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,Varanidae,0.31757095356715,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,other Squamata,0.275946875249875,,,TRUE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,major:Aves,0.236390079690759,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,major:Crocodylia,0.315363880571222,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,major:Mammalia,0.203513294601259,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,major:Squamata,0.276711085866241,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,tree:Avialae@130.5,0.246112638504532,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,tree:dated,0.249549288170654,,,FALSE
+Confuciusornis_sanctus,taxon,Dalsatt2006_01,tree:dated+Eshanosaurus,0.249549288170654,,,FALSE
+Yanornis,taxon,Zheng2014_01,Accipitriformes,0.09085497154984,,,FALSE
+Yanornis,taxon,Zheng2014_07,Accipitriformes,0.0950669953145195,,,FALSE
+Yanornis,taxon,Zheng2014_08,Accipitriformes,0.148479803071008,,,FALSE
+Yanornis,taxon,Zheng2014_13,Accipitriformes,0.108225166753726,,,FALSE
+Yanornis,taxon,Zheng2014_01,Charadriiformes,0.336684470469661,,,FALSE
+Yanornis,taxon,Zheng2014_07,Charadriiformes,0.33948672561398,,,FALSE
+Yanornis,taxon,Zheng2014_08,Charadriiformes,0.361118853786295,,,FALSE
+Yanornis,taxon,Zheng2014_13,Charadriiformes,0.347977341882043,,,FALSE
+Yanornis,taxon,Zheng2014_01,Falconiformes,0.0890611826736609,,,FALSE
+Yanornis,taxon,Zheng2014_07,Falconiformes,0.0927907232000276,,,FALSE
+Yanornis,taxon,Zheng2014_08,Falconiformes,0.139083257191236,,,FALSE
+Yanornis,taxon,Zheng2014_13,Falconiformes,0.104128664991941,,,FALSE
+Yanornis,taxon,Zheng2014_01,Passeriformes,0.254775561183022,,,TRUE
+Yanornis,taxon,Zheng2014_07,Passeriformes,0.262294966380326,,,TRUE
+Yanornis,taxon,Zheng2014_08,Passeriformes,0.327497389787963,,,TRUE
+Yanornis,taxon,Zheng2014_13,Passeriformes,0.284677854079742,,,TRUE
+Yanornis,taxon,Zheng2014_01,Pelecaniformes,0.331792210241655,,,FALSE
+Yanornis,taxon,Zheng2014_07,Pelecaniformes,0.335874545129946,,,FALSE
+Yanornis,taxon,Zheng2014_08,Pelecaniformes,0.367069291730291,,,FALSE
+Yanornis,taxon,Zheng2014_13,Pelecaniformes,0.34779454895723,,,FALSE
+Yanornis,taxon,Zheng2014_01,Strigiformes,0.0877082090845217,,,FALSE
+Yanornis,taxon,Zheng2014_07,Strigiformes,0.0897795353683487,,,FALSE
+Yanornis,taxon,Zheng2014_08,Strigiformes,0.11046700520898,,,FALSE
+Yanornis,taxon,Zheng2014_13,Strigiformes,0.0957793783483589,,,FALSE
+Yanornis,taxon,Zheng2014_01,other Aves,0.312851215971392,,,FALSE
+Yanornis,taxon,Zheng2014_07,other Aves,0.316003450381738,,,FALSE
+Yanornis,taxon,Zheng2014_08,other Aves,0.341127446027017,,,FALSE
+Yanornis,taxon,Zheng2014_13,other Aves,0.325780557891443,,,FALSE
+Yanornis,taxon,Zheng2014_01,Crocodylia,0.428610038322073,,,FALSE
+Yanornis,taxon,Zheng2014_07,Crocodylia,0.437401122746331,,,FALSE
+Yanornis,taxon,Zheng2014_08,Crocodylia,0.491667741908606,,,FALSE
+Yanornis,taxon,Zheng2014_13,Crocodylia,0.462619630238421,,,FALSE
+Yanornis,taxon,Zheng2014_01,Caniformia,0.130218568359979,,,FALSE
+Yanornis,taxon,Zheng2014_07,Caniformia,0.134044114871954,,,FALSE
+Yanornis,taxon,Zheng2014_08,Caniformia,0.174654240719044,,,FALSE
+Yanornis,taxon,Zheng2014_13,Caniformia,0.145767790139149,,,FALSE
+Yanornis,taxon,Zheng2014_01,Dasyuromorphia,0.100071851360075,,,TRUE
+Yanornis,taxon,Zheng2014_07,Dasyuromorphia,0.10299738985509,,,TRUE
+Yanornis,taxon,Zheng2014_08,Dasyuromorphia,0.135328255408952,,,TRUE
+Yanornis,taxon,Zheng2014_13,Dasyuromorphia,0.11185539809849,,,TRUE
+Yanornis,taxon,Zheng2014_01,Feliformia,0.295079206574613,,,FALSE
+Yanornis,taxon,Zheng2014_07,Feliformia,0.308803868195398,,,FALSE
+Yanornis,taxon,Zheng2014_08,Feliformia,0.412376441437907,,,FALSE
+Yanornis,taxon,Zheng2014_13,Feliformia,0.349166492896054,,,FALSE
+Yanornis,taxon,Zheng2014_01,other Mammalia,0.111710460734435,,,FALSE
+Yanornis,taxon,Zheng2014_07,other Mammalia,0.115733940010734,,,FALSE
+Yanornis,taxon,Zheng2014_08,other Mammalia,0.161072342190927,,,FALSE
+Yanornis,taxon,Zheng2014_13,other Mammalia,0.127086508861998,,,FALSE
+Yanornis,taxon,Zheng2014_01,Iguania,0.142229542363309,,,FALSE
+Yanornis,taxon,Zheng2014_07,Iguania,0.148492674046688,,,FALSE
+Yanornis,taxon,Zheng2014_08,Iguania,0.217334451759049,,,FALSE
+Yanornis,taxon,Zheng2014_13,Iguania,0.167032488044923,,,FALSE
+Yanornis,taxon,Zheng2014_01,Serpentes,0.195494815551682,,,FALSE
+Yanornis,taxon,Zheng2014_07,Serpentes,0.197323154069191,,,FALSE
+Yanornis,taxon,Zheng2014_08,Serpentes,0.211819771346341,,,FALSE
+Yanornis,taxon,Zheng2014_13,Serpentes,0.202643858082846,,,FALSE
+Yanornis,taxon,Zheng2014_01,Teiioidea,0.443005330507255,,,FALSE
+Yanornis,taxon,Zheng2014_07,Teiioidea,0.449789451791182,,,FALSE
+Yanornis,taxon,Zheng2014_08,Teiioidea,0.492734946713637,,,FALSE
+Yanornis,taxon,Zheng2014_13,Teiioidea,0.468921386354741,,,FALSE
+Yanornis,taxon,Zheng2014_01,Varanidae,0.312466817126851,,,FALSE
+Yanornis,taxon,Zheng2014_07,Varanidae,0.320113681140954,,,FALSE
+Yanornis,taxon,Zheng2014_08,Varanidae,0.379291367525765,,,FALSE
+Yanornis,taxon,Zheng2014_13,Varanidae,0.342728086951589,,,FALSE
+Yanornis,taxon,Zheng2014_01,other Squamata,0.269771215796952,,,TRUE
+Yanornis,taxon,Zheng2014_07,other Squamata,0.277178734684806,,,TRUE
+Yanornis,taxon,Zheng2014_08,other Squamata,0.341489330574123,,,TRUE
+Yanornis,taxon,Zheng2014_13,other Squamata,0.299030671102735,,,TRUE
+Yanornis,taxon,Zheng2014_01,major:Aves,0.232246570303359,,,FALSE
+Yanornis,taxon,Zheng2014_07,major:Aves,0.237402930799321,,,FALSE
+Yanornis,taxon,Zheng2014_08,major:Aves,0.277224961241135,,,FALSE
+Yanornis,taxon,Zheng2014_13,major:Aves,0.251826016371454,,,FALSE
+Yanornis,taxon,Zheng2014_01,major:Crocodylia,0.310715130013062,,,FALSE
+Yanornis,taxon,Zheng2014_07,major:Crocodylia,0.317674509366316,,,FALSE
+Yanornis,taxon,Zheng2014_08,major:Crocodylia,0.36370451017747,,,FALSE
+Yanornis,taxon,Zheng2014_13,major:Crocodylia,0.337115226973988,,,FALSE
+Yanornis,taxon,Zheng2014_01,major:Mammalia,0.19817892792863,,,FALSE
+Yanornis,taxon,Zheng2014_07,major:Mammalia,0.203942190173067,,,FALSE
+Yanornis,taxon,Zheng2014_08,major:Mammalia,0.250880741074707,,,FALSE
+Yanornis,taxon,Zheng2014_13,major:Mammalia,0.220060072779934,,,FALSE
+Yanornis,taxon,Zheng2014_01,major:Squamata,0.271598772447673,,,FALSE
+Yanornis,taxon,Zheng2014_07,major:Squamata,0.27812717866201,,,FALSE
+Yanornis,taxon,Zheng2014_08,major:Squamata,0.323316218876134,,,FALSE
+Yanornis,taxon,Zheng2014_13,major:Squamata,0.296236568865813,,,FALSE
+Yanornis,taxon,Zheng2014_01,tree:Avialae@130.5,0.241739021765494,,,FALSE
+Yanornis,taxon,Zheng2014_07,tree:Avialae@130.5,0.247197434721502,,,FALSE
+Yanornis,taxon,Zheng2014_08,tree:Avialae@130.5,0.288130722452698,,,FALSE
+Yanornis,taxon,Zheng2014_13,tree:Avialae@130.5,0.262438470562758,,,FALSE
+Yanornis,taxon,Zheng2014_01,tree:dated,0.237672150222266,,,FALSE
+Yanornis,taxon,Zheng2014_07,tree:dated,0.242808765579631,,,FALSE
+Yanornis,taxon,Zheng2014_08,tree:dated,0.284688283627267,,,FALSE
+Yanornis,taxon,Zheng2014_13,tree:dated,0.257653303223825,,,FALSE
+Yanornis,taxon,Zheng2014_01,tree:dated+Eshanosaurus,0.237672150222266,,,FALSE
+Yanornis,taxon,Zheng2014_07,tree:dated+Eshanosaurus,0.242808765579631,,,FALSE
+Yanornis,taxon,Zheng2014_08,tree:dated+Eshanosaurus,0.284688283627267,,,FALSE
+Yanornis,taxon,Zheng2014_13,tree:dated+Eshanosaurus,0.257653303223825,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Accipitriformes,0.220249933763839,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Charadriiformes,0.560432335500563,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Falconiformes,0.351658337259035,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Passeriformes,0.559661598394235,,,TRUE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Pelecaniformes,0.510781223180391,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Strigiformes,0.660520442373847,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,other Aves,0.533153857718841,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Crocodylia,0.680543856830572,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Caniformia,0.297087365087445,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Dasyuromorphia,0.266898355921573,,,TRUE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Feliformia,0.212825775361148,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,other Mammalia,0.362427109406702,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Iguania,0.357446682651341,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Serpentes,0.831568925651662,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Teiioidea,0.832901725180472,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,Varanidae,0.400742273440511,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,other Squamata,0.603905851050907,,,TRUE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,major:Aves,0.497901714107262,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,major:Crocodylia,0.560076277180201,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,major:Mammalia,0.385999372013099,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,major:Squamata,0.545767828510628,,,FALSE
+Aplestosuchus_sordidus,taxon,Godoy2014_01,tree:Crocodyliformes@190,0.524409707887295,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Accipitriformes,0.295042712936936,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Charadriiformes,0.604098765259978,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Falconiformes,0.447525714421425,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Passeriformes,0.653609725356946,,,TRUE
+Confractosuchus_sauroktonos,taxon,White2022_01,Pelecaniformes,0.55914733646916,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Strigiformes,0.752045500374186,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,other Aves,0.579904649093662,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Crocodylia,0.758669618617735,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Caniformia,0.363357179756613,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Dasyuromorphia,0.325135171610879,,,TRUE
+Confractosuchus_sauroktonos,taxon,White2022_01,Feliformia,0.298483772899205,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,other Mammalia,0.441995258963542,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Iguania,0.457042235146771,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Serpentes,0.883417300510064,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Teiioidea,0.885085395728446,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,Varanidae,0.468046552856511,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,other Squamata,0.695506445181703,,,TRUE
+Confractosuchus_sauroktonos,taxon,White2022_01,major:Aves,0.567642808714363,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,major:Crocodylia,0.631779630742918,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,major:Mammalia,0.455426258663636,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,major:Squamata,0.619104073898551,,,FALSE
+Confractosuchus_sauroktonos,taxon,White2022_01,tree:Crocodyliformes@190,0.594895346439977,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Accipitriformes,0.920403640282572,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Accipitriformes,0.169372371681376,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Charadriiformes,0.890943955669922,,,TRUE
+Repenomamus_robustus,taxon,Hu2005_01,Charadriiformes,0.483865661402836,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Falconiformes,0.972482310026783,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Falconiformes,0.237184154082817,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Passeriformes,0.993578885464613,,,TRUE
+Repenomamus_robustus,taxon,Hu2005_01,Passeriformes,0.460065633407979,,,TRUE
+Repenomamus_robustus,taxon,Han2023_01,Pelecaniformes,0.890862250141037,,,TRUE
+Repenomamus_robustus,taxon,Hu2005_01,Pelecaniformes,0.452286081849725,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Strigiformes,0.996167079881879,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Strigiformes,0.404651123467439,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,other Aves,0.890241547394954,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,other Aves,0.457572421320014,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Crocodylia,0.996778580559281,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Crocodylia,0.610092549484508,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Caniformia,0.880764928733841,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Caniformia,0.231884683705314,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Dasyuromorphia,0.822636315803048,,,TRUE
+Repenomamus_robustus,taxon,Hu2005_01,Dasyuromorphia,0.194623716374717,,,TRUE
+Repenomamus_robustus,taxon,Han2023_01,Feliformia,0.974110335228413,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Feliformia,0.265417057915907,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,other Mammalia,0.942889060037792,,,TRUE
+Repenomamus_robustus,taxon,Hu2005_01,other Mammalia,0.256038102428829,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Iguania,0.979400438294952,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Iguania,0.278880004010802,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Serpentes,0.998322579011171,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Serpentes,0.612276184401412,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Teiioidea,0.999286145257604,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Teiioidea,0.725317013649609,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,Varanidae,0.934093320495507,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,Varanidae,0.381403778003064,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,other Squamata,0.99178775621523,,,TRUE
+Repenomamus_robustus,taxon,Hu2005_01,other Squamata,0.494945016942415,,,TRUE
+Repenomamus_robustus,taxon,Han2023_01,major:Aves,0.942641555059615,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,major:Aves,0.396567065626182,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,major:Crocodylia,0.964899883902279,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,major:Crocodylia,0.475719088612494,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,major:Mammalia,0.919440170798409,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,major:Mammalia,0.311507353660161,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,major:Squamata,0.964262982514216,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,major:Squamata,0.447250835499974,,,FALSE
+Repenomamus_robustus,taxon,Han2023_01,tree:Repenomamus@175,0.921876589895536,,,FALSE
+Repenomamus_robustus,taxon,Hu2005_01,tree:Repenomamus@175,0.320196236345071,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Accipitriformes,0.0588257662625055,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Charadriiformes,0.329991727297395,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Falconiformes,0.0668939246002817,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Passeriformes,0.204881945749588,,,TRUE
+Compsognathus_longipes,taxon,Conrad2017_01,Pelecaniformes,0.307785253518486,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Strigiformes,0.0966487685928107,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,other Aves,0.301515471401898,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Crocodylia,0.362068857579126,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Caniformia,0.103142235836505,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Dasyuromorphia,0.081869403206955,,,TRUE
+Compsognathus_longipes,taxon,Conrad2017_01,Feliformia,0.154589789966181,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,other Mammalia,0.0895163285854631,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Iguania,0.098975352221424,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Serpentes,0.233931200315941,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Teiioidea,0.421004175982968,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,Varanidae,0.241595926745208,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,other Squamata,0.224590630255716,,,TRUE
+Compsognathus_longipes,taxon,Conrad2017_01,major:Aves,0.202829954212997,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,major:Crocodylia,0.263814869989751,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,major:Mammalia,0.156637710811718,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,major:Squamata,0.230720110885546,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,tree:Theropoda@162.5,0.212856496636162,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,tree:dated,0.213228459053229,,,FALSE
+Compsognathus_longipes,taxon,Conrad2017_01,tree:dated+Eshanosaurus,0.217928819645348,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Accipitriformes,0.522220652991527,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Accipitriformes,0.237915448339601,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Charadriiformes,0.731413514186676,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Charadriiformes,0.59281212317658,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Falconiformes,0.723254652077908,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Falconiformes,0.409239282034332,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Passeriformes,0.836340374246657,,,TRUE
+Daspletosaurus,taxon,Varricchio2001_02,Passeriformes,0.57291350438157,,,TRUE
+Daspletosaurus,taxon,Varricchio2001_01,Pelecaniformes,0.680919412526787,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Pelecaniformes,0.527217044587156,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Strigiformes,0.960946235347846,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Strigiformes,0.790933647423266,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,other Aves,0.711782397468046,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,other Aves,0.563797891297876,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Crocodylia,0.881811381387091,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Crocodylia,0.666848343403301,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Caniformia,0.567387322708271,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Caniformia,0.327885731873399,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Dasyuromorphia,0.533263387197844,,,TRUE
+Daspletosaurus,taxon,Varricchio2001_02,Dasyuromorphia,0.314903747821543,,,TRUE
+Daspletosaurus,taxon,Varricchio2001_01,Feliformia,0.392953591505355,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Feliformia,0.140073559293881,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,other Mammalia,0.669544922289676,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,other Mammalia,0.413551622693848,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Iguania,0.698593843393876,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Iguania,0.371600888071901,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Serpentes,0.986740029885499,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Serpentes,0.914121217355211,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Teiioidea,0.968384293119502,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Teiioidea,0.85510557689967,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,Varanidae,0.588877070659326,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,Varanidae,0.377229822505459,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,other Squamata,0.869715761487262,,,TRUE
+Daspletosaurus,taxon,Varricchio2001_02,other Squamata,0.622835858939657,,,TRUE
+Daspletosaurus,taxon,Varricchio2001_01,major:Aves,0.744047005201969,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,major:Aves,0.529383193484128,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,major:Crocodylia,0.776946193042977,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,major:Crocodylia,0.56458234975839,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,major:Mammalia,0.638384221034003,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,major:Mammalia,0.406005028586946,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,major:Squamata,0.778988130472948,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,major:Squamata,0.561715871585423,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,tree:Theropoda@162.5,0.741939365769569,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,tree:Theropoda@162.5,0.527683242484576,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,tree:dated,0.747091514856812,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,tree:dated,0.533810198020195,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_01,tree:dated+Eshanosaurus,0.746867810862047,,,FALSE
+Daspletosaurus,taxon,Varricchio2001_02,tree:dated+Eshanosaurus,0.533301938570813,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Accipitriformes,0.301302551897873,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Accipitriformes,0.327294337652311,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Charadriiformes,0.626570217411893,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Charadriiformes,0.640264607695318,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Falconiformes,0.484554370936186,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Falconiformes,0.51627767472894,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Passeriformes,0.661313257950108,,,TRUE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Passeriformes,0.689186186688476,,,TRUE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Pelecaniformes,0.569310677424526,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Pelecaniformes,0.584332319307787,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Strigiformes,0.835906668742735,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Strigiformes,0.857661543329112,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,other Aves,0.600604814076971,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,other Aves,0.615193479145568,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Crocodylia,0.752728600861768,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Crocodylia,0.775302306949287,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Caniformia,0.381480103446599,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Caniformia,0.403950571213708,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Dasyuromorphia,0.355644962803919,,,TRUE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Dasyuromorphia,0.37592855050222,,,TRUE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Feliformia,0.219163717915642,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Feliformia,0.242803116576214,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,other Mammalia,0.473632577476658,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,other Mammalia,0.499174607527534,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Iguania,0.462838399878228,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Iguania,0.495261437555694,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Serpentes,0.934450218965291,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Serpentes,0.944338612765183,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Teiioidea,0.901452526922419,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Teiioidea,0.914271948341993,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,Varanidae,0.445069423489839,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,Varanidae,0.465465484281989,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,other Squamata,0.708959406788078,,,TRUE
+Gorgosaurus_libratus,taxon,Therrien2023_02,other Squamata,0.735668213637575,,,TRUE
+Gorgosaurus_libratus,taxon,Therrien2023_01,major:Aves,0.588354977393542,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,major:Aves,0.610420526700859,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,major:Crocodylia,0.634140333395435,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,major:Crocodylia,0.656175355988151,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,major:Mammalia,0.466327845121406,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,major:Mammalia,0.489224259941689,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,major:Squamata,0.629149972836773,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,major:Squamata,0.651804210435876,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,tree:Theropoda@162.5,0.588537345156174,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,tree:Theropoda@162.5,0.610552899866652,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,tree:dated,0.589958797039142,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,tree:dated,0.611874401633474,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_01,tree:dated+Eshanosaurus,0.590316422947852,,,FALSE
+Gorgosaurus_libratus,taxon,Therrien2023_02,tree:dated+Eshanosaurus,0.612259324056253,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Accipitriformes,0.404714649739488,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Charadriiformes,0.578645168372277,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Falconiformes,0.470399114546196,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Passeriformes,0.71732433540107,,,TRUE
+Microraptor_gui,taxon,OConnor2011_01,Pelecaniformes,0.581543595141144,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Strigiformes,0.546046082886869,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,other Aves,0.565659366281721,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Crocodylia,0.81981373988033,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Caniformia,0.414105054880154,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Dasyuromorphia,0.339927104927909,,,TRUE
+Microraptor_gui,taxon,OConnor2011_01,Feliformia,0.689095150238208,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,other Mammalia,0.463525471473163,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Iguania,0.573109351864095,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Serpentes,0.686839197269965,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Teiioidea,0.863444147831729,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,Varanidae,0.620939945728685,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,other Squamata,0.743683205623463,,,TRUE
+Microraptor_gui,taxon,OConnor2011_01,major:Aves,0.575071703779994,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,major:Crocodylia,0.675380947957158,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,major:Mammalia,0.51984697088482,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,major:Squamata,0.645793460652711,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,tree:Theropoda@162.5,0.593566146258819,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,tree:dated,0.596810825751549,,,FALSE
+Microraptor_gui,taxon,OConnor2011_01,tree:dated+Eshanosaurus,0.596810825751549,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Accipitriformes,0.54701696123744,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Accipitriformes,0.122064749582689,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Charadriiformes,0.594051950781213,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Charadriiformes,0.374828249441202,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Falconiformes,0.561695894937337,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Falconiformes,0.125809299410168,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Passeriformes,0.800043015930387,,,TRUE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Passeriformes,0.323584058584553,,,TRUE
+Microraptor_zhaoianus,taxon,Hone2022_01,Pelecaniformes,0.629239523083952,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Pelecaniformes,0.371078119407219,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Strigiformes,0.493744141956084,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Strigiformes,0.132520566872188,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,other Aves,0.59032673216695,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,other Aves,0.352062725229305,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Crocodylia,0.875290224262183,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Crocodylia,0.501032398787764,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Caniformia,0.506087778259702,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Caniformia,0.163566420370698,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Dasyuromorphia,0.409590576719628,,,TRUE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Dasyuromorphia,0.126756006575799,,,TRUE
+Microraptor_zhaoianus,taxon,Hone2022_01,Feliformia,0.892402255917237,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Feliformia,0.354004038161236,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,other Mammalia,0.547564650537939,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,other Mammalia,0.148716006620348,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Iguania,0.71103112077089,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Iguania,0.191951011718065,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Serpentes,0.592424122092062,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Serpentes,0.262239332549907,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Teiioidea,0.878630040440664,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Teiioidea,0.525645213742463,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,Varanidae,0.744431053634688,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,Varanidae,0.360221968371774,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,other Squamata,0.818876278962367,,,TRUE
+Microraptor_zhaoianus,taxon,OConnor2019_01,other Squamata,0.340657651861146,,,TRUE
+Microraptor_zhaoianus,taxon,Hone2022_01,major:Aves,0.623796472486225,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,major:Aves,0.277618711920438,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,major:Crocodylia,0.729615421094237,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,major:Crocodylia,0.365471977468982,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,major:Mammalia,0.60639131068479,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,major:Mammalia,0.237626784633349,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,major:Squamata,0.696358858983313,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,major:Squamata,0.324347340247953,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,tree:Theropoda@162.5,0.645715343218083,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,tree:Theropoda@162.5,0.294255387355939,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,tree:dated,0.647406649491082,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,tree:dated,0.295891420050784,,,FALSE
+Microraptor_zhaoianus,taxon,Hone2022_01,tree:dated+Eshanosaurus,0.647406649491082,,,FALSE
+Microraptor_zhaoianus,taxon,OConnor2019_01,tree:dated+Eshanosaurus,0.295891420050784,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Accipitriformes,0.00268753639736891,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Accipitriformes,0.0372795084930887,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Charadriiformes,0.0999641630620918,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Charadriiformes,0.226541915737739,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Falconiformes,0.00106007976777757,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Falconiformes,0.0261126864508733,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Passeriformes,0.0101648898250482,,,TRUE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Passeriformes,0.111292987582508,,,TRUE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Pelecaniformes,0.0971808120315238,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Pelecaniformes,0.231018955086232,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Strigiformes,0.000304136581635068,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Strigiformes,0.0139560857385337,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,other Aves,0.0838118382586495,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,other Aves,0.20589524404563,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Crocodylia,0.0562735299845042,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Crocodylia,0.262229723425567,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Caniformia,0.00959693602841952,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Caniformia,0.0633876157513434,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Dasyuromorphia,0.00767900884299103,,,TRUE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Dasyuromorphia,0.0479383130368291,,,TRUE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Feliformia,0.0381902864458205,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Feliformia,0.223417725698236,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,other Mammalia,0.00493961006806121,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,other Mammalia,0.0445402690966887,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Iguania,0.00347385030457926,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Iguania,0.0542504220619393,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Serpentes,0.00265629058878654,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Serpentes,0.0453700705981886,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Teiioidea,0.0322078160780434,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Teiioidea,0.21755381961216,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,Varanidae,0.067905076455655,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,Varanidae,0.222962360916092,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,other Squamata,0.0134857125193704,,,TRUE
+Scipionyx_samniticus,taxon,DalSasso2011_07,other Squamata,0.116349134643573,,,TRUE
+Scipionyx_samniticus,taxon,DalSasso2011_05,major:Aves,0.0382725398678262,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,major:Aves,0.132365568617997,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,major:Crocodylia,0.0562869062868932,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,major:Crocodylia,0.191408299778782,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,major:Mammalia,0.0346067004975552,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,major:Mammalia,0.121167943607151,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,major:Squamata,0.0426861801948425,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,major:Squamata,0.157912642193136,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,tree:Theropoda@162.5,0.0437128169118476,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,tree:Theropoda@162.5,0.146590696144837,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,tree:dated,0.0428703244757177,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,tree:dated,0.144912640324923,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_05,tree:dated+Eshanosaurus,0.0449972022585773,,,FALSE
+Scipionyx_samniticus,taxon,DalSasso2011_07,tree:dated+Eshanosaurus,0.151126355429424,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Accipitriformes,0.417938107213663,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Accipitriformes,0.157663730786579,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Accipitriformes,0.157663730786579,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Charadriiformes,0.664924097740554,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Charadriiformes,0.515315741090526,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Charadriiformes,0.515315741090526,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Falconiformes,0.589068969678654,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Falconiformes,0.264985393910983,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Falconiformes,0.264985393910983,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Passeriformes,0.77112383443956,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Passeriformes,0.45820343383295,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Passeriformes,0.45820343383295,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Pelecaniformes,0.626726037940817,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Pelecaniformes,0.460930002114758,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Pelecaniformes,0.460930002114758,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Strigiformes,0.857456604616316,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Strigiformes,0.559527474478496,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Strigiformes,0.559527474478496,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,other Aves,0.645354163056946,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,other Aves,0.48517710945747,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,other Aves,0.48517710945747,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Crocodylia,0.848395531235682,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Crocodylia,0.586897760009942,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Crocodylia,0.586897760009942,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Caniformia,0.465286275668218,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Caniformia,0.236518172408458,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Caniformia,0.236518172408458,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Dasyuromorphia,0.416805993183779,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Dasyuromorphia,0.215288934606643,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Dasyuromorphia,0.215288934606643,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Feliformia,0.437489839639838,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Feliformia,0.142737818856878,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Feliformia,0.142737818856878,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,other Mammalia,0.559758537544334,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,other Mammalia,0.287774959380162,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,other Mammalia,0.287774959380162,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Iguania,0.603035439026846,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Iguania,0.266018269061987,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Iguania,0.266018269061987,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Serpentes,0.937348444594195,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Serpentes,0.767095201411748,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Serpentes,0.767095201411748,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Teiioidea,0.938293261634257,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Teiioidea,0.762036841989451,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Teiioidea,0.762036841989451,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,Varanidae,0.564562988544546,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,Varanidae,0.333199930790102,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,Varanidae,0.333199930790102,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,other Squamata,0.806414719189845,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,other Squamata,0.500211840794774,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,other Squamata,0.500211840794774,,,TRUE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,major:Aves,0.668572146497922,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,major:Aves,0.425190054022744,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,major:Aves,0.425190054022744,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,major:Crocodylia,0.729630200615509,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,major:Crocodylia,0.47987187069843,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,major:Crocodylia,0.47987187069843,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,major:Mammalia,0.565911980478897,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,major:Mammalia,0.317259831178748,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,major:Mammalia,0.317259831178748,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,major:Squamata,0.721074203810723,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,major:Squamata,0.464606508134629,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,major:Squamata,0.464606508134629,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,tree:Theropoda@162.5,0.674606815200708,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,tree:Theropoda@162.5,0.429704334440424,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,tree:Theropoda@162.5,0.429704334440424,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,tree:dated,0.674368638218919,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,tree:dated,0.427933950865868,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,tree:dated,0.427933950865868,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_01,tree:dated+Eshanosaurus,0.677545779736266,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_04,tree:dated+Eshanosaurus,0.429977928059668,,,FALSE
+Sinocalliopteryx_gigas,taxon,Xing2012_05,tree:dated+Eshanosaurus,0.429977928059668,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Accipitriformes,0.241094638806815,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Charadriiformes,0.490540015756279,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Falconiformes,0.284455025995744,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Passeriformes,0.535982495114002,,,TRUE
+Sinosauropteryx_prima,taxon,Chen1998_01,Pelecaniformes,0.483395114876518,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Strigiformes,0.35579565598283,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,other Aves,0.470581588762941,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Crocodylia,0.683803860339216,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Caniformia,0.280226798606418,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Dasyuromorphia,0.225102356541366,,,TRUE
+Sinosauropteryx_prima,taxon,Chen1998_01,Feliformia,0.488275981586893,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,other Mammalia,0.295685743716521,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Iguania,0.369342448924444,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Serpentes,0.529005420726896,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Teiioidea,0.742385952790765,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,Varanidae,0.482416416863488,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,other Squamata,0.563356566213224,,,TRUE
+Sinosauropteryx_prima,taxon,Chen1998_01,major:Aves,0.433915105238549,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,major:Crocodylia,0.533414892791907,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,major:Mammalia,0.373559393130234,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,major:Squamata,0.49762408274365,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,tree:Theropoda@162.5,0.451814081050583,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,tree:dated,0.449001975976902,,,FALSE
+Sinosauropteryx_prima,taxon,Chen1998_01,tree:dated+Eshanosaurus,0.457318585908586,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Accipitriformes,0.796704665714973,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Charadriiformes,0.843310656099181,,,TRUE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Falconiformes,0.915574812978824,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Passeriformes,0.971207556309582,,,TRUE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Pelecaniformes,0.825131906830588,,,TRUE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Strigiformes,0.991244938583629,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,other Aves,0.834780273883743,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Crocodylia,0.985736717470745,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Caniformia,0.773694698044175,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Dasyuromorphia,0.708736161436557,,,TRUE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Feliformia,0.846401171592097,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,other Mammalia,0.860397729042632,,,TRUE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Iguania,0.92223180755323,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Serpentes,0.997197929314137,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Teiioidea,0.997039536269795,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,Varanidae,0.835971457081987,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,other Squamata,0.972381084878222,,,TRUE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,major:Aves,0.892859292824483,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,major:Crocodylia,0.925822544930914,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,major:Mammalia,0.839082854366514,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,major:Squamata,0.924434986526744,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,tree:Theropoda@162.5,0.895280799982634,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,tree:dated,0.89318391462907,,,FALSE
+Velociraptor_mongoliensis,taxon,Carpenter1998_01,tree:dated+Eshanosaurus,0.89318391462907,,,FALSE

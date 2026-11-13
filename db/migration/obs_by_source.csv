@@ -1,0 +1,11 @@
+"observation_type","01_rawdata","02_aviandietdb","03_extant_new_observations","04_raptordiets","05_tucker2016","06_jekyll","07_glaudas2019","08_tegu","09_varanus"
+"bite_trace",0,0,0,0,0,0,0,0,0
+"combat_association",0,0,0,0,0,0,0,0,0
+"direct_observation",998,0,10,2552,0,0,0,0,0
+"dna_detection",0,0,10,110,0,0,0,0,0
+"pellet",3031,0,1,44548,0,0,0,0,0
+"prey_remains",166,0,2,6774,0,0,0,0,0
+"regurgitate",1,101,35,0,0,0,0,0,0
+"scat",1650,0,1,0,0,0,0,0,0
+"stomach_content",1523,113,113,1441,0,65,115,1767,88
+"unknown",0,0,72,65,107,0,0,0,7

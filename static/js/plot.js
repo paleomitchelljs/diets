@@ -35,7 +35,7 @@
     D.svg('line', { x1: left, x2: left + pw, y1: top + ph, y2: top + ph }, ax);
     D.svg('line', { x1: left, x2: left, y1: top, y2: top + ph }, ax);
     D.svg('text', { x: left + pw / 2, y: h - 8, 'text-anchor': 'middle', class: 'title' }, ax).textContent = o.xlab || 'Predator size';
-    D.svg('text', { x: -(top + ph / 2), y: 32, transform: 'rotate(-90)', 'text-anchor': 'middle', class: 'title' }, ax).textContent = o.ylab || 'Meal size';
+    D.svg('text', { x: -(top + ph / 2), y: 32, transform: 'rotate(-90)', 'text-anchor': 'middle', class: 'title' }, ax).textContent = o.ylab || 'Prey size';
     const id = 'c' + Math.random().toString(36).slice(2);
     const cp = D.svg('clipPath', { id }, D.svg('defs', {}, svg));
     D.svg('rect', { x: left, y: top, width: pw, height: ph }, cp);

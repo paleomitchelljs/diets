@@ -1,0 +1,451 @@
+truth,rep,obs_used,n_records,top_minor,top_major,top_with_tree,p_true_minor,p_true_major,p_none
+Serpentes,1,stomach_content,17,Serpentes,major:Aves,major:Aves,0.512335277108701,0.221191241741414,0.146214646027693
+Serpentes,2,stomach_content,32,Serpentes,major:Squamata,major:Squamata,0.531455725902306,0.310065034120732,0.121013354573783
+Serpentes,3,stomach_content,21,Serpentes,major:Crocodylia,major:Crocodylia,0.753245803437842,0.213394966231752,0.253209048337689
+Serpentes,4,stomach_content,21,Strigiformes,major:Squamata,major:Squamata,0.199046368315979,0.383469432527341,0.153041660618486
+Serpentes,5,stomach_content,24,Strigiformes,major:Aves,major:Aves,0.227298179561991,0.227675765228972,0.15314269506298
+Serpentes,6,stomach_content,18,Serpentes,major:Aves,major:Aves,0.396955313800605,0.206786117227311,0.190894939747015
+Serpentes,7,stomach_content,24,Serpentes,major:Squamata,major:Squamata,0.702042199700314,0.412600482708993,0.38486538997181
+Serpentes,8,stomach_content,13,Passeriformes,major:Squamata,major:Squamata,0.160847367647675,0.260155745316114,0.16673596660261
+Serpentes,9,stomach_content,18,other Squamata,major:Aves,tree:Theropoda@162.5,0.00664176750005278,0.090444766609594,0.0567765973414806
+Serpentes,10,stomach_content,21,Serpentes,major:Crocodylia,major:Crocodylia,0.655727012932248,0.235465784903874,0.154815780470902
+Serpentes,11,stomach_content,21,Serpentes,major:Squamata,major:Squamata,0.592255225230843,0.333520129477593,0.165290786211434
+Serpentes,12,stomach_content,20,Passeriformes,major:Squamata,major:Squamata,0.0905824705384711,0.266455249379001,0.167206121506215
+Serpentes,13,stomach_content,18,Serpentes,major:Squamata,major:Squamata,0.41172984880758,0.281434956592023,0.147403280238588
+Serpentes,14,stomach_content,19,Strigiformes,major:Aves,major:Aves,0.0419733819037123,0.199444025727158,0.216795012119093
+Serpentes,15,stomach_content,20,Serpentes,major:Crocodylia,major:Crocodylia,0.632709989806978,0.240318169833036,0.158037208446004
+Serpentes,16,stomach_content,21,Serpentes,major:Squamata,major:Squamata,0.504300254074579,0.323129531563897,0.16156066119149
+Serpentes,17,stomach_content,24,Serpentes,major:Squamata,major:Squamata,0.599719890143126,0.232071338252705,0.204492811227844
+Serpentes,18,stomach_content,24,Serpentes,major:Aves,major:Aves,0.3663594374228,0.21399521844903,0.188857875728066
+Serpentes,19,stomach_content,25,Serpentes,major:Squamata,major:Squamata,0.879539832095488,0.331884581730119,0.20126570265982
+Serpentes,20,stomach_content,20,Serpentes,major:Aves,major:Aves,0.399914314463616,0.185768756929947,0.191200222451118
+Serpentes,21,stomach_content,18,Serpentes,major:Squamata,major:Squamata,0.415779356089637,0.231322166881507,0.180859853895475
+Serpentes,22,stomach_content,21,Serpentes,major:Aves,major:Aves,0.234258182074574,0.232348027128668,0.128860649450941
+Serpentes,23,stomach_content,17,Serpentes,major:Mammalia,major:Mammalia,0.687562069751173,0.216825164023289,0.122219998603039
+Serpentes,24,stomach_content,23,Serpentes,major:Aves,major:Aves,0.685397649052421,0.190889197546594,0.133953023606397
+Serpentes,25,stomach_content,26,Strigiformes,major:Aves,tree:Theropoda@162.5,0.320039061622523,0.185572236510667,0.201309065464387
+Serpentes,26,stomach_content,22,Serpentes,major:Squamata,major:Squamata,0.47988833681774,0.256092084127435,0.216089953897474
+Serpentes,27,stomach_content,31,Serpentes,major:Squamata,major:Squamata,0.928769406464077,0.313677531964432,0.272710122395492
+Serpentes,28,stomach_content,20,Serpentes,major:Mammalia,tree:Theropoda@162.5,0.79418642553395,0.231077126322593,0.23752305329976
+Serpentes,29,stomach_content,19,Serpentes,major:Squamata,major:Squamata,0.880290509526272,0.253554612695281,0.178099847503453
+Serpentes,30,stomach_content,26,Serpentes,major:Crocodylia,major:Crocodylia,0.615686917024869,0.296948102150853,0.0927464913276542
+Serpentes,31,stomach_content,22,Serpentes,major:Aves,major:Aves,0.582489922437452,0.223006819688295,0.18980992228902
+Serpentes,32,stomach_content,21,Serpentes,major:Crocodylia,major:Crocodylia,0.690761555408147,0.252312782236695,0.161223886393216
+Serpentes,33,stomach_content,32,Strigiformes,major:Squamata,major:Squamata,0.135822318881912,0.316105458320544,0.193957629281795
+Serpentes,34,stomach_content,18,Strigiformes,major:Aves,major:Aves,0.125785559830714,0.191564171947797,0.156741985893162
+Serpentes,35,stomach_content,17,Serpentes,major:Crocodylia,major:Crocodylia,0.211584619845038,0.250905408255066,0.148709536587086
+Serpentes,36,stomach_content,20,Serpentes,major:Squamata,major:Squamata,0.786032766693053,0.283398965002117,0.237201306849216
+Serpentes,37,stomach_content,26,Serpentes,major:Squamata,major:Squamata,0.597190442136665,0.329895690903728,0.156003353561594
+Serpentes,38,stomach_content,25,Serpentes,major:Aves,major:Aves,0.306183681639559,0.203421920552218,0.169711148951938
+Serpentes,39,stomach_content,25,Serpentes,major:Squamata,major:Squamata,0.922594122613921,0.273349415846507,0.182413258592084
+Serpentes,40,stomach_content,27,Serpentes,major:Mammalia,major:Mammalia,0.425653664107715,0.0540323566925686,0.0830616595008529
+Serpentes,41,stomach_content,19,Serpentes,major:Aves,major:Aves,0.337434168304818,0.221968305502209,0.168451228665184
+Serpentes,42,stomach_content,19,Dasyuromorphia,major:Squamata,major:Squamata,0.0304626511102528,0.266385299692021,0.146694569648325
+Serpentes,43,stomach_content,21,Serpentes,major:Squamata,major:Squamata,0.574148216356888,0.364088809330249,0.169236678217949
+Serpentes,44,stomach_content,20,Serpentes,major:Squamata,major:Squamata,0.683433824334148,0.305229805590313,0.21514190465962
+Serpentes,45,stomach_content,20,Serpentes,major:Aves,major:Aves,0.509031094609222,0.166368045137482,0.108414700771475
+Serpentes,46,stomach_content,27,Serpentes,major:Squamata,tree:Theropoda@162.5,0.788653476977953,0.289447470600452,0.21737021380907
+Serpentes,47,stomach_content,17,other Squamata,major:Squamata,major:Squamata,0.218721262625569,0.415684560366007,0.124387159564882
+Serpentes,48,stomach_content,26,Serpentes,major:Squamata,major:Squamata,0.587228938376131,0.31872777963131,0.11169685419651
+Serpentes,49,stomach_content,17,Serpentes,major:Squamata,major:Squamata,0.929851596374482,0.329301802177591,0.186558992294484
+Serpentes,50,stomach_content,33,Serpentes,major:Squamata,major:Squamata,0.717767061224434,0.220476773660177,0.198825597871128
+Accipitriformes,51,stomach_content,24,Falconiformes,major:Mammalia,major:Mammalia,0.2326329929684,0.223413514541323,0.19026058165528
+Accipitriformes,52,stomach_content,20,Strigiformes,major:Mammalia,major:Mammalia,0.0497864459221199,0.202924630504417,0.182297272179072
+Accipitriformes,53,stomach_content,24,Falconiformes,major:Mammalia,major:Mammalia,0.28791148024203,0.218193446116136,0.211136117252437
+Accipitriformes,54,stomach_content,25,Accipitriformes,major:Mammalia,major:Mammalia,0.355553424634832,0.179911604667701,0.245075352079984
+Accipitriformes,55,stomach_content,19,Accipitriformes,major:Mammalia,major:Mammalia,0.389797852015086,0.221918930874093,0.202322986955758
+Accipitriformes,56,stomach_content,21,Accipitriformes,major:Mammalia,major:Mammalia,0.317040283420392,0.241708870516874,0.204365760305487
+Accipitriformes,57,stomach_content,27,Falconiformes,major:Aves,major:Aves,0.10835684844847,0.232484652254874,0.169211983304995
+Accipitriformes,58,stomach_content,29,Falconiformes,major:Aves,major:Aves,0.105265577082232,0.255718597767279,0.177549737356944
+Accipitriformes,59,stomach_content,28,Accipitriformes,major:Mammalia,major:Mammalia,0.356502568581592,0.213685252303225,0.212612821040731
+Accipitriformes,60,stomach_content,23,Accipitriformes,major:Mammalia,major:Mammalia,0.382423534258956,0.245243595981843,0.193085912508997
+Accipitriformes,61,stomach_content,25,Falconiformes,major:Mammalia,major:Mammalia,0.134737443540091,0.208249731045005,0.203494198628838
+Accipitriformes,62,stomach_content,26,Falconiformes,major:Aves,major:Aves,0.103606288698054,0.243170599166511,0.203998344581113
+Accipitriformes,63,stomach_content,27,Accipitriformes,major:Mammalia,major:Mammalia,0.397391446856584,0.219058820217351,0.166260676630924
+Accipitriformes,64,stomach_content,22,Falconiformes,major:Mammalia,major:Mammalia,0.0911454608363167,0.185671390328206,0.199835244991002
+Accipitriformes,65,stomach_content,25,Accipitriformes,major:Mammalia,major:Mammalia,0.335311133385255,0.236079287042526,0.231257979528128
+Accipitriformes,66,stomach_content,22,Accipitriformes,major:Mammalia,major:Mammalia,0.383827953764705,0.223207488220358,0.196061693207177
+Accipitriformes,67,stomach_content,23,Falconiformes,major:Mammalia,major:Mammalia,0.177834476538018,0.177234382328185,0.210496499286753
+Accipitriformes,68,stomach_content,26,Accipitriformes,major:Mammalia,major:Mammalia,0.356620464253721,0.215856734163093,0.17847263553924
+Accipitriformes,69,stomach_content,25,Dasyuromorphia,major:Mammalia,major:Mammalia,0.137470731369202,0.217431501653292,0.204609286831157
+Accipitriformes,70,stomach_content,24,Accipitriformes,major:Mammalia,major:Mammalia,0.352491903137217,0.23505686831399,0.172577060272577
+Accipitriformes,71,stomach_content,25,Falconiformes,major:Aves,major:Aves,0.121701737813228,0.250537205776245,0.167345064777468
+Accipitriformes,72,stomach_content,23,Falconiformes,major:Mammalia,major:Mammalia,0.312053671912567,0.173651654405815,0.288335291948648
+Accipitriformes,73,stomach_content,26,other Mammalia,major:Mammalia,major:Mammalia,0.240849390681163,0.20087793908214,0.203966923437093
+Accipitriformes,74,stomach_content,25,Accipitriformes,major:Mammalia,major:Mammalia,0.32163742184034,0.249059066905491,0.215740305464474
+Accipitriformes,75,stomach_content,31,Accipitriformes,major:Mammalia,major:Mammalia,0.436174408525042,0.245146272450197,0.211997429198914
+Accipitriformes,76,stomach_content,20,Accipitriformes,major:Mammalia,major:Mammalia,0.323357411864407,0.254407532130789,0.196002836189165
+Accipitriformes,77,stomach_content,22,Accipitriformes,major:Mammalia,major:Mammalia,0.228752057982153,0.247879591107163,0.187567028806167
+Accipitriformes,78,stomach_content,29,Strigiformes,major:Aves,tree:Theropoda@162.5,0.0997715966653396,0.26484058657347,0.216638375648595
+Accipitriformes,79,stomach_content,30,Falconiformes,none,none,0.14283798274524,0.145001775080424,0.346803551221308
+Accipitriformes,80,stomach_content,25,Accipitriformes,major:Mammalia,major:Mammalia,0.369687867777295,0.170509729876438,0.171225052185807
+Accipitriformes,81,stomach_content,21,Accipitriformes,major:Mammalia,major:Mammalia,0.371471843630916,0.210600502334334,0.186022245845275
+Accipitriformes,82,stomach_content,19,Falconiformes,major:Mammalia,major:Mammalia,0.201640811815425,0.193441026535836,0.18293042746767
+Accipitriformes,83,stomach_content,19,Falconiformes,major:Mammalia,major:Mammalia,0.234643529258709,0.235423231996647,0.190995718446684
+Accipitriformes,84,stomach_content,24,Accipitriformes,major:Mammalia,major:Mammalia,0.39999232185549,0.191654312526487,0.210227457071488
+Accipitriformes,85,stomach_content,20,Accipitriformes,major:Mammalia,major:Mammalia,0.305026871716152,0.238609366097588,0.193744117427138
+Accipitriformes,86,stomach_content,29,Falconiformes,major:Mammalia,major:Mammalia,0.191166078404688,0.204666762672426,0.218460841050474
+Accipitriformes,87,stomach_content,23,Falconiformes,major:Crocodylia,major:Crocodylia,0.120300978483281,0.165491655518552,0.186852517390842
+Accipitriformes,88,stomach_content,20,Falconiformes,major:Mammalia,major:Mammalia,0.115425891146429,0.198521514877846,0.177572616162087
+Accipitriformes,89,stomach_content,27,Falconiformes,major:Mammalia,major:Mammalia,0.120764091964763,0.232295889109784,0.176243620005652
+Accipitriformes,90,stomach_content,24,Caniformia,major:Mammalia,major:Mammalia,0.249056129976402,0.230958919568847,0.199947725548827
+Accipitriformes,91,stomach_content,20,Falconiformes,major:Mammalia,major:Mammalia,0.147611459905275,0.205226030865178,0.1908525106624
+Accipitriformes,92,stomach_content,25,Falconiformes,major:Mammalia,major:Mammalia,0.20069554702703,0.173067606127054,0.238809816750793
+Accipitriformes,93,stomach_content,23,Accipitriformes,major:Mammalia,major:Mammalia,0.349337291577985,0.235255038287578,0.19312250604193
+Accipitriformes,94,stomach_content,25,Falconiformes,major:Aves,major:Aves,0.236479254275375,0.300823202191624,0.136379020070707
+Accipitriformes,95,stomach_content,25,other Squamata,major:Mammalia,major:Mammalia,0.00958680542909957,0.190166155252394,0.204029932854406
+Accipitriformes,96,stomach_content,27,Strigiformes,major:Squamata,major:Squamata,0.0335918326588067,0.0875440391622905,0.296346702020225
+Accipitriformes,97,stomach_content,30,other Mammalia,major:Mammalia,major:Mammalia,0.282249946823399,0.171922936128366,0.223180614648086
+Accipitriformes,98,stomach_content,19,Falconiformes,major:Mammalia,major:Mammalia,0.120524407536692,0.163250379212313,0.246274814108945
+Accipitriformes,99,stomach_content,21,Iguania,major:Mammalia,major:Mammalia,0.033135248601197,0.246080431203752,0.203812599477636
+Accipitriformes,100,stomach_content,17,Falconiformes,major:Squamata,major:Squamata,0.0536575847956872,0.222840786911083,0.182204907117884
+Feliformia,101,stomach_content,33,Feliformia,major:Crocodylia,major:Crocodylia,0.849139519944438,0.226572353192254,0.209742723779249
+Feliformia,102,stomach_content,28,Feliformia,none,none,0.597130371641893,0.241782467848053,0.28923873494594
+Feliformia,103,stomach_content,30,Passeriformes,major:Aves,major:Aves,0.046610673597727,0.0784619812726918,0.147787252032572
+Feliformia,104,stomach_content,31,Feliformia,major:Aves,major:Aves,0.801372507997878,0.2441504209545,0.172380333728963
+Feliformia,105,stomach_content,33,Feliformia,major:Aves,major:Aves,0.276461459678269,0.213709011660631,0.180568993002264
+Feliformia,106,stomach_content,30,Passeriformes,none,none,0.0108299552340962,0.127851832618627,0.25111726453201
+Feliformia,107,stomach_content,29,other Squamata,major:Squamata,major:Squamata,0.038200224176505,0.0229918602785849,0.22290581335712
+Feliformia,108,stomach_content,28,Feliformia,major:Squamata,major:Squamata,0.361437289947477,0.150219496360304,0.210600427990652
+Feliformia,109,stomach_content,25,Crocodylia,major:Aves,major:Aves,0.00631527757831687,0.132645785118325,0.134318292475628
+Feliformia,110,stomach_content,23,Feliformia,major:Aves,major:Aves,0.30497103218429,0.181308821486954,0.177085496398521
+Feliformia,111,stomach_content,29,Feliformia,major:Crocodylia,major:Crocodylia,0.240551934348832,0.178724132713678,0.16360126163224
+Feliformia,112,stomach_content,29,Passeriformes,major:Crocodylia,major:Crocodylia,0.082998840918165,0.141744939835412,0.115183029770125
+Feliformia,113,stomach_content,28,Feliformia,major:Squamata,major:Squamata,0.753368260867719,0.147861425902229,0.189311577794916
+Feliformia,114,stomach_content,28,Passeriformes,none,tree:Theropoda@162.5,0.0191025756052154,0.116504302343279,0.255254454843763
+Feliformia,115,stomach_content,25,Crocodylia,major:Crocodylia,major:Crocodylia,0.024614297101461,0.172438822586704,0.151684251568772
+Feliformia,116,stomach_content,27,Feliformia,major:Aves,major:Aves,0.200132314847438,0.168872932516795,0.149219941851412
+Feliformia,117,stomach_content,26,Strigiformes,major:Squamata,major:Squamata,0.000203199797023033,0.0833167291787209,0.21654498484977
+Feliformia,118,stomach_content,21,Strigiformes,major:Squamata,major:Squamata,0.0115421622384821,0.122988234123731,0.162658385545234
+Feliformia,119,stomach_content,25,Feliformia,major:Crocodylia,major:Crocodylia,0.444328592301714,0.154844471773392,0.201377922106777
+Feliformia,120,stomach_content,25,other Mammalia,major:Aves,major:Aves,0.141167345001354,0.212937058470915,0.177923861521712
+Feliformia,121,stomach_content,29,Feliformia,major:Aves,major:Aves,0.274661002835959,0.142830881195089,0.171937084373466
+Feliformia,122,stomach_content,30,Feliformia,major:Aves,major:Aves,0.35310859017767,0.205137880629974,0.165235807885589
+Feliformia,123,stomach_content,21,Feliformia,major:Aves,major:Aves,0.257525988557637,0.227233894236374,0.175062715218964
+Feliformia,124,stomach_content,29,Feliformia,major:Squamata,major:Squamata,0.461410651573379,0.172639436313915,0.22594192725305
+Feliformia,125,stomach_content,24,Strigiformes,major:Squamata,major:Squamata,0.0173922830912802,0.101662490528447,0.143343840320102
+Feliformia,126,stomach_content,23,Passeriformes,major:Aves,major:Aves,0.108552039239799,0.177021716070422,0.168954887561104
+Feliformia,127,stomach_content,27,Feliformia,major:Mammalia,major:Mammalia,0.269704470683925,0.248931313159808,0.248880793321366
+Feliformia,128,stomach_content,24,Feliformia,none,none,0.626486519124763,0.233275480448247,0.237371791796459
+Feliformia,129,stomach_content,24,Falconiformes,major:Mammalia,major:Mammalia,0.184915136011043,0.281124824617119,0.177350637806786
+Feliformia,130,stomach_content,29,Feliformia,major:Aves,major:Aves,0.261151798207348,0.183093664888452,0.179348139566709
+Feliformia,131,stomach_content,14,Feliformia,major:Crocodylia,major:Crocodylia,0.389771120556246,0.160115438021949,0.178497910665975
+Feliformia,132,stomach_content,23,Serpentes,major:Crocodylia,major:Crocodylia,0.000308752530753894,0.0906834795942614,0.182571222894763
+Feliformia,133,stomach_content,16,Feliformia,major:Aves,major:Aves,0.47860607608845,0.197481633851329,0.182501461783914
+Feliformia,134,stomach_content,30,Feliformia,major:Mammalia,major:Mammalia,0.527738017593761,0.213781378611809,0.189397982732305
+Feliformia,135,stomach_content,29,Feliformia,major:Aves,major:Aves,0.498981421488975,0.187839704805274,0.159492337835583
+Feliformia,136,stomach_content,23,Crocodylia,major:Crocodylia,major:Crocodylia,0.14620897954249,0.128033640424222,0.168686527764749
+Feliformia,137,stomach_content,22,Passeriformes,major:Crocodylia,major:Crocodylia,0.0993322268580712,0.18350887090408,0.186993481093248
+Feliformia,138,stomach_content,34,Feliformia,major:Crocodylia,major:Crocodylia,0.367716543907944,0.177452929016549,0.21946527667925
+Feliformia,139,stomach_content,24,Feliformia,major:Aves,major:Aves,0.233733616848876,0.204842404459408,0.172679974042095
+Feliformia,140,stomach_content,36,Feliformia,major:Mammalia,major:Mammalia,0.588912653844332,0.266255443011312,0.172243450924323
+Feliformia,141,stomach_content,35,Passeriformes,major:Aves,major:Aves,0.0861850107392134,0.127404591427285,0.208774767210032
+Feliformia,142,stomach_content,22,Feliformia,major:Mammalia,major:Mammalia,0.754770125837236,0.27946578661811,0.202685904506878
+Feliformia,143,stomach_content,28,Feliformia,major:Aves,major:Aves,0.345471953606638,0.182417774370981,0.155247777703719
+Feliformia,144,stomach_content,27,Feliformia,none,none,0.777835381065481,0.240867576669305,0.29830599354173
+Feliformia,145,stomach_content,25,Varanidae,major:Aves,major:Aves,0.00474136338917623,0.176086743251099,0.166425805993353
+Feliformia,146,stomach_content,30,Passeriformes,major:Squamata,major:Squamata,0.0185805088749486,0.121697252272736,0.220355124055611
+Feliformia,147,stomach_content,25,Strigiformes,major:Squamata,major:Squamata,0.0208200762174247,0.146718473299009,0.178048660166773
+Feliformia,148,stomach_content,31,Passeriformes,major:Squamata,major:Squamata,0.0641908750540247,0.168354011560527,0.168532938671355
+Feliformia,149,stomach_content,30,Feliformia,major:Mammalia,major:Mammalia,0.624919414020696,0.239453714137957,0.177593771128231
+Feliformia,150,stomach_content,25,Feliformia,major:Squamata,major:Squamata,0.618450904274965,0.200835410154821,0.182912511788641
+Strigiformes,151,stomach_content,23,Strigiformes,major:Aves,major:Aves,0.404162751114046,0.223795264706428,0.199197460554854
+Strigiformes,152,stomach_content,25,Strigiformes,major:Aves,major:Aves,0.282879980053087,0.245463047369083,0.180123305403408
+Strigiformes,153,stomach_content,21,Falconiformes,major:Crocodylia,major:Crocodylia,0.243648927105024,0.212029048032536,0.169492931041585
+Strigiformes,154,stomach_content,23,Serpentes,major:Aves,major:Aves,0.231710372930064,0.267921664602391,0.193139067845634
+Strigiformes,155,stomach_content,23,Falconiformes,major:Aves,major:Aves,0.19792092525303,0.26530566194805,0.180255930523089
+Strigiformes,156,stomach_content,28,Falconiformes,major:Mammalia,major:Mammalia,0.264592550854706,0.252388467091192,0.159761770830258
+Strigiformes,157,stomach_content,27,Strigiformes,none,none,0.404723298702996,0.172904831002299,0.248493736973618
+Strigiformes,158,stomach_content,27,Strigiformes,major:Aves,major:Aves,0.268935954291202,0.252542903834705,0.22487097118365
+Strigiformes,159,stomach_content,30,Strigiformes,major:Crocodylia,major:Crocodylia,0.356188520378491,0.19022763518926,0.156475001407671
+Strigiformes,160,stomach_content,21,Falconiformes,major:Mammalia,major:Mammalia,0.151716847948015,0.24104220163044,0.171949336305474
+Strigiformes,161,stomach_content,23,Strigiformes,major:Mammalia,major:Mammalia,0.319865703461202,0.212896319437536,0.176658262275348
+Strigiformes,162,stomach_content,21,Strigiformes,major:Aves,major:Aves,0.36029190962773,0.272944352939243,0.205078729989439
+Strigiformes,163,stomach_content,24,Strigiformes,major:Crocodylia,major:Crocodylia,0.447250971122483,0.167405127622135,0.180632380132185
+Strigiformes,164,stomach_content,25,Falconiformes,major:Aves,major:Aves,0.265527810226844,0.224082415352099,0.172842976207195
+Strigiformes,165,stomach_content,23,Strigiformes,major:Squamata,major:Squamata,0.225264557240358,0.176269899864162,0.164960330618249
+Strigiformes,166,stomach_content,22,Accipitriformes,major:Aves,major:Aves,0.123531642032006,0.250974595201817,0.19710983096514
+Strigiformes,167,stomach_content,26,Strigiformes,major:Aves,major:Aves,0.307803814978007,0.293702023319238,0.140843043455937
+Strigiformes,168,stomach_content,25,Falconiformes,major:Aves,major:Aves,0.171401873458177,0.245254002358492,0.230087095236565
+Strigiformes,169,stomach_content,31,Accipitriformes,major:Aves,major:Aves,0.015528488164935,0.250686561055489,0.160856950361967
+Strigiformes,170,stomach_content,26,Strigiformes,major:Squamata,major:Squamata,0.301054177655524,0.235065596681564,0.160262860117741
+Strigiformes,171,stomach_content,31,Strigiformes,major:Squamata,major:Squamata,0.468584239902259,0.179987452052716,0.209524663148275
+Strigiformes,172,stomach_content,21,Falconiformes,major:Aves,major:Aves,0.213729731062546,0.262494337748253,0.17826239441976
+Strigiformes,173,stomach_content,28,Accipitriformes,major:Mammalia,major:Mammalia,0.0215558550402257,0.235910601381604,0.197037565380525
+Strigiformes,174,stomach_content,25,Falconiformes,major:Aves,major:Aves,0.134517551700648,0.274047839783214,0.183701436907096
+Strigiformes,175,stomach_content,22,Serpentes,major:Crocodylia,major:Crocodylia,0.0555868597644803,0.1786809673487,0.184177271707618
+Strigiformes,176,stomach_content,24,Falconiformes,major:Aves,major:Aves,0.240754678517224,0.228962497019423,0.185339109275951
+Strigiformes,177,stomach_content,23,Falconiformes,major:Aves,major:Aves,0.269543732968781,0.258562431238509,0.193237547615262
+Strigiformes,178,stomach_content,30,Accipitriformes,major:Mammalia,major:Mammalia,0.148948741518385,0.24586855785901,0.143300746404913
+Strigiformes,179,stomach_content,25,Strigiformes,major:Mammalia,major:Mammalia,0.484584644724576,0.193176976139954,0.213541803578371
+Strigiformes,180,stomach_content,26,Strigiformes,major:Aves,major:Aves,0.535512092669571,0.327796097362556,0.195279657902616
+Strigiformes,181,stomach_content,27,Strigiformes,major:Crocodylia,major:Crocodylia,0.732965531759349,0.176446236467947,0.183142589107687
+Strigiformes,182,stomach_content,19,Serpentes,major:Squamata,major:Squamata,0.14197993755041,0.165128034494884,0.179314499043669
+Strigiformes,183,stomach_content,22,Strigiformes,major:Squamata,tree:Theropoda@162.5,0.442535322077981,0.193558524469594,0.19885469863676
+Strigiformes,184,stomach_content,30,Strigiformes,major:Aves,major:Aves,0.563731077362851,0.432730930573726,0.132885484529984
+Strigiformes,185,stomach_content,26,Falconiformes,major:Mammalia,major:Mammalia,0.214770623444858,0.233589252600531,0.175349923087056
+Strigiformes,186,stomach_content,26,Accipitriformes,major:Aves,major:Aves,0.109746343767079,0.248427860060247,0.205778955904148
+Strigiformes,187,stomach_content,22,Strigiformes,major:Squamata,major:Squamata,0.275681900132459,0.197019236497407,0.172048301881964
+Strigiformes,188,stomach_content,20,Strigiformes,major:Aves,major:Aves,0.366537419394805,0.249518333898226,0.161780973732937
+Strigiformes,189,stomach_content,27,Accipitriformes,major:Aves,major:Aves,0.0560440718603707,0.27296003673872,0.202347905430072
+Strigiformes,190,stomach_content,25,Caniformia,major:Aves,major:Aves,0.0207725567529167,0.25057981906953,0.181885893796746
+Strigiformes,191,stomach_content,28,Strigiformes,major:Crocodylia,major:Crocodylia,0.382037688352038,0.157286403307704,0.23039194828472
+Strigiformes,192,stomach_content,20,Serpentes,major:Aves,major:Aves,0.18808625874039,0.253902992577089,0.164189519606178
+Strigiformes,193,stomach_content,22,Serpentes,major:Squamata,major:Squamata,0.25730513442179,0.19734391549518,0.185483502844948
+Strigiformes,194,stomach_content,29,Strigiformes,major:Squamata,major:Squamata,0.368415232957304,0.220785599970899,0.156181322519766
+Strigiformes,195,stomach_content,28,Falconiformes,major:Aves,major:Aves,0.0681862247424599,0.279174000053287,0.170821876556243
+Strigiformes,196,stomach_content,26,Strigiformes,major:Aves,tree:Theropoda@162.5,0.51495388772286,0.273144204515734,0.232881085502052
+Strigiformes,197,stomach_content,28,Iguania,major:Squamata,major:Squamata,0.231299933882197,0.21024527224411,0.157777653821638
+Strigiformes,198,stomach_content,22,Strigiformes,major:Aves,major:Aves,0.262848605093117,0.315148197283818,0.133087925982422
+Strigiformes,199,stomach_content,28,Falconiformes,major:Aves,major:Aves,0.270354051816256,0.237048882009744,0.156896230972392
+Strigiformes,200,stomach_content,21,Iguania,major:Mammalia,major:Mammalia,0.184873594257162,0.166783839817607,0.161672148752186
+Charadriiformes,201,unknown,21,Charadriiformes,major:Aves,major:Aves,0.416192229351985,0.249879775519066,0.19293739510617
+Charadriiformes,202,unknown,20,Charadriiformes,major:Crocodylia,major:Crocodylia,0.5128671896589,0.176312831559649,0.226888089303599
+Charadriiformes,203,unknown;stomach_content,18,Charadriiformes,major:Aves,major:Aves,0.469431346486924,0.255904017034985,0.229730897515555
+Charadriiformes,204,unknown,24,Charadriiformes,none,none,0.513419892195226,0.165141668985692,0.310660915837211
+Charadriiformes,205,unknown,14,Charadriiformes,none,none,0.539823448651795,0.197624788832142,0.244529280923315
+Charadriiformes,206,unknown;stomach_content,21,Charadriiformes,none,tree:Theropoda@162.5,0.681670491733358,0.234556674107936,0.276353479875709
+Charadriiformes,207,unknown,19,Charadriiformes,major:Aves,tree:Theropoda@162.5,0.442236779116418,0.234371868214483,0.198422229432148
+Charadriiformes,208,unknown;stomach_content,23,Charadriiformes,none,tree:Theropoda@162.5,0.510699477623231,0.210031744915196,0.223565163069138
+Charadriiformes,209,unknown;stomach_content,19,Charadriiformes,none,tree:Theropoda@162.5,0.539376148328078,0.223251965442789,0.241126289134295
+Charadriiformes,210,unknown;stomach_content,22,Pelecaniformes,none,none,0.285823467950774,0.194797906683001,0.272127108867483
+Charadriiformes,211,unknown;stomach_content,21,Pelecaniformes,major:Crocodylia,major:Crocodylia,0.401798046023042,0.160514939116147,0.243451432732278
+Charadriiformes,212,unknown;stomach_content,24,Charadriiformes,none,tree:Theropoda@162.5,0.473018686759496,0.211633498569146,0.237242592866694
+Charadriiformes,213,unknown,24,Charadriiformes,major:Aves,major:Aves,0.435017892626675,0.296825243042878,0.196845689616548
+Charadriiformes,214,unknown,21,Charadriiformes,major:Aves,tree:Theropoda@162.5,0.495613886799402,0.242413753039894,0.213700349772501
+Charadriiformes,215,unknown;stomach_content,28,Pelecaniformes,none,none,0.296668962724744,0.152426879725026,0.297238908291511
+Charadriiformes,216,unknown,23,Charadriiformes,major:Aves,major:Aves,0.490505633555948,0.2837240669597,0.20267105024721
+Charadriiformes,217,unknown;stomach_content,24,Charadriiformes,none,none,0.533783744314026,0.196108918632079,0.25656171623817
+Charadriiformes,218,unknown,19,Charadriiformes,major:Aves,major:Aves,0.526757725058922,0.250321987771514,0.220269440070428
+Charadriiformes,219,unknown,26,Charadriiformes,none,tree:Theropoda@162.5,0.418043554729261,0.201285325037042,0.234911507542979
+Charadriiformes,220,unknown,19,Charadriiformes,major:Aves,major:Aves,0.499321262675965,0.253778440653073,0.211988149389561
+Charadriiformes,221,unknown;stomach_content,19,Pelecaniformes,none,none,0.129681466149696,0.110395797223288,0.325970767593156
+Charadriiformes,222,unknown,16,Charadriiformes,none,none,0.485522519055665,0.197453120368206,0.28403992745534
+Charadriiformes,223,stomach_content;unknown,23,Pelecaniformes,major:Aves,major:Aves,0.326009359820882,0.239721659240542,0.18909744104318
+Charadriiformes,224,unknown;stomach_content,22,Charadriiformes,major:Crocodylia,major:Crocodylia,0.53750421857833,0.183788402641094,0.219576396701151
+Charadriiformes,225,stomach_content;unknown,26,Charadriiformes,major:Aves,tree:Theropoda@162.5,0.517115168740853,0.22828395257948,0.206731591201095
+Charadriiformes,226,unknown,17,Charadriiformes,major:Aves,major:Aves,0.532771010180949,0.267613998824063,0.225872711175101
+Charadriiformes,227,unknown,21,Charadriiformes,major:Crocodylia,major:Crocodylia,0.489280904461849,0.191949995776614,0.216266408320434
+Charadriiformes,228,unknown,21,Charadriiformes,none,none,0.53646016470541,0.220048333070872,0.267372602000074
+Charadriiformes,229,unknown;stomach_content,22,Charadriiformes,major:Aves,major:Aves,0.478665811214388,0.271386442517949,0.199047551114936
+Charadriiformes,230,unknown,23,Charadriiformes,none,none,0.51651080951716,0.176482823601708,0.313247664015475
+Charadriiformes,231,unknown,21,Charadriiformes,none,none,0.619964037448806,0.22348715681127,0.275031498788843
+Charadriiformes,232,unknown,22,Charadriiformes,major:Aves,major:Aves,0.410965714458529,0.250300873950487,0.19638797856769
+Charadriiformes,233,unknown;stomach_content,28,Charadriiformes,none,none,0.418975282558345,0.228792523190472,0.253148954563445
+Charadriiformes,234,unknown;stomach_content,23,Pelecaniformes,major:Crocodylia,major:Crocodylia,0.309319869565016,0.186046534020164,0.243665427910741
+Charadriiformes,235,unknown;stomach_content,23,Charadriiformes,major:Aves,major:Aves,0.458586941760431,0.261334275878678,0.219808472338978
+Charadriiformes,236,unknown;stomach_content,25,Charadriiformes,none,tree:Theropoda@162.5,0.464302081503214,0.209562446888801,0.236822980510083
+Charadriiformes,237,unknown;stomach_content,21,Charadriiformes,major:Aves,major:Aves,0.389518668919267,0.252465120471077,0.204747989028175
+Charadriiformes,238,unknown,22,Charadriiformes,none,none,0.515401769138788,0.187196211393776,0.275104072611407
+Charadriiformes,239,unknown;stomach_content,20,Pelecaniformes,none,none,0.371451766776835,0.165956465369522,0.267037519359094
+Charadriiformes,240,unknown,19,Charadriiformes,none,none,0.463404216555465,0.173780123371626,0.265123299204229
+Charadriiformes,241,unknown;stomach_content,19,Caniformia,major:Aves,major:Aves,0.0572740607057132,0.270647620919111,0.166934092788615
+Charadriiformes,242,unknown,24,Charadriiformes,none,none,0.444789496324486,0.210691649376424,0.272921038448316
+Charadriiformes,243,unknown;stomach_content,21,Charadriiformes,major:Aves,major:Aves,0.51236828173162,0.318435651111975,0.202599875362631
+Charadriiformes,244,unknown;stomach_content,19,Charadriiformes,none,none,0.59058380802178,0.232689554070183,0.294238754228902
+Charadriiformes,245,unknown;stomach_content,24,Charadriiformes,major:Aves,major:Aves,0.490669651166114,0.293326500972983,0.203225683562097
+Charadriiformes,246,unknown,14,Charadriiformes,major:Aves,tree:Theropoda@162.5,0.495911104567061,0.236724372494951,0.217059098145796
+Charadriiformes,247,unknown,25,Charadriiformes,major:Crocodylia,major:Crocodylia,0.452528771681205,0.1385097165216,0.246772132147234
+Charadriiformes,248,unknown;stomach_content,25,Charadriiformes,major:Aves,major:Aves,0.518067790885517,0.251895392420833,0.210106564326332
+Charadriiformes,249,unknown,25,Charadriiformes,major:Crocodylia,major:Crocodylia,0.590326062272536,0.191690834591662,0.2013254831012
+Charadriiformes,250,unknown,21,Pelecaniformes,major:Crocodylia,major:Crocodylia,0.313236267152525,0.202282239357034,0.179919076377683
+Caniformia,251,stomach_content,33,Accipitriformes,major:Mammalia,major:Mammalia,0.15239486301057,0.441411577153905,0.164633539767806
+Caniformia,252,stomach_content,28,Dasyuromorphia,major:Mammalia,major:Mammalia,0.319233570820634,0.288812101665172,0.183207346629956
+Caniformia,253,stomach_content,28,Caniformia,major:Mammalia,major:Mammalia,0.449549232849129,0.347617235301102,0.189980057249791
+Caniformia,254,stomach_content,29,Accipitriformes,major:Mammalia,major:Mammalia,0.142052800147212,0.335996489708884,0.195827333339065
+Caniformia,255,stomach_content,33,Dasyuromorphia,major:Mammalia,major:Mammalia,0.151004491512436,0.397557691323819,0.185734188995665
+Caniformia,256,stomach_content,23,Dasyuromorphia,major:Mammalia,major:Mammalia,0.26963825008142,0.29507519068437,0.207739559820395
+Caniformia,257,stomach_content,32,Caniformia,major:Mammalia,major:Mammalia,0.507620185534533,0.299318405174612,0.178998391982951
+Caniformia,258,stomach_content,20,Accipitriformes,major:Mammalia,major:Mammalia,0.182858428392579,0.381092245419704,0.187042964382102
+Caniformia,259,stomach_content,26,Caniformia,major:Mammalia,major:Mammalia,0.439180406294069,0.32910241664386,0.197489717406146
+Caniformia,260,stomach_content,26,Accipitriformes,major:Mammalia,major:Mammalia,0.138381079220196,0.356685326400018,0.190440051897241
+Caniformia,261,stomach_content,25,Dasyuromorphia,major:Mammalia,major:Mammalia,0.340261395926974,0.322001322908847,0.206104504394055
+Caniformia,262,stomach_content,33,Caniformia,major:Mammalia,major:Mammalia,0.45691447972887,0.286963611635361,0.184433482543257
+Caniformia,263,stomach_content,21,Caniformia,major:Mammalia,major:Mammalia,0.399479698361915,0.295673089203514,0.19336613264573
+Caniformia,264,stomach_content,27,Accipitriformes,major:Mammalia,major:Mammalia,0.301241693166531,0.336625841425167,0.210038923975659
+Caniformia,265,stomach_content,28,Caniformia,major:Mammalia,major:Mammalia,0.45436351283989,0.314259551936409,0.203224779990611
+Caniformia,266,stomach_content,18,other Mammalia,major:Aves,major:Aves,0.130099181427533,0.183021043400422,0.173929476724775
+Caniformia,267,stomach_content,27,Caniformia,major:Mammalia,major:Mammalia,0.356820948558353,0.323564716378922,0.169190255648793
+Caniformia,268,stomach_content,25,Caniformia,major:Mammalia,major:Mammalia,0.295292173254303,0.324875123160824,0.258938806304561
+Caniformia,269,stomach_content,25,Feliformia,major:Aves,major:Aves,0.0849930556462103,0.252155196254962,0.189279125402435
+Caniformia,270,stomach_content,29,Dasyuromorphia,major:Mammalia,major:Mammalia,0.133066573398076,0.366115044338374,0.263092157092142
+Caniformia,271,stomach_content,33,Dasyuromorphia,major:Mammalia,major:Mammalia,0.357656049055497,0.372654525109487,0.2008866394224
+Caniformia,272,stomach_content,21,Caniformia,major:Mammalia,major:Mammalia,0.230089341557694,0.3126072399401,0.172716042708577
+Caniformia,273,stomach_content,27,Caniformia,major:Aves,major:Aves,0.402076972492932,0.222409700604015,0.16497600369137
+Caniformia,274,stomach_content,25,Caniformia,major:Aves,major:Aves,0.375572061772865,0.25451784779681,0.196195752553799
+Caniformia,275,stomach_content,26,Caniformia,major:Mammalia,major:Mammalia,0.317064919247552,0.369053339994989,0.188081564168928
+Caniformia,276,stomach_content,33,Accipitriformes,major:Mammalia,major:Mammalia,0.198325701511281,0.591320022800938,0.164682668125358
+Caniformia,277,stomach_content,31,Dasyuromorphia,major:Mammalia,major:Mammalia,0.386281009307336,0.357775819415752,0.193637068173153
+Caniformia,278,stomach_content,17,Caniformia,major:Mammalia,major:Mammalia,0.312469119520646,0.29542745730327,0.189778026324955
+Caniformia,279,stomach_content,25,Dasyuromorphia,major:Mammalia,major:Mammalia,0.149516780491621,0.495045183994688,0.159192191033778
+Caniformia,280,stomach_content,30,Caniformia,major:Mammalia,major:Mammalia,0.488351214645795,0.283915676371865,0.194261849588375
+Caniformia,281,stomach_content,23,Falconiformes,major:Aves,major:Aves,0.0341290980106257,0.261789413601644,0.176695277941518
+Caniformia,282,stomach_content,26,Caniformia,major:Mammalia,major:Mammalia,0.393733198327906,0.313213765943769,0.212819705517734
+Caniformia,283,stomach_content,26,Caniformia,major:Mammalia,major:Mammalia,0.451194715256484,0.287659176838436,0.204323358930525
+Caniformia,284,stomach_content,24,Accipitriformes,major:Aves,major:Aves,0.232729202807643,0.237073123619578,0.188045103236747
+Caniformia,285,stomach_content,26,Caniformia,major:Mammalia,major:Mammalia,0.46127439071244,0.315525307912037,0.212313079972728
+Caniformia,286,stomach_content,30,Dasyuromorphia,major:Mammalia,major:Mammalia,0.251828606767009,0.406643530106898,0.214191717470907
+Caniformia,287,stomach_content,27,Dasyuromorphia,major:Mammalia,major:Mammalia,0.191871885230422,0.423626580359499,0.215916204303708
+Caniformia,288,stomach_content,24,Accipitriformes,major:Mammalia,major:Mammalia,0.237451824100721,0.375276574113664,0.189540596159386
+Caniformia,289,stomach_content,22,Caniformia,major:Mammalia,major:Mammalia,0.332927716100805,0.276658350977173,0.184394650407153
+Caniformia,290,stomach_content,28,Accipitriformes,none,none,0.280989445882512,0.221873839772504,0.252241412578794
+Caniformia,291,stomach_content,32,Accipitriformes,major:Mammalia,major:Mammalia,0.139777656428039,0.336868105460382,0.220242373477104
+Caniformia,292,stomach_content,26,Dasyuromorphia,major:Mammalia,major:Mammalia,0.267492735222906,0.356102512744694,0.247462912316169
+Caniformia,293,stomach_content,24,Feliformia,major:Mammalia,major:Mammalia,0.149409708052604,0.284844316356904,0.183284925575576
+Caniformia,294,stomach_content,33,Caniformia,major:Mammalia,major:Mammalia,0.503958566373875,0.314047077379556,0.187304851887903
+Caniformia,295,stomach_content,35,Dasyuromorphia,major:Mammalia,major:Mammalia,0.201696110653015,0.596116858110214,0.175675455286356
+Caniformia,296,stomach_content,20,Caniformia,major:Mammalia,major:Mammalia,0.276226717219225,0.32724466913127,0.181142346300189
+Caniformia,297,stomach_content,23,Falconiformes,major:Mammalia,major:Mammalia,0.0333751752295548,0.317795912467289,0.187923334035137
+Caniformia,298,stomach_content,31,Caniformia,major:Mammalia,major:Mammalia,0.364497667517441,0.343337374966477,0.184736419167577
+Caniformia,299,stomach_content,29,Dasyuromorphia,major:Mammalia,major:Mammalia,0.225176394405143,0.392324004444397,0.231819614151917
+Caniformia,300,stomach_content,38,Accipitriformes,major:Mammalia,major:Mammalia,0.256808300779657,0.337318379486981,0.263210016610678
+Passeriformes,301,regurgitate,15,other Squamata,major:Crocodylia,major:Crocodylia,0.110614223277688,0.109625304889114,0.165912911872092
+Passeriformes,302,unknown;regurgitate,14,Varanidae,major:Crocodylia,major:Crocodylia,0.00134574900547876,0.117189329581798,0.226109990945548
+Passeriformes,303,regurgitate;unknown;pellet_scat;prey_remains,19,Pelecaniformes,major:Crocodylia,major:Crocodylia,1.82244072196454e-05,0.235259673220988,0.175342653788864
+Passeriformes,304,regurgitate;pellet_scat,16,other Squamata,major:Squamata,major:Squamata,0.146376030270498,0.0897442018713816,0.194542701982003
+Passeriformes,305,regurgitate;pellet_scat;unknown,12,other Squamata,major:Crocodylia,major:Crocodylia,0.140364417350106,0.105795546137886,0.180648727638178
+Passeriformes,306,regurgitate;unknown,14,other Squamata,major:Crocodylia,major:Crocodylia,0.0939987110256998,0.0919196280092791,0.232155193255943
+Passeriformes,307,regurgitate;unknown,16,other Squamata,none,none,0.148038291826297,0.0434410185915924,0.37850289239622
+Passeriformes,308,regurgitate;unknown,15,Teiioidea,major:Crocodylia,major:Crocodylia,0.135534439318637,0.0725537698049294,0.18307710605934
+Passeriformes,309,regurgitate,15,other Squamata,major:Crocodylia,major:Crocodylia,0.0968156286770392,0.0672083327683717,0.222561037094832
+Passeriformes,310,regurgitate;unknown;pellet_scat,14,Iguania,major:Crocodylia,major:Crocodylia,0.14996574665169,0.129137104541598,0.15270103686942
+Passeriformes,311,regurgitate;unknown,16,other Squamata,major:Crocodylia,major:Crocodylia,0.164418993825173,0.0682413450859692,0.165860540987677
+Passeriformes,312,regurgitate;unknown;pellet_scat,15,other Squamata,major:Squamata,major:Squamata,0.102709319826807,0.0501436819418771,0.167221753791946
+Passeriformes,313,regurgitate,16,other Squamata,major:Squamata,major:Squamata,0.109193663858535,0.0400320177480906,0.343794581976993
+Passeriformes,314,regurgitate;pellet_scat;unknown,20,Iguania,major:Squamata,major:Squamata,0.260342244012949,0.160509756761156,0.237548014999394
+Passeriformes,315,regurgitate;unknown;pellet_scat;prey_remains,19,Iguania,major:Mammalia,major:Mammalia,0.267691552705825,0.170551175814809,0.202644136027941
+Passeriformes,316,regurgitate;unknown,15,other Squamata,major:Crocodylia,major:Crocodylia,0.143632906778187,0.0837517852441938,0.211429966966428
+Passeriformes,317,regurgitate,14,other Squamata,major:Crocodylia,major:Crocodylia,0.13363462747929,0.138728391530609,0.159562657306205
+Passeriformes,318,regurgitate;pellet_scat,15,other Squamata,major:Squamata,major:Squamata,0.103969692579654,0.0746844942165155,0.259702126149014
+Passeriformes,319,regurgitate;unknown;prey_remains,16,other Squamata,major:Squamata,major:Squamata,0.204206354620706,0.0845026936062039,0.21231565561495
+Passeriformes,320,regurgitate;pellet_scat,18,other Squamata,major:Squamata,major:Squamata,0.0924091540828693,0.0910954180827163,0.250904508072761
+Passeriformes,321,regurgitate;pellet_scat;unknown,16,other Squamata,major:Crocodylia,major:Crocodylia,0.113210018458229,0.088556000074995,0.074134286174306
+Passeriformes,322,regurgitate;unknown;pellet_scat;prey_remains,18,Passeriformes,major:Mammalia,major:Mammalia,0.234541974314033,0.1793991094813,0.181691224582976
+Passeriformes,323,regurgitate;unknown,16,other Squamata,major:Crocodylia,major:Crocodylia,0.175171132475792,0.147425652834339,0.196378331838716
+Passeriformes,324,regurgitate,16,other Squamata,major:Squamata,major:Squamata,0.125201309792868,0.0778408222152432,0.198159768666156
+Passeriformes,325,regurgitate;unknown;pellet_scat;prey_remains,15,Passeriformes,none,none,0.232188903869287,0.100638243134081,0.349695300291704
+Passeriformes,326,regurgitate;unknown,13,other Squamata,major:Aves,major:Aves,0.10768486483449,0.393130398783132,0.187014957702088
+Passeriformes,327,regurgitate;unknown,15,Crocodylia,major:Squamata,major:Squamata,0.13819824284375,0.0991442816983989,0.213846925706298
+Passeriformes,328,regurgitate;unknown,16,other Squamata,major:Squamata,major:Squamata,0.100598056804898,0.0697078087320903,0.145015379233401
+Passeriformes,329,regurgitate;prey_remains;pellet_scat;unknown,16,other Squamata,major:Squamata,major:Squamata,0.145614947708227,0.0878770733385394,0.233424452949618
+Passeriformes,330,regurgitate;unknown,14,other Squamata,major:Crocodylia,major:Crocodylia,0.141273919547731,0.0969607352446065,0.223874628645245
+Passeriformes,331,regurgitate;unknown,18,Varanidae,major:Crocodylia,major:Crocodylia,0.000181475345409652,0.191698894581952,0.192020804477093
+Passeriformes,332,regurgitate;pellet_scat;prey_remains;unknown,20,Passeriformes,major:Crocodylia,major:Crocodylia,0.271221448603119,0.222773668732313,0.172819952132133
+Passeriformes,333,regurgitate;pellet_scat;prey_remains;unknown,15,other Squamata,major:Crocodylia,major:Crocodylia,0.165916494534329,0.140696507583835,0.231123819022414
+Passeriformes,334,regurgitate;unknown,18,Feliformia,none,none,0.229134062626662,0.130418665204258,0.23487234582785
+Passeriformes,335,regurgitate;unknown,16,Varanidae,major:Crocodylia,major:Crocodylia,0.00025820261517129,0.183681487482673,0.194430927606012
+Passeriformes,336,regurgitate;unknown,16,Varanidae,major:Crocodylia,major:Crocodylia,0.000312590479813974,0.19761671685714,0.184188967140146
+Passeriformes,337,regurgitate;pellet_scat;prey_remains,18,Passeriformes,none,none,0.230574676561583,0.223691206732273,0.252795206443991
+Passeriformes,338,regurgitate;unknown,12,Teiioidea,major:Crocodylia,major:Crocodylia,0.106263485843243,0.128192113106674,0.149450723436258
+Passeriformes,339,regurgitate;prey_remains;unknown,16,Varanidae,major:Crocodylia,major:Crocodylia,0.000157843844211569,0.196553541527667,0.185328115057228
+Passeriformes,340,regurgitate;unknown,14,other Squamata,major:Crocodylia,major:Crocodylia,0.095265572267552,0.100802947540062,0.142660380509958
+Passeriformes,341,regurgitate;unknown,15,other Squamata,major:Crocodylia,major:Crocodylia,0.147090461635667,0.126332519293151,0.232368477515387
+Passeriformes,342,regurgitate;unknown;pellet_scat,19,other Squamata,major:Crocodylia,major:Crocodylia,0.150689213490902,0.210632710425884,0.144236649370293
+Passeriformes,343,regurgitate;unknown;pellet_scat,16,other Squamata,major:Crocodylia,major:Crocodylia,0.134586847711516,0.111074877834998,0.200459511611597
+Passeriformes,344,regurgitate;prey_remains,14,other Squamata,major:Crocodylia,major:Crocodylia,0.14492171428738,0.190100067381943,0.164745050064963
+Passeriformes,345,regurgitate;unknown,16,Teiioidea,major:Crocodylia,major:Crocodylia,0.000911795002983954,0.125898213876012,0.179585920314109
+Passeriformes,346,regurgitate;unknown,13,Pelecaniformes,major:Crocodylia,major:Crocodylia,1.10646630166914e-05,0.181679937355335,0.193148945045674
+Passeriformes,347,regurgitate;pellet_scat,17,other Squamata,major:Crocodylia,major:Crocodylia,0.0237374973051715,0.0274968939751763,0.134129296650868
+Passeriformes,348,regurgitate;unknown,14,other Squamata,major:Crocodylia,major:Crocodylia,0.057058689297921,0.0781366161389308,0.272836757488403
+Passeriformes,349,regurgitate;unknown,13,other Squamata,major:Squamata,major:Squamata,0.12073474940393,0.0875534794775513,0.22189693649761
+Passeriformes,350,regurgitate,13,other Squamata,none,none,0.139811323931888,0.087107179637802,0.285807210785435
+Iguania,351,unknown;stomach_content,14,other Squamata,major:Squamata,major:Squamata,0.235462006561176,0.272133841004665,0.166401511285758
+Iguania,352,stomach_content;unknown,13,other Squamata,major:Squamata,major:Squamata,0.298577354860258,0.242023164879815,0.18296291469689
+Iguania,353,unknown;stomach_content;direct_observation,12,Accipitriformes,major:Mammalia,major:Mammalia,0.201932592928072,0.184446904807617,0.141713327231777
+Iguania,354,unknown;stomach_content,15,Teiioidea,major:Crocodylia,major:Crocodylia,0.190420079324718,0.217134580794282,0.172893750657999
+Iguania,355,stomach_content;unknown;direct_observation,15,Falconiformes,major:Crocodylia,major:Crocodylia,0.231274172541419,0.173880256273367,0.146961995508195
+Iguania,356,unknown;stomach_content,19,Iguania,major:Squamata,major:Squamata,0.293833520265538,0.27211261927683,0.156157005157408
+Iguania,357,unknown,14,other Squamata,major:Mammalia,major:Mammalia,0.139398115565421,0.151443801834391,0.202526554805292
+Iguania,358,unknown,18,other Squamata,none,none,0.292558064941425,0.250175400569908,0.278026322244385
+Iguania,359,direct_observation;unknown;stomach_content,17,Accipitriformes,major:Mammalia,major:Mammalia,0.188026567839647,0.18498066008953,0.163522953759715
+Iguania,360,unknown;direct_observation;stomach_content,16,Accipitriformes,major:Mammalia,major:Mammalia,0.123060756387904,0.185931102530944,0.173454164180388
+Iguania,361,unknown;direct_observation;stomach_content,16,Iguania,major:Mammalia,major:Mammalia,0.245294762493513,0.122585181020523,0.105491045908964
+Iguania,362,unknown;direct_observation;stomach_content,16,Iguania,major:Squamata,major:Squamata,0.376489427747679,0.320225525465234,0.131440048487608
+Iguania,363,unknown,14,other Squamata,major:Aves,tree:Theropoda@162.5,0.267235661364954,0.192184581539823,0.198507780886162
+Iguania,364,unknown,18,other Squamata,none,none,0.257909505412112,0.138569317657869,0.473613850588209
+Iguania,365,unknown;direct_observation,13,Iguania,major:Crocodylia,major:Crocodylia,0.355403178397869,0.205056585826816,0.165364138079122
+Iguania,366,unknown;direct_observation;stomach_content,19,Iguania,major:Mammalia,major:Mammalia,0.353807233916731,0.156732855381146,0.205935104618726
+Iguania,367,direct_observation;unknown,14,Iguania,major:Mammalia,major:Mammalia,0.353068370919793,0.235276094102845,0.179165955649118
+Iguania,368,unknown;direct_observation,13,Iguania,major:Mammalia,major:Mammalia,0.386152414530333,0.176452586624107,0.209193978761919
+Iguania,369,unknown;direct_observation,16,other Squamata,major:Mammalia,major:Mammalia,0.291284606541167,0.128060696335794,0.1855493157616
+Iguania,370,unknown;direct_observation,14,Iguania,none,none,0.635644154418068,0.251540684816096,0.304856419745809
+Iguania,371,unknown;stomach_content,21,Iguania,major:Mammalia,major:Mammalia,0.39420581951973,0.191308864003092,0.205688433229616
+Iguania,372,stomach_content;unknown,22,Iguania,none,none,0.276106897711809,0.131550810793978,0.300146894333192
+Iguania,373,unknown,15,other Squamata,major:Squamata,major:Squamata,0.15352819705432,0.261580630647109,0.211112429130245
+Iguania,374,unknown,14,other Squamata,major:Squamata,major:Squamata,0.239875396385584,0.340565342106291,0.168580630332097
+Iguania,375,unknown;direct_observation,16,Iguania,major:Crocodylia,major:Crocodylia,0.420979194369763,0.242216157834599,0.00877230947901995
+Iguania,376,unknown;stomach_content;direct_observation,18,Falconiformes,major:Mammalia,major:Mammalia,0.216650696646735,0.241908136445163,0.0942332233249851
+Iguania,377,unknown;stomach_content,18,Iguania,none,none,0.403332704275713,0.255706424927143,0.30349579636824
+Iguania,378,unknown;stomach_content,15,Iguania,none,none,0.30342110754224,0.170675177140897,0.424487718723384
+Iguania,379,unknown,16,other Squamata,major:Crocodylia,major:Crocodylia,0.277102587689596,0.224123062727668,0.168163002332107
+Iguania,380,unknown;stomach_content,17,other Squamata,major:Crocodylia,major:Crocodylia,0.228932307846606,0.241638089322019,0.156800011696835
+Iguania,381,unknown;direct_observation,17,Iguania,major:Mammalia,major:Mammalia,0.336915051646168,0.167166566453799,0.206919402689518
+Iguania,382,unknown;direct_observation,15,Iguania,major:Mammalia,major:Mammalia,0.343493324587272,0.192138149683603,0.2346354648022
+Iguania,383,unknown;direct_observation,18,Accipitriformes,major:Mammalia,major:Mammalia,0.0886559417805001,0.236686406615717,0.182057414387919
+Iguania,384,unknown,14,other Squamata,major:Squamata,major:Squamata,0.285179560114087,0.231354468790344,0.230789422246107
+Iguania,385,unknown;direct_observation;stomach_content,14,Accipitriformes,major:Aves,major:Aves,0.0517363056244797,0.16658786092295,0.174801811053309
+Iguania,386,unknown;direct_observation;stomach_content,19,Iguania,major:Mammalia,major:Mammalia,0.339278194721049,0.149536043075513,0.186755441937455
+Iguania,387,unknown;direct_observation;stomach_content,16,Falconiformes,major:Mammalia,major:Mammalia,0.119365136780944,0.202445934852455,0.210409934379113
+Iguania,388,unknown;direct_observation;stomach_content,14,Iguania,major:Squamata,major:Squamata,0.356368682054362,0.360818263305642,0.124643261591423
+Iguania,389,unknown;direct_observation,14,Iguania,major:Aves,major:Aves,0.313875981873755,0.161813123925299,0.16306129721682
+Iguania,390,unknown;stomach_content,14,Iguania,major:Squamata,major:Squamata,0.389445432691874,0.345026144795281,0.195196976706187
+Iguania,391,unknown,17,Iguania,none,none,0.242501070859594,0.170359275710283,0.288255955304922
+Iguania,392,unknown;direct_observation,19,Accipitriformes,major:Mammalia,major:Mammalia,0.178988506137007,0.204551325282419,0.204350672410011
+Iguania,393,unknown;stomach_content,15,Iguania,major:Crocodylia,major:Crocodylia,0.319879687901821,0.231653213597373,0.193908449066714
+Iguania,394,unknown;direct_observation;stomach_content,18,Iguania,major:Crocodylia,major:Crocodylia,0.249601063697569,0.241126733294126,0.177374121887794
+Iguania,395,unknown;direct_observation,17,Iguania,major:Squamata,major:Squamata,0.60606058934274,0.431323995848831,0.137628261065192
+Iguania,396,unknown;direct_observation,15,Iguania,major:Mammalia,major:Mammalia,0.369899109614526,0.201472809086587,0.157042232950831
+Iguania,397,stomach_content;unknown,16,other Squamata,major:Crocodylia,major:Crocodylia,0.257021135794153,0.162531909740314,0.135941626802102
+Iguania,398,unknown;direct_observation,17,Iguania,major:Mammalia,major:Mammalia,0.257925250406659,0.178157039190257,0.219330863655513
+Iguania,399,unknown;stomach_content;direct_observation,18,Iguania,major:Mammalia,major:Mammalia,0.497057846652257,0.211082549480135,0.261696575546278
+Iguania,400,unknown;stomach_content,14,Accipitriformes,major:Aves,major:Aves,0.106216924425054,0.201954369156455,0.157776951762862
+Falconiformes,401,pellet_scat;stomach_content;prey_remains;regurgitate;direct_observation,24,Falconiformes,major:Mammalia,major:Mammalia,0.283455928554462,0.212410504668513,0.191803729356173
+Falconiformes,402,prey_remains;pellet_scat;regurgitate;stomach_content;direct_observation,32,Accipitriformes,major:Mammalia,major:Mammalia,0.191690193450709,0.225012960193177,0.180265546900432
+Falconiformes,403,pellet_scat;regurgitate;prey_remains;unknown,30,Iguania,major:Mammalia,major:Mammalia,0.0852320512073912,0.239911363766844,0.160621421071065
+Falconiformes,404,prey_remains;pellet_scat;direct_observation;stomach_content,31,Strigiformes,major:Squamata,major:Squamata,0.264207645615111,0.210719641999672,0.175352600828053
+Falconiformes,405,pellet_scat;stomach_content;unknown;prey_remains;direct_observation;regurgitate,23,Iguania,major:Mammalia,major:Mammalia,0.144005121448531,0.214887934723451,0.195466069948907
+Falconiformes,406,prey_remains;pellet_scat;direct_observation,26,Strigiformes,major:Squamata,major:Squamata,0.145931785954518,0.188749492801372,0.210528130468504
+Falconiformes,407,pellet_scat;direct_observation;stomach_content;prey_remains;regurgitate,26,Falconiformes,major:Mammalia,major:Mammalia,0.303484518024838,0.248738765425066,0.135402037029366
+Falconiformes,408,pellet_scat;direct_observation;prey_remains;stomach_content,30,Strigiformes,major:Squamata,tree:Theropoda@162.5,0.137794284124483,0.244470205660347,0.131033320772786
+Falconiformes,409,prey_remains;pellet_scat;regurgitate;direct_observation;stomach_content,22,Serpentes,major:Aves,major:Aves,0.152986728811794,0.233743240420077,0.189051570922987
+Falconiformes,410,prey_remains;dna_detection;stomach_content;pellet_scat;direct_observation;regurgitate,25,Passeriformes,none,none,0.131359762023648,0.151601018000678,0.540568307155274
+Falconiformes,411,prey_remains;direct_observation;pellet_scat,26,Iguania,major:Squamata,major:Squamata,0.099403072087555,0.18190356149629,0.212047827970972
+Falconiformes,412,pellet_scat;prey_remains;unknown;regurgitate;stomach_content,25,Strigiformes,major:Crocodylia,major:Crocodylia,0.171819562743856,0.158274593773275,0.152529967057371
+Falconiformes,413,prey_remains;direct_observation;pellet_scat,27,Strigiformes,major:Aves,major:Aves,0.128934544044626,0.250071799260994,0.139356549971319
+Falconiformes,414,pellet_scat;regurgitate;prey_remains;unknown,27,Falconiformes,major:Crocodylia,major:Crocodylia,0.22381294431516,0.193630196796785,0.188698194445384
+Falconiformes,415,pellet_scat;prey_remains;dna_detection;direct_observation;unknown;regurgitate,27,Accipitriformes,major:Mammalia,major:Mammalia,0.105212282854094,0.24026377461286,0.170412631847839
+Falconiformes,416,prey_remains;pellet_scat;direct_observation;regurgitate,27,Serpentes,major:Crocodylia,major:Crocodylia,0.0668674640787404,0.223007260138242,0.172109493113583
+Falconiformes,417,pellet_scat;prey_remains;direct_observation;stomach_content;dna_detection,30,Strigiformes,major:Aves,tree:Theropoda@162.5,0.297468717247478,0.30259897632111,0.248464478367744
+Falconiformes,418,prey_remains;pellet_scat;direct_observation,31,Strigiformes,major:Mammalia,major:Mammalia,0.168970514139156,0.188045787652234,0.0957854599345391
+Falconiformes,419,direct_observation;pellet_scat;prey_remains;unknown;stomach_content,27,Serpentes,major:Squamata,major:Squamata,0.0778955613252724,0.195181991535289,0.168644546268395
+Falconiformes,420,pellet_scat;prey_remains;direct_observation,27,Accipitriformes,major:Mammalia,major:Mammalia,0.2689581923732,0.235369178562065,0.189826818314771
+Falconiformes,421,pellet_scat;prey_remains;direct_observation;regurgitate,25,Iguania,major:Crocodylia,major:Crocodylia,0.0789040743933734,0.132777372048746,0.133834879161082
+Falconiformes,422,prey_remains;pellet_scat;unknown;stomach_content;direct_observation,30,Falconiformes,major:Mammalia,major:Mammalia,0.299385780216991,0.220983806626864,0.19942248967773
+Falconiformes,423,direct_observation;pellet_scat;prey_remains;unknown,21,Accipitriformes,major:Mammalia,major:Mammalia,0.226201033798422,0.229606629180471,0.140946637587882
+Falconiformes,424,prey_remains;pellet_scat;direct_observation;unknown,34,Falconiformes,major:Aves,major:Aves,0.367545813730737,0.280150672058115,0.158267117848526
+Falconiformes,425,pellet_scat;prey_remains;stomach_content;unknown;direct_observation,25,Strigiformes,major:Mammalia,major:Mammalia,0.239027400054767,0.22238181795947,0.156320311677544
+Falconiformes,426,pellet_scat;stomach_content;prey_remains;direct_observation,26,Accipitriformes,major:Aves,major:Aves,0.191572426083775,0.271738872246175,0.168062334394938
+Falconiformes,427,prey_remains;pellet_scat;direct_observation;regurgitate;stomach_content,20,Accipitriformes,major:Aves,major:Aves,0.197523003880355,0.254987555293681,0.15517825728796
+Falconiformes,428,pellet_scat;direct_observation;prey_remains;unknown,29,Iguania,major:Squamata,major:Squamata,0.061179249621843,0.23052654811316,0.142169386339387
+Falconiformes,429,prey_remains;pellet_scat;stomach_content;unknown;regurgitate;direct_observation,27,Falconiformes,major:Squamata,major:Squamata,0.222432657196073,0.18321954960315,0.148307028044601
+Falconiformes,430,pellet_scat;direct_observation;prey_remains;unknown,21,Strigiformes,major:Aves,major:Aves,0.25485237484872,0.25977606736347,0.177395341260869
+Falconiformes,431,prey_remains;pellet_scat;unknown;regurgitate;direct_observation;dna_detection,29,Serpentes,major:Aves,major:Aves,0.146169383486353,0.285047983563191,0.12442182072421
+Falconiformes,432,pellet_scat;prey_remains;stomach_content;direct_observation,31,Strigiformes,major:Crocodylia,major:Crocodylia,0.260345357031571,0.167596553831213,0.100557387161736
+Falconiformes,433,direct_observation;pellet_scat;prey_remains;unknown;stomach_content,27,Strigiformes,major:Squamata,major:Squamata,0.167000757359772,0.164076516030673,0.21080530244655
+Falconiformes,434,pellet_scat;direct_observation;prey_remains;stomach_content,29,Strigiformes,major:Aves,major:Aves,0.230588409712309,0.556262452387141,0.0759397418682301
+Falconiformes,435,pellet_scat;prey_remains;direct_observation;dna_detection;unknown,30,Falconiformes,none,none,0.341795627620484,0.195413030666611,0.301145866689533
+Falconiformes,436,stomach_content;pellet_scat;prey_remains;direct_observation,24,Accipitriformes,major:Aves,major:Aves,0.180345999180751,0.261665322643887,0.185703782056768
+Falconiformes,437,pellet_scat;prey_remains;direct_observation;regurgitate,27,Iguania,major:Aves,major:Aves,0.139000650679327,0.246435538482521,0.182325213527435
+Falconiformes,438,unknown;prey_remains;pellet_scat;direct_observation;stomach_content,31,Strigiformes,major:Squamata,major:Squamata,0.1277906431174,0.157796243468358,0.215936807069279
+Falconiformes,439,prey_remains;pellet_scat;direct_observation;stomach_content;regurgitate,25,Caniformia,major:Mammalia,major:Mammalia,0.0397486859579432,0.233863761176078,0.196694353574003
+Falconiformes,440,pellet_scat;prey_remains;dna_detection;direct_observation;stomach_content;regurgitate,29,Iguania,major:Mammalia,major:Mammalia,0.260744250938957,0.286486566594252,0.0955549950463247
+Falconiformes,441,prey_remains;pellet_scat;unknown,33,Iguania,none,none,0.0953494039978231,0.012185303277787,0.571049095858101
+Falconiformes,442,unknown;pellet_scat;direct_observation;prey_remains;stomach_content,24,Strigiformes,major:Aves,major:Aves,0.130688165027122,0.297180072653481,0.219181943139186
+Falconiformes,443,prey_remains;pellet_scat;regurgitate;direct_observation,28,Iguania,major:Squamata,major:Squamata,0.105719115971878,0.208437765707307,0.157235479679391
+Falconiformes,444,prey_remains;pellet_scat;direct_observation;regurgitate;stomach_content,31,Falconiformes,major:Mammalia,major:Mammalia,0.346084098317286,0.162095736072675,0.102641895411432
+Falconiformes,445,pellet_scat;direct_observation;prey_remains;regurgitate;unknown,27,Iguania,major:Aves,major:Aves,0.209395008026322,0.283594108872332,0.163623942530935
+Falconiformes,446,pellet_scat;direct_observation;prey_remains;regurgitate;unknown,29,Passeriformes,major:Squamata,major:Squamata,0.0653114197743371,0.117245559257234,0.125019150645081
+Falconiformes,447,pellet_scat;prey_remains;regurgitate;direct_observation;unknown,26,Iguania,major:Squamata,major:Squamata,0.133010484165902,0.255880452690502,0.149136694349936
+Falconiformes,448,pellet_scat;stomach_content;direct_observation;prey_remains,31,Accipitriformes,major:Mammalia,major:Mammalia,0.18712499758056,0.252631457690469,0.178319587637424
+Falconiformes,449,pellet_scat;prey_remains;direct_observation;dna_detection;unknown,28,Strigiformes,none,none,0.189618206963441,0.134691812644226,0.467719587782042
+Falconiformes,450,pellet_scat;regurgitate;unknown;prey_remains;stomach_content,29,Falconiformes,major:Aves,major:Aves,0.222539585696473,0.268296145399695,0.139395055411576

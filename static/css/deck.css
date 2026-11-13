@@ -4,7 +4,8 @@
   --ground: #141e1a; --board: #1b2823; --board-2: #22312b; --card: #24352e;
   --ink: #edece3; --ink-2: #c4c9c0; --muted: #919d97; --rule: #34463e; --grid: #263730;
   --accent: #f5d76e; --accent-ink: #f5d76e; --accent-soft: rgba(245, 215, 110, 0.10);
-  --aves: #3987e5; --mammalia: #d95926; --squamata: #199e70; --crocodylia: #9085e9; --fossil: #c98500;
+  --aves: #3987e5; --mammalia: #c08416; --squamata: #199e70; --crocodylia: #c95fc0; --fossil: #e5484d;
+  --own1: #56d0e0; --own2: #a9a2ff; --own3: #f2e05c; --own4: #a6d854; --own5: #ff9f7a; --own6: #d9d9d9;
   --font-ui: "Source Sans 3", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
   color-scheme: dark;
 }
@@ -12,7 +13,8 @@
   --ground: #e8edea; --board: #f9fbfa; --board-2: #eef2f0; --card: #ffffff;
   --ink: #17211d; --ink-2: #44514c; --muted: #62706a; --rule: #cfd8d3; --grid: #e3e9e6;
   --accent: #f2b705; --accent-ink: #8a6100; --accent-soft: rgba(242, 183, 5, 0.12);
-  --aves: #2a78d6; --mammalia: #eb6834; --squamata: #1baf7a; --crocodylia: #6250d6; --fossil: #c99400;
+  --aves: #2a78d6; --mammalia: #b97a0c; --squamata: #17996b; --crocodylia: #b548ab; --fossil: #d93a40;
+  --own1: #0e94a8; --own2: #6a5fd0; --own3: #a08a00; --own4: #5f9a12; --own5: #d9643a; --own6: #555555;
   color-scheme: light;
 }
 *, *::before, *::after { box-sizing: border-box; }
@@ -52,6 +54,9 @@ body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
 .lbl { fill: var(--ink); font: 700 32px var(--font-ui); }
 .lbl.small { font-size: 28px; font-weight: 600; fill: var(--ink-2); }
 .lbl.muted { fill: var(--muted); font-weight: 400; }
+.lbl.tiny { font-size: 24px; font-weight: 600; fill: var(--ink-2); }
+.lbl.strong { fill: var(--ink); font-weight: 700; }
+.lbl.halo { paint-order: stroke; stroke: var(--board); stroke-width: 9px; stroke-linejoin: round; }
 .guide { stroke: var(--muted); stroke-width: 2.5; stroke-dasharray: 8 9; fill: none; }
 .guide-lbl { fill: var(--muted); font: italic 600 28px var(--font-ui); }
 .fade { transition: opacity 0.6s ease; }
@@ -64,6 +69,31 @@ body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
 .titlecard h1 { margin: 0; font: 700 92px/1.05 var(--font-ui); letter-spacing: -0.015em; }
 .titlecard h1 em { font-style: normal; color: var(--accent-ink); }
 .titlecard p { margin: 36px 0 0; font: 400 34px var(--font-ui); color: var(--ink-2); }
+.titlecard { top: 200px; }
+.titlecard p.sub { margin-top: 28px; font: 600 44px var(--font-ui); color: var(--ink-2); }
+.titlecard p.who { margin-top: 90px; font: 600 38px var(--font-ui); color: var(--ink); }
+.plate { display: inline-flex; align-items: center; justify-content: center; margin-top: 22px; padding: 18px 26px; border-radius: 12px; background: #fff; }
+.titlecard .plate img { height: 46px; display: block; }
+
+/* ---------- headings that change with the build, images ---------- */
+.kicker { position: absolute; left: 82px; top: 26px; font: 600 30px var(--font-ui); color: var(--muted); }
+.frame.has-kicker h2 { top: 70px; }
+.frame figure { margin: 0; }
+.gut { position: absolute; left: 250px; top: 176px; width: 520px; border: 3px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); transition: width 0.7s ease, opacity 0.7s ease; }
+.gut.small { width: 170px; }
+.gut img, .cutout img { display: block; width: 100%; }
+.gut figcaption, .cutout figcaption { padding: 4px 10px 6px; font: 600 19px var(--font-ui); color: var(--ink-2); white-space: nowrap; overflow: hidden; }
+.gut.small figcaption { display: none; }
+.cutout { position: absolute; right: 112px; bottom: 158px; width: 340px; border: 3px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); }
+.formula { position: absolute; left: 0; right: 0; top: 822px; text-align: center; font: italic 600 32px var(--font-ui); color: var(--ink-2); }
+.formula sub { font-size: 0.65em; font-style: normal; }
+.ack { position: absolute; left: 120px; right: 120px; top: 190px; }
+.ack .logos { display: flex; gap: 48px; align-items: center; }
+.ack .plate { margin: 0; height: 230px; padding: 24px 32px; }
+.ack .plate img { display: block; height: 180px; }
+.ack .plate.wide img { height: 64px; }
+.ack .names { margin-top: 56px; columns: 2; column-gap: 80px; font: 400 34px/1.6 var(--font-ui); }
+.ack .names p { margin: 0; }
 .thanks { position: absolute; left: 120px; right: 120px; top: 200px; columns: 2; column-gap: 80px; font: 400 34px/1.6 var(--font-ui); }
 .thanks b { color: var(--accent-ink); font-weight: 600; }
 

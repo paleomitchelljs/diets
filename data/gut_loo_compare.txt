@@ -1,0 +1,3 @@
+         elpd_diff se_diff
+fits$int  0.0       0.0   
+fits$add -1.0       2.3   

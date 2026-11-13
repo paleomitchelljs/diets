@@ -1,0 +1,16 @@
+"quantity","value"
+"x20 newobs rows assembled, June state (log: newobs=142)",142
+"longform rebuilt (items)",171406
+"data/longform.csv (items)",171406
+"rebuilt = longform.csv (multiset of ln masses)",1
+"x20 animal-prey rows, current files",167367
+"x20 vertebrate-prey rows, June state (log: 144152)",144152
+"x20 subsample, June state (log: 15260)",15260
+"x20 vertebrate-prey rows, current files",144198
+"x20 subsample, current files",15306
+"db A-D vertebrate-prey rows (same 3 sources)",136683
+"db A-D subsample",12410
+"x20 June rows reproduced identically in db A-D",135479
+"x20 June rows in db A-D with a changed mass, clade or level",1203
+"x20 June rows not in db A-D",7470
+"db A-D rows not in x20",0
