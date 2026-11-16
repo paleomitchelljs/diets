@@ -37,7 +37,7 @@ body.scroll .frame-wrap { position: relative; margin: 0 auto 24px; }
   background: var(--board); color: var(--ink); font: 26px/1.3 var(--font-ui); user-select: none;
 }
 .frame h2 { position: absolute; left: 80px; right: 80px; top: 44px; margin: 0; font: 700 58px/1.1 var(--font-ui); letter-spacing: -0.01em; }
-.frame h2 em { font-style: normal; color: var(--accent-ink); }
+.frame h2 em { font-style: normal; color: inherit; }   /* titles are one colour (JM 2026-11-13) */
 .frame .plot { position: absolute; left: 60px; top: 150px; width: 1480px; height: 710px; }
 .frame svg { overflow: visible; }
 .draft-tag {
@@ -69,23 +69,13 @@ body.nopics .sil { display: none; }
 /* ---------- title slide ---------- */
 .titlecard { position: absolute; left: 120px; right: 120px; top: 300px; }
 .titlecard h1 { margin: 0; font: 700 92px/1.05 var(--font-ui); letter-spacing: -0.015em; }
-.titlecard h1 em { font-style: normal; color: var(--accent-ink); }
+.titlecard h1 em { font-style: normal; color: inherit; }
 .titlecard p { margin: 36px 0 0; font: 400 34px var(--font-ui); color: var(--ink-2); }
 .titlecard { top: 200px; }
 .titlecard p.sub { margin-top: 28px; font: 600 44px var(--font-ui); color: var(--ink-2); }
 .titlecard p.who { margin-top: 90px; font: 600 38px var(--font-ui); color: var(--ink); }
 .plate { display: inline-flex; align-items: center; justify-content: center; margin-top: 22px; padding: 18px 26px; border-radius: 12px; background: #fff; }
 .titlecard .plate img { height: 46px; display: block; }
-
-/* title slide with the outlier sidebar */
-.titlecard.with-side { right: 660px; left: 90px; }
-.titlecard.with-side h1 { font-size: 84px; }
-.hl { position: absolute; right: 70px; top: 96px; width: 540px; }
-.hl .cap { font: 600 26px var(--font-ui); color: var(--muted); margin: 0 0 14px; }
-.hl figure { margin: 0 0 20px; border: 3px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); }
-.hl figure img { display: block; width: 100%; height: 86px; object-fit: contain; background: #fff; padding: 6px 10px; }
-.hl figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 6px 12px 8px; font: 600 22px var(--font-ui); color: var(--ink-2); white-space: nowrap; }
-.hl figcaption b { font: 700 28px var(--font-ui); color: var(--accent-ink); }
 
 /* ---------- headings that change with the build, images ---------- */
 .kicker { position: absolute; left: 82px; top: 26px; font: 600 30px var(--font-ui); color: var(--muted); }
@@ -106,6 +96,10 @@ body.nopics .sil { display: none; }
 .ack .plate.wide img { height: 64px; }
 .ack .names { margin-top: 56px; columns: 2; column-gap: 80px; font: 400 34px/1.6 var(--font-ui); }
 .ack .names p { margin: 0; }
+.ack.with-fig .names { columns: 1; }
+.ackfig { position: absolute; right: 120px; top: 190px; width: 440px; margin: 0; border: 3px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); }
+.ackfig img { display: block; width: 100%; }
+.ackfig figcaption { padding: 4px 10px 6px; font: 600 19px var(--font-ui); color: var(--ink-2); }
 .thanks { position: absolute; left: 120px; right: 120px; top: 200px; columns: 2; column-gap: 80px; font: 400 34px/1.6 var(--font-ui); }
 .thanks b { color: var(--accent-ink); font-weight: 600; }
 

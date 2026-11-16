@@ -125,13 +125,9 @@
 
   /* ---------- 0 title ---------- */
   S.push({
-    builds: [`Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is ${nSpecies.toLocaleString()} living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?` +
-      (X.highlights ? ' On the right, some of what is in the living data. ' + X.highlights.map((h) => `${h.pred} with ${h.prey}, ${Math.round(h.ratio)} times its own mass (${h.cite}): ${h.what}.`).join(' ') + ' The three big numbers are carrion, entered at the prey species’ average mass. The lions are real kills. A fossil gut cannot tell those apart.' : '')],
+    builds: [`Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is ${nSpecies.toLocaleString()} living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?`],
     make(fr) {
-      const H = X.highlights || [];
-      if (H.length) D.el('div', 'hl', fr, '<p class="cap">Recorded meals of extant predators</p>' + H.map((h) =>
-        `<figure><img src="img/highlights/${h.img}" alt="${h.cite}"><figcaption><span><i>${h.pred}</i> ← <i>${h.prey}</i></span><b>${Math.round(h.ratio)} ×</b></figcaption></figure>`).join(''));
-      D.el('div', 'titlecard' + (H.length ? ' with-side' : ''), fr, `<h1>Preferred prey size for <em>theropod dinosaurs</em></h1>` +
+      D.el('div', 'titlecard', fr, `<h1>Preferred prey size for <em>theropod dinosaurs</em></h1>` +
         `<p class="sub">Evidence from ${nSpecies.toLocaleString()} extant species</p>` +
         `<p class="who">Jonathan Mitchell</p><div class="plate"><img src="img/logo_coe.png" alt="Coe College"></div>`);
     }
@@ -316,16 +312,16 @@
   /* ---------- 5 specific animals ---------- */
   const preyLab = (r) => /^[A-Z][a-z]+( [a-z]+)?$/.test(r.prey) && !/idae$|ia$|ei$|es$/.test(r.prey) ? r.prey.split(' ')[0] : r.prey;
   const cases = [
-    { title: '<em>Microraptor</em>: four observations', ids: ['OConnor2011_01', 'Xing2013_01', 'Hone2022_01', 'OConnor2019_01'], labels: ['bird', 'fish', 'mammal', 'lizard'],
+    { title: '<i>Microraptor</i>: four observations', ids: ['OConnor2011_01', 'Xing2013_01', 'Hone2022_01', 'OConnor2019_01'], labels: ['bird', 'fish', 'mammal', 'lizard'],
       img: 'microraptor.jpg', credit: 'IVPP V17972 · O’Connor et al. 2011',
       note: 'Microraptor. Four gut records from one genus: a bird, a fish, a mammal, a lizard. This is the best fossil case for diet breadth we have. The spread of these four is the closest thing to a fossil spindle. The fish is a bar because all that is preserved is fin rays; more on that bar in a minute.' },
-    { title: 'Juvenile <em>Gorgosaurus</em>: two observations', ids: ['Therrien2023_01', 'Therrien2023_02'], labels: ['Citipes', 'Citipes'],
+    { title: 'Juvenile <i>Gorgosaurus</i>: two observations', ids: ['Therrien2023_01', 'Therrien2023_02'], labels: ['Citipes', 'Citipes'],
       img: 'gorgosaurus.jpg', credit: 'TMP 2009.12.14 · Therrien et al. 2023',
       note: 'A juvenile Gorgosaurus with two young Citipes in its gut. Each is about 3% of the predator’s mass. A juvenile tyrannosaur was not eating like an adult.' },
-    { title: '<em>Sinocalliopteryx</em>: three observations', ids: ['Xing2012_01', 'Xing2012_04', 'Xing2012_05'], labels: ['Sinornithosaurus (prey)', 'Confuciusornis ×2 (prey)', ''],
+    { title: '<i>Sinocalliopteryx</i>: three observations', ids: ['Xing2012_01', 'Xing2012_04', 'Xing2012_05'], labels: ['Sinornithosaurus (prey)', 'Confuciusornis ×2 (prey)', ''],
       img: 'sinocalliopteryx.jpg', credit: 'JMP-V-05-8-01 · Xing et al. 2012',
       note: 'Sinocalliopteryx, two specimens. One has a Sinornithosaurus leg in its gut, a dromaeosaur about 8% of its mass. The other has two Confuciusornis, each about 1%. The labels on the plot are the prey.' },
-    { title: '<em>Velociraptor</em>: battling <em>Protoceratops</em>', ids: ['Carpenter1998_01'], labels: ['Protoceratops (prey)'],
+    { title: '<i>Velociraptor</i>: battling <i>Protoceratops</i>', ids: ['Carpenter1998_01'], labels: ['Protoceratops (prey)'],
       img: 'velociraptor.jpg', credit: 'Fighting dinosaurs (cast) · Y. Tamai, CC BY 2.0',
       note: 'Velociraptor locked with Protoceratops. The prey is heavier than the predator: this one sits above the one-to-one line. It is a fight, not a meal, and it goes into the model as a direct observation, not a stomach.' }
   ];
@@ -506,7 +502,7 @@
     title: 'Close relatives <em>scale differently</em>',
     builds: [
       `Slope of prey mass on predator mass for each living clade, with its 90% interval. The dashed line is the global slope, ${global.slope.toFixed(2)}. Feliforms: ${F.primary.Feliformia.slope.toFixed(2)}, prey mass rises faster than predator mass. Caniforms: ${F.primary.Caniformia.slope.toFixed(2)}. Sister groups, different answers.`,
-      `Accipitriforms against strigiforms: ${F.primary.Accipitriformes.slope.toFixed(2)} against ${F.primary.Strigiformes.slope.toFixed(2)}. The same split, inside birds. The model found this from the data. It did not assume the tree was right, and this is why the tree cannot predict a theropod tightly.`
+      `Accipitriforms against strigiforms: ${F.primary.Accipitriformes.slope.toFixed(2)} against ${F.primary.Strigiformes.slope.toFixed(2)}. The same split, inside birds. The model found this from the data. It did not assume the tree was right, and this is why the tree cannot predict a theropod tightly. Next: one line through everything, and where the theropods fall against it.`
     ],
     make(fr) {
       const box = plotBox(fr), W = 1480, Hh = 710, svg = D.svg('svg', { width: W, height: Hh }, box);
@@ -548,7 +544,7 @@
     title: 'Prey size relative to the <em>global regression</em>',
     anim: { 1: 900 },
     builds: [
-      'The same information on the tree. Colour is how far a clade sits from the global line at its own typical size: orange is larger prey than the line predicts, blue is smaller, grey is on the line. Branch colours between the tips are interpolated, the way a phylogenetic trait map does it. On the right, the same number for each tip with its 90% interval. The axis is its own colour key. Mammalian carnivores and hawks run orange. Crocodylians and teiioids run blue.',
+      'Every living clade on the tree. Colour is how far a clade sits from the global line at its own typical size: orange is larger prey than the line predicts, blue is smaller, grey is on the line. Branch colours between the tips are interpolated, the way a phylogenetic trait map does it. On the right, the same number for each tip with its 90% interval. The axis is its own colour key. Mammalian carnivores and hawks run orange. Crocodylians and teiioids run blue.',
       `Now the theropods, grafted onto the bird stem. Each dot is one gut record against the global line; thin bars are brackets. The medians of the measured records: ${THERO.map((t) => t.name.replace(' (non-avian)', '') + ' ' + Math.pow(10, t.dev).toPrecision(2) + ' times the line').join(', ')}. Compsognathids sit on the blue side, with the crocodylians and teiioids, and away from the birds they are closest to on the tree. The paravians cover the whole axis, from a lizard in a Microraptor to the Protoceratops fight. ${theroRecs.length} records cannot say more than that.`
     ],
     make(fr) {
@@ -716,12 +712,17 @@
     title: 'Acknowledgments',
     builds: ['Acknowledgments. NSF and Coe College for support. Faith Hysell. Mike Grundler and SquamataBase. The people who built OS-Prey, CarniDIET, GATEWAy and AVONET, and every author who weighed a stomach. PhyloPic.'],
     make(fr) {
-      D.el('div', 'ack', fr,
+      D.el('figure', 'ackfig', fr, '<img src="img/python_sunbear.png" alt=""><figcaption><i>Malayopython reticulatus</i> after swallowing <i>Helarctos malayanus</i> · Fredriksson 2005</figcaption>');
+      D.el('div', 'ack with-fig', fr,
         '<div class="logos"><div class="plate"><img src="img/logo_nsf.svg" alt="U.S. National Science Foundation"></div>' +
         '<div class="plate wide"><img src="img/logo_coe.png" alt="Coe College"></div></div>' +
         '<div class="names"><p>Faith Hysell</p><p>Mike Grundler · SquamataBase</p><p>OS-Prey · CarniDIET · GATEWAy · AVONET</p><p>PhyloPic</p></div>');
     }
   });
 
-  root.TALK = S;
+  /* Running order (JM 2026-11-13). S is in the order the slides are written above:
+   * 0 title, 1 single meal, 2 lumping, 3 hierarchical, 4 global line, 5 specimens, 6 spindles, 7 record type,
+   * 8 ratio by clade, 9 slopes, 10 tree map, 11 conclusions, 12 acknowledgments.
+   * Slopes now follow the hierarchical slide; the tree map closes the results; the ratio slide (8) is not shown. */
+  root.TALK = [0, 1, 2, 3, 9, 4, 5, 6, 7, 10, 11, 12].map((i) => S[i]);
 })(window);

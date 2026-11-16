@@ -2,14 +2,14 @@
   "site": "/Users/jmitchell/Library/CloudStorage/Dropbox/Research/DietProject/static/index.html",
   "width": 1600,
   "height": 900,
-  "built": "2026-11-13T12:07:10.754Z",
+  "built": "2026-11-13T13:27:55.581Z",
   "slides": [
     {
       "builds": [
         {
           "media": "media/s0_b0.png",
           "title": "Preferred prey size for theropod dinosaurs",
-          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that? On the right, some of what is in the living data. Mustela nivalis with Capreolus capreolus, 345 times its own mass (Elmeros 2006, Acta Theriologica): 1 of 132 weasel guts; probably scavenged carrion (road-kill or hunters' remains). Aquila chrysaetos with Bos taurus, 144 times its own mass (Marr & Knight 1983, The Murrelet): cattle carrion, one record. Sarcophilus harrisii with Bos taurus, 90 times its own mass (Pemberton et al. 2008, Pap. Proc. R. Soc. Tasmania): cattle hair in scats; scavenging. Panthera leo with Loxodonta africana, 6 times its own mass (Joubert 2006, Afr. J. Ecol.): 74 elephants killed by lions in four dry seasons, most aged 4 to 15 years; real kills, with the mass of a 6-year-old calf estimated from its age. The three big numbers are carrion, entered at the prey species’ average mass. The lions are real kills. A fossil gut cannot tell those apart."
+          "notes": "Title. Fossil gut contents are the only direct record of what an extinct predator ate. The comparison set is 1,257 living predator species. The question for the next few minutes: what can a handful of fossil meals say against that?"
         }
       ]
     },
@@ -99,11 +99,25 @@
       "builds": [
         {
           "media": "media/s4_b0.png",
+          "title": "Close relatives scale differently",
+          "notes": "Slope of prey mass on predator mass for each living clade, with its 90% interval. The dashed line is the global slope, 0.81. Feliforms: 1.33, prey mass rises faster than predator mass. Caniforms: 0.91. Sister groups, different answers."
+        },
+        {
+          "media": "media/s4_b1.png",
+          "title": "Close relatives scale differently",
+          "notes": "Accipitriforms against strigiforms: 1.00 against 0.47. The same split, inside birds. The model found this from the data. It did not assume the tree was right, and this is why the tree cannot predict a theropod tightly. Next: one line through everything, and where the theropods fall against it."
+        }
+      ]
+    },
+    {
+      "builds": [
+        {
+          "media": "media/s5_b0.png",
           "title": "A global regression line",
           "notes": "Start with the simplest version. Every living record in grey, and one line through all of them: prey mass goes up with predator mass with a slope of 0.81. The dashed line is one to one, a meal as heavy as the animal eating it. Nearly everything sits below it."
         },
         {
-          "media": "media/s4_b1.gif",
+          "media": "media/s5_b1.gif",
           "title": "Where theropods fall relative to extant diet data",
           "notes": "Now the fossils, in red: every non-avian theropod gut with a prey mass or a bracket, 25 records. Bars are prey known only to within a bracket. They fall inside the living cloud, and most of them sit under the line."
         }
@@ -112,22 +126,22 @@
     {
       "builds": [
         {
-          "media": "media/s5_b0.png",
+          "media": "media/s6_b0.png",
           "title": "Microraptor: four observations",
           "notes": "Microraptor. Four gut records from one genus: a bird, a fish, a mammal, a lizard. This is the best fossil case for diet breadth we have. The spread of these four is the closest thing to a fossil spindle. The fish is a bar because all that is preserved is fin rays; more on that bar in a minute."
         },
         {
-          "media": "media/s5_b1.png",
+          "media": "media/s6_b1.png",
           "title": "Juvenile Gorgosaurus: two observations",
           "notes": "A juvenile Gorgosaurus with two young Citipes in its gut. Each is about 3% of the predator’s mass. A juvenile tyrannosaur was not eating like an adult."
         },
         {
-          "media": "media/s5_b2.png",
+          "media": "media/s6_b2.png",
           "title": "Sinocalliopteryx: three observations",
           "notes": "Sinocalliopteryx, two specimens. One has a Sinornithosaurus leg in its gut, a dromaeosaur about 8% of its mass. The other has two Confuciusornis, each about 1%. The labels on the plot are the prey."
         },
         {
-          "media": "media/s5_b3.png",
+          "media": "media/s6_b3.png",
           "title": "Velociraptor: battling Protoceratops",
           "notes": "Velociraptor locked with Protoceratops. The prey is heavier than the predator: this one sits above the one-to-one line. It is a fight, not a meal, and it goes into the model as a direct observation, not a stomach."
         }
@@ -136,12 +150,12 @@
     {
       "builds": [
         {
-          "media": "media/s6_b0.png",
+          "media": "media/s7_b0.png",
           "title": "Theropods compared to extant predators",
           "notes": "Every living predator species with at least 20 vertebrate prey records: 308 spindles, each one a species’ whole recorded diet. Colour is the major clade. Snakes sit low and flat. Cats climb steeply. Owls are narrow, canids are wide."
         },
         {
-          "media": "media/s6_b1.gif",
+          "media": "media/s7_b1.gif",
           "title": "Theropods compared to extant predators",
           "notes": "And the theropod gut records on top, in red. They fall inside the living cloud, mostly in its lower half for their size. No single colour owns them."
         }
@@ -150,7 +164,7 @@
     {
       "builds": [
         {
-          "media": "media/s7_b0.png",
+          "media": "media/s8_b0.png",
           "title": "Prey size by type of record",
           "notes": "The living data are not one kind of record. Most of it, 53,599 rows, is pellets and scats. Stomachs are 8,943. The model estimates a shift for each kind, measured against stomach contents, with everything else held fixed. Pellets and scats: prey 1.12 times as heavy as a stomach would give. Prey remains: 1.41. Watching the animal hunt: 1.50. Big prey is what you see, and what is left at the nest. Fossil guts are stomachs, so every comparison in this talk is made at the stomach line."
         }
@@ -159,40 +173,12 @@
     {
       "builds": [
         {
-          "media": "media/s8_b0.png",
-          "title": "Prey to predator mass ratio for extant clades",
-          "notes": "Each living clade at its typical body size. The dot is the median meal as a share of predator mass, and the bar is the 90% interval on that median, not the range of meals. The number is how many species are behind it. The grey tick is where the global line says a predator of that size should be. Coloured rows are the clades that clearly sit off the global line: hawks, both carnivoran groups and dasyuromorphs above it, crocodylians and teiioids below."
-        },
-        {
-          "media": "media/s8_b1.gif",
-          "title": "Prey to predator mass ratio for theropods",
-          "notes": "The theropods on their own tree, every gut record as a share of its predator. Dots are measured prey. Thin bars are brackets: prey known only between two bounds. The Microraptor fish runs off the axis because its lower bound comes from a 6.7 mm fin ray and nothing else. The spread inside one genus, Microraptor, is as wide as a whole living clade."
-        }
-      ]
-    },
-    {
-      "builds": [
-        {
           "media": "media/s9_b0.png",
-          "title": "Close relatives scale differently",
-          "notes": "Slope of prey mass on predator mass for each living clade, with its 90% interval. The dashed line is the global slope, 0.81. Feliforms: 1.33, prey mass rises faster than predator mass. Caniforms: 0.91. Sister groups, different answers."
-        },
-        {
-          "media": "media/s9_b1.png",
-          "title": "Close relatives scale differently",
-          "notes": "Accipitriforms against strigiforms: 1.00 against 0.47. The same split, inside birds. The model found this from the data. It did not assume the tree was right, and this is why the tree cannot predict a theropod tightly."
-        }
-      ]
-    },
-    {
-      "builds": [
-        {
-          "media": "media/s10_b0.png",
           "title": "Prey size relative to the global regression",
-          "notes": "The same information on the tree. Colour is how far a clade sits from the global line at its own typical size: orange is larger prey than the line predicts, blue is smaller, grey is on the line. Branch colours between the tips are interpolated, the way a phylogenetic trait map does it. On the right, the same number for each tip with its 90% interval. The axis is its own colour key. Mammalian carnivores and hawks run orange. Crocodylians and teiioids run blue."
+          "notes": "Every living clade on the tree. Colour is how far a clade sits from the global line at its own typical size: orange is larger prey than the line predicts, blue is smaller, grey is on the line. Branch colours between the tips are interpolated, the way a phylogenetic trait map does it. On the right, the same number for each tip with its 90% interval. The axis is its own colour key. Mammalian carnivores and hawks run orange. Crocodylians and teiioids run blue."
         },
         {
-          "media": "media/s10_b1.gif",
+          "media": "media/s9_b1.gif",
           "title": "Prey size relative to the global regression",
           "notes": "Now the theropods, grafted onto the bird stem. Each dot is one gut record against the global line; thin bars are brackets. The medians of the measured records: Tyrannosauridae 1.9 times the line, Compsognathidae 0.42 times the line, Paraves 2.1 times the line. Compsognathids sit on the blue side, with the crocodylians and teiioids, and away from the birds they are closest to on the tree. The paravians cover the whole axis, from a lizard in a Microraptor to the Protoceratops fight. 25 records cannot say more than that."
         }
@@ -201,17 +187,17 @@
     {
       "builds": [
         {
-          "media": "media/s11_b0.png",
+          "media": "media/s10_b0.png",
           "title": "Conclusions",
           "notes": "Three points, each on the same axis: prey size against the global line, so predator size is taken out. First, the 17 living clades. From Teiioids to Feliforms is a 28-fold difference in prey size at the same predator size. There is no single living predator to compare a fossil to."
         },
         {
-          "media": "media/s11_b1.gif",
+          "media": "media/s10_b1.gif",
           "title": "Conclusions",
           "notes": "Second, the theropods. Grey is every living record, 75,583 of them. Red dots are theropod records with a measured prey, thin bars are brackets, and the open dot is the Velociraptor fight. 17 of 25 sit inside the middle 90% of living records, 8 below it and 0 above (brackets counted at their midpoint). Nothing here needs a kind of predator that is not alive today."
         },
         {
-          "media": "media/s11_b2.gif",
+          "media": "media/s10_b2.gif",
           "title": "Conclusions",
           "notes": "Third, the kind of record. Fossil guts are stomachs. The dashed line is the median theropod stomach record with a measured prey, 14 records. Against living stomachs, 44% of records sit below that line: theropods look ordinary. Against prey remains it is 15% (pellets and scats 29%, observed kills 20%): the same theropods start to look like small-prey specialists. These are raw records, so part of the gap is which species each method samples. The model’s shift for method alone is smaller, 1.1 to 1.5 times. Either way: compare stomachs to stomachs."
         }
@@ -220,7 +206,7 @@
     {
       "builds": [
         {
-          "media": "media/s12_b0.png",
+          "media": "media/s11_b0.png",
           "title": "Acknowledgments",
           "notes": "Acknowledgments. NSF and Coe College for support. Faith Hysell. Mike Grundler and SquamataBase. The people who built OS-Prey, CarniDIET, GATEWAy and AVONET, and every author who weighed a stomach. PhyloPic."
         }
